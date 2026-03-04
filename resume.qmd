@@ -10,7 +10,6 @@ title: "Resume"
 
 -   Bachelor of Forestry and Wildlife Management (Forestry Major), Federal University of Agriculture, Abeokuta (FUNAAB) – Ogun, Nigeria, February 2020.
 
-
 ## Publications
 
 *Peer-reviewed publications:*
@@ -33,17 +32,17 @@ title: "Resume"
 
 ## Awards & Honors
 
-- Fully funded master’s program at UBC, Mastercard Foundation Scholarship, 2025
--	Fully funded micro credential in GIS, Seneca Polytechnic, Quick Train Canada, 2024
--	Award of Meritorious Service as Associate Agronomist, GBFOODS, Africa, 2023
--	Reviewer for the year 2022, Current Agriculture Research Journal, India, 2022
--	Data Science Micro degree scholarship, USTACKY, 2021	
--	Best Graduating Student in the Department of Forestry and Wildlife Management 2020/21 session, FUNAAB, 2020
+-   Fully funded master’s program at UBC, Mastercard Foundation Scholarship, 2025
+-   Fully funded micro credential in GIS, Seneca Polytechnic, Quick Train Canada, 2024
+-   Award of Meritorious Service as Associate Agronomist, GBFOODS, Africa, 2023
+-   Reviewer for the year 2022, Current Agriculture Research Journal, India, 2022
+-   Data Science Micro degree scholarship, USTACKY, 2021\
+-   Best Graduating Student in the Department of Forestry and Wildlife Management 2020/21 session, FUNAAB, 2020
 
 ## Teaching Assistantships
 
 -   List any TA positions you may have held.
 
-# Institutional Service
+## Institutional Service
 
 -   Volunteering etc.

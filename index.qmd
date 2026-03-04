@@ -10,7 +10,7 @@ about:
       href: https://www.linkedin.com/in/oluwaseyi-godwin-ezekiel-146148148?
     - icon: github
       text: GitHub
-      href: https://github.com/GEO-001
+      href: https://github.com/oluwaseyigezekiel
     - icon
     - icon: envelope-at
       text: Email
@@ -22,4 +22,3 @@ about:
 I am passionate about advancing studies in spatial ecology and environmental management. My goal is to contribute to global conservation efforts that involve the integration of traditional monitoring and assessment methods with the latest technologies in remote sensing and Geographic Information Systems.
 
 In my spare time, you’ll probably find me at a chessboard, playing Scrabble, or at the piano.
-

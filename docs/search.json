@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "I am passionate about advancing studies in spatial ecology and environmental management. My goal is to contribute to global conservation efforts that involve the integration of traditional monitoring and assessment methods with the latest technologies in remote sensing and Geographic Information Systems.\nIn my spare time, you’ll probably find me at a chessboard, playing Scrabble, or at the piano."
-  },
-  {
     "objectID": "resume.html",
     "href": "resume.html",
     "title": "Resume",
@@ -14,18 +7,60 @@
     "text": "Master of Geomatics for Environmental Management, University of British Columbia (UBC), Canada – Vancouver, BC, Expected April 2026.\nMicro credential in Geospatial Data Collection, Analysis, and Interpretation, Seneca Polytechnic, Canada – Toronto, ON, April 2024.\nBachelor of Forestry and Wildlife Management (Forestry Major), Federal University of Agriculture, Abeokuta (FUNAAB) – Ogun, Nigeria, February 2020."
   },
   {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Resume",
     "section": "",
-    "text": "Peer-reviewed publications:\n\nEzekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development (JAEID), 118(1), 5–18. https://doi.org/10.36253/jaeid-12082."
+    "text": "Master of Geomatics for Environmental Management, University of British Columbia (UBC), Canada – Vancouver, BC, Expected April 2026.\nMicro credential in Geospatial Data Collection, Analysis, and Interpretation, Seneca Polytechnic, Canada – Toronto, ON, April 2024.\nBachelor of Forestry and Wildlife Management (Forestry Major), Federal University of Agriculture, Abeokuta (FUNAAB) – Ogun, Nigeria, February 2020."
   },
   {
-    "objectID": "content_development.html",
-    "href": "content_development.html",
-    "title": "Content & Deliverables",
+    "objectID": "resume.html#publications",
+    "href": "resume.html#publications",
+    "title": "Resume",
+    "section": "Publications",
+    "text": "Publications\nPeer-reviewed publications:\n\nEzekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development (JAEID), 118(1), 5–18. https://doi.org/10.36253/jaeid-12082\n\nReports:\n\nList any non-peer reviewed materials you’d like to share here."
+  },
+  {
+    "objectID": "resume.html#conferences-talks",
+    "href": "resume.html#conferences-talks",
+    "title": "Resume",
+    "section": "Conferences & Talks",
+    "text": "Conferences & Talks\nInvited Talks\n\nIf you’ve been invited to speak in a professional setting, list that here.\n\nConference Presentations\n\nIf the presentation was at a conference, list them here."
+  },
+  {
+    "objectID": "resume.html#awards-honors",
+    "href": "resume.html#awards-honors",
+    "title": "Resume",
+    "section": "Awards & Honors",
+    "text": "Awards & Honors\n\nFully funded master’s program at UBC, Mastercard Foundation Scholarship, 2025\nFully funded micro credential in GIS, Seneca Polytechnic, Quick Train Canada, 2024\nAward of Meritorious Service as Associate Agronomist, GBFOODS, Africa, 2023\nReviewer for the year 2022, Current Agriculture Research Journal, India, 2022\nData Science Micro degree scholarship, USTACKY, 2021\n\nBest Graduating Student in the Department of Forestry and Wildlife Management 2020/21 session, FUNAAB, 2020"
+  },
+  {
+    "objectID": "resume.html#teaching-assistantships",
+    "href": "resume.html#teaching-assistantships",
+    "title": "Resume",
+    "section": "Teaching Assistantships",
+    "text": "Teaching Assistantships\n\nList any TA positions you may have held."
+  },
+  {
+    "objectID": "resume.html#institutional-service",
+    "href": "resume.html#institutional-service",
+    "title": "Resume",
+    "section": "Institutional Service",
+    "text": "Institutional Service\n\nVolunteering etc."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Oluwaseyi Ezekiel",
     "section": "",
-    "text": "Project Deliverable 1\nThis is a sample page where you can archive project deliverables."
+    "text": "I am passionate about advancing studies in spatial ecology and environmental management. My goal is to contribute to global conservation efforts that involve the integration of traditional monitoring and assessment methods with the latest technologies in remote sensing and Geographic Information Systems.\nIn my spare time, you’ll probably find me at a chessboard, playing Scrabble, or at the piano."
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "I am passionate about advancing studies in spatial ecology and environmental management. My goal is to contribute to global conservation efforts that involve the integration of traditional monitoring and assessment methods with the latest technologies in remote sensing and Geographic Information Systems.\nIn my spare time, you’ll probably find me at a chessboard, playing Scrabble, or at the piano."
   },
   {
     "objectID": "content.html",
@@ -56,52 +91,10 @@
     "text": "You can also provide a frame linking to external websites. For example, here is a Google Earth Engine application I developed - which I embedded in this webpage using the code below:\n\n\n&lt;iframe width=\"900\" height=\"700\"\nsrc=\"https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool\"&gt;\n&lt;/iframe&gt;\n\nThe full-screen GEE application is available here in case you’re interested.\n(To use the GEE tool, navigate to any city you’d like, hit apply filters, and click anywhere on the map to retrieve a time-series of Landsat surface temperature observations for that point. Areas where the maximum temp exceeded 35 degrees Celsius in your date-range are highlighted in red.)"
   },
   {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Oluwaseyi Ezekiel",
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
     "section": "",
-    "text": "I am passionate about advancing studies in spatial ecology and environmental management. My goal is to contribute to global conservation efforts that involve the integration of traditional monitoring and assessment methods with the latest technologies in remote sensing and Geographic Information Systems.\nIn my spare time, you’ll probably find me at a chessboard, playing Scrabble, or at the piano."
-  },
-  {
-    "objectID": "resume.html#education",
-    "href": "resume.html#education",
-    "title": "Resume",
-    "section": "",
-    "text": "Master of Geomatics for Environmental Management, University of British Columbia (UBC), Canada – Vancouver, BC, Expected April 2026.\nMicro credential in Geospatial Data Collection, Analysis, and Interpretation, Seneca Polytechnic, Canada – Toronto, ON, April 2024.\nBachelor of Forestry and Wildlife Management (Forestry Major), Federal University of Agriculture, Abeokuta (FUNAAB) – Ogun, Nigeria, February 2020."
-  },
-  {
-    "objectID": "resume.html#publications",
-    "href": "resume.html#publications",
-    "title": "Resume",
-    "section": "Publications",
-    "text": "Publications\nPeer-reviewed publications:\n\nEzekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development (JAEID), 118(1), 5–18. https://doi.org/10.36253/jaeid-12082\n\nReports:\n\nList any non-peer reviewed materials you’d like to share here."
-  },
-  {
-    "objectID": "resume.html#awards-honors",
-    "href": "resume.html#awards-honors",
-    "title": "Resume",
-    "section": "Awards & Honors",
-    "text": "Awards & Honors\n\nFully funded master’s program at UBC, Mastercard Foundation Scholarship, 2025\nFully funded micro credential in GIS, Seneca Polytechnic, Quick Train Canada, 2024\nAward of Meritorious Service as Associate Agronomist, GBFOODS, Africa, 2023\nReviewer for the year 2022, Current Agriculture Research Journal, India, 2022\nData Science Micro degree scholarship, USTACKY, 2021\n\nBest Graduating Student in the Department of Forestry and Wildlife Management 2020/21 session, FUNAAB, 2020"
-  },
-  {
-    "objectID": "resume.html#conferences-talks",
-    "href": "resume.html#conferences-talks",
-    "title": "Resume",
-    "section": "Conferences & Talks",
-    "text": "Conferences & Talks\nInvited Talks\n\nIf you’ve been invited to speak in a professional setting, list that here.\n\nConference Presentations\n\nIf the presentation was at a conference, list them here."
-  },
-  {
-    "objectID": "resume.html#teaching-assistantships",
-    "href": "resume.html#teaching-assistantships",
-    "title": "Resume",
-    "section": "Teaching Assistantships",
-    "text": "Teaching Assistantships\n\nList any TA positions you may have held."
-  },
-  {
-    "objectID": "resume.html#institutional-service",
-    "href": "resume.html#institutional-service",
-    "title": "Resume",
-    "section": "Institutional Service",
-    "text": "Institutional Service\n\nVolunteering etc."
+    "text": "Peer-reviewed publications:\n\nEzekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development (JAEID), 118(1), 5–18. https://doi.org/10.36253/jaeid-12082."
   }
 ]
