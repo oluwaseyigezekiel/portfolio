@@ -6,68 +6,38 @@ format:
 editor: source
 ---
 
-This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.
-
 ## Map Gallery
+
+This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.
 
 <div class="project-grid">
 
-<a href="images/harmonized_maps.png" class="project-card-link">
+<a href="agriculture.html" class="project-card-link">
   <div class="project-card">
-    <img src="images/harmonized_maps.png" alt="Harmonized land-cover maps" class="project-card-img">
+    <img src="images/cover-page.jpg" alt="Agricultural landscape transitions project" class="project-card-img">
     <div class="project-card-body">
-      <h3>Harmonized Land-Cover Maps</h3>
-      <p>Comparison of harmonized land-cover datasets used to analyze agricultural transitions.</p>
+      <h3>Assessing Critical Transitions in Agricultural Landscapes</h3>
+      <p>Harmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia, with emphasis on adjacency, interspersion, and opportunities for perennial agriculture adoption.</p>
     </div>
   </div>
 </a>
 
-<a href="images/change_map2.png" class="project-card-link">
+<a href="lidar.html" class="project-card-link">
   <div class="project-card">
-    <img src="images/change_map2.png" alt="Change detection map" class="project-card-img">
+    <img src="images/forest-agric.png" alt="LiDAR-based tree detection project" class="project-card-img">
     <div class="project-card-body">
-      <h3>Change Detection Map</h3>
-      <p>Spatial representation of land-cover change across the study area.</p>
+      <h3>LiDAR-Based Tree Detection and Segmentation</h3>
+      <p>Forest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.</p>
     </div>
   </div>
 </a>
 
-<a href="images/adjacency.png" class="project-card-link">
+<a href="hyperspectral.html" class="project-card-link">
   <div class="project-card">
-    <img src="images/adjacency.png" alt="Adjacency analysis map" class="project-card-img">
+    <img src="images/harmonized_maps.png" alt="Hyperspectral vegetation analysis project" class="project-card-img">
     <div class="project-card-body">
-      <h3>Adjacency Analysis</h3>
-      <p>Visualization of agricultural adjacency and interspersion patterns.</p>
-    </div>
-  </div>
-</a>
-
-<a href="images/sankey_2015_2020.png" class="project-card-link">
-  <div class="project-card">
-    <img src="images/sankey_2015_2020.png" alt="Land-cover transition Sankey diagram" class="project-card-img">
-    <div class="project-card-body">
-      <h3>Land-Cover Transition Sankey</h3>
-      <p>Diagram illustrating transitions between land-cover classes from 2015 to 2020.</p>
-    </div>
-  </div>
-</a>
-
-<a href="images/normalized_weights.png" class="project-card-link">
-  <div class="project-card">
-    <img src="images/normalized_weights.png" alt="Dataset weighting visualization" class="project-card-img">
-    <div class="project-card-body">
-      <h3>Normalized Dataset Weights</h3>
-      <p>Visualization of dataset weighting used during land-cover harmonization.</p>
-    </div>
-  </div>
-</a>
-
-<a href="images/forest-agric.png" class="project-card-link">
-  <div class="project-card">
-    <img src="images/forest-agric.png" alt="Forest agriculture spatial patterns map" class="project-card-img">
-    <div class="project-card-body">
-      <h3>Forest–Agriculture Spatial Patterns</h3>
-      <p>Map showing spatial relationships between forest cover and agricultural land uses.</p>
+      <h3>Hyperspectral Vegetation Analysis</h3>
+      <p>Spectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows.</p>
     </div>
   </div>
 </a>
