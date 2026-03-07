@@ -6,52 +6,21 @@ format:
     toc: false
 ---
 
-:::: hero
-<h1 class="hero-name">
+:::: hero-wrapper
+<h1 class="home-name">
 
 Oluwaseyi Ezekiel
 
 </h1>
 
-<p class="hero-tagline">
+<p class="home-tagline">
 
-Geomatics • Remote Sensing • Spatial Ecology
-
-</p>
-
-<p class="hero-description">
-
-Geospatial analyst and environmental researcher focused on spatial ecology, land-cover change, remote sensing, and GIS for environmental management.
+Geospatial and Remote Sensing Scientist
 
 </p>
 
-::: hero-buttons
-<a href="about.html" class="btn btn-primary btn-lg">Enter Portfolio</a>
-
-<a href="content.html" class="btn btn-outline-secondary btn-lg">View Projects</a>
+::: home-line
 :::
+
+<a href="content.html" class="btn btn-primary btn-lg"> View Portfolio </a>
 ::::
-
-------------------------------------------------------------------------
-
-## Areas of Focus
-
-:::::: columns
-::: {.column width="33%"}
-### Remote Sensing
-
-Land-cover analysis, spectral interpretation, and environmental change detection.
-:::
-
-::: {.column width="33%"}
-### GIS and Spatial Analysis
-
-Mapping workflows, spatial data processing, and environmental applications.
-:::
-
-::: {.column width="33%"}
-### Reproducible Workflows
-
-Technical communication and geospatial analysis using R, Quarto, and markdown.
-:::
-::::::
