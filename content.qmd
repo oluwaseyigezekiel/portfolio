@@ -16,7 +16,7 @@ This page highlights selected remote sensing, spatial analysis, and GIS projects
 
 ### [Assessing Critical Transitions in Agricultural Landscapes](agriculture.html)
 
-Harmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia, with emphasis on adjacency, interspersion, and opportunities for perennial agriculture adoption.
+Harmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia.
 :::
 
 ::: {.column width="33%"}

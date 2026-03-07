@@ -39,14 +39,14 @@
     "href": "content.html",
     "title": "Projects",
     "section": "",
-    "text": "This page highlights selected remote sensing, spatial analysis, and GIS projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.\n\n\n\n\n\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia, with emphasis on adjacency, interspersion, and opportunities for perennial agriculture adoption.\n\n\n\n\n\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\n\n\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
+    "text": "This page highlights selected remote sensing, spatial analysis, and GIS projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.\n\n\n\n\n\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia.\n\n\n\n\n\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\n\n\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
   },
   {
     "objectID": "content.html#projects",
     "href": "content.html#projects",
     "title": "Projects",
     "section": "",
-    "text": "This page highlights selected remote sensing, spatial analysis, and GIS projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.\n\n\n\n\n\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia, with emphasis on adjacency, interspersion, and opportunities for perennial agriculture adoption.\n\n\n\n\n\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\n\n\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
+    "text": "This page highlights selected remote sensing, spatial analysis, and GIS projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.\n\n\n\n\n\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia.\n\n\n\n\n\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\n\n\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
   },
   {
     "objectID": "about.html",
@@ -65,9 +65,16 @@
   {
     "objectID": "gallery.html",
     "href": "gallery.html",
-    "title": "Oluwaseyi Ezekiel",
+    "title": "Map Gallery",
     "section": "",
-    "text": "This gallery showcases cartographic layouts and spatial visualizations developed during my studies in Geomatics and GIS.\n\n\n\n\nAssessing Critical Transitions in Agricultural Landscapes\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia, with emphasis on adjacency, interspersion, and opportunities for perennial agriculture adoption.\n\n\n\n\nLiDAR-Based Tree Detection and Segmentation\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\n\nHyperspectral Vegetation Analysis\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
+    "text": "This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.\n\n\n\n\n\nComparison of harmonized land-cover datasets used to analyze agricultural transitions in the Lower Fraser Valley.\n\n\n\n\n\nSpatial representation of land-cover change across the study area between analysis periods.\n\n\n\n\n\nVisualization of adjacency and interspersion patterns between annual and perennial agriculture.\n\n\n\n\n\n\n\n\nSpatial distribution of agricultural land classes derived from harmonized land-cover datasets.\n\n\n\n\n\nCanopy height model generated from LiDAR point clouds to represent forest structure.\n\n\n\n\n\nVisualization of individual tree segmentation derived from LiDAR-based analysis."
+  },
+  {
+    "objectID": "gallery.html#map-gallery",
+    "href": "gallery.html#map-gallery",
+    "title": "Map Gallery",
+    "section": "",
+    "text": "This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.\n\n\n\n\n\nComparison of harmonized land-cover datasets used to analyze agricultural transitions in the Lower Fraser Valley.\n\n\n\n\n\nSpatial representation of land-cover change across the study area between analysis periods.\n\n\n\n\n\nVisualization of adjacency and interspersion patterns between annual and perennial agriculture.\n\n\n\n\n\n\n\n\nSpatial distribution of agricultural land classes derived from harmonized land-cover datasets.\n\n\n\n\n\nCanopy height model generated from LiDAR point clouds to represent forest structure.\n\n\n\n\n\nVisualization of individual tree segmentation derived from LiDAR-based analysis."
   },
   {
     "objectID": "index.html",

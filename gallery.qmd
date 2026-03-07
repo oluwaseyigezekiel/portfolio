@@ -1,42 +1,79 @@
 ---
-title: ""
+title: "Map Gallery"
 format:
   html:
     toc: false
 editor: source
 ---
 
-This gallery showcases cartographic layouts and spatial visualizations developed during my studies in Geomatics and GIS.
+## Map Gallery
+
+This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.
 
 :::: {.columns}
 
 ::: {.column width="33%"}
 
-[![](images/cover-page.jpg){.gallery-img}](agriculture.html)
+![](images/harmonized_maps.png){.gallery-img}
 
-### [Assessing Critical Transitions in Agricultural Landscapes](agriculture.html)
+### Harmonized Land-Cover Maps
 
-Harmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia, with emphasis on adjacency, interspersion, and opportunities for perennial agriculture adoption.
-
-:::
-
-::: {.column width="33%"}
-
-[![](images/forest-agric.png){.gallery-img}](lidar.html)
-
-### [LiDAR-Based Tree Detection and Segmentation](lidar.html)
-
-Forest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.
+Comparison of harmonized land-cover datasets used to analyze agricultural transitions in the Lower Fraser Valley.
 
 :::
 
 ::: {.column width="33%"}
 
-[![](images/harmonized_maps.png){.gallery-img}](hyperspectral.html)
+![](images/change_map2.png){.gallery-img}
 
-### [Hyperspectral Vegetation Analysis](hyperspectral.html)
+### Change Detection Map
 
-Spectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows.
+Spatial representation of land-cover change across the study area between analysis periods.
+
+:::
+
+::: {.column width="33%"}
+
+![](images/adjacency.png){.gallery-img}
+
+### Agricultural Adjacency Analysis
+
+Visualization of adjacency and interspersion patterns between annual and perennial agriculture.
+
+:::
+
+::::
+
+
+:::: {.columns}
+
+::: {.column width="33%"}
+
+![](images/agriculture_map.png){.gallery-img}
+
+### Agricultural Distribution Map
+
+Spatial distribution of agricultural land classes derived from harmonized land-cover datasets.
+
+:::
+
+::: {.column width="33%"}
+
+![](images/lidar_chm.png){.gallery-img}
+
+### LiDAR Canopy Height Model
+
+Canopy height model generated from LiDAR point clouds to represent forest structure.
+
+:::
+
+::: {.column width="33%"}
+
+![](images/tree_detection.png){.gallery-img}
+
+### Individual Tree Detection
+
+Visualization of individual tree segmentation derived from LiDAR-based analysis.
 
 :::
 
