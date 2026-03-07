@@ -35,34 +35,6 @@
     "text": "Awards and Honors\n\nFully funded master’s program at UBC, Mastercard Foundation Scholarship, 2025\nFully funded micro-credential in GIS, Seneca Polytechnic, Quick Train Canada, 2024\nAward of Meritorious Service as Associate Agronomist, GBFOODS Africa, 2023\nReviewer of the Year, Current Agriculture Research Journal, India, 2022\nData Science Microdegree Scholarship, USTACKY, 2021\nBest Graduating Student in the Department of Forestry and Wildlife Management, FUNAAB, 2020"
   },
   {
-    "objectID": "content.html",
-    "href": "content.html",
-    "title": "Projects",
-    "section": "",
-    "text": "This page highlights selected remote sensing, spatial analysis, and GIS projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.\n\n\n\n\n\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia.\n\n\n\n\n\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\n\n\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
-  },
-  {
-    "objectID": "content.html#projects",
-    "href": "content.html#projects",
-    "title": "Projects",
-    "section": "",
-    "text": "This page highlights selected remote sensing, spatial analysis, and GIS projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.\n\n\n\n\n\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia.\n\n\n\n\n\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\n\n\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano."
-  },
-  {
-    "objectID": "about.html#about-me",
-    "href": "about.html#about-me",
-    "title": "About",
-    "section": "",
-    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano."
-  },
-  {
     "objectID": "gallery.html",
     "href": "gallery.html",
     "title": "Map Gallery",
@@ -77,11 +49,39 @@
     "text": "This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.\n\n\n\nHarmonized Land-Cover Maps\nComparison of harmonized land-cover datasets used to analyze agricultural transitions in the Lower Fraser Valley.\n\n\nChange Detection Map\nSpatial representation of land-cover change across the study area.\n\n\nAgricultural Adjacency Analysis\nVisualization of adjacency and interspersion patterns between agricultural classes.\n\n\n\n\n\nNormalized Dataset Weights\nVisualization of dataset weighting used during land-cover harmonization.\n\n\nLand-Cover Transition Sankey\nDiagram illustrating transitions between land-cover classes from 2015 to 2020.\n\n\nForest–Agriculture Spatial Patterns\nMap showing spatial relationships between forest cover and agricultural land uses."
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About me",
+    "section": "",
+    "text": "About me\nI am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano."
+  },
+  {
+    "objectID": "content.html",
+    "href": "content.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This page highlights selected remote sensing, spatial analysis, and GIS projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.\n\n\n\n\n\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia.\n\n\n\n\n\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\n\n\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
+  },
+  {
+    "objectID": "content.html#projects",
+    "href": "content.html#projects",
+    "title": "Projects",
+    "section": "",
+    "text": "This page highlights selected remote sensing, spatial analysis, and GIS projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.\n\n\n\n\n\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia.\n\n\n\n\n\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\n\n\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
+  },
+  {
+    "objectID": "home.html",
+    "href": "home.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Oluwaseyi Ezekiel\n\n\nGeospatial and Remote Sensing Scientist\n\n\n\n\nView Portfolio"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "\nOluwaseyi Ezekiel\n",
+    "title": "Oluwaseyi Ezekiel",
     "section": "",
-    "text": "Geospatial and Remote Sensing Scientist\n\n\n\n\n View Portfolio"
+    "text": "Welcome!!!"
   },
   {
     "objectID": "publications.html",

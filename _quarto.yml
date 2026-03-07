@@ -5,8 +5,9 @@ project:
 website:
   title: "Oluwaseyi Ezekiel"
   navbar:
+    logo: images/geo2025.jpg
     left:
-      - href: index.qmd
+      - href: home.qmd
         text: Home
       - href: about.qmd
         text: About
@@ -32,10 +33,12 @@ website:
 format:
   html:
     theme: flatly
+    css: styles.css
     toc: true
     toc-location: right
     smooth-scroll: true
     link-external-newwindow: true
-    fontsize: 1.05em
+    fontsize: 1.1em
 
 editor: visual
+
