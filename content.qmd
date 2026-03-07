@@ -10,49 +10,37 @@ editor: source
 
 This page showcases selected geospatial and remote sensing projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.
 
-:::::: project-grid
-<a href="agriculture.html" class="project-card-link">
+These projects demonstrate experience in:
 
-::::: project-card
-```         
-  <img src="images/cover-page.jpg" alt="Agricultural landscape transitions project" class="project-card-img">
-  <div class="project-card-body">
-    <h3>Assessing Critical Transitions in Agricultural Landscapes</h3>
-    <p>Harmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia.</p>
-  </div>
-</div>
-```
+-   Geographic Information Systems (GIS)
+-   Remote sensing
+-   Spatial analysis
+-   Reproducible geospatial workflows using R and Quarto
 
-</a>
+## Selected Projects
 
-<a href="lidar.html" class="project-card-link">
+:::::: columns
+::: {.column width="33%"}
+[![](images/cover-page.jpg){.gallery-img}](agriculture.html)
 
-:::: project-card
-```         
-  <img src="images/forest-agric.png" alt="LiDAR tree detection project" class="project-card-img">
-  <div class="project-card-body">
-    <h3>LiDAR-Based Tree Detection and Segmentation</h3>
-    <p>Forest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.</p>
-  </div>
-</div>
-```
+### [Agricultural Landscape Transitions](agriculture.html)
 
-</a>
-
-<a href="hyperspectral.html" class="project-card-link">
-
-::: project-card
-```         
-  <img src="images/harmonized_maps.png" alt="Hyperspectral vegetation analysis project" class="project-card-img">
-  <div class="project-card-body">
-    <h3>Hyperspectral Vegetation Analysis</h3>
-    <p>Spectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral workflows.</p>
-  </div>
-</div>
-```
-
-</a>
+Harmonized land-cover analysis of agricultural change in the Lower Fraser Valley.
 :::
-::::
-:::::
+
+::: {.column width="33%"}
+[![](images/forest-agric.png){.gallery-img}](lidar.html)
+
+### [LiDAR Tree Detection](lidar.html)
+
+Forest structure analysis using canopy height models and tree segmentation.
+:::
+
+::: {.column width="33%"}
+[![](images/harmonized_maps.png){.gallery-img}](hyperspectral.html)
+
+### [Hyperspectral Vegetation Analysis](hyperspectral.html)
+
+Spectral interpretation of vegetation classes using hyperspectral reflectance data.
+:::
 ::::::
