@@ -74,14 +74,7 @@
     "href": "gallery.html",
     "title": "Map Gallery",
     "section": "",
-    "text": "This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.\n\n\n\n\n\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia, with emphasis on adjacency, interspersion, and opportunities for perennial agriculture adoption.\n\n\n\n\n\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\n\n\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
-  },
-  {
-    "objectID": "gallery.html#map-gallery",
-    "href": "gallery.html#map-gallery",
-    "title": "Map Gallery",
-    "section": "",
-    "text": "This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.\n\n\n\n\n\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia, with emphasis on adjacency, interspersion, and opportunities for perennial agriculture adoption.\n\n\n\n\n\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\n\n\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
+    "text": "This gallery showcases cartographic layouts and spatial visualizations developed during my studies in Geomatics and GIS.\n\n\n\n\nAssessing Critical Transitions in Agricultural Landscapes\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia, with emphasis on adjacency, interspersion, and opportunities for perennial agriculture adoption.\n\n\n\n\nLiDAR-Based Tree Detection and Segmentation\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\n\nHyperspectral Vegetation Analysis\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
   },
   {
     "objectID": "index.html",
