@@ -24,7 +24,7 @@ These projects demonstrate experience in:
 
 ::: project-card
 ```         
-<img src="images/cover-page.jpg" class="project-card-img">
+<img src="images/cover-page.jpg" alt="Agricultural landscape transitions project" class="project-card-img">
 <div class="project-card-body">
   <h3>Agricultural Landscape Transitions</h3>
   <p>Harmonized land-cover analysis of agricultural change in the Lower Fraser Valley.</p>
@@ -38,7 +38,7 @@ These projects demonstrate experience in:
 
 ::: project-card
 ```         
-<img src="images/forest-agric.png" class="project-card-img">
+<img src="images/forest-agric.png" alt="LiDAR tree detection project" class="project-card-img">
 <div class="project-card-body">
   <h3>LiDAR Tree Detection</h3>
   <p>Forest structure analysis using canopy height models and tree segmentation.</p>
@@ -52,7 +52,7 @@ These projects demonstrate experience in:
 
 ::: project-card
 ```         
-<img src="images/harmonized_maps.png" class="project-card-img">
+<img src="images/harmonized_maps.png" alt="Hyperspectral vegetation analysis project" class="project-card-img">
 <div class="project-card-body">
   <h3>Hyperspectral Vegetation Analysis</h3>
   <p>Spectral interpretation of vegetation classes using hyperspectral reflectance data.</p>

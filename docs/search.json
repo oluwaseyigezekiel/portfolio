@@ -53,7 +53,7 @@
     "href": "content.html#selected-projects",
     "title": "Projects",
     "section": "Selected Projects",
-    "text": "Selected Projects\n\n\n\n&lt;img src=\"images/cover-page.jpg\" alt=\"Agricultural landscape transitions project\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Assessing Critical Transitions in Agricultural Landscapes&lt;/h3&gt;\n  &lt;p&gt;\n    Harmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia, with emphasis on adjacency, interspersion, and opportunities for perennial agriculture adoption.\n  &lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/forest-agric.png\" alt=\"LiDAR or forest structure project\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;LiDAR-Based Tree Detection and Segmentation&lt;/h3&gt;\n  &lt;p&gt;\n    Forest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n  &lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/harmonized_maps.png\" alt=\"Hyperspectral vegetation analysis project\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Hyperspectral Vegetation Analysis&lt;/h3&gt;\n  &lt;p&gt;\n    Spectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows.\n  &lt;/p&gt;\n&lt;/div&gt;"
+    "text": "Selected Projects\n\n\n\n&lt;img src=\"images/cover-page.jpg\" alt=\"Agricultural landscape transitions project\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Agricultural Landscape Transitions&lt;/h3&gt;\n  &lt;p&gt;Harmonized land-cover analysis of agricultural change in the Lower Fraser Valley.&lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/forest-agric.png\" alt=\"LiDAR tree detection project\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;LiDAR Tree Detection&lt;/h3&gt;\n  &lt;p&gt;Forest structure analysis using canopy height models and tree segmentation.&lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/harmonized_maps.png\" alt=\"Hyperspectral vegetation analysis project\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Hyperspectral Vegetation Analysis&lt;/h3&gt;\n  &lt;p&gt;Spectral interpretation of vegetation classes using hyperspectral reflectance data.&lt;/p&gt;\n&lt;/div&gt;"
   },
   {
     "objectID": "about.html",
@@ -75,6 +75,13 @@
     "title": "Map Gallery",
     "section": "",
     "text": "This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS."
+  },
+  {
+    "objectID": "gallery.html#map-gallery",
+    "href": "gallery.html#map-gallery",
+    "title": "Map Gallery",
+    "section": "Map Gallery",
+    "text": "Map Gallery\n\n\n\n&lt;img src=\"images/harmonized_maps.png\" alt=\"Harmonized land-cover maps\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Harmonized Land-Cover Maps&lt;/h3&gt;\n  &lt;p&gt;Comparison of harmonized land-cover datasets used to analyze agricultural transitions.&lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/change_map2.png\" alt=\"Change detection map\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Change Detection Map&lt;/h3&gt;\n  &lt;p&gt;Spatial representation of land-cover change across the study area.&lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/adjacency.png\" alt=\"Adjacency analysis map\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Adjacency Analysis&lt;/h3&gt;\n  &lt;p&gt;Visualization of agricultural adjacency and interspersion patterns.&lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/sankey_2015_2020.png\" alt=\"Land-cover transition Sankey diagram\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Land-Cover Transition Sankey&lt;/h3&gt;\n  &lt;p&gt;Diagram illustrating transitions between land-cover classes from 2015 to 2020.&lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/normalized_weights.png\" alt=\"Dataset weighting visualization\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Normalized Dataset Weights&lt;/h3&gt;\n  &lt;p&gt;Visualization of dataset weighting used during land-cover harmonization.&lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/forest-agric.png\" alt=\"Forest agriculture spatial patterns map\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Forest–Agriculture Spatial Patterns&lt;/h3&gt;\n  &lt;p&gt;Map showing spatial relationships between forest cover and agricultural land uses.&lt;/p&gt;\n&lt;/div&gt;"
   },
   {
     "objectID": "index.html",
@@ -103,19 +110,5 @@
     "title": "Publications",
     "section": "",
     "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
-  },
-  {
-    "objectID": "gallery.html#selected-projects",
-    "href": "gallery.html#selected-projects",
-    "title": "Map Gallery",
-    "section": "Selected Projects",
-    "text": "Selected Projects\n\n\n\nAssessing Critical Transitions in Agricultural Landscapes\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia, with emphasis on adjacency, interspersion, and opportunities for perennial agriculture adoption.\n\n\n\nLiDAR-Based Tree Detection and Segmentation\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\nHyperspectral Vegetation Analysis\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
-  },
-  {
-    "objectID": "gallery.html#map-gallery",
-    "href": "gallery.html#map-gallery",
-    "title": "Map Gallery",
-    "section": "Map Gallery",
-    "text": "Map Gallery\n\n\n\n&lt;img src=\"images/harmonized_maps.png\" alt=\"Harmonized land-cover maps\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Harmonized Land-Cover Maps&lt;/h3&gt;\n  &lt;p&gt;Comparison of harmonized land-cover datasets used to analyze agricultural transitions.&lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/change_map2.png\" alt=\"Change detection map\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Change Detection Map&lt;/h3&gt;\n  &lt;p&gt;Spatial representation of land-cover change across the study area.&lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/adjacency.png\" alt=\"Adjacency analysis map\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Adjacency Analysis&lt;/h3&gt;\n  &lt;p&gt;Visualization of agricultural adjacency and interspersion patterns.&lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/sankey_2015_2020.png\" alt=\"Land-cover transition Sankey diagram\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Land-Cover Transition Sankey&lt;/h3&gt;\n  &lt;p&gt;Diagram illustrating transitions between land-cover classes from 2015 to 2020.&lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/normalized_weights.png\" alt=\"Dataset weighting visualization\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Normalized Dataset Weights&lt;/h3&gt;\n  &lt;p&gt;Visualization of dataset weighting used during land-cover harmonization.&lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/forest-agric.png\" alt=\"Forest agriculture spatial patterns map\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Forest–Agriculture Spatial Patterns&lt;/h3&gt;\n  &lt;p&gt;Map showing spatial relationships between forest cover and agricultural land uses.&lt;/p&gt;\n&lt;/div&gt;"
   }
 ]
