@@ -16,7 +16,7 @@ This gallery showcases cartographic layouts and spatial visualizations developed
 
 ![](images/harmonized_maps.png){.gallery-img}
 
-### Harmonized Land-Cover Maps
+**Harmonized Land-Cover Maps**
 
 Comparison of harmonized land-cover datasets used to analyze agricultural transitions in the Lower Fraser Valley.
 
@@ -26,9 +26,9 @@ Comparison of harmonized land-cover datasets used to analyze agricultural transi
 
 ![](images/change_map2.png){.gallery-img}
 
-### Change Detection Map
+**Change Detection Map**
 
-Spatial representation of land-cover change across the study area between analysis periods.
+Spatial representation of land-cover change across the study area.
 
 :::
 
@@ -36,9 +36,9 @@ Spatial representation of land-cover change across the study area between analys
 
 ![](images/adjacency.png){.gallery-img}
 
-### Agricultural Adjacency Analysis
+**Agricultural Adjacency Analysis**
 
-Visualization of adjacency and interspersion patterns between annual and perennial agriculture.
+Visualization of adjacency and interspersion patterns between agricultural classes.
 
 :::
 
@@ -51,9 +51,9 @@ Visualization of adjacency and interspersion patterns between annual and perenni
 
 ![](images/agriculture_map.png){.gallery-img}
 
-### Agricultural Distribution Map
+**Agricultural Distribution Map**
 
-Spatial distribution of agricultural land classes derived from harmonized land-cover datasets.
+Spatial distribution of agricultural land classes derived from harmonized datasets.
 
 :::
 
@@ -61,9 +61,9 @@ Spatial distribution of agricultural land classes derived from harmonized land-c
 
 ![](images/lidar_chm.png){.gallery-img}
 
-### LiDAR Canopy Height Model
+**LiDAR Canopy Height Model**
 
-Canopy height model generated from LiDAR point clouds to represent forest structure.
+Canopy height model derived from LiDAR point clouds representing forest structure.
 
 :::
 
@@ -71,9 +71,9 @@ Canopy height model generated from LiDAR point clouds to represent forest struct
 
 ![](images/tree_detection.png){.gallery-img}
 
-### Individual Tree Detection
+**Individual Tree Detection**
 
-Visualization of individual tree segmentation derived from LiDAR-based analysis.
+Visualization of segmented tree crowns derived from LiDAR analysis.
 
 :::
 
