@@ -4,97 +4,104 @@
     "href": "resume.html",
     "title": "Resume",
     "section": "",
-    "text": "Master of Geomatics for Environmental Management, University of British Columbia (UBC), Canada – Vancouver, BC, Expected April 2026.\nMicro credential in Geospatial Data Collection, Analysis, and Interpretation, Seneca Polytechnic, Canada – Toronto, ON, April 2024.\nBachelor of Forestry and Wildlife Management (Forestry Major), Federal University of Agriculture, Abeokuta (FUNAAB) – Ogun, Nigeria, February 2020."
+    "text": "Master of Geomatics for Environmental Management\nUniversity of British Columbia, Vancouver, BC, Canada\nExpected April 2026\nMicro-credential in Geospatial Data Collection, Analysis, and Interpretation\nSeneca Polytechnic, Toronto, ON, Canada\nApril 2024\nBachelor of Forestry and Wildlife Management (Forestry Major)\nFederal University of Agriculture, Abeokuta, Ogun, Nigeria\nFebruary 2020"
   },
   {
     "objectID": "resume.html#education",
     "href": "resume.html#education",
     "title": "Resume",
     "section": "",
-    "text": "Master of Geomatics for Environmental Management, University of British Columbia (UBC), Canada – Vancouver, BC, Expected April 2026.\nMicro credential in Geospatial Data Collection, Analysis, and Interpretation, Seneca Polytechnic, Canada – Toronto, ON, April 2024.\nBachelor of Forestry and Wildlife Management (Forestry Major), Federal University of Agriculture, Abeokuta (FUNAAB) – Ogun, Nigeria, February 2020."
+    "text": "Master of Geomatics for Environmental Management\nUniversity of British Columbia, Vancouver, BC, Canada\nExpected April 2026\nMicro-credential in Geospatial Data Collection, Analysis, and Interpretation\nSeneca Polytechnic, Toronto, ON, Canada\nApril 2024\nBachelor of Forestry and Wildlife Management (Forestry Major)\nFederal University of Agriculture, Abeokuta, Ogun, Nigeria\nFebruary 2020"
   },
   {
     "objectID": "resume.html#publications",
     "href": "resume.html#publications",
     "title": "Resume",
     "section": "Publications",
-    "text": "Publications\nPeer-reviewed publications:\n\nEzekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development (JAEID), 118(1), 5–18. https://doi.org/10.36253/jaeid-12082\n\nReports:\n\nList any non-peer reviewed materials you’d like to share here."
+    "text": "Publications\n\nPeer-Reviewed Publications\nEzekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082\n\n\nReports\nAdditional technical reports and project deliverables can be added here."
   },
   {
-    "objectID": "resume.html#conferences-talks",
-    "href": "resume.html#conferences-talks",
+    "objectID": "resume.html#conferences-and-talks",
+    "href": "resume.html#conferences-and-talks",
     "title": "Resume",
-    "section": "Conferences & Talks",
-    "text": "Conferences & Talks\nInvited Talks\n\nIf you’ve been invited to speak in a professional setting, list that here.\n\nConference Presentations\n\nIf the presentation was at a conference, list them here."
+    "section": "Conferences and Talks",
+    "text": "Conferences and Talks\n\nInvited Talks\nAdd invited talks here as applicable.\n\n\nConference Presentations\nAdd conference presentations here as applicable."
   },
   {
-    "objectID": "resume.html#awards-honors",
-    "href": "resume.html#awards-honors",
+    "objectID": "resume.html#awards-and-honors",
+    "href": "resume.html#awards-and-honors",
     "title": "Resume",
-    "section": "Awards & Honors",
-    "text": "Awards & Honors\n\nFully funded master’s program at UBC, Mastercard Foundation Scholarship, 2025\nFully funded micro credential in GIS, Seneca Polytechnic, Quick Train Canada, 2024\nAward of Meritorious Service as Associate Agronomist, GBFOODS, Africa, 2023\nReviewer for the year 2022, Current Agriculture Research Journal, India, 2022\nData Science Micro degree scholarship, USTACKY, 2021\n\nBest Graduating Student in the Department of Forestry and Wildlife Management 2020/21 session, FUNAAB, 2020"
+    "section": "Awards and Honors",
+    "text": "Awards and Honors\n\nFully funded master’s program at UBC, Mastercard Foundation Scholarship, 2025\nFully funded micro-credential in GIS, Seneca Polytechnic, Quick Train Canada, 2024\nAward of Meritorious Service as Associate Agronomist, GBFOODS Africa, 2023\nReviewer of the Year, Current Agriculture Research Journal, India, 2022\nData Science Microdegree Scholarship, USTACKY, 2021\nBest Graduating Student in the Department of Forestry and Wildlife Management, FUNAAB, 2020"
   },
   {
-    "objectID": "resume.html#teaching-assistantships",
-    "href": "resume.html#teaching-assistantships",
-    "title": "Resume",
-    "section": "Teaching Assistantships",
-    "text": "Teaching Assistantships\n\nList any TA positions you may have held."
+    "objectID": "content.html",
+    "href": "content.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This page showcases selected geospatial and remote sensing projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.\nThese projects demonstrate experience in:\n\nGeographic Information Systems (GIS)\nRemote sensing\nSpatial analysis\nReproducible geospatial workflows using R and Quarto"
   },
   {
-    "objectID": "resume.html#institutional-service",
-    "href": "resume.html#institutional-service",
-    "title": "Resume",
-    "section": "Institutional Service",
-    "text": "Institutional Service\n\nVolunteering etc."
+    "objectID": "content.html#overview",
+    "href": "content.html#overview",
+    "title": "Projects",
+    "section": "",
+    "text": "This page showcases selected geospatial and remote sensing projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.\nThese projects demonstrate experience in:\n\nGeographic Information Systems (GIS)\nRemote sensing\nSpatial analysis\nReproducible geospatial workflows using R and Quarto"
+  },
+  {
+    "objectID": "content.html#selected-projects",
+    "href": "content.html#selected-projects",
+    "title": "Projects",
+    "section": "Selected Projects",
+    "text": "Selected Projects\n\n\n\n&lt;img src=\"images/cover-page.jpg\" alt=\"Agricultural landscape transitions project\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Assessing Critical Transitions in Agricultural Landscapes&lt;/h3&gt;\n  &lt;p&gt;\n    Harmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia, with emphasis on adjacency, interspersion, and opportunities for perennial agriculture adoption.\n  &lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/forest-agric.png\" alt=\"LiDAR or forest structure project\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;LiDAR-Based Tree Detection and Segmentation&lt;/h3&gt;\n  &lt;p&gt;\n    Forest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n  &lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/harmonized_maps.png\" alt=\"Hyperspectral vegetation analysis project\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Hyperspectral Vegetation Analysis&lt;/h3&gt;\n  &lt;p&gt;\n    Spectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows.\n  &lt;/p&gt;\n&lt;/div&gt;"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano."
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About",
+    "section": "",
+    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano."
+  },
+  {
+    "objectID": "gallery.html",
+    "href": "gallery.html",
+    "title": "Map Gallery",
+    "section": "",
+    "text": "This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.\n\n\n\n&lt;img src=\"images/harmonized_maps.png\" alt=\"Harmonized land-cover maps\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Harmonized Land-Cover Maps&lt;/h3&gt;\n  &lt;p&gt;Comparison of harmonized land-cover datasets used to analyze agricultural landscape transitions.&lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/change_map2.png\" alt=\"Change detection map\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Change Detection Map&lt;/h3&gt;\n  &lt;p&gt;Spatial representation of land-cover change across the study area between analysis periods.&lt;/p&gt;\n&lt;/div&gt;\n\n\n\n\n&lt;img src=\"images/adjacency.png\" alt=\"Adjacency analysis map\" class=\"project-card-img\"&gt;\n&lt;div class=\"project-card-body\"&gt;\n  &lt;h3&gt;Adjacency Analysis&lt;/h3&gt;\n  &lt;p&gt;Visualization of agricultural adjacency and interspersion patterns across the landscape.&lt;/p&gt;\n&lt;/div&gt;"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Oluwaseyi Ezekiel",
     "section": "",
-    "text": "I am passionate about advancing studies in spatial ecology and environmental management. My goal is to contribute to global conservation efforts that involve the integration of traditional monitoring and assessment methods with the latest technologies in remote sensing and Geographic Information Systems.\nIn my spare time, you’ll probably find me at a chessboard, playing Scrabble, or at the piano."
+    "text": "Geomatics • Remote Sensing • Spatial Ecology\n\n\n\n\n\nEnter Portfolio View Projects"
   },
   {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
     "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "I am passionate about advancing studies in spatial ecology and environmental management. My goal is to contribute to global conservation efforts that involve the integration of traditional monitoring and assessment methods with the latest technologies in remote sensing and Geographic Information Systems.\nIn my spare time, you’ll probably find me at a chessboard, playing Scrabble, or at the piano."
-  },
-  {
-    "objectID": "content.html",
-    "href": "content.html",
-    "title": "Content & Deliverables",
-    "section": "",
-    "text": "This is a sample page where you can archive project deliverables. Every header you use will correspond to a tab in the legend - shown on the right-hand side of your screen (“On this page”).\nIf you’ve produced any GIS layers for your 599 project, this may be a good place to share them as interactive maps through leaflet. Alternatively, you can upload high-res figures showing correlations, box-plots, etc. from your report here, and provide a brief overview of key project results. If you have written some useful functions, you may also want to share those here to demonstrate proficiency in particular coding languages or synergies between notable coding packages.\n\n\nSample leaflet - for detailed leaflet instructions, visit the FCOR 599 workshop archive page here.\n\n\n\n\n\n\n\n\n\nSample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a ‘tabset’ in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let’s showcase a function for calculating NDVI in R and Python.\n\nRPython\n\n\ncalc_ndvi &lt;- function(nir, red){\n  ndvi &lt;- (nir-red)/(nir+red)\n  return(ndvi)\n}\n(Assuming nir and red are terra rast objects)\n\n\ndef calc_ndvi(nir, red): \n  ndvi = (nir - red)/(nir + red)\n  return(ndvi)\n(Assuming nir and red are numpy arrays)\n\n\n\n\n\n\nYou can also provide a frame linking to external websites. For example, here is a Google Earth Engine application I developed - which I embedded in this webpage using the code below:\n\n\n&lt;iframe width=\"900\" height=\"700\"\nsrc=\"https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool\"&gt;\n&lt;/iframe&gt;\n\nThe full-screen GEE application is available here in case you’re interested.\n(To use the GEE tool, navigate to any city you’d like, hit apply filters, and click anywhere on the map to retrieve a time-series of Landsat surface temperature observations for that point. Areas where the maximum temp exceeded 35 degrees Celsius in your date-range are highlighted in red.)"
-  },
-  {
-    "objectID": "content.html#leaflet",
-    "href": "content.html#leaflet",
-    "title": "Content & Deliverables",
-    "section": "",
-    "text": "Sample leaflet - for detailed leaflet instructions, visit the FCOR 599 workshop archive page here."
-  },
-  {
-    "objectID": "content.html#code-snippets",
-    "href": "content.html#code-snippets",
-    "title": "Content & Deliverables",
-    "section": "",
-    "text": "Sample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a ‘tabset’ in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let’s showcase a function for calculating NDVI in R and Python.\n\nRPython\n\n\ncalc_ndvi &lt;- function(nir, red){\n  ndvi &lt;- (nir-red)/(nir+red)\n  return(ndvi)\n}\n(Assuming nir and red are terra rast objects)\n\n\ndef calc_ndvi(nir, red): \n  ndvi = (nir - red)/(nir + red)\n  return(ndvi)\n(Assuming nir and red are numpy arrays)"
-  },
-  {
-    "objectID": "content.html#external-links",
-    "href": "content.html#external-links",
-    "title": "Content & Deliverables",
-    "section": "",
-    "text": "You can also provide a frame linking to external websites. For example, here is a Google Earth Engine application I developed - which I embedded in this webpage using the code below:\n\n\n&lt;iframe width=\"900\" height=\"700\"\nsrc=\"https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool\"&gt;\n&lt;/iframe&gt;\n\nThe full-screen GEE application is available here in case you’re interested.\n(To use the GEE tool, navigate to any city you’d like, hit apply filters, and click anywhere on the map to retrieve a time-series of Landsat surface temperature observations for that point. Areas where the maximum temp exceeded 35 degrees Celsius in your date-range are highlighted in red.)"
+    "section": "Welcome",
+    "text": "Welcome\nWelcome to my e-portfolio. This website highlights my academic and professional work in geomatics for environmental management, including projects in remote sensing, GIS, spatial analysis, and reproducible geospatial workflows using R, Quarto, and related tools.\n\n\nRemote Sensing\nLand-cover analysis, spectral interpretation, and environmental change detection.\n\n\nGIS and Spatial Analysis\nMapping workflows, spatial data processing, and environmental applications.\n\n\nReproducible Workflows\nTechnical communication and geospatial analysis using R, Quarto, and markdown."
   },
   {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Peer-reviewed publications:\n\nEzekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development (JAEID), 118(1), 5–18. https://doi.org/10.36253/jaeid-12082."
+    "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
+  },
+  {
+    "objectID": "publications.html#peer-reviewed-publications",
+    "href": "publications.html#peer-reviewed-publications",
+    "title": "Publications",
+    "section": "",
+    "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
   }
 ]

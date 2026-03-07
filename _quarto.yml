@@ -1,24 +1,42 @@
 project:
   type: website
   output-dir: docs
+
 website:
   title: "Oluwaseyi Ezekiel"
   navbar:
     left:
       - href: index.qmd
         text: Home
+      - href: about.qmd
+        text: About
       - href: resume.qmd
         text: Resume
       - href: publications.qmd
         text: Publications
       - href: content.qmd
-        text: Content & Deliverables
+        text: Projects
+      - href: gallery.qmd
+        text: Map Gallery
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/oluwaseyi-godwin-ezekiel-146148148
+      - icon: github
+        href: https://github.com/oluwaseyigezekiel
+      - icon: envelope-at
+        href: mailto:godwinoluwaseyi0@gmail.com
+  page-footer:
+    left: "© 2026 Oluwaseyi Ezekiel"
+    right: "Built with Quarto"
 
 format:
   html:
     theme: flatly
     css: styles.css
     toc: true
+    toc-location: right
+    smooth-scroll: true
+    link-external-newwindow: true
+    fontsize: 1.05em
 
 editor: visual
-

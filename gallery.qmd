@@ -1,0 +1,43 @@
+---
+title: "Map Gallery"
+format:
+  html:
+    toc: false
+editor: source
+---
+
+This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.
+
+<div class="project-grid">
+
+<a href="images/harmonized_maps.png" class="project-card-link">
+  <div class="project-card">
+    <img src="images/harmonized_maps.png" alt="Harmonized land-cover maps" class="project-card-img">
+    <div class="project-card-body">
+      <h3>Harmonized Land-Cover Maps</h3>
+      <p>Comparison of harmonized land-cover datasets used to analyze agricultural landscape transitions.</p>
+    </div>
+  </div>
+</a>
+
+<a href="images/change_map2.png" class="project-card-link">
+  <div class="project-card">
+    <img src="images/change_map2.png" alt="Change detection map" class="project-card-img">
+    <div class="project-card-body">
+      <h3>Change Detection Map</h3>
+      <p>Spatial representation of land-cover change across the study area between analysis periods.</p>
+    </div>
+  </div>
+</a>
+
+<a href="images/adjacency.png" class="project-card-link">
+  <div class="project-card">
+    <img src="images/adjacency.png" alt="Adjacency analysis map" class="project-card-img">
+    <div class="project-card-body">
+      <h3>Adjacency Analysis</h3>
+      <p>Visualization of agricultural adjacency and interspersion patterns across the landscape.</p>
+    </div>
+  </div>
+</a>
+
+</div>

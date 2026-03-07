@@ -1,0 +1,28 @@
+---
+title: "About"
+image: images/geo2025.jpg
+about:
+  template: trestles
+  image-width: 20em
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/oluwaseyi-godwin-ezekiel-146148148
+    - icon: github
+      text: GitHub
+      href: https://github.com/oluwaseyigezekiel
+    - icon: envelope-at
+      text: Email
+      href: mailto:godwinoluwaseyi0@gmail.com
+format:
+  html:
+    toc: false
+---
+
+## About Me
+
+I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.
+
+My interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.
+
+In my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.

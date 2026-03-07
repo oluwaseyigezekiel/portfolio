@@ -1,24 +1,45 @@
 ---
-title: "Oluwaseyi Ezekiel"
-image: images/geo2025.jpg
-about:
-  template: trestles
-  image-width: 20em
-  links: 
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/oluwaseyi-godwin-ezekiel-146148148?
-    - icon: github
-      text: GitHub
-      href: https://github.com/oluwaseyigezekiel
-    - icon
-    - icon: envelope-at
-      text: Email
-      href: mailto:godwinoluwaseyi0@gmail.com
+title: ""
+page-layout: full
+format:
+  html:
+    toc: false
 ---
 
-## About Me
+::::: hero-banner
+:::: hero-content
+[Geomatics • Remote Sensing • Spatial Ecology]{.hero-kicker}
 
-I am passionate about advancing studies in spatial ecology and environmental management. My goal is to contribute to global conservation efforts that involve the integration of traditional monitoring and assessment methods with the latest technologies in remote sensing and Geographic Information Systems.
+# Oluwaseyi Ezekiel
 
-In my spare time, you’ll probably find me at a chessboard, playing Scrabble, or at the piano.
+### Geospatial analyst and environmental researcher focused on spatial ecology, land-cover change, remote sensing, and GIS for environmental management.
+
+::: hero-buttons
+<a href="about.html" class="btn btn-primary btn-lg">Enter Portfolio</a> <a href="content.html" class="btn btn-outline-light btn-lg">View Projects</a>
+:::
+::::
+:::::
+
+## Welcome
+
+Welcome to my e-portfolio. This website highlights my academic and professional work in geomatics for environmental management, including projects in remote sensing, GIS, spatial analysis, and reproducible geospatial workflows using R, Quarto, and related tools.
+
+:::::: grid
+::: {.g-col-12 .g-col-md-4}
+### Remote Sensing
+
+Land-cover analysis, spectral interpretation, and environmental change detection.
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### GIS and Spatial Analysis
+
+Mapping workflows, spatial data processing, and environmental applications.
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### Reproducible Workflows
+
+Technical communication and geospatial analysis using R, Quarto, and markdown.
+:::
+::::::

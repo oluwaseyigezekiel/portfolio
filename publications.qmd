@@ -1,7 +1,10 @@
 ---
 title: "Publications"
+format:
+  html:
+    toc: false
 ---
 
-*Peer-reviewed publications:*
+## Peer-Reviewed Publications
 
--   Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development (JAEID), 118(1), 5–18. <https://doi.org/10.36253/jaeid-12082>.
+Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (*Adansonia digitata*). *Journal of Agriculture and Environment for International Development, 118*(1), 5–18. <https://doi.org/10.36253/jaeid-12082>

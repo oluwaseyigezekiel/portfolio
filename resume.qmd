@@ -1,48 +1,52 @@
 ---
 title: "Resume"
+format:
+  html:
+    toc: true
+    toc-depth: 2
 ---
 
 ## Education
 
--   Master of Geomatics for Environmental Management, University of British Columbia (UBC), Canada – Vancouver, BC, Expected April 2026.
+**Master of Geomatics for Environmental Management**\
+University of British Columbia, Vancouver, BC, Canada\
+Expected April 2026
 
--   Micro credential in Geospatial Data Collection, Analysis, and Interpretation, Seneca Polytechnic, Canada – Toronto, ON, April 2024.
+**Micro-credential in Geospatial Data Collection, Analysis, and Interpretation**\
+Seneca Polytechnic, Toronto, ON, Canada\
+April 2024
 
--   Bachelor of Forestry and Wildlife Management (Forestry Major), Federal University of Agriculture, Abeokuta (FUNAAB) – Ogun, Nigeria, February 2020.
+**Bachelor of Forestry and Wildlife Management (Forestry Major)**\
+Federal University of Agriculture, Abeokuta, Ogun, Nigeria\
+February 2020
 
 ## Publications
 
-*Peer-reviewed publications:*
+### Peer-Reviewed Publications
 
--   Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development (JAEID), 118(1), 5–18. https://doi.org/10.36253/jaeid-12082
+Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (*Adansonia digitata*). *Journal of Agriculture and Environment for International Development, 118*(1), 5–18. <https://doi.org/10.36253/jaeid-12082>
 
-*Reports:*
+### Reports
 
--   List any non-peer reviewed materials you'd like to share here.
+Additional technical reports and project deliverables can be added here.
 
-## Conferences & Talks
+## Conferences and Talks
 
-*Invited Talks*
+### Invited Talks
 
--   If you've been invited to speak in a professional setting, list that here.
+Add invited talks here as applicable.
 
-*Conference Presentations*
+### Conference Presentations
 
--   If the presentation was at a conference, list them here.
+Add conference presentations here as applicable.
 
-## Awards & Honors
+## Awards and Honors
 
 -   Fully funded master’s program at UBC, Mastercard Foundation Scholarship, 2025
--   Fully funded micro credential in GIS, Seneca Polytechnic, Quick Train Canada, 2024
--   Award of Meritorious Service as Associate Agronomist, GBFOODS, Africa, 2023
--   Reviewer for the year 2022, Current Agriculture Research Journal, India, 2022
--   Data Science Micro degree scholarship, USTACKY, 2021\
--   Best Graduating Student in the Department of Forestry and Wildlife Management 2020/21 session, FUNAAB, 2020
+-   Fully funded micro-credential in GIS, Seneca Polytechnic, Quick Train Canada, 2024
+-   Award of Meritorious Service as Associate Agronomist, GBFOODS Africa, 2023
+-   Reviewer of the Year, *Current Agriculture Research Journal*, India, 2022
+-   Data Science Microdegree Scholarship, USTACKY, 2021
+-   Best Graduating Student in the Department of Forestry and Wildlife Management, FUNAAB, 2020
 
-## Teaching Assistantships
-
--   List any TA positions you may have held.
-
-## Institutional Service
-
--   Volunteering etc.
+## 
