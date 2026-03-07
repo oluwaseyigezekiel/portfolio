@@ -14,7 +14,7 @@ This gallery showcases cartographic layouts and spatial visualizations developed
 
 ::: {.column width="33%"}
 
-![](images/harmonized_maps.png){.gallery-img}
+[![](images/harmonized_maps.png){.gallery-img}](images/harmonized_maps.png)
 
 **Harmonized Land-Cover Maps**
 
@@ -24,7 +24,7 @@ Comparison of harmonized land-cover datasets used to analyze agricultural transi
 
 ::: {.column width="33%"}
 
-![](images/change_map2.png){.gallery-img}
+[![](images/change_map2.png){.gallery-img}](images/change_map2.png)
 
 **Change Detection Map**
 
@@ -34,7 +34,7 @@ Spatial representation of land-cover change across the study area.
 
 ::: {.column width="33%"}
 
-![](images/adjacency.png){.gallery-img}
+[![](images/adjacency.png){.gallery-img}](images/adjacency.png)
 
 **Agricultural Adjacency Analysis**
 
@@ -44,36 +44,35 @@ Visualization of adjacency and interspersion patterns between agricultural class
 
 ::::
 
-
 :::: {.columns}
 
 ::: {.column width="33%"}
 
-![](images/agriculture_map.png){.gallery-img}
+[![](images/normalized_weights.png){.gallery-img}](images/normalized_weights.png)
 
-**Agricultural Distribution Map**
+**Normalized Dataset Weights**
 
-Spatial distribution of agricultural land classes derived from harmonized datasets.
-
-:::
-
-::: {.column width="33%"}
-
-![](images/lidar_chm.png){.gallery-img}
-
-**LiDAR Canopy Height Model**
-
-Canopy height model derived from LiDAR point clouds representing forest structure.
+Visualization of dataset weighting used during land-cover harmonization.
 
 :::
 
 ::: {.column width="33%"}
 
-![](images/tree_detection.png){.gallery-img}
+[![](images/sankey_2015_2020.png){.gallery-img}](images/sankey_2015_2020.png)
 
-**Individual Tree Detection**
+**Land-Cover Transition Sankey**
 
-Visualization of segmented tree crowns derived from LiDAR analysis.
+Diagram illustrating transitions between land-cover classes from 2015 to 2020.
+
+:::
+
+::: {.column width="33%"}
+
+[![](images/forest-agric.png){.gallery-img}](images/forest-agric.png)
+
+**Forest–Agriculture Spatial Patterns**
+
+Map showing spatial relationships between forest cover and agricultural land uses.
 
 :::
 
