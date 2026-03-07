@@ -8,8 +8,6 @@ editor: source
 
 ## Map Gallery
 
-This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.
-
 <div class="project-grid">
 
 <a href="agriculture.html" class="project-card-link">
