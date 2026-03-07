@@ -48,9 +48,3 @@
   line-height: 1.5;
   color: #555;
 }
-
-@media (max-width: 900px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-}
