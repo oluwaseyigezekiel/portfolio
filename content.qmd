@@ -24,12 +24,10 @@ These projects demonstrate experience in:
 
 ::: project-card
 ```         
-<img src="images/cover-page.jpg" alt="Agricultural landscape transitions project" class="project-card-img">
+<img src="images/cover-page.jpg" class="project-card-img">
 <div class="project-card-body">
-  <h3>Assessing Critical Transitions in Agricultural Landscapes</h3>
-  <p>
-    Harmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia, with emphasis on adjacency, interspersion, and opportunities for perennial agriculture adoption.
-  </p>
+  <h3>Agricultural Landscape Transitions</h3>
+  <p>Harmonized land-cover analysis of agricultural change in the Lower Fraser Valley.</p>
 </div>
 ```
 :::
@@ -40,12 +38,10 @@ These projects demonstrate experience in:
 
 ::: project-card
 ```         
-<img src="images/forest-agric.png" alt="LiDAR or forest structure project" class="project-card-img">
+<img src="images/forest-agric.png" class="project-card-img">
 <div class="project-card-body">
-  <h3>LiDAR-Based Tree Detection and Segmentation</h3>
-  <p>
-    Forest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.
-  </p>
+  <h3>LiDAR Tree Detection</h3>
+  <p>Forest structure analysis using canopy height models and tree segmentation.</p>
 </div>
 ```
 :::
@@ -56,12 +52,10 @@ These projects demonstrate experience in:
 
 ::: project-card
 ```         
-<img src="images/harmonized_maps.png" alt="Hyperspectral vegetation analysis project" class="project-card-img">
+<img src="images/harmonized_maps.png" class="project-card-img">
 <div class="project-card-body">
   <h3>Hyperspectral Vegetation Analysis</h3>
-  <p>
-    Spectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows.
-  </p>
+  <p>Spectral interpretation of vegetation classes using hyperspectral reflectance data.</p>
 </div>
 ```
 :::
