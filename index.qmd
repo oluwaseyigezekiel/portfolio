@@ -6,38 +6,50 @@ format:
     toc: false
 ---
 
-::::: hero-banner
-:::: hero-content
-[Geomatics • Remote Sensing • Spatial Ecology]{.hero-kicker}
+:::: hero
+<h1 class="hero-name">
 
-# Oluwaseyi Ezekiel
+Oluwaseyi Ezekiel
 
-### Geospatial analyst and environmental researcher focused on spatial ecology, land-cover change, remote sensing, and GIS for environmental management.
+</h1>
+
+<p class="hero-tagline">
+
+Geomatics • Remote Sensing • Spatial Ecology
+
+</p>
+
+<p class="hero-description">
+
+Geospatial analyst and environmental researcher focused on spatial ecology, land-cover change, remote sensing, and GIS for environmental management.
+
+</p>
 
 ::: hero-buttons
-<a href="about.html" class="btn btn-primary btn-lg">Enter Portfolio</a> <a href="content.html" class="btn btn-outline-light btn-lg">View Projects</a>
+<a href="about.html" class="btn btn-primary btn-lg">Enter Portfolio</a>
+
+<a href="content.html" class="btn btn-outline-secondary btn-lg">View Projects</a>
 :::
 ::::
-:::::
 
-## Welcome
+------------------------------------------------------------------------
 
-Welcome to my e-portfolio. This website highlights my academic and professional work in geomatics for environmental management, including projects in remote sensing, GIS, spatial analysis, and reproducible geospatial workflows using R, Quarto, and related tools.
+## Areas of Focus
 
-:::::: grid
-::: {.g-col-12 .g-col-md-4}
+:::::: columns
+::: {.column width="33%"}
 ### Remote Sensing
 
 Land-cover analysis, spectral interpretation, and environmental change detection.
 :::
 
-::: {.g-col-12 .g-col-md-4}
+::: {.column width="33%"}
 ### GIS and Spatial Analysis
 
 Mapping workflows, spatial data processing, and environmental applications.
 :::
 
-::: {.g-col-12 .g-col-md-4}
+::: {.column width="33%"}
 ### Reproducible Workflows
 
 Technical communication and geospatial analysis using R, Quarto, and markdown.

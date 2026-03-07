@@ -79,16 +79,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Oluwaseyi Ezekiel",
+    "title": "\nOluwaseyi Ezekiel\n",
     "section": "",
-    "text": "Geomatics • Remote Sensing • Spatial Ecology\n\n\n\n\n\nEnter Portfolio View Projects"
+    "text": "Geomatics • Remote Sensing • Spatial Ecology\n\n\nGeospatial analyst and environmental researcher focused on spatial ecology, land-cover change, remote sensing, and GIS for environmental management.\n\n\nEnter Portfolio\nView Projects"
   },
   {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Welcome",
-    "text": "Welcome\nWelcome to my e-portfolio. This website highlights my academic and professional work in geomatics for environmental management, including projects in remote sensing, GIS, spatial analysis, and reproducible geospatial workflows using R, Quarto, and related tools.\n\n\nRemote Sensing\nLand-cover analysis, spectral interpretation, and environmental change detection.\n\n\nGIS and Spatial Analysis\nMapping workflows, spatial data processing, and environmental applications.\n\n\nReproducible Workflows\nTechnical communication and geospatial analysis using R, Quarto, and markdown."
+    "objectID": "index.html#areas-of-focus",
+    "href": "index.html#areas-of-focus",
+    "title": "\nOluwaseyi Ezekiel\n",
+    "section": "Areas of Focus",
+    "text": "Areas of Focus\n\n\n\nRemote Sensing\nLand-cover analysis, spectral interpretation, and environmental change detection.\n\n\n\nGIS and Spatial Analysis\nMapping workflows, spatial data processing, and environmental applications.\n\n\n\nReproducible Workflows\nTechnical communication and geospatial analysis using R, Quarto, and markdown."
   },
   {
     "objectID": "publications.html",
