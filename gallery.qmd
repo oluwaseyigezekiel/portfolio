@@ -1,5 +1,5 @@
 ---
-title: "Map Gallery"
+title: ""
 format:
   html:
     toc: false

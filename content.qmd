@@ -6,34 +6,25 @@ format:
 editor: source
 ---
 
-## Overview
+## Projects
 
-This page showcases selected geospatial and remote sensing projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.
-
-These projects demonstrate experience in:
-
--   Geographic Information Systems (GIS)
--   Remote sensing
--   Spatial analysis
--   Reproducible geospatial workflows using R and Quarto
-
-## Selected Projects
+This page highlights selected remote sensing, spatial analysis, and GIS projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.
 
 :::::: columns
 ::: {.column width="33%"}
 [![](images/cover-page.jpg){.gallery-img}](agriculture.html)
 
-### [Agricultural Landscape Transitions](agriculture.html)
+### [Assessing Critical Transitions in Agricultural Landscapes](agriculture.html)
 
-Harmonized land-cover analysis of agricultural change in the Lower Fraser Valley.
+Harmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia, with emphasis on adjacency, interspersion, and opportunities for perennial agriculture adoption.
 :::
 
 ::: {.column width="33%"}
 [![](images/forest-agric.png){.gallery-img}](lidar.html)
 
-### [LiDAR Tree Detection](lidar.html)
+### [LiDAR-Based Tree Detection and Segmentation](lidar.html)
 
-Forest structure analysis using canopy height models and tree segmentation.
+Forest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.
 :::
 
 ::: {.column width="33%"}
@@ -41,6 +32,6 @@ Forest structure analysis using canopy height models and tree segmentation.
 
 ### [Hyperspectral Vegetation Analysis](hyperspectral.html)
 
-Spectral interpretation of vegetation classes using hyperspectral reflectance data.
+Spectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows.
 :::
 ::::::
