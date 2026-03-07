@@ -1,48 +1,61 @@
-html, body {
+/* Remove default margins */
+
+body {
   margin: 0;
-  padding: 0;
-  height: 100%;
 }
 
-/* Center everything */
 
-.hero-wrapper {
-  min-height: 100vh;
+/* Remove Quarto container restriction */
+
+#quarto-content main {
+  max-width: none !important;
+  margin: 0 auto !important;
+}
+
+
+/* CENTER HERO */
+
+.home-hero {
+  height: calc(100vh - 120px);
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* vertical center */
-  align-items: center;       /* horizontal center */
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-/* Name */
+
+/* BIG NAME */
 
 .home-name {
-  font-size: 3.8rem;
+  font-size: 4.5rem;
   font-weight: 700;
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
 }
 
-/* Subtitle */
+
+/* TAGLINE */
 
 .home-tagline {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: #555;
-  margin: 0 0 16px 0;
+  margin-bottom: 18px;
 }
 
-/* Line */
+
+/* LINE */
 
 .home-line {
-  width: 160px;
+  width: 180px;
   height: 2px;
   background: #333;
-  margin: 18px auto 28px auto;
+  margin-bottom: 30px;
 }
 
-/* Button */
 
-.btn {
+/* BUTTON */
+
+.home-hero .btn {
   padding: 12px 28px;
   font-size: 1rem;
 }

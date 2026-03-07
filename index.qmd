@@ -6,7 +6,8 @@ format:
     toc: false
 ---
 
-:::: hero-wrapper
+::::: hero-wrapper
+:::: home-hero
 <h1 class="home-name">
 
 Oluwaseyi Ezekiel
@@ -24,3 +25,4 @@ Geospatial and Remote Sensing Scientist
 
 <a href="content.html" class="btn btn-primary btn-lg"> View Portfolio </a>
 ::::
+:::::
