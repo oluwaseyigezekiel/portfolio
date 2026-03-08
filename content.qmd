@@ -1,37 +1,368 @@
 ---
-title: "Projects"
+title: ""
 format:
   html:
     toc: false
 editor: source
 ---
 
-## Projects
+<style>
+.projects-intro{
+  max-width:900px;
+  margin:0 auto 2.5rem auto;
+  text-align:left;
+}
 
-This page highlights selected remote sensing, spatial analysis, and GIS projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.
+.projects-intro h1{
+  margin-bottom:0.6rem;
+}
 
-:::::: columns
-::: {.column width="33%"}
-[![](images/cover-page.jpg){.gallery-img}](agriculture.html)
+.projects-intro p{
+  color:#555;
+  font-size:1.05rem;
+}
 
-### [Assessing Critical Transitions in Agricultural Landscapes](agriculture.html)
+.category-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:1.5rem;
+  margin:2rem 0 2.5rem 0;
+}
 
-Harmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia.
+@media (max-width: 900px){
+  .category-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+.category-card{
+  background:#ffffff;
+  border-radius:22px;
+  padding:1.5rem;
+  box-shadow:0 10px 24px rgba(0,0,0,0.08);
+  border:1px solid rgba(0,0,0,0.05);
+  cursor:pointer;
+  transition:all .2s ease;
+}
+
+.category-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 16px 32px rgba(0,0,0,0.12);
+}
+
+.category-card h3{
+  margin-top:0;
+  margin-bottom:.7rem;
+}
+
+.category-card p{
+  color:#555;
+  margin-bottom:.8rem;
+}
+
+.tag-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.45rem;
+}
+
+.tag{
+  display:inline-block;
+  padding:.3rem .7rem;
+  border-radius:999px;
+  background:#eef4ff;
+  color:#2457a6;
+  font-size:.82rem;
+  font-weight:600;
+}
+
+.subpage{
+  display:none;
+  margin-top:1.5rem;
+}
+
+.subpage.active{
+  display:block;
+}
+
+.back-btn{
+  display:inline-block;
+  margin-bottom:1.4rem;
+  padding:.55rem 1rem;
+  border-radius:999px;
+  background:#f3f4f6;
+  color:#222;
+  text-decoration:none;
+  font-weight:600;
+  border:1px solid rgba(0,0,0,0.08);
+  cursor:pointer;
+}
+
+.back-btn:hover{
+  background:#e9ecef;
+  text-decoration:none;
+}
+
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1rem;
+  margin-top:1rem;
+}
+
+.project-card{
+  background:#ffffff;
+  border-radius:16px;
+  padding:1rem;
+  box-shadow:0 6px 16px rgba(0,0,0,0.06);
+  border:1px solid rgba(0,0,0,0.05);
+}
+
+.project-card h4{
+  margin-top:0;
+  margin-bottom:.5rem;
+}
+
+.project-card p{
+  color:#555;
+  margin-bottom:.75rem;
+}
+
+.project-link{
+  display:inline-block;
+  font-weight:600;
+  text-decoration:none;
+}
+
+.project-link:hover{
+  text-decoration:underline;
+}
+</style>
+
+::: {#projects-home}
+
+::: {.projects-intro}
+
+# Projects
+
+<div style="text-align:left; font-weight:600; margin-top:8px;">
+Note: Click a category to explore projects.
+</div>
+
 :::
 
-::: {.column width="33%"}
-[![](images/forest-agric.png){.gallery-img}](lidar.html)
+::: {.category-grid}
 
-### [LiDAR-Based Tree Detection and Segmentation](lidar.html)
+::: {.category-card data-target="project-mgt-page"}
+### Project Management
 
-Forest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.
+Applied capstone work and geospatial project planning.
+
+::: {.tag-row}
+[Capstone]{.tag}
+[Planning]{.tag}
+[Communication]{.tag}
+:::
 :::
 
-::: {.column width="33%"}
-[![](images/harmonized_maps.png){.gallery-img}](hyperspectral.html)
+::: {.category-card data-target="cartography-page"}
+### Cartography & GIS Applications
 
-### [Hyperspectral Vegetation Analysis](hyperspectral.html)
+Map design, ArcGIS Online applications, dashboards, field data collection and desktop GIS workflows.
 
-Spectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows.
+::: {.tag-row}
+[StoryMaps]{.tag}
+[Survey123]{.tag}
+[ArcGIS Pro]{.tag}
+[QGIS]{.tag}
 :::
-::::::
+:::
+
+::: {.category-card onclick="window.location.href='remote-sensing.html'"}
+### Remote Sensing & Image Processing
+
+LiDAR analysis, land-cover classification, spectral interpretation, and satellite time-series remote sensing.
+
+::: {.tag-row}
+[LiDAR]{.tag}
+[Classification]{.tag}
+[Spectral]{.tag}
+[Landsat]{.tag}
+:::
+:::
+
+::: {.category-card data-target="landscape-page"}
+### Landscape Modeling & Spatial Statistics
+
+Landscape metrics, spatial modeling, forest analytics, and environmental statistics.
+
+::: {.tag-row}
+[Spatial Statistics]{.tag}
+[Modeling]{.tag}
+[Python]{.tag}
+:::
+:::
+
+:::
+:::
+
+::: {#cartography-page .subpage}
+
+[← Back to Projects](#){.back-btn data-back="true"}
+
+## Cartography & GIS Applications
+
+::: {.project-grid}
+
+::: {.project-card}
+#### Citizen Science: Asset & Infrastructure Management
+
+Interactive StoryMaps analyzing traffic patterns and urban mobility challenges to support safer and more efficient transportation systems.
+
+::: {.tag-row}
+[Asset Management]{.tag}
+[Urban Planning]{.tag}
+[ArcGIS StoryMaps]{.tag}
+:::
+
+[View StoryMaps →](storymaps.html){.project-link}
+:::
+
+::: {.project-card}
+#### Data Visualization: Environmental Conservation
+
+Interactive dashboard designed to monitor and visualize environmental indicators collected through Survey123 field surveys.
+
+::: {.tag-row}
+[Environmental Conservation]{.tag}
+[Data Visualization]{.tag}
+[ArcGIS Dashboards]{.tag}
+:::
+
+[View Dashboard →](dashboard.html){.project-link}
+:::
+
+::: {.project-card}
+#### Field Data Collection: Species Monitoring
+
+Mobile GIS workflow developed using ArcGIS Survey123 to collect structured geospatial data in the field.
+
+::: {.tag-row}
+[Field Data Collection]{.tag}
+[Survey123]{.tag}
+:::
+
+[View Survey →](survey123.html){.project-link}
+:::
+
+::: {.project-card}
+#### Desktop GIS: Mapping Projects
+
+Collection of thematic maps and cartographic layouts developed using ArcGIS Pro and QGIS.
+
+::: {.tag-row}
+[ArcGIS Pro]{.tag}
+[QGIS]{.tag}
+[Cartography]{.tag}
+:::
+
+[See Map Gallery →](gallery.html){.project-link}
+:::
+
+:::
+:::
+
+::: {#landscape-page .subpage}
+[← Back to Projects](#){.back-btn data-back="true"}
+
+## Landscape Modeling & Spatial Statistics
+
+::: {.project-grid}
+
+::: {.project-card}
+#### Mapping Dominant Tree Species Using LiDAR Structural Metrics
+
+This project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the **Petawawa Research Forest, Ontario**, as part of Ontario’s transition toward an **Enhanced Forest Inventory (EFI)**. LiDAR-derived metrics were extracted at ground plot locations and analyzed using **mutual information feature selection** to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.
+
+The analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.
+
+::: {.tag-row}
+[Spatial Statistics]{.tag}
+[LiDAR]{.tag}
+[Forest Inventory]{.tag}
+[Feature Selection]{.tag}
+:::
+
+[View project →](projects/project_tree_species.html){.project-link}
+:::
+
+:::
+:::
+
+::: {#project-mgt-page .subpage}
+
+[← Back to Projects](#){.back-btn data-back="true"}
+
+## Project Management
+
+---
+
+### Assessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley
+
+Master’s Capstone Project — University of British Columbia (UBC)
+
+This study examines how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020 by harmonizing multi-source land-cover datasets and analyzing landscape structure and land-cover transitions. The project identifies spatial patterns of agricultural change and evaluates opportunities for perennial agriculture expansion within existing agricultural systems.
+
+[View full project →](capstone.html)
+
+---
+
+### Mapping Spatial Patterns of Urban Carbon Sinks in Metro Vancouver
+
+Research Proposal — UBC GEM 500 (Landscape Ecology)
+
+This project investigates how vegetation distribution and landscape structure influence urban carbon storage across Metro Vancouver municipalities. Using Landsat imagery, carbon biomass datasets, and landscape metrics, the study aims to identify municipalities functioning as major urban carbon sinks and assess the spatial factors influencing carbon storage.
+
+[View full project →](urban-carbon.html)
+
+:::
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const home = document.getElementById("projects-home");
+  const cards = document.querySelectorAll(".category-card[data-target]");
+  const subpages = document.querySelectorAll(".subpage");
+  const backButtons = document.querySelectorAll("[data-back='true']");
+
+  function openSubpage(targetId) {
+    const targetPage = document.getElementById(targetId);
+    if (!targetPage) return;
+
+    subpages.forEach(page => page.classList.remove("active"));
+    home.style.display = "none";
+    targetPage.classList.add("active");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  cards.forEach(card => {
+    card.addEventListener("click", function () {
+      const targetId = this.getAttribute("data-target");
+      openSubpage(targetId);
+    });
+  });
+
+  backButtons.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      subpages.forEach(page => page.classList.remove("active"));
+      home.style.display = "block";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+
+  const hash = window.location.hash.replace("#", "");
+  if (hash) {
+    openSubpage(hash);
+  }
+});
+</script>

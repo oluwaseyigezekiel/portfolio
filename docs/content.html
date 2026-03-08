@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Projects – Oluwaseyi Ezekiel</title>
+<title>content – Oluwaseyi Ezekiel</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -104,16 +104,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
-<span class="menu-text">Resume</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
-<span class="menu-text">Publications</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./content.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resume.html"> 
+<span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./gallery.html"> 
@@ -149,54 +145,299 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Projects</h1></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Projects</h1>
+
+
+
+<style>
+.projects-intro{
+  max-width:900px;
+  margin:0 auto 2.5rem auto;
+  text-align:left;
+}
+
+.projects-intro h1{
+  margin-bottom:0.6rem;
+}
+
+.projects-intro p{
+  color:#555;
+  font-size:1.05rem;
+}
+
+.category-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:1.5rem;
+  margin:2rem 0 2.5rem 0;
+}
+
+@media (max-width: 900px){
+  .category-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+.category-card{
+  background:#ffffff;
+  border-radius:22px;
+  padding:1.5rem;
+  box-shadow:0 10px 24px rgba(0,0,0,0.08);
+  border:1px solid rgba(0,0,0,0.05);
+  cursor:pointer;
+  transition:all .2s ease;
+}
+
+.category-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 16px 32px rgba(0,0,0,0.12);
+}
+
+.category-card h3{
+  margin-top:0;
+  margin-bottom:.7rem;
+}
+
+.category-card p{
+  color:#555;
+  margin-bottom:.8rem;
+}
+
+.tag-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.45rem;
+}
+
+.tag{
+  display:inline-block;
+  padding:.3rem .7rem;
+  border-radius:999px;
+  background:#eef4ff;
+  color:#2457a6;
+  font-size:.82rem;
+  font-weight:600;
+}
+
+.subpage{
+  display:none;
+  margin-top:1.5rem;
+}
+
+.subpage.active{
+  display:block;
+}
+
+.back-btn{
+  display:inline-block;
+  margin-bottom:1.4rem;
+  padding:.55rem 1rem;
+  border-radius:999px;
+  background:#f3f4f6;
+  color:#222;
+  text-decoration:none;
+  font-weight:600;
+  border:1px solid rgba(0,0,0,0.08);
+  cursor:pointer;
+}
+
+.back-btn:hover{
+  background:#e9ecef;
+  text-decoration:none;
+}
+
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1rem;
+  margin-top:1rem;
+}
+
+.project-card{
+  background:#ffffff;
+  border-radius:16px;
+  padding:1rem;
+  box-shadow:0 6px 16px rgba(0,0,0,0.06);
+  border:1px solid rgba(0,0,0,0.05);
+}
+
+.project-card h4{
+  margin-top:0;
+  margin-bottom:.5rem;
+}
+
+.project-card p{
+  color:#555;
+  margin-bottom:.75rem;
+}
+
+.project-link{
+  display:inline-block;
+  font-weight:600;
+  text-decoration:none;
+}
+
+.project-link:hover{
+  text-decoration:underline;
+}
+</style>
+<div id="projects-home">
+<section id="projects" class="level1 projects-intro">
+
+<div style="text-align:left; font-weight:600; margin-top:8px;">
+<p>Note: Click a category to explore projects.</p>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="projects" class="level2">
-<h2 class="anchored" data-anchor-id="projects">Projects</h2>
-<p>This page highlights selected remote sensing, spatial analysis, and GIS projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.</p>
-<div class="columns">
-<div class="column" style="width:33%;">
-<p><a href="agriculture.html"><img src="images/cover-page.jpg" class="gallery-img img-fluid"></a></p>
-<section id="assessing-critical-transitions-in-agricultural-landscapes" class="level3">
-<h3 class="anchored" data-anchor-id="assessing-critical-transitions-in-agricultural-landscapes"><a href="agriculture.html">Assessing Critical Transitions in Agricultural Landscapes</a></h3>
-<p>Harmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia.</p>
 </section>
-</div><div class="column" style="width:33%;">
-<p><a href="lidar.html"><img src="images/forest-agric.png" class="gallery-img img-fluid"></a></p>
-<section id="lidar-based-tree-detection-and-segmentation" class="level3">
-<h3 class="anchored" data-anchor-id="lidar-based-tree-detection-and-segmentation"><a href="lidar.html">LiDAR-Based Tree Detection and Segmentation</a></h3>
-<p>Forest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.</p>
+<div class="category-grid">
+<section id="project-management" class="level3 category-card" data-target="project-mgt-page">
+<h3 class="anchored" data-anchor-id="project-management">Project Management</h3>
+<p>Applied capstone work and geospatial project planning.</p>
+<div class="tag-row">
+<p><span class="tag">Capstone</span> <span class="tag">Planning</span> <span class="tag">Communication</span></p>
+</div>
 </section>
-</div><div class="column" style="width:33%;">
-<p><a href="hyperspectral.html"><img src="images/harmonized_maps.png" class="gallery-img img-fluid"></a></p>
-<section id="hyperspectral-vegetation-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="hyperspectral-vegetation-analysis"><a href="hyperspectral.html">Hyperspectral Vegetation Analysis</a></h3>
-<p>Spectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows.</p>
+<section id="cartography-gis-applications" class="level3 category-card" data-target="cartography-page">
+<h3 class="anchored" data-anchor-id="cartography-gis-applications">Cartography &amp; GIS Applications</h3>
+<p>Map design, ArcGIS Online applications, dashboards, field data collection and desktop GIS workflows.</p>
+<div class="tag-row">
+<p><span class="tag">StoryMaps</span> <span class="tag">Survey123</span> <span class="tag">ArcGIS Pro</span> <span class="tag">QGIS</span></p>
+</div>
+</section>
+<section id="remote-sensing-image-processing" class="level3 category-card" onclick="window.location.href='remote-sensing.html'">
+<h3 class="anchored" data-anchor-id="remote-sensing-image-processing">Remote Sensing &amp; Image Processing</h3>
+<p>LiDAR analysis, land-cover classification, spectral interpretation, and satellite time-series remote sensing.</p>
+<div class="tag-row">
+<p><span class="tag">LiDAR</span> <span class="tag">Classification</span> <span class="tag">Spectral</span> <span class="tag">Landsat</span></p>
+</div>
+</section>
+<section id="landscape-modeling-spatial-statistics" class="level3 category-card" data-target="landscape-page">
+<h3 class="anchored" data-anchor-id="landscape-modeling-spatial-statistics">Landscape Modeling &amp; Spatial Statistics</h3>
+<p>Landscape metrics, spatial modeling, forest analytics, and environmental statistics.</p>
+<div class="tag-row">
+<p><span class="tag">Spatial Statistics</span> <span class="tag">Modeling</span> <span class="tag">Python</span></p>
+</div>
 </section>
 </div>
 </div>
-
-
+<div id="cartography-page" class="subpage">
+<p><a href="#" class="back-btn" data-back="true">← Back to Projects</a></p>
+<section id="cartography-gis-applications-1" class="level2">
+<h2 class="anchored" data-anchor-id="cartography-gis-applications-1">Cartography &amp; GIS Applications</h2>
+<div class="project-grid">
+<section id="citizen-science-asset-infrastructure-management" class="level4 project-card">
+<h4 class="anchored" data-anchor-id="citizen-science-asset-infrastructure-management">Citizen Science: Asset &amp; Infrastructure Management</h4>
+<p>Interactive StoryMaps analyzing traffic patterns and urban mobility challenges to support safer and more efficient transportation systems.</p>
+<div class="tag-row">
+<p><span class="tag">Asset Management</span> <span class="tag">Urban Planning</span> <span class="tag">ArcGIS StoryMaps</span></p>
+</div>
+<p><a href="storymaps.html" class="project-link">View StoryMaps →</a></p>
 </section>
+<section id="data-visualization-environmental-conservation" class="level4 project-card">
+<h4 class="anchored" data-anchor-id="data-visualization-environmental-conservation">Data Visualization: Environmental Conservation</h4>
+<p>Interactive dashboard designed to monitor and visualize environmental indicators collected through Survey123 field surveys.</p>
+<div class="tag-row">
+<p><span class="tag">Environmental Conservation</span> <span class="tag">Data Visualization</span> <span class="tag">ArcGIS Dashboards</span></p>
+</div>
+<p><a href="dashboard.html" class="project-link">View Dashboard →</a></p>
+</section>
+<section id="field-data-collection-species-monitoring" class="level4 project-card">
+<h4 class="anchored" data-anchor-id="field-data-collection-species-monitoring">Field Data Collection: Species Monitoring</h4>
+<p>Mobile GIS workflow developed using ArcGIS Survey123 to collect structured geospatial data in the field.</p>
+<div class="tag-row">
+<p><span class="tag">Field Data Collection</span> <span class="tag">Survey123</span></p>
+</div>
+<p><a href="survey123.html" class="project-link">View Survey →</a></p>
+</section>
+<section id="desktop-gis-mapping-projects" class="level4 project-card">
+<h4 class="anchored" data-anchor-id="desktop-gis-mapping-projects">Desktop GIS: Mapping Projects</h4>
+<p>Collection of thematic maps and cartographic layouts developed using ArcGIS Pro and QGIS.</p>
+<div class="tag-row">
+<p><span class="tag">ArcGIS Pro</span> <span class="tag">QGIS</span> <span class="tag">Cartography</span></p>
+</div>
+<p><a href="gallery.html" class="project-link">See Map Gallery →</a></p>
+</section>
+</div>
+</section>
+</div>
+<div id="landscape-page" class="subpage">
+<p><a href="#" class="back-btn" data-back="true">← Back to Projects</a></p>
+<section id="landscape-modeling-spatial-statistics-1" class="level2">
+<h2 class="anchored" data-anchor-id="landscape-modeling-spatial-statistics-1">Landscape Modeling &amp; Spatial Statistics</h2>
+<div class="project-grid">
+<section id="mapping-dominant-tree-species-using-lidar-structural-metrics" class="level4 project-card">
+<h4 class="anchored" data-anchor-id="mapping-dominant-tree-species-using-lidar-structural-metrics">Mapping Dominant Tree Species Using LiDAR Structural Metrics</h4>
+<p>This project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the <strong>Petawawa Research Forest, Ontario</strong>, as part of Ontario’s transition toward an <strong>Enhanced Forest Inventory (EFI)</strong>. LiDAR-derived metrics were extracted at ground plot locations and analyzed using <strong>mutual information feature selection</strong> to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.</p>
+<p>The analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.</p>
+<div class="tag-row">
+<p><span class="tag">Spatial Statistics</span> <span class="tag">LiDAR</span> <span class="tag">Forest Inventory</span> <span class="tag">Feature Selection</span></p>
+</div>
+<p><a href="projects/project_tree_species.html" class="project-link">View project →</a></p>
+</section>
+</div>
+</section>
+</div>
+<div id="project-mgt-page" class="subpage">
+<p><a href="#" class="back-btn" data-back="true">← Back to Projects</a></p>
+<section id="project-management-1" class="level2">
+<h2 class="anchored" data-anchor-id="project-management-1">Project Management</h2>
+<hr>
+<section id="assessing-critical-transitions-in-agricultural-landscapes-in-the-lower-fraser-valley" class="level3">
+<h3 class="anchored" data-anchor-id="assessing-critical-transitions-in-agricultural-landscapes-in-the-lower-fraser-valley">Assessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley</h3>
+<p>Master’s Capstone Project — University of British Columbia (UBC)</p>
+<p>This study examines how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020 by harmonizing multi-source land-cover datasets and analyzing landscape structure and land-cover transitions. The project identifies spatial patterns of agricultural change and evaluates opportunities for perennial agriculture expansion within existing agricultural systems.</p>
+<p><a href="capstone.html">View full project →</a></p>
+<hr>
+</section>
+<section id="mapping-spatial-patterns-of-urban-carbon-sinks-in-metro-vancouver" class="level3">
+<h3 class="anchored" data-anchor-id="mapping-spatial-patterns-of-urban-carbon-sinks-in-metro-vancouver">Mapping Spatial Patterns of Urban Carbon Sinks in Metro Vancouver</h3>
+<p>Research Proposal — UBC GEM 500 (Landscape Ecology)</p>
+<p>This project investigates how vegetation distribution and landscape structure influence urban carbon storage across Metro Vancouver municipalities. Using Landsat imagery, carbon biomass datasets, and landscape metrics, the study aims to identify municipalities functioning as major urban carbon sinks and assess the spatial factors influencing carbon storage.</p>
+<p><a href="urban-carbon.html">View full project →</a></p>
+</section>
+</section>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const home = document.getElementById("projects-home");
+  const cards = document.querySelectorAll(".category-card[data-target]");
+  const subpages = document.querySelectorAll(".subpage");
+  const backButtons = document.querySelectorAll("[data-back='true']");
+
+  function openSubpage(targetId) {
+    const targetPage = document.getElementById(targetId);
+    if (!targetPage) return;
+
+    subpages.forEach(page => page.classList.remove("active"));
+    home.style.display = "none";
+    targetPage.classList.add("active");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  cards.forEach(card => {
+    card.addEventListener("click", function () {
+      const targetId = this.getAttribute("data-target");
+      openSubpage(targetId);
+    });
+  });
+
+  backButtons.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      subpages.forEach(page => page.classList.remove("active"));
+      home.style.display = "block";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+
+  const hash = window.location.hash.replace("#", "");
+  if (hash) {
+    openSubpage(hash);
+  }
+});
+</script>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,4 +1,40 @@
 ---
-title: "hyperspectral"
-format: html
+title: ""
+format:
+  html:
+    toc: true
 ---
+
+[← Back to Projects](content.html#remote-sensing-page)
+
+# Hyperspectral Vegetation Spectral Analysis
+
+## Overview
+
+This project explores hyperspectral reflectance signatures of vegetation and surface materials across the visible, near-infrared, and shortwave infrared spectral regions. Hyperspectral measurements allow detailed analysis of vegetation properties such as chlorophyll content, leaf structure, and moisture.
+
+## Data
+
+Field spectrometry measurements of vegetation and surface materials including:
+
+-   Bigleaf maple
+-   Douglas-fir
+-   Garry oak
+-   Soil
+-   Grass
+-   Moss
+-   Coarse woody debris
+
+## Methods
+
+Spectral curves were analyzed across three main spectral regions:
+
+| Region        | Wavelength   | Information        |
+|---------------|--------------|--------------------|
+| Visible       | 400–700 nm   | pigment absorption |
+| Near infrared | 750–1300 nm  | leaf structure     |
+| SWIR          | 1300–2500 nm | water content      |
+
+## Example Code
+
+\`\`\`r Refl_ind \<- function(wl, refl, target_wl){ approx(x = wl, y = refl, xout = target_wl, rule = 2)\$y }

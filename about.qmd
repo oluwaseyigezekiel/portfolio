@@ -18,12 +18,28 @@ format:
     toc: false
 ---
 
-::: bg_about_me
-# About me
+::: {.bg_about_me}
+
+## About Me
 
 I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.
 
 My interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.
 
 In my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.
+
+<br>
+
+<div style="text-align:center; margin-top:40px;">
+
+<a href="content.html" class="btn btn-primary btn-lg" style="margin-right:15px;">
+View Projects
+</a>
+
+<a href="resume.html" class="btn btn-outline-dark btn-lg">
+View Resume
+</a>
+
+</div>
+
 :::

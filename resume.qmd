@@ -1,52 +1,421 @@
 ---
-title: "Resume"
+title: ""
 format:
   html:
     toc: true
     toc-depth: 2
+    toc-location: right
+editor: source
 ---
 
+<style>
+.resume-page {
+  max-width: 1050px;
+  margin: 0 auto;
+  font-family: "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.resume-section {
+  margin: 2.6rem 0;
+}
+
+.resume-section h2 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 2px solid #eef1f4;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.edu-list,
+.exp-list,
+.pub-list,
+.award-list,
+.training-list,
+.service-list,
+.capstone-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.edu-item,
+.exp-item,
+.pub-item,
+.award-item,
+.training-item,
+.service-item,
+.capstone-item {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 18px;
+  padding: 1.15rem 1.25rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.edu-item {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.school-logo img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.item-title-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 0.2rem;
+}
+
+.item-title-row h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.item-date {
+  color: #666;
+  font-weight: 600;
+  white-space: nowrap;
+  font-size: 0.95rem;
+}
+
+.item-org {
+  margin: 0.1rem 0 0 0;
+  color: #2457a6;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.item-desc,
+.item-desc ul {
+  margin: 0;
+  color: #555;
+  line-height: 1.7;
+}
+
+.item-desc ul {
+  padding-left: 1.2rem;
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.skill-pill {
+  display: inline-block;
+  padding: 0.38rem 0.8rem;
+  border-radius: 999px;
+  background: #eef4ff;
+  color: #2457a6;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.resume-link {
+  color: #2457a6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+.link-row {
+  margin-top: 0.6rem;
+}
+
+@media (max-width: 700px) {
+  .edu-item {
+    grid-template-columns: 1fr;
+  }
+
+  .school-logo img {
+    width: 56px;
+    height: 56px;
+  }
+}
+</style>
+
+::: {.resume-page}
+
+::: {.resume-section}
 ## Education
 
-**Master of Geomatics for Environmental Management**\
-University of British Columbia, Vancouver, BC, Canada\
-Expected April 2026
+::: {.edu-list}
 
-**Micro-credential in Geospatial Data Collection, Analysis, and Interpretation**\
-Seneca Polytechnic, Toronto, ON, Canada\
-April 2024
+::: {.edu-item}
+::: {.school-logo}
+![](images/ubc_logo.png)
+:::
 
-**Bachelor of Forestry and Wildlife Management (Forestry Major)**\
-Federal University of Agriculture, Abeokuta, Ogun, Nigeria\
-February 2020
+::: {}
+<div class="item-title-row">
+  <h3>Master of Geomatics for Environmental Management</h3>
+  <span class="item-date">Expected Apr. 2026</span>
+</div>
+<div class="item-org"><em>University of British Columbia (UBC), Vancouver, BC, Canada</em></div>
+:::
+:::
 
+::: {.edu-item}
+::: {.school-logo}
+![](images/seneca-poly.jpg)
+:::
+
+::: {}
+<div class="item-title-row">
+  <h3>Micro-credential in Geospatial Data Analysis</h3>
+  <span class="item-date">Apr. 2024</span>
+</div>
+<div class="item-org"><em>Seneca Polytechnic, Toronto, ON, Canada</em></div>
+:::
+:::
+
+::: {.edu-item}
+::: {.school-logo}
+![](images/funaab_logo.png)
+:::
+
+::: {}
+<div class="item-title-row">
+  <h3>Bachelor of Forestry and Wildlife Management</h3>
+  <span class="item-date">Feb. 2020</span>
+</div>
+<div class="item-org"><em>Federal University of Agriculture, Abeokuta (FUNAAB), Ogun, Nigeria</em></div>
+:::
+:::
+
+:::
+:::
+
+::: {.resume-section}
+## Skills
+
+::: {.skill-pills}
+[ArcGIS Pro]{.skill-pill}
+[QGIS]{.skill-pill}
+[ENVI]{.skill-pill}
+[Google Earth Engine]{.skill-pill}
+[Spatial Modelling]{.skill-pill}
+[R]{.skill-pill}
+[Python]{.skill-pill}
+[SQL]{.skill-pill}
+[Markdown]{.skill-pill}
+[GitHub]{.skill-pill}
+[MS Excel]{.skill-pill}
+[Research]{.skill-pill}
+[Project Management]{.skill-pill}
+[Technical Writing]{.skill-pill}
+:::
+
+[See Projects →](content.html){.resume-link}
+:::
+
+::: {.resume-section}
+## Experience
+
+::: {.exp-list}
+
+::: {.exp-item}
+<div class="item-title-row">
+  <h3>Geospatial Analyst</h3>
+  <span class="item-date">Feb. 2025 – May 2025</span>
+</div>
+<div class="item-org"><em>Geospatial Research Limited, Ikeja, Lagos</em></div>
+<div class="item-desc">
+<ul>
+  <li>Updated about 30,000 geodatabases of building footprints in Lagos State, Nigeria.</li>
+  <li>Conducted spatial analysis of Lagos State road networks, signages, and markings to support transport management.</li>
+</ul>
+</div>
+:::
+
+::: {.exp-item}
+<div class="item-title-row">
+  <h3>Associate Agronomist</h3>
+  <span class="item-date">Aug. 2020 – Jan. 2024</span>
+</div>
+<div class="item-org"><em>GBFOODS, Tomani Farms & Agro. Industry Limited, Kebbi, Nigeria</em></div>
+<div class="item-desc">
+<ul>
+  <li>Monitored an 800-hectare farm using UAVs and satellite imagery.</li>
+  <li>Supervised precision tools and decision support systems.</li>
+  <li>Sensitized 200 local farmers on agrochemical use and sustainable agriculture.</li>
+</ul>
+</div>
+:::
+
+::: {.exp-item}
+<div class="item-title-row">
+  <h3>Geospatial Data Analyst</h3>
+  <span class="item-date">May 2024</span>
+</div>
+<div class="item-org"><em>Citizen Science, Ayobo Local Council Development Area, Lagos, Nigeria</em></div>
+<div class="item-desc">
+<ul>
+  <li>Conducted municipal projects to analyze traffic and security conditions.</li>
+  <li>Proposed measures to improve well-being and safety conditions within the community.</li>
+</ul>
+</div>
+:::
+
+::: {.exp-item}
+<div class="item-title-row">
+  <h3>Geospatial Data Analyst Intern</h3>
+  <span class="item-date">Nov. 2018 – Jan. 2020</span>
+</div>
+<div class="item-org"><em>Department of Forestry & Wildlife Management, FUNAAB</em></div>
+<div class="item-desc">
+<ul>
+  <li>Created maps of study locations for 10 undergraduate research projects.</li>
+  <li>Developed geospatial data collection forms and field applications.</li>
+  <li>Updated topographic maps of the university with new thematic features.</li>
+</ul>
+</div>
+:::
+
+:::
+:::
+
+::: {.resume-section}
+## Master’s Capstone Project
+
+::: {.capstone-list}
+
+::: {.capstone-item}
+<div class="item-title-row">
+  <h3>Assessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley</h3>
+  <span class="item-date">Aug. 2025 – May 2026</span>
+</div>
+
+<div class="item-desc">
+<ul>
+  <li>Harmonized multi-source land-cover and agricultural datasets to detect changes in the LFV between 2015 and 2020.</li>
+  <li>Produced 30 m land-cover outputs to quantify land-cover change, characterize landscape structure, and identify key transitions.</li>
+  <li>Evaluated fragmentation, connectivity, and spatial patterns to support interpretation of ecological and agricultural landscape change.</li>
+  <li>Identified priority areas for perennial agricultural expansion to inform sustainable land management.</li>
+</ul>
+</div>
+
+<div class="link-row">
+  <a href="capstone.html" class="resume-link">View Capstone Project →</a>
+</div>
+:::
+
+:::
+:::
+
+::: {.resume-section}
 ## Publications
 
-### Peer-Reviewed Publications
+::: {.pub-list}
 
-Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (*Adansonia digitata*). *Journal of Agriculture and Environment for International Development, 118*(1), 5–18. <https://doi.org/10.36253/jaeid-12082>
+::: {.pub-item}
+<div class="item-title-row">
+  <h3>Peer-Reviewed Publication</h3>
+</div>
+<div class="item-desc">
+Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). <em>Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata).</em> <em>Journal of Agriculture and Environment for International Development, 118</em>(1), 5–18.
+</div>
+<div class="link-row">
+  <a href="https://doi.org/10.36253/jaeid-12082" class="resume-link">View publication →</a>
+</div>
+:::
 
-### Reports
+:::
+:::
 
-Additional technical reports and project deliverables can be added here.
+::: {.resume-section}
+## Volunteering & Service
 
-## Conferences and Talks
+::: {.service-list}
 
-### Invited Talks
+::: {.service-item}
+<div class="item-title-row">
+  <h3>GitHub Contributor — Open Geomatics Textbook Revision</h3>
+  <span class="item-date">Nov. 2025 – Present</span>
+</div>
+<div class="item-org"><em>UBC Geomatics Community of Practice</em></div>
+<div class="item-desc">
+Contributing to the revision of the Open Geomatics textbook for advanced GIS learning and community-based geospatial education.
+</div>
+<div class="link-row">
+  <a href="https://github.com/ubc-geomatics-community-of-practice/GEM511-Advanced-GIS-for-Environmental-Management" class="resume-link">View GitHub Repository →</a>
+</div>
+:::
 
-Add invited talks here as applicable.
+::: {.service-item}
+<div class="item-title-row">
+  <h3>Peer Reviewer</h3>
+  <span class="item-date">Aug. 2022 – Present</span>
+</div>
+<div class="item-org"><em>Journal of Forestry Research; Current Agriculture Research Journal</em></div>
+<div class="item-desc">
+Reviewed research articles and provided publication feedback, supporting research quality and editorial evaluation in forestry and agriculture.
+</div>
+<div class="link-row">
+  <a href="https://orcid.org/0009-0006-4772-9538" class="resume-link">See verified reviews here →</a>
+</div>
+:::
 
-### Conference Presentations
+:::
+:::
 
-Add conference presentations here as applicable.
+::: {.resume-section}
+## Training & Professional Development
 
-## Awards and Honors
+::: {.training-list}
 
--   Fully funded master’s program at UBC, Mastercard Foundation Scholarship, 2025
--   Fully funded micro-credential in GIS, Seneca Polytechnic, Quick Train Canada, 2024
--   Award of Meritorious Service as Associate Agronomist, GBFOODS Africa, 2023
--   Reviewer of the Year, *Current Agriculture Research Journal*, India, 2022
--   Data Science Microdegree Scholarship, USTACKY, 2021
--   Best Graduating Student in the Department of Forestry and Wildlife Management, FUNAAB, 2020
+::: {.training-item}
+<div class="item-desc">
+- Drought Monitoring, Prediction, and Projection using NASA Earth System Data — NASA ARSET, Oct. 2024  
+- Invasive Species Monitoring with Remote Sensing — NASA ARSET, Oct. 2024  
+- CO2 Measurements for Climate-Related Studies — NASA ARSET, Oct. 2024  
+- Introduction to Agent Based Modeling — Geoversity, University of Twente, Sep. 2024  
+- UAVs in Precision Agriculture — Geoversity, University of Twente (ITC), Aug. 2024  
+- Geo Web App Building with Open-Source Tools — Geoversity, ITC, Aug. 2024  
+- Remote Sensing Image Acquisition, Analysis and Applications — Coursera, Jul. 2024
+</div>
+<div class="link-row">
+  <a href="https://drive.google.com/file/d/1Tfz0730ozpZtY_sC8khtmHXsZX5fPI7B/view?usp=sharing" class="resume-link">View training certificates here →</a>
+</div>
+:::
 
-## 
+:::
+:::
+
+::: {.resume-section}
+## Awards & Honors
+
+::: {.award-list}
+
+::: {.award-item}
+<div class="item-desc">
+- Fully funded master’s program at UBC — Mastercard Foundation Scholarship, 2025  
+- Fully funded micro-credential in GIS — Seneca Polytechnic / Quick Train Canada, 2024  
+- Award of Meritorious Service — GBFOODS Africa, 2023  
+- Reviewer of the Year — Current Agriculture Research Journal, 2022  
+- Data Science Microdegree Scholarship — USTACKY, 2021  
+- Best Graduating Student, Department of Forestry and Wildlife Management — FUNAAB Senate Awards, 2020
+</div>
+:::
+
+:::
+:::
+
+:::

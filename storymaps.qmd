@@ -1,0 +1,182 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+editor: source
+---
+
+<style>
+.storymaps-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 1.4rem;
+  padding: .55rem 1rem;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.back-btn:hover {
+  background: #e9ecef;
+  text-decoration: none;
+}
+
+.storymaps-intro {
+  margin-bottom: 2rem;
+}
+
+.storymaps-intro h1 {
+  margin-bottom: .6rem;
+}
+
+.storymaps-intro p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.storymaps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.storymap-card {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 18px;
+  padding: 1.2rem 1.25rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.storymap-card h3 {
+  margin-top: 0;
+  margin-bottom: .6rem;
+  font-size: 1.1rem;
+}
+
+.storymap-card p {
+  color: #555;
+  line-height: 1.65;
+  margin-bottom: .8rem;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-bottom: .9rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: .3rem .7rem;
+  border-radius: 999px;
+  background: #eef4ff;
+  color: #2457a6;
+  font-size: .82rem;
+  font-weight: 600;
+}
+
+.storymap-link {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  color: #2457a6;
+}
+
+.storymap-link:hover {
+  text-decoration: underline;
+}
+
+.note-box {
+  margin-top: 2rem;
+  padding: 1rem 1.1rem;
+  background: #f8f9fb;
+  border-left: 4px solid #2457a6;
+  border-radius: 10px;
+  color: #555;
+}
+</style>
+
+::: {.storymaps-page}
+
+[← Back to Projects](content.html#cartography-page){.back-btn}
+
+::: {.storymaps-intro}
+# StoryMaps
+
+These StoryMaps are part of my micro-credential in Geospatial Data Collection, Analysis & Interpretation using GIS Technology** at Seneca Polytechnic, Canada. They show how spatial storytelling can be employed in Asset and infrastructure management, Urban planning and other real-world scenarios.
+
+:::
+
+::: {.storymaps-grid}
+
+::: {.storymap-card}
+### Traffic Analysis and Safety
+
+::: {.tag-row}
+[StoryMaps]{.tag}
+[Traffic Analysis]{.tag}
+[Road Safety]{.tag}
+:::
+
+This project analyzes infrastructure distribution and traffic patterns to improve road safety and optimize traffic flow.
+
+[View project PDF →](storymaps/traffic_analysis.pdf){.storymap-link target="_blank"}
+:::
+
+::: {.storymap-card}
+### Military Checkpoint Establishment
+
+::: {.tag-row}
+[StoryMaps]{.tag}
+[Site Selection]{.tag}
+[Strategic Planning]{.tag}
+:::
+
+This project develops GIS-based solutions for the strategic placement of military checkpoints.
+
+[View project PDF →](storymaps/military_checkpoint.pdf){.storymap-link target="_blank"}
+:::
+
+::: {.storymap-card}
+### Field Maps App for Spatial Data Collection
+
+::: {.tag-row}
+[StoryMaps]{.tag}
+[Field Maps]{.tag}
+[Spatial Data Collection]{.tag}
+:::
+
+This project demonstrates the use of the ESRI Field Maps app to collect, manage, and communicate spatial data.
+
+[View project PDF →](storymaps/field_maps.pdf){.storymap-link target="_blank"}
+:::
+
+::: {.storymap-card}
+### 200m Boundary Delineation
+
+::: {.tag-row}
+[StoryMaps]{.tag}
+[Boundary Analysis]{.tag}
+[Real Estate GIS]{.tag}
+:::
+  
+This project defines a 200-meter jurisdiction boundary for real estate purposes.
+
+[View project PDF →](storymaps/boundary_delineation.pdf){.storymap-link target="_blank"}
+:::
+
+:::
+
+
+:::

@@ -1,100 +1,30 @@
 [
   {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Resume",
-    "section": "",
-    "text": "Master of Geomatics for Environmental Management\nUniversity of British Columbia, Vancouver, BC, Canada\nExpected April 2026\nMicro-credential in Geospatial Data Collection, Analysis, and Interpretation\nSeneca Polytechnic, Toronto, ON, Canada\nApril 2024\nBachelor of Forestry and Wildlife Management (Forestry Major)\nFederal University of Agriculture, Abeokuta, Ogun, Nigeria\nFebruary 2020"
-  },
-  {
-    "objectID": "resume.html#education",
-    "href": "resume.html#education",
-    "title": "Resume",
-    "section": "",
-    "text": "Master of Geomatics for Environmental Management\nUniversity of British Columbia, Vancouver, BC, Canada\nExpected April 2026\nMicro-credential in Geospatial Data Collection, Analysis, and Interpretation\nSeneca Polytechnic, Toronto, ON, Canada\nApril 2024\nBachelor of Forestry and Wildlife Management (Forestry Major)\nFederal University of Agriculture, Abeokuta, Ogun, Nigeria\nFebruary 2020"
-  },
-  {
-    "objectID": "resume.html#publications",
-    "href": "resume.html#publications",
-    "title": "Resume",
-    "section": "Publications",
-    "text": "Publications\n\nPeer-Reviewed Publications\nEzekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082\n\n\nReports\nAdditional technical reports and project deliverables can be added here."
-  },
-  {
-    "objectID": "resume.html#conferences-and-talks",
-    "href": "resume.html#conferences-and-talks",
-    "title": "Resume",
-    "section": "Conferences and Talks",
-    "text": "Conferences and Talks\n\nInvited Talks\nAdd invited talks here as applicable.\n\n\nConference Presentations\nAdd conference presentations here as applicable."
-  },
-  {
-    "objectID": "resume.html#awards-and-honors",
-    "href": "resume.html#awards-and-honors",
-    "title": "Resume",
-    "section": "Awards and Honors",
-    "text": "Awards and Honors\n\nFully funded master’s program at UBC, Mastercard Foundation Scholarship, 2025\nFully funded micro-credential in GIS, Seneca Polytechnic, Quick Train Canada, 2024\nAward of Meritorious Service as Associate Agronomist, GBFOODS Africa, 2023\nReviewer of the Year, Current Agriculture Research Journal, India, 2022\nData Science Microdegree Scholarship, USTACKY, 2021\nBest Graduating Student in the Department of Forestry and Wildlife Management, FUNAAB, 2020"
-  },
-  {
-    "objectID": "gallery.html",
-    "href": "gallery.html",
-    "title": "Map Gallery",
-    "section": "",
-    "text": "This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.\n\n\n\nHarmonized Land-Cover Maps\nComparison of harmonized land-cover datasets used to analyze agricultural transitions in the Lower Fraser Valley.\n\n\nChange Detection Map\nSpatial representation of land-cover change across the study area.\n\n\nAgricultural Adjacency Analysis\nVisualization of adjacency and interspersion patterns between agricultural classes.\n\n\n\n\n\nNormalized Dataset Weights\nVisualization of dataset weighting used during land-cover harmonization.\n\n\nLand-Cover Transition Sankey\nDiagram illustrating transitions between land-cover classes from 2015 to 2020.\n\n\nForest–Agriculture Spatial Patterns\nMap showing spatial relationships between forest cover and agricultural land uses."
-  },
-  {
-    "objectID": "gallery.html#map-gallery",
-    "href": "gallery.html#map-gallery",
-    "title": "Map Gallery",
-    "section": "",
-    "text": "This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.\n\n\n\nHarmonized Land-Cover Maps\nComparison of harmonized land-cover datasets used to analyze agricultural transitions in the Lower Fraser Valley.\n\n\nChange Detection Map\nSpatial representation of land-cover change across the study area.\n\n\nAgricultural Adjacency Analysis\nVisualization of adjacency and interspersion patterns between agricultural classes.\n\n\n\n\n\nNormalized Dataset Weights\nVisualization of dataset weighting used during land-cover harmonization.\n\n\nLand-Cover Transition Sankey\nDiagram illustrating transitions between land-cover classes from 2015 to 2020.\n\n\nForest–Agriculture Spatial Patterns\nMap showing spatial relationships between forest cover and agricultural land uses."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About me",
-    "section": "",
-    "text": "About me\nI am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano."
-  },
-  {
     "objectID": "content.html",
     "href": "content.html",
     "title": "Projects",
     "section": "",
-    "text": "This page highlights selected remote sensing, spatial analysis, and GIS projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.\n\n\n\n\n\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia.\n\n\n\n\n\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\n\n\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
+    "text": "Note: Click a category to explore projects.\n\n\n\n\n\nApplied capstone work and geospatial project planning.\n\nCapstone Planning Communication\n\n\n\n\nMap design, ArcGIS Online applications, dashboards, field data collection and desktop GIS workflows.\n\nStoryMaps Survey123 ArcGIS Pro QGIS\n\n\n\n\nLiDAR analysis, land-cover classification, spectral interpretation, and satellite time-series remote sensing.\n\nLiDAR Classification Spectral Landsat\n\n\n\n\nLandscape metrics, spatial modeling, forest analytics, and environmental statistics.\n\nSpatial Statistics Modeling Python"
   },
   {
-    "objectID": "content.html#projects",
-    "href": "content.html#projects",
+    "objectID": "content.html#cartography-gis-applications-1",
+    "href": "content.html#cartography-gis-applications-1",
     "title": "Projects",
-    "section": "",
-    "text": "This page highlights selected remote sensing, spatial analysis, and GIS projects developed during my Master of Geomatics for Environmental Management at the University of British Columbia.\n\n\n\n\n\nHarmonized land-cover analysis of agricultural transitions in the Lower Fraser Valley, British Columbia.\n\n\n\n\n\nForest structure analysis using LiDAR point clouds, canopy height models, and individual tree detection workflows.\n\n\n\n\n\nSpectral interpretation of vegetation and non-vegetation classes using reflectance curves and hyperspectral remote sensing workflows."
+    "section": "Cartography & GIS Applications",
+    "text": "Cartography & GIS Applications\n\n\nCitizen Science: Asset & Infrastructure Management\nInteractive StoryMaps analyzing traffic patterns and urban mobility challenges to support safer and more efficient transportation systems.\n\nAsset Management Urban Planning ArcGIS StoryMaps\n\nView StoryMaps →\n\n\nData Visualization: Environmental Conservation\nInteractive dashboard designed to monitor and visualize environmental indicators collected through Survey123 field surveys.\n\nEnvironmental Conservation Data Visualization ArcGIS Dashboards\n\nView Dashboard →\n\n\nField Data Collection: Species Monitoring\nMobile GIS workflow developed using ArcGIS Survey123 to collect structured geospatial data in the field.\n\nField Data Collection Survey123\n\nView Survey →\n\n\nDesktop GIS: Mapping Projects\nCollection of thematic maps and cartographic layouts developed using ArcGIS Pro and QGIS.\n\nArcGIS Pro QGIS Cartography\n\nSee Map Gallery →"
   },
   {
-    "objectID": "home.html",
-    "href": "home.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Oluwaseyi Ezekiel\n\n\nGeospatial and Remote Sensing Scientist\n\n\n\n\nView Portfolio"
+    "objectID": "content.html#landscape-modeling-spatial-statistics-1",
+    "href": "content.html#landscape-modeling-spatial-statistics-1",
+    "title": "Projects",
+    "section": "Landscape Modeling & Spatial Statistics",
+    "text": "Landscape Modeling & Spatial Statistics\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nThe analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.\n\nSpatial Statistics LiDAR Forest Inventory Feature Selection\n\nView project →"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Welcome!!!"
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
-  },
-  {
-    "objectID": "publications.html#peer-reviewed-publications",
-    "href": "publications.html#peer-reviewed-publications",
-    "title": "Publications",
-    "section": "",
-    "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
+    "objectID": "content.html#project-management-1",
+    "href": "content.html#project-management-1",
+    "title": "Projects",
+    "section": "Project Management",
+    "text": "Project Management\n\n\nAssessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley\nMaster’s Capstone Project — University of British Columbia (UBC)\nThis study examines how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020 by harmonizing multi-source land-cover datasets and analyzing landscape structure and land-cover transitions. The project identifies spatial patterns of agricultural change and evaluates opportunities for perennial agriculture expansion within existing agricultural systems.\nView full project →\n\n\n\nMapping Spatial Patterns of Urban Carbon Sinks in Metro Vancouver\nResearch Proposal — UBC GEM 500 (Landscape Ecology)\nThis project investigates how vegetation distribution and landscape structure influence urban carbon storage across Metro Vancouver municipalities. Using Landsat imagery, carbon biomass datasets, and landscape metrics, the study aims to identify municipalities functioning as major urban carbon sinks and assess the spatial factors influencing carbon storage.\nView full project →"
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Map Gallery – Oluwaseyi Ezekiel</title>
+<title>gallery – Oluwaseyi Ezekiel</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -104,16 +104,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
-<span class="menu-text">Resume</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
-<span class="menu-text">Publications</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./content.html"> 
 <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resume.html"> 
+<span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./gallery.html" aria-current="page"> 
@@ -149,63 +145,225 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Map Gallery</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
+<p><a href="content.html#cartography-page" class="back-btn">← Back to Projects</a></p>
+<style>
+.gallery-intro {
+  max-width: 920px;
+  margin: 0 auto 2.5rem auto;
+  text-align: left;
+}
 
+.gallery-intro h1 {
+  margin-bottom: 0.6rem;
+}
 
-</header>
+.gallery-intro p {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
 
+.map-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
 
-<section id="map-gallery" class="level2">
+.map-card {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.map-card.reverse {
+  grid-template-columns: 1fr 1.4fr;
+}
+
+.map-card.reverse .map-text {
+  order: 1;
+}
+
+.map-card.reverse .map-image {
+  order: 2;
+}
+
+.map-image a {
+  display: block;
+}
+
+.map-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: zoom-in;
+}
+
+.map-image img:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+.map-text h2 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-size: 1.45rem;
+}
+
+.map-text p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.map-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.map-tag {
+  background: #eef4ff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #2457a6;
+}
+
+@media (max-width: 900px) {
+  .map-card,
+  .map-card.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .map-card.reverse .map-text,
+  .map-card.reverse .map-image {
+    order: initial;
+  }
+}
+</style>
+<section id="map-gallery" class="level2 gallery-intro">
 <h2 class="anchored" data-anchor-id="map-gallery">Map Gallery</h2>
-<p>This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.</p>
-<div class="columns">
-<div class="column" style="width:33%;">
-<p><a href="images/harmonized_maps.png"><img src="images/harmonized_maps.png" class="gallery-img img-fluid"></a></p>
-<p><strong>Harmonized Land-Cover Maps</strong></p>
-<p>Comparison of harmonized land-cover datasets used to analyze agricultural transitions in the Lower Fraser Valley.</p>
-</div><div class="column" style="width:33%;">
-<p><a href="images/change_map2.png"><img src="images/change_map2.png" class="gallery-img img-fluid"></a></p>
-<p><strong>Change Detection Map</strong></p>
-<p>Spatial representation of land-cover change across the study area.</p>
-</div><div class="column" style="width:33%;">
-<p><a href="images/adjacency.png"><img src="images/adjacency.png" class="gallery-img img-fluid"></a></p>
-<p><strong>Agricultural Adjacency Analysis</strong></p>
-<p>Visualization of adjacency and interspersion patterns between agricultural classes.</p>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:33%;">
-<p><a href="images/normalized_weights.png"><img src="images/normalized_weights.png" class="gallery-img img-fluid"></a></p>
-<p><strong>Normalized Dataset Weights</strong></p>
-<p>Visualization of dataset weighting used during land-cover harmonization.</p>
-</div><div class="column" style="width:33%;">
-<p><a href="images/sankey_2015_2020.png"><img src="images/sankey_2015_2020.png" class="gallery-img img-fluid"></a></p>
-<p><strong>Land-Cover Transition Sankey</strong></p>
-<p>Diagram illustrating transitions between land-cover classes from 2015 to 2020.</p>
-</div><div class="column" style="width:33%;">
-<p><a href="images/forest-agric.png"><img src="images/forest-agric.png" class="gallery-img img-fluid"></a></p>
-<p><strong>Forest–Agriculture Spatial Patterns</strong></p>
-<p>Map showing spatial relationships between forest cover and agricultural land uses.</p>
-</div>
-</div>
-
-
+<p>This gallery showcases layouts of selected GIS and cartographic workflows developed during the Master of Geomatics for Environmental Management program at UBC.</p>
 </section>
+<div class="map-gallery">
+<div class="map-card">
+<div class="map-image">
+<p><a href="map_gallery/EzekielO_GEM511_lab2.jpg" target="_blank"><img src="map_gallery/EzekielO_GEM511_lab2.jpg" class="img-fluid" alt="GEM 511 Lab 2 Map"></a></p>
+</div>
+<div class="map-text">
+<div class="map-tag-row">
+<p><span class="map-tag">Riparian Terrain Analysis</span></p>
+</div>
+<section id="hydrological-modeling-and-stream-network-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="hydrological-modeling-and-stream-network-analysis">Hydrological Modeling and Stream Network Analysis</h2>
+<p>Cartographic layout prepared as part of GIS coursework, demonstrating map composition, symbology, labeling, and design principles for effective spatial communication.</p>
+</section>
+</div>
+</div>
+<div class="map-card reverse">
+<div class="map-image">
+<p><a href="map_gallery/GEM510_Lab3_map.jpg" target="_blank"><img src="map_gallery/GEM510_Lab3_map.jpg" class="img-fluid" alt="GEM 510 Lab 3 Map"></a></p>
+</div>
+<div class="map-text">
+<div class="map-tag-row">
+<p><span class="map-tag">Old growth forests</span> <span class="map-tag">Zonal Statistics</span></p>
+</div>
+<section id="old-growth-forest-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="old-growth-forest-analysis">Old Growth Forest Analysis</h2>
+<p>Map layout created as part of introductory GIS coursework, showcasing cartographic design, thematic mapping, and foundational spatial communication skills.</p>
+</section>
+</div>
+</div>
+<div class="map-card">
+<div class="map-image">
+<p><a href="map_gallery/EzekielO_GEM511_lab4.png" target="_blank"><img src="map_gallery/EzekielO_GEM511_lab4.png" class="img-fluid" alt="GEM 511 Lab 4 Map"></a></p>
+</div>
+<div class="map-text">
+<div class="map-tag-row">
+<p><span class="map-tag">Machine learning</span> <span class="map-tag">Spatial Analysis</span></p>
+</div>
+<section id="machine-learning-with-geospatial-data" class="level2">
+<h2 class="anchored" data-anchor-id="machine-learning-with-geospatial-data">Machine Learning with Geospatial Data</h2>
+<p>GIS project applying machine learning techniques to analyze spatial patterns and relationships within geospatial datasets. The resulting map visualizes model outputs and demonstrates how predictive spatial analysis can support environmental and geographic decision-making.</p>
+</section>
+</div>
+</div>
+<div class="map-card reverse">
+<div class="map-image">
+<p><a href="map_gallery/harmonized_maps.png" target="_blank"><img src="map_gallery/harmonized.png" class="img-fluid" alt="Harmonized Land-Cover Maps"></a></p>
+</div>
+<div class="map-text">
+<div class="map-tag-row">
+<p><span class="map-tag">Data Harmonization</span></p>
+</div>
+<section id="multisource-land-cover-dataset-harmonization" class="level2">
+<h2 class="anchored" data-anchor-id="multisource-land-cover-dataset-harmonization">Multisource Land-Cover Dataset Harmonization</h2>
+<p>Comparison of harmonized land-cover datasets used to analyze agricultural transitions in the Lower Fraser Valley between 2015 and 2020.</p>
+</section>
+</div>
+</div>
+<div class="map-card">
+<div class="map-image">
+<p><a href="map_gallery/change_map.png" target="_blank"><img src="map_gallery/change_map.png" class="img-fluid" alt="Change Detection Map"></a></p>
+</div>
+<div class="map-text">
+<div class="map-tag-row">
+<p><span class="map-tag">Land Cover Classification</span> <span class="map-tag">Change Detection</span></p>
+</div>
+<section id="time-series-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="time-series-analysis">Time Series Analysis</h2>
+<p>Spatial representation of land-cover change across the Lower Fraser Valley, highlighting where transitions and stable classes occurred over time.</p>
+</section>
+</div>
+</div>
+<div class="map-card reverse">
+<div class="map-image">
+<p><a href="map_gallery/adjacency.png" target="_blank"><img src="map_gallery/adjacency.png" class="img-fluid" alt="Agricultural Adjacency Analysis"></a></p>
+</div>
+<div class="map-text">
+<div class="map-tag-row">
+<p><span class="map-tag">Spatial correlation</span> <span class="map-tag">Landscape Pattern Analysis</span></p>
+</div>
+<section id="agricultural-adjacency-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="agricultural-adjacency-analysis">Agricultural Adjacency Analysis</h2>
+<p>Visualization of adjacency and interspersion patterns between agricultural classes. This map shows regions of annual agricultural that are likely to transition into perennial classes in the near future.</p>
+</section>
+</div>
+</div>
+<div class="map-card reverse">
+<div class="map-image">
+<p><a href="map_gallery/carbon_density_map.jpg" target="_blank"><img src="map_gallery/carbon_density_map.jpg" class="img-fluid" alt="Carbon Density Map"></a></p>
+</div>
+<div class="map-text">
+<div class="map-tag-row">
+<p><span class="map-tag">Carbon Management</span> <span class="map-tag">Environmental Mapping</span></p>
+</div>
+<section id="carbon-density-mapping" class="level2">
+<h2 class="anchored" data-anchor-id="carbon-density-mapping">Carbon Density Mapping</h2>
+<p>Spatial visualization of carbon density patterns across MetroVancouver, BC, Canada. This map supports urban management planning and operational decisions in environmental management.</p>
+</section>
+</div>
+</div>
+
+
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

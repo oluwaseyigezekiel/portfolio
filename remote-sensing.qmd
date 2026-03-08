@@ -1,0 +1,147 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+editor: source
+---
+
+<style>
+.rs-container{
+  max-width:1000px;
+  margin:0 auto;
+}
+
+.lab-card{
+  background:#ffffff;
+  border-radius:18px;
+  padding:1.4rem;
+  margin-bottom:1.6rem;
+  box-shadow:0 6px 18px rgba(0,0,0,0.07);
+  border:1px solid rgba(0,0,0,0.05);
+}
+
+.tag-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.45rem;
+  margin-bottom:.7rem;
+}
+
+.tag{
+  background:#eef4ff;
+  padding:.25rem .7rem;
+  border-radius:999px;
+  font-size:.8rem;
+  font-weight:600;
+  color:#2457a6;
+}
+
+.project-link{
+  font-weight:600;
+  text-decoration:none;
+}
+
+.project-link:hover{
+  text-decoration:underline;
+}
+
+.back-btn{
+  display:inline-block;
+  margin-bottom:1.4rem;
+  padding:.55rem 1rem;
+  border-radius:999px;
+  background:#f3f4f6;
+  color:#222;
+  text-decoration:none;
+  font-weight:600;
+  border:1px solid rgba(0,0,0,0.08);
+}
+
+.back-btn:hover{
+  background:#e9ecef;
+}
+</style>
+
+<div class="rs-container">
+
+[← Back to Projects](content.html){.back-btn}
+
+
+# Remote Sensing Projects
+
+*Click a project below to view the full lab report.*
+
+---
+
+### Land Cover Classification
+
+::: {.lab-card}
+
+::: {.tag-row}
+[Remote Sensing]{.tag}
+[Image Classification]{.tag}
+[Landsat]{.tag}
+:::
+
+This project applies supervised image classification to Landsat imagery using the Maximum Likelihood algorithm to map seven land-cover classes: Broadleaf Forest, Coniferous Forest, Exposed Soil and Rocks, High Density Developed, Low Density Developed, Non-forest Vegetation, and Water. The workflow includes training and validation polygons, spectral signature analysis, and accuracy assessment.
+
+[See full lab report (PDF) →](labs/classification.pdf){.project-link}
+
+:::
+
+---
+
+### LiDAR Forest Structure and Individual Tree Segmentation
+
+::: {.lab-card}
+
+::: {.tag-row}
+[LiDAR]{.tag}
+[Forest Structure]{.tag}
+[Point Cloud]{.tag}
+:::
+
+This lab uses airborne LiDAR point cloud data to identify and segment individual trees in forest plots. The workflow includes plot extraction, canopy height model generation, tree-top detection, and segmentation using the **li2012** and **dalponte2016** algorithms, with comparison across multiple canopy height model resolutions to determine an efficient balance between detail and computation.
+
+[See full lab report (PDF) →](labs/lidar.pdf){.project-link}
+
+:::
+
+---
+
+### Spectral Indices and Vegetation Properties
+
+::: {.lab-card}
+
+::: {.tag-row}
+[Spectral Analysis]{.tag}
+[Vegetation Indices]{.tag}
+[Remote Sensing]{.tag}
+:::
+
+This project analyzes reflectance spectra measured with the ASD FieldSpecPro to compare live vegetation, dead vegetation, soil, and rock. It also computes spectral indices such as **PRI, SIPI, and ND705**, simulates mixed pixels, and shows how **NDVI** and **NDWI** respond to increasing live vegetation cover at Landsat spectral resolution.
+
+[See full lab report (PDF) →](labs/spectral.pdf){.project-link}
+
+:::
+
+---
+
+### Wildfire Burn Severity and Vegetation Recovery
+
+::: {.lab-card}
+
+::: {.tag-row}
+[Landsat]{.tag}
+[Time Series]{.tag}
+[NDVI / NBR]{.tag}
+:::
+
+This project analyzes wildfire burn severity and post-fire vegetation recovery using a Landsat 8 time series over the Prouton Lakes fire in British Columbia. The workflow includes cloud masking, NDVI and NBR calculation, yearly compositing, dNBR-based burn severity classification, and assessment of vegetation recovery patterns from 2018 to 2021.
+
+[See full lab report (PDF) →](labs/wildfire.pdf){.project-link}
+
+:::
+
+</div>

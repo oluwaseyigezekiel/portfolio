@@ -48,7 +48,7 @@ Oluwaseyi Ezekiel
 
 </div>
 
-<div style="font-size:4rem; margin-top:1px; margin-bottom:0px; color:white;">
+<div style="font-size:3.5rem; margin-top:1px; margin-bottom:0px; color:white;">
 Geospatial and Remote Sensing Scientist
 </div>
 

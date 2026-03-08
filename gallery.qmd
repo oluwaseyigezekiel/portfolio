@@ -1,63 +1,269 @@
 ---
-title: "Map Gallery"
+title: ""
 format:
   html:
     toc: false
 editor: source
 ---
+[← Back to Projects](content.html#cartography-page){.back-btn}
 
+<style>
+.gallery-intro {
+  max-width: 920px;
+  margin: 0 auto 2.5rem auto;
+  text-align: left;
+}
+
+.gallery-intro h1 {
+  margin-bottom: 0.6rem;
+}
+
+.gallery-intro p {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.map-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.map-card {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.map-card.reverse {
+  grid-template-columns: 1fr 1.4fr;
+}
+
+.map-card.reverse .map-text {
+  order: 1;
+}
+
+.map-card.reverse .map-image {
+  order: 2;
+}
+
+.map-image a {
+  display: block;
+}
+
+.map-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: zoom-in;
+}
+
+.map-image img:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+.map-text h2 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-size: 1.45rem;
+}
+
+.map-text p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.map-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.map-tag {
+  background: #eef4ff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #2457a6;
+}
+
+@media (max-width: 900px) {
+  .map-card,
+  .map-card.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .map-card.reverse .map-text,
+  .map-card.reverse .map-image {
+    order: initial;
+  }
+}
+</style>
+
+::: {.gallery-intro}
 ## Map Gallery
 
-This gallery showcases cartographic layouts and spatial visualizations developed during my studies in geomatics and GIS.
+This gallery showcases layouts of selected GIS and cartographic workflows developed during the Master of Geomatics for Environmental Management program at UBC.
 
-:::::: columns
-::: {.column width="33%"}
-[![](images/harmonized_maps.png){.gallery-img}](images/harmonized_maps.png)
-
-**Harmonized Land-Cover Maps**
-
-Comparison of harmonized land-cover datasets used to analyze agricultural transitions in the Lower Fraser Valley.
 :::
 
-::: {.column width="33%"}
-[![](images/change_map2.png){.gallery-img}](images/change_map2.png)
+:::: {.map-gallery}
 
-**Change Detection Map**
+::: {.map-card}
 
-Spatial representation of land-cover change across the study area.
+::: {.map-image}
+[![](map_gallery/EzekielO_GEM511_lab2.jpg){fig-alt="GEM 511 Lab 2 Map"}](map_gallery/EzekielO_GEM511_lab2.jpg){target="_blank"}
 :::
 
-::: {.column width="33%"}
-[![](images/adjacency.png){.gallery-img}](images/adjacency.png)
+::: {.map-text}
+::: {.map-tag-row}
 
-**Agricultural Adjacency Analysis**
-
-Visualization of adjacency and interspersion patterns between agricultural classes.
-:::
-::::::
-
-:::::: columns
-::: {.column width="33%"}
-[![](images/normalized_weights.png){.gallery-img}](images/normalized_weights.png)
-
-**Normalized Dataset Weights**
-
-Visualization of dataset weighting used during land-cover harmonization.
+[Riparian Terrain Analysis]{.map-tag}
 :::
 
-::: {.column width="33%"}
-[![](images/sankey_2015_2020.png){.gallery-img}](images/sankey_2015_2020.png)
+## Hydrological Modeling and Stream Network Analysis
 
-**Land-Cover Transition Sankey**
-
-Diagram illustrating transitions between land-cover classes from 2015 to 2020.
+Cartographic layout prepared as part of GIS coursework, demonstrating map composition, symbology, labeling, and design principles for effective spatial communication.
 :::
 
-::: {.column width="33%"}
-[![](images/forest-agric.png){.gallery-img}](images/forest-agric.png)
-
-**Forest–Agriculture Spatial Patterns**
-
-Map showing spatial relationships between forest cover and agricultural land uses.
 :::
-::::::
+
+
+
+::: {.map-card .reverse}
+
+::: {.map-image}
+[![](map_gallery/GEM510_Lab3_map.jpg){fig-alt="GEM 510 Lab 3 Map"}](map_gallery/GEM510_Lab3_map.jpg){target="_blank"}
+:::
+
+::: {.map-text}
+::: {.map-tag-row}
+[Old growth forests]{.map-tag}
+[Zonal Statistics]{.map-tag}
+:::
+
+## Old Growth Forest Analysis
+
+Map layout created as part of introductory GIS coursework, showcasing cartographic design, thematic mapping, and foundational spatial communication skills.
+:::
+
+:::
+
+
+
+::: {.map-card}
+
+::: {.map-image}
+[![](map_gallery/EzekielO_GEM511_lab4.png){fig-alt="GEM 511 Lab 4 Map"}](map_gallery/EzekielO_GEM511_lab4.png){target="_blank"}
+:::
+
+::: {.map-text}
+::: {.map-tag-row}
+[Machine learning]{.map-tag}
+[Spatial Analysis]{.map-tag}
+:::
+
+## Machine Learning with Geospatial Data
+
+GIS project applying machine learning techniques to analyze spatial patterns and relationships within geospatial datasets. The resulting map visualizes model outputs and demonstrates how predictive spatial analysis can support environmental and geographic decision-making.
+:::
+
+:::
+
+
+
+::: {.map-card .reverse}
+
+::: {.map-image}
+[![](map_gallery/harmonized.png){fig-alt="Harmonized Land-Cover Maps"}](map_gallery/harmonized_maps.png){target="_blank"}
+:::
+
+::: {.map-text}
+::: {.map-tag-row}
+[Data Harmonization]{.map-tag}
+:::
+
+## Multisource Land-Cover Dataset Harmonization
+
+Comparison of harmonized land-cover datasets used to analyze agricultural transitions in the Lower Fraser Valley  between 2015 and 2020.
+:::
+
+:::
+
+
+
+::: {.map-card}
+
+::: {.map-image}
+[![](map_gallery/change_map.png){fig-alt="Change Detection Map"}](map_gallery/change_map.png){target="_blank"}
+:::
+
+::: {.map-text}
+::: {.map-tag-row}
+[Land Cover Classification]{.map-tag}
+[Change Detection]{.map-tag}
+:::
+
+## Time Series Analysis
+
+Spatial representation of land-cover change across the Lower Fraser Valley, highlighting where transitions and stable classes occurred over time. 
+:::
+
+:::
+
+
+
+::: {.map-card .reverse}
+
+::: {.map-image}
+[![](map_gallery/adjacency.png){fig-alt="Agricultural Adjacency Analysis"}](map_gallery/adjacency.png){target="_blank"}
+:::
+
+::: {.map-text}
+::: {.map-tag-row}
+[Spatial correlation]{.map-tag}
+[Landscape Pattern Analysis]{.map-tag}
+:::
+
+## Agricultural Adjacency Analysis
+
+Visualization of adjacency and interspersion patterns between agricultural classes. This map shows regions of annual agricultural that are likely to transition into perennial classes in the near future.
+:::
+
+:::
+
+
+::: {.map-card .reverse}
+
+::: {.map-image}
+[![](map_gallery/carbon_density_map.jpg){fig-alt="Carbon Density Map"}](map_gallery/carbon_density_map.jpg){target="_blank"}
+:::
+
+::: {.map-text}
+::: {.map-tag-row}
+[Carbon Management]{.map-tag}
+[Environmental Mapping]{.map-tag}
+:::
+
+## Carbon Density Mapping
+
+Spatial visualization of carbon density patterns across MetroVancouver, BC, Canada. This map supports urban management planning and operational decisions in environmental management.
+
+:::
+
+:::

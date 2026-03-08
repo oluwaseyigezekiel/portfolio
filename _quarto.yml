@@ -11,12 +11,12 @@ website:
         text: Home
       - href: about.qmd
         text: About
+      - href: content.qmd
+        text: Projects        
       - href: resume.qmd
         text: Resume
-      - href: publications.qmd
-        text: Publications
-      - href: content.qmd
-        text: Projects
+     # - href: publications.qmd
+     #   text: Publications
       - href: gallery.qmd
         text: Map Gallery
     right:
@@ -40,5 +40,10 @@ format:
     link-external-newwindow: true
     fontsize: 1.1em
 
-editor: visual
+editor: visual  
+
+
+
+
+
 

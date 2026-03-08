@@ -1,0 +1,85 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+---
+
+<style>
+.dashboard-page{
+  max-width:1000px;
+  margin:0 auto;
+}
+
+.back-btn{
+  display:inline-block;
+  margin-bottom:1.4rem;
+  padding:.55rem 1rem;
+  border-radius:999px;
+  background:#f3f4f6;
+  color:#222;
+  text-decoration:none;
+  font-weight:600;
+  border:1px solid rgba(0,0,0,0.08);
+}
+
+.back-btn:hover{
+  background:#e9ecef;
+}
+
+.dashboard-frame{
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 10px 28px rgba(0,0,0,0.12);
+}
+
+.dashboard-note{
+  margin:1rem 0;
+  padding:0.85rem 1rem;
+  border-left:4px solid #2457a6;
+  background:#f8f9fb;
+  border-radius:8px;
+  color:#555;
+}
+</style>
+
+::: {.dashboard-page}
+
+[← Back to Projects](content.html#cartography-page){.back-btn}
+
+## Environmental Monitoring Dashboard
+
+**Course:** Project Proposal Development and Proof of Concept (FCOR 599)  
+*Group project with four MGEM colleagues*
+
+**Role:** Dashboard development and GIS visualization  
+
+**Team Members**
+
+- Nathan Mithal  
+- Kate Van den Berg  
+- Muhamad Nafi Andriansyah  
+- Nicole Graham  
+
+
+This ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.
+
+
+### Interactive Dashboard
+
+::: {.dashboard-note}
+**Note:** If prompted to sign in to ArcGIS Online, click **Cancel** to view the dashboard.
+:::
+
+::: {.dashboard-frame}
+<iframe
+  src="https://www.arcgis.com/apps/dashboards/1d640b2ee0d1471d9ffe2e9b155568b6"
+  width="100%"
+  height="650"
+  frameborder="0">
+</iframe>
+:::
+
+[Open dashboard full screen →](https://www.arcgis.com/apps/dashboards/1d640b2ee0d1471d9ffe2e9b155568b6){target="_blank"}
+
+:::

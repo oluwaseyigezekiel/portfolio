@@ -1,0 +1,76 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+---
+
+<style>
+
+.survey-page{
+  max-width:1000px;
+  margin:0 auto;
+}
+
+.back-btn{
+  display:inline-block;
+  margin-bottom:1.4rem;
+  padding:.55rem 1rem;
+  border-radius:999px;
+  background:#f3f4f6;
+  color:#222;
+  text-decoration:none;
+  font-weight:600;
+  border:1px solid rgba(0,0,0,0.08);
+}
+
+.back-btn:hover{
+  background:#e9ecef;
+}
+
+.survey-frame{
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 10px 28px rgba(0,0,0,0.12);
+}
+
+</style>
+
+::: {.survey-page}
+
+[← Back to Projects](content.html#cartography-page){.back-btn}
+
+## Survey123 Field Data Collection
+
+**Course:** Project Proposal Development and Proof of Concept (FCOR 599)  
+*Group project with four MGEM colleagues*
+
+**Role:** Survey design
+
+**Team Members**
+
+- Nathan Mithal  
+- Kate Van den Berg  
+- Muhamad Nafi Andriansyah  
+- Nicole Graham  
+
+This Survey123 form was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The form was designed to collect structured wildlife observations including species type, observation location, and if species were dead or alive.
+
+Participants (MGEM students) used the form to submit simulated wildlife observations, which were visualized real-time through the [Environmental Monitoring Dashboard](dashboards.html). The workflow demonstrates how mobile GIS tools can support citizen science data collection while  highlighting practical challenges such as data reliability, spatial coverage, and observer bias.
+
+
+### Field Data Collection Form
+**Note:** [This survey form](https://arcg.is/1CLO1z0) is displayed for demonstration purposes. Submissions are currently disabled.
+
+::: {.survey-frame}
+
+<iframe
+  src="https://arcg.is/1CLO1z0"
+  width="100%"
+  height="500"
+  frameborder="0">
+</iframe>
+
+:::
+
+
