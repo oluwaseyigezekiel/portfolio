@@ -40,7 +40,8 @@ format:
     link-external-newwindow: true
     fontsize: 1.1em
 
-editor: visual  
+editor: visual
+
 
 
 

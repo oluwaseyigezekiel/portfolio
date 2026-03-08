@@ -1,5 +1,152 @@
 [
   {
+    "objectID": "urban-carbon.html",
+    "href": "urban-carbon.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "← Back to Projects"
+  },
+  {
+    "objectID": "urban-carbon.html#summary",
+    "href": "urban-carbon.html#summary",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Summary",
+    "text": "Summary\nUrban carbon sinks are vegetated areas such as urban forests, parks, street trees, and remnant green spaces that capture and store atmospheric carbon through plant biomass and soil processes. These ecosystems play an important role in climate mitigation by removing carbon dioxide from the atmosphere and storing it in vegetation and soils.\nIn Metro Vancouver, rapid urban expansion has increased impervious surface cover and fragmented vegetated landscapes, reducing the region’s capacity for carbon sequestration. While many urban forestry assessments focus primarily on canopy cover, fewer studies evaluate how spatial patterns of vegetation and landscape configuration influence carbon storage capacity.\nThis study proposes to map the spatial distribution of urban carbon sinks across Metro Vancouver municipalities and examine how landscape structure—such as vegetation extent, fragmentation, and connectivity—affects carbon biomass density.\nThe project addresses two key research questions:\n\nWhich municipalities in Metro Vancouver function as the largest urban carbon sinks?\nHow do spatial patterns of vegetation and impervious surfaces influence carbon storage capacity?"
+  },
+  {
+    "objectID": "urban-carbon.html#methods",
+    "href": "urban-carbon.html#methods",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Methods",
+    "text": "Methods\nThis study integrates remote sensing data, carbon biomass datasets, and landscape metrics to examine spatial patterns of urban carbon storage across Metro Vancouver municipalities.\nCarbon biomass density data (tC/ha) and municipal boundaries will be obtained from the Metro Vancouver Open Data Portal, while Landsat 8 and 9 surface reflectance imagery (30 m resolution) will be acquired from the USGS EarthExplorer platform. :contentReferenceoaicite:0\nLand-cover classification will be performed in ArcGIS Pro using a supervised maximum likelihood classifier to distinguish three primary classes: vegetated areas, impervious surfaces, and open land.\nTo evaluate spatial patterns of vegetation, landscape metrics will be calculated using the landscapemetrics package in R, including:\n\nPLAND – proportion of vegetated land cover\n\nEdge Density (ED) – fragmentation between vegetation and impervious surfaces\n\nLargest Patch Index (LPI) – size of the largest contiguous vegetation patch\n\nPatch Density (PD) – distribution of vegetation patches\n\nFinally, multiple linear regression will be used to examine relationships between carbon biomass density and landscape structure across municipalities.\n\nFigure. Proposed workflow for mapping spatial patterns of urban carbon sinks in Metro Vancouver."
+  },
+  {
+    "objectID": "urban-carbon.html#expected-results",
+    "href": "urban-carbon.html#expected-results",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Expected Results",
+    "text": "Expected Results\nThe study is expected to generate a spatial map of carbon biomass density across Metro Vancouver municipalities.\nMunicipalities with larger and more contiguous vegetated areas are expected to show higher carbon biomass density, while highly fragmented landscapes dominated by impervious surfaces may exhibit lower carbon storage capacity.\nHowever, vegetation extent alone may not fully explain carbon storage patterns. Differences in vegetation type, canopy structure, and biomass accumulation may produce variation in carbon storage even among areas with similar vegetated cover.\n\nFigure 2. Expected relationship between proportion of landscape vegetated (PLAND) and carbon biomass density.\nThis analysis will help reveal whether landscape structure and vegetation configuration influence carbon storage potential within urban environments."
+  },
+  {
+    "objectID": "urban-carbon.html#project-significance",
+    "href": "urban-carbon.html#project-significance",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Project Significance",
+    "text": "Project Significance\nUnderstanding spatial patterns of urban carbon sinks is essential for supporting climate mitigation strategies in rapidly urbanizing regions.\nThis study will help identify:\n\nmunicipalities with high carbon storage capacity\nareas where green infrastructure expansion could increase carbon sequestration\nlocations where urban restoration efforts may have the greatest environmental impact\n\nThe findings can inform urban forestry planning, climate policy, and green infrastructure initiatives aimed at improving ecosystem services and climate resilience across Metro Vancouver."
+  },
+  {
+    "objectID": "storymaps.html",
+    "href": "storymaps.html",
+    "title": "StoryMaps",
+    "section": "",
+    "text": "← Back to Projects\n\nStoryMaps\nThese StoryMaps are part of my micro-credential in Geospatial Data Collection, Analysis & Interpretation using GIS Technology** at Seneca Polytechnic, Canada. They show how spatial storytelling can be employed in Asset and infrastructure management, Urban planning and other real-world scenarios.\n\n\n\nTraffic Analysis and Safety\n\nStoryMaps Traffic Analysis Road Safety\n\nThis project analyzes infrastructure distribution and traffic patterns to improve road safety and optimize traffic flow.\nView project PDF →\n\n\nMilitary Checkpoint Establishment\n\nStoryMaps Site Selection Strategic Planning\n\nThis project develops GIS-based solutions for the strategic placement of military checkpoints.\nView project PDF →\n\n\nField Maps App for Spatial Data Collection\n\nStoryMaps Field Maps Spatial Data Collection\n\nThis project demonstrates the use of the ESRI Field Maps app to collect, manage, and communicate spatial data.\nView project PDF →\n\n\n200m Boundary Delineation\n\nStoryMaps Boundary Analysis Real Estate GIS\n\nThis project defines a 200-meter jurisdiction boundary for real estate purposes.\nView project PDF →"
+  },
+  {
+    "objectID": "remote-sensing.html",
+    "href": "remote-sensing.html",
+    "title": "Remote Sensing Projects",
+    "section": "",
+    "text": "← Back to Projects\n\nRemote Sensing Projects\nClick a project below to view the full lab report.\n\n\nLand Cover Classification\n\n\nRemote Sensing Image Classification Landsat\n\nThis project applies supervised image classification to Landsat imagery using the Maximum Likelihood algorithm to map seven land-cover classes: Broadleaf Forest, Coniferous Forest, Exposed Soil and Rocks, High Density Developed, Low Density Developed, Non-forest Vegetation, and Water. The workflow includes training and validation polygons, spectral signature analysis, and accuracy assessment.\nSee full lab report (PDF) →\n\n\n\n\nLiDAR Forest Structure and Individual Tree Segmentation\n\n\nLiDAR Forest Structure Point Cloud\n\nThis lab uses airborne LiDAR point cloud data to identify and segment individual trees in forest plots. The workflow includes plot extraction, canopy height model generation, tree-top detection, and segmentation using the li2012 and dalponte2016 algorithms, with comparison across multiple canopy height model resolutions to determine an efficient balance between detail and computation.\nSee full lab report (PDF) →\n\n\n\n\nSpectral Indices and Vegetation Properties\n\n\nSpectral Analysis Vegetation Indices Remote Sensing\n\nThis project analyzes reflectance spectra measured with the ASD FieldSpecPro to compare live vegetation, dead vegetation, soil, and rock. It also computes spectral indices such as PRI, SIPI, and ND705, simulates mixed pixels, and shows how NDVI and NDWI respond to increasing live vegetation cover at Landsat spectral resolution.\nSee full lab report (PDF) →\n\n\n\n\nWildfire Burn Severity and Vegetation Recovery\n\n\nLandsat Time Series NDVI / NBR\n\nThis project analyzes wildfire burn severity and post-fire vegetation recovery using a Landsat 8 time series over the Prouton Lakes fire in British Columbia. The workflow includes cloud masking, NDVI and NBR calculation, yearly compositing, dNBR-based burn severity classification, and assessment of vegetation recovery patterns from 2018 to 2021.\nSee full lab report (PDF) →"
+  },
+  {
+    "objectID": "hyperspectral.html",
+    "href": "hyperspectral.html",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "section": "",
+    "text": "← Back to Projects"
+  },
+  {
+    "objectID": "hyperspectral.html#overview",
+    "href": "hyperspectral.html#overview",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "section": "Overview",
+    "text": "Overview\nThis project explores hyperspectral reflectance signatures of vegetation and surface materials across the visible, near-infrared, and shortwave infrared spectral regions. Hyperspectral measurements allow detailed analysis of vegetation properties such as chlorophyll content, leaf structure, and moisture."
+  },
+  {
+    "objectID": "hyperspectral.html#data",
+    "href": "hyperspectral.html#data",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "section": "Data",
+    "text": "Data\nField spectrometry measurements of vegetation and surface materials including:\n\nBigleaf maple\nDouglas-fir\nGarry oak\nSoil\nGrass\nMoss\nCoarse woody debris"
+  },
+  {
+    "objectID": "hyperspectral.html#methods",
+    "href": "hyperspectral.html#methods",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "section": "Methods",
+    "text": "Methods\nSpectral curves were analyzed across three main spectral regions:\n\n\n\nRegion\nWavelength\nInformation\n\n\n\n\nVisible\n400–700 nm\npigment absorption\n\n\nNear infrared\n750–1300 nm\nleaf structure\n\n\nSWIR\n1300–2500 nm\nwater content"
+  },
+  {
+    "objectID": "hyperspectral.html#example-code",
+    "href": "hyperspectral.html#example-code",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "section": "Example Code",
+    "text": "Example Code\n```r Refl_ind &lt;- function(wl, refl, target_wl){ approx(x = wl, y = refl, xout = target_wl, rule = 2)$y }"
+  },
+  {
+    "objectID": "gallery.html",
+    "href": "gallery.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "← Back to Projects"
+  },
+  {
+    "objectID": "gallery.html#map-gallery",
+    "href": "gallery.html#map-gallery",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Map Gallery",
+    "text": "Map Gallery\nThis gallery showcases layouts of selected GIS and cartographic workflows developed during the Master of Geomatics for Environmental Management program at UBC."
+  },
+  {
+    "objectID": "gallery.html#hydrological-modeling-and-stream-network-analysis",
+    "href": "gallery.html#hydrological-modeling-and-stream-network-analysis",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Hydrological Modeling and Stream Network Analysis",
+    "text": "Hydrological Modeling and Stream Network Analysis\nCartographic layout prepared as part of GIS coursework, demonstrating map composition, symbology, labeling, and design principles for effective spatial communication."
+  },
+  {
+    "objectID": "gallery.html#old-growth-forest-analysis",
+    "href": "gallery.html#old-growth-forest-analysis",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Old Growth Forest Analysis",
+    "text": "Old Growth Forest Analysis\nMap layout created as part of introductory GIS coursework, showcasing cartographic design, thematic mapping, and foundational spatial communication skills."
+  },
+  {
+    "objectID": "gallery.html#machine-learning-with-geospatial-data",
+    "href": "gallery.html#machine-learning-with-geospatial-data",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Machine Learning with Geospatial Data",
+    "text": "Machine Learning with Geospatial Data\nGIS project applying machine learning techniques to analyze spatial patterns and relationships within geospatial datasets. The resulting map visualizes model outputs and demonstrates how predictive spatial analysis can support environmental and geographic decision-making."
+  },
+  {
+    "objectID": "gallery.html#multisource-land-cover-dataset-harmonization",
+    "href": "gallery.html#multisource-land-cover-dataset-harmonization",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Multisource Land-Cover Dataset Harmonization",
+    "text": "Multisource Land-Cover Dataset Harmonization\nComparison of harmonized land-cover datasets used to analyze agricultural transitions in the Lower Fraser Valley between 2015 and 2020."
+  },
+  {
+    "objectID": "gallery.html#time-series-analysis",
+    "href": "gallery.html#time-series-analysis",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Time Series Analysis",
+    "text": "Time Series Analysis\nSpatial representation of land-cover change across the Lower Fraser Valley, highlighting where transitions and stable classes occurred over time."
+  },
+  {
+    "objectID": "gallery.html#agricultural-adjacency-analysis",
+    "href": "gallery.html#agricultural-adjacency-analysis",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Agricultural Adjacency Analysis",
+    "text": "Agricultural Adjacency Analysis\nVisualization of adjacency and interspersion patterns between agricultural classes. This map shows regions of annual agricultural that are likely to transition into perennial classes in the near future."
+  },
+  {
+    "objectID": "gallery.html#carbon-density-mapping",
+    "href": "gallery.html#carbon-density-mapping",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Carbon Density Mapping",
+    "text": "Carbon Density Mapping\nSpatial visualization of carbon density patterns across MetroVancouver, BC, Canada. This map supports urban management planning and operational decisions in environmental management."
+  },
+  {
     "objectID": "content.html",
     "href": "content.html",
     "title": "Projects",
@@ -26,6 +173,97 @@
     "title": "Projects",
     "section": "Project Management",
     "text": "Project Management\n\n\nAssessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley\nMaster’s Capstone Project — University of British Columbia (UBC)\nThis study examines how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020 by harmonizing multi-source land-cover datasets and analyzing landscape structure and land-cover transitions. The project identifies spatial patterns of agricultural change and evaluates opportunities for perennial agriculture expansion within existing agricultural systems.\nView full project →\n\n\n\nMapping Spatial Patterns of Urban Carbon Sinks in Metro Vancouver\nResearch Proposal — UBC GEM 500 (Landscape Ecology)\nThis project investigates how vegetation distribution and landscape structure influence urban carbon storage across Metro Vancouver municipalities. Using Landsat imagery, carbon biomass datasets, and landscape metrics, the study aims to identify municipalities functioning as major urban carbon sinks and assess the spatial factors influencing carbon storage.\nView full project →"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
+  },
+  {
+    "objectID": "capstone.html",
+    "href": "capstone.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "← Back to Projects"
+  },
+  {
+    "objectID": "capstone.html#introduction",
+    "href": "capstone.html#introduction",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Introduction",
+    "text": "Introduction\nAgricultural landscapes in the Lower Fraser Valley (LFV), British Columbia, are experiencing structural changes driven by evolving agricultural practices, environmental pressures, and expanding urban development. Understanding how land-cover transitions occur within this highly productive agricultural region is important for supporting sustainable land management and identifying opportunities for resilient farming systems.\nThis capstone project evaluates how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020, with particular attention to transitions between annual and perennial agriculture. By integrating multiple land-cover datasets and applying spatial analysis techniques, the study identifies patterns of land-cover change and areas where perennial agriculture may expand within existing agricultural landscapes.\n\nFigure 1. Study area showing the Lower Fraser Valley agricultural region analyzed in this project."
+  },
+  {
+    "objectID": "capstone.html#methods",
+    "href": "capstone.html#methods",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Methods",
+    "text": "Methods\nThis study integrates two multi-source land-cover datasets—the Annual Crop Inventory (ACI) and the North American Land Change Monitoring System (NALCMS)—to produce harmonized land-cover maps for 2015 and 2020 and evaluate agricultural landscape dynamics.\nFirst, all datasets were reprojected to UTM Zone 10N and clipped to the Lower Fraser Valley boundary to ensure spatial alignment. Land-cover classes from each dataset were then aggregated into six harmonized categories: Annual Agriculture, Perennial Agriculture, Forest, Marginalized Land, Wetlands, and Water. These categories were selected to maintain ecological relevance while reducing thematic inconsistencies between datasets. :contentReferenceoaicite:0\nDataset agreement was evaluated using confusion matrices, and overall classification agreement was used to derive relative dataset weighting. Harmonization was then performed through pixel-wise overlay, prioritizing ACI classifications in cases of disagreement due to its higher thematic detail for agricultural subclasses.\nFollowing harmonization, post-classification change detection was conducted by comparing the 2015 and 2020 land-cover maps to quantify land-cover transitions and calculate both net and relative changes in landscape composition. Spatial configuration and structural dynamics were further assessed using patch metrics, diversity indices, and adjacency analysis.\n\nFigure 2. Analytical workflow used to harmonize multi-source land-cover datasets and analyze landscape transitions."
+  },
+  {
+    "objectID": "capstone.html#results",
+    "href": "capstone.html#results",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Results",
+    "text": "Results\n\nLand-Cover Transitions\nTemporal analysis revealed notable shifts in agricultural land cover between 2015 and 2020. Annual agriculture declined substantially, while perennial agriculture increased, indicating an important structural transition within the agricultural system.\n\nFigure 4. Sankey diagram illustrating land-cover transitions between 2015 and 2020.\nThe largest transition occurred from annual agriculture to perennial agriculture, representing nearly half of the annual agricultural area observed in 2015. Smaller conversions occurred between agricultural classes and marginalized land, as well as limited transitions involving forested areas.\n\n\n\nSpatial Distribution of Change\nSpatial change detection shows that most of the landscape remained stable during the study period, while transitions were concentrated within agricultural regions.\n\nFigure 5. Spatial distribution of land-cover persistence and change between 2015 and 2020.\nApproximately three-quarters of the landscape remained persistent, while about one-quarter experienced land-cover transitions. These changes occurred across thousands of discrete patches, indicating that most transitions were spatially dispersed rather than large-scale conversions.\n\n\n\nAgricultural Adjacency\nBeyond land-cover transitions, the study examined spatial relationships between annual and perennial agricultural systems.\n\nFigure 6. Spatial distribution of annual agriculture adjacent to perennial agriculture.\nThe proportion of annual agriculture directly adjacent to perennial systems increased substantially between 2015 and 2020. This pattern suggests growing spatial interaction between agricultural classes and highlights areas where perennial agriculture expansion may occur within existing agricultural landscapes.\n\n\n\nLandscape Structural Dynamics\nShannon’s Diversity Index (SHDI) increased slightly from 1.3249 to 1.355, while Shannon’s Evenness Index (SHEI) increased from 0.7394 to 0.7563, suggesting a more balanced distribution among land-cover classes over time. These changes reflect shifts in the relative proportions of agricultural and non-agricultural classes across the region. At the class level, mean forest patch area decreased from 12.9 ha to 10.72 ha, accompanied by a decline in forest edge density, indicating subtle changes in forest spatial configuration within the agricultural landscape.\nTable 1 summarizes landscape-level diversity metrics and selected class-level structural indicators derived from the harmonized land-cover maps.\n\nLandscape structural metrics derived from harmonized land-cover maps.\n\n\nMetric\n2015\n2020\n\n\n\n\nShannon’s Diversity Index (SHDI)\n1.3249\n1.355\n\n\nShannon’s Evenness Index (SHEI)\n0.7394\n0.7563\n\n\nForest Mean Patch Area (ha)\n12.90\n10.72\n\n\nForest Edge Density (m/ha)\n42.17\n37.38"
+  },
+  {
+    "objectID": "capstone.html#project-significance",
+    "href": "capstone.html#project-significance",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Project Significance",
+    "text": "Project Significance\nThis capstone project demonstrates how harmonized land-cover analysis and spatial landscape metrics can be used to evaluate agricultural transitions and landscape dynamics within complex agricultural regions.\nThe findings indicate a clear shift from annual to perennial agricultural systems, accompanied by increasing spatial interaction between agricultural classes. These patterns suggest opportunities for supporting more sustainable agricultural practices while maintaining the productivity of the Lower Fraser Valley.\nMore broadly, the analytical framework developed in this study provides a transferable approach for examining land-cover change, agricultural transitions, and landscape sustainability in other regions."
+  },
+  {
+    "objectID": "dashboards.html",
+    "href": "dashboards.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "← Back to Projects\n\n\nCourse: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →"
+  },
+  {
+    "objectID": "dashboards.html#environmental-monitoring-dashboard",
+    "href": "dashboards.html#environmental-monitoring-dashboard",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →"
+  },
+  {
+    "objectID": "home.html",
+    "href": "home.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Oluwaseyi Ezekiel\n\n\nGeospatial and Remote Sensing Scientist\n\n\n\n\nView Portfolio"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Welcome!!!"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
+  },
+  {
+    "objectID": "publications.html#peer-reviewed-publications",
+    "href": "publications.html#peer-reviewed-publications",
+    "title": "Publications",
+    "section": "",
+    "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
   },
   {
     "objectID": "resume.html",
@@ -91,80 +329,17 @@
     "text": "Fully funded master’s program at UBC — Mastercard Foundation Scholarship, 2025\n\nFully funded micro-credential in GIS — Seneca Polytechnic / Quick Train Canada, 2024\n\nAward of Meritorious Service — GBFOODS Africa, 2023\n\nReviewer of the Year — Current Agriculture Research Journal, 2022\n\nData Science Microdegree Scholarship — USTACKY, 2021\n\nBest Graduating Student, Department of Forestry and Wildlife Management — FUNAAB Senate Awards, 2020"
   },
   {
-    "objectID": "urban-carbon.html",
-    "href": "urban-carbon.html",
+    "objectID": "survey123.html",
+    "href": "survey123.html",
     "title": "Oluwaseyi Ezekiel",
     "section": "",
-    "text": "← Back to Projects"
+    "text": "← Back to Projects\n\n\nCourse: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Survey design\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis Survey123 form was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The form was designed to collect structured wildlife observations including species type, observation location, and if species were dead or alive.\nParticipants (MGEM students) used the form to submit simulated wildlife observations, which were visualized real-time through the Environmental Monitoring Dashboard. The workflow demonstrates how mobile GIS tools can support citizen science data collection while highlighting practical challenges such as data reliability, spatial coverage, and observer bias.\n\n\nNote: This survey form is displayed for demonstration purposes. Submissions are currently disabled."
   },
   {
-    "objectID": "urban-carbon.html#summary",
-    "href": "urban-carbon.html#summary",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Summary",
-    "text": "Summary\nUrban carbon sinks are vegetated areas such as urban forests, parks, street trees, and remnant green spaces that capture and store atmospheric carbon through plant biomass and soil processes. These ecosystems play an important role in climate mitigation by removing carbon dioxide from the atmosphere and storing it in vegetation and soils.\nIn Metro Vancouver, rapid urban expansion has increased impervious surface cover and fragmented vegetated landscapes, reducing the region’s capacity for carbon sequestration. While many urban forestry assessments focus primarily on canopy cover, fewer studies evaluate how spatial patterns of vegetation and landscape configuration influence carbon storage capacity.\nThis study proposes to map the spatial distribution of urban carbon sinks across Metro Vancouver municipalities and examine how landscape structure—such as vegetation extent, fragmentation, and connectivity—affects carbon biomass density.\nThe project addresses two key research questions:\n\nWhich municipalities in Metro Vancouver function as the largest urban carbon sinks?\nHow do spatial patterns of vegetation and impervious surfaces influence carbon storage capacity?"
-  },
-  {
-    "objectID": "urban-carbon.html#methods",
-    "href": "urban-carbon.html#methods",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Methods",
-    "text": "Methods\nThis study integrates remote sensing data, carbon biomass datasets, and landscape metrics to examine spatial patterns of urban carbon storage across Metro Vancouver municipalities.\nCarbon biomass density data (tC/ha) and municipal boundaries will be obtained from the Metro Vancouver Open Data Portal, while Landsat 8 and 9 surface reflectance imagery (30 m resolution) will be acquired from the USGS EarthExplorer platform. :contentReferenceoaicite:0\nLand-cover classification will be performed in ArcGIS Pro using a supervised maximum likelihood classifier to distinguish three primary classes: vegetated areas, impervious surfaces, and open land.\nTo evaluate spatial patterns of vegetation, landscape metrics will be calculated using the landscapemetrics package in R, including:\n\nPLAND – proportion of vegetated land cover\n\nEdge Density (ED) – fragmentation between vegetation and impervious surfaces\n\nLargest Patch Index (LPI) – size of the largest contiguous vegetation patch\n\nPatch Density (PD) – distribution of vegetation patches\n\nFinally, multiple linear regression will be used to examine relationships between carbon biomass density and landscape structure across municipalities.\n\nFigure. Proposed workflow for mapping spatial patterns of urban carbon sinks in Metro Vancouver."
-  },
-  {
-    "objectID": "urban-carbon.html#expected-results",
-    "href": "urban-carbon.html#expected-results",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Expected Results",
-    "text": "Expected Results\nThe study is expected to generate a spatial map of carbon biomass density across Metro Vancouver municipalities.\nMunicipalities with larger and more contiguous vegetated areas are expected to show higher carbon biomass density, while highly fragmented landscapes dominated by impervious surfaces may exhibit lower carbon storage capacity.\nHowever, vegetation extent alone may not fully explain carbon storage patterns. Differences in vegetation type, canopy structure, and biomass accumulation may produce variation in carbon storage even among areas with similar vegetated cover.\n\nFigure 2. Expected relationship between proportion of landscape vegetated (PLAND) and carbon biomass density.\nThis analysis will help reveal whether landscape structure and vegetation configuration influence carbon storage potential within urban environments."
-  },
-  {
-    "objectID": "urban-carbon.html#project-significance",
-    "href": "urban-carbon.html#project-significance",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Project Significance",
-    "text": "Project Significance\nUnderstanding spatial patterns of urban carbon sinks is essential for supporting climate mitigation strategies in rapidly urbanizing regions.\nThis study will help identify:\n\nmunicipalities with high carbon storage capacity\nareas where green infrastructure expansion could increase carbon sequestration\nlocations where urban restoration efforts may have the greatest environmental impact\n\nThe findings can inform urban forestry planning, climate policy, and green infrastructure initiatives aimed at improving ecosystem services and climate resilience across Metro Vancouver."
-  },
-  {
-    "objectID": "remote-sensing.html",
-    "href": "remote-sensing.html",
-    "title": "Remote Sensing Projects",
-    "section": "",
-    "text": "← Back to Projects\n\nRemote Sensing Projects\nClick a project below to view the full lab report.\n\n\nLand Cover Classification\n\n\nRemote Sensing Image Classification Landsat\n\nThis project applies supervised image classification to Landsat imagery using the Maximum Likelihood algorithm to map seven land-cover classes: Broadleaf Forest, Coniferous Forest, Exposed Soil and Rocks, High Density Developed, Low Density Developed, Non-forest Vegetation, and Water. The workflow includes training and validation polygons, spectral signature analysis, and accuracy assessment.\nSee full lab report (PDF) →\n\n\n\n\nLiDAR Forest Structure and Individual Tree Segmentation\n\n\nLiDAR Forest Structure Point Cloud\n\nThis lab uses airborne LiDAR point cloud data to identify and segment individual trees in forest plots. The workflow includes plot extraction, canopy height model generation, tree-top detection, and segmentation using the li2012 and dalponte2016 algorithms, with comparison across multiple canopy height model resolutions to determine an efficient balance between detail and computation.\nSee full lab report (PDF) →\n\n\n\n\nSpectral Indices and Vegetation Properties\n\n\nSpectral Analysis Vegetation Indices Remote Sensing\n\nThis project analyzes reflectance spectra measured with the ASD FieldSpecPro to compare live vegetation, dead vegetation, soil, and rock. It also computes spectral indices such as PRI, SIPI, and ND705, simulates mixed pixels, and shows how NDVI and NDWI respond to increasing live vegetation cover at Landsat spectral resolution.\nSee full lab report (PDF) →\n\n\n\n\nWildfire Burn Severity and Vegetation Recovery\n\n\nLandsat Time Series NDVI / NBR\n\nThis project analyzes wildfire burn severity and post-fire vegetation recovery using a Landsat 8 time series over the Prouton Lakes fire in British Columbia. The workflow includes cloud masking, NDVI and NBR calculation, yearly compositing, dNBR-based burn severity classification, and assessment of vegetation recovery patterns from 2018 to 2021.\nSee full lab report (PDF) →"
-  },
-  {
-    "objectID": "dashboards.html",
-    "href": "dashboards.html",
+    "objectID": "survey123.html#survey123-field-data-collection",
+    "href": "survey123.html#survey123-field-data-collection",
     "title": "Oluwaseyi Ezekiel",
     "section": "",
-    "text": "← Back to Projects\n\n\nCourse: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →"
-  },
-  {
-    "objectID": "dashboards.html#environmental-monitoring-dashboard",
-    "href": "dashboards.html#environmental-monitoring-dashboard",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →"
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
-  },
-  {
-    "objectID": "publications.html#peer-reviewed-publications",
-    "href": "publications.html#peer-reviewed-publications",
-    "title": "Publications",
-    "section": "",
-    "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
-  },
-  {
-    "objectID": "storymaps.html",
-    "href": "storymaps.html",
-    "title": "StoryMaps",
-    "section": "",
-    "text": "← Back to Projects\n\nStoryMaps\nThese StoryMaps are part of my micro-credential in Geospatial Data Collection, Analysis & Interpretation using GIS Technology** at Seneca Polytechnic, Canada. They show how spatial storytelling can be employed in Asset and infrastructure management, Urban planning and other real-world scenarios.\n\n\n\nTraffic Analysis and Safety\n\nStoryMaps Traffic Analysis Road Safety\n\nThis project analyzes infrastructure distribution and traffic patterns to improve road safety and optimize traffic flow.\nView project PDF →\n\n\nMilitary Checkpoint Establishment\n\nStoryMaps Site Selection Strategic Planning\n\nThis project develops GIS-based solutions for the strategic placement of military checkpoints.\nView project PDF →\n\n\nField Maps App for Spatial Data Collection\n\nStoryMaps Field Maps Spatial Data Collection\n\nThis project demonstrates the use of the ESRI Field Maps app to collect, manage, and communicate spatial data.\nView project PDF →\n\n\n200m Boundary Delineation\n\nStoryMaps Boundary Analysis Real Estate GIS\n\nThis project defines a 200-meter jurisdiction boundary for real estate purposes.\nView project PDF →"
+    "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Survey design\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis Survey123 form was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The form was designed to collect structured wildlife observations including species type, observation location, and if species were dead or alive.\nParticipants (MGEM students) used the form to submit simulated wildlife observations, which were visualized real-time through the Environmental Monitoring Dashboard. The workflow demonstrates how mobile GIS tools can support citizen science data collection while highlighting practical challenges such as data reliability, spatial coverage, and observer bias.\n\n\nNote: This survey form is displayed for demonstration purposes. Submissions are currently disabled."
   }
 ]
