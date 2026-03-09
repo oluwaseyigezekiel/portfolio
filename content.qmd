@@ -239,7 +239,7 @@ Interactive dashboard designed to monitor and visualize environmental indicators
 [ArcGIS Dashboards]{.tag}
 :::
 
-[View Dashboard →](dashboard.html){.project-link}
+[View Dashboard →](dashboards.html){.project-link}
 :::
 
 ::: {.project-card}
