@@ -238,7 +238,7 @@ The objective of this project is to evaluate how interpolation methods influence
 
 ## Machine Learning with Geospatial Data
 
-In this project, a Random Forest model was applied to geospatial data to predict fuel type classes and crown closure across the study area. The workflow used a suite of spectral, terrain, and climate predictors—including Tasseled Cap Brightness, Tasseled Cap Wetness, Digital Elevation Model, Aspect, and Summer Heat Moisture Index—as inputs to the classification and regression models. The Random Forest classifier generated spatial patterns of fuel type distribution, while a regression‑based forest model produced continuous crown‑closure estimates. 
+In this project, a Random Forest model was applied to geospatial data to predict fuel type classes and crown closure across the study area. The workflow used a suite of spectral, terrain, and climate predictors as inputs to the classification and regression models. The Random Forest classifier generated spatial patterns of fuel type distribution, while a regression‑based forest model produced continuous crown‑closure estimates. 
 :::
 
 :::
