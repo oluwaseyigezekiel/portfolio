@@ -123,49 +123,49 @@
     "href": "gallery.html#infrastructure-management",
     "title": "Oluwaseyi Ezekiel",
     "section": "Infrastructure Management",
-    "text": "Infrastructure Management\nVisualization of adjacency and interspersion patterns between agricultural classes. This map shows regions of annual agricultural that are likely to transition into perennial classes in the near future."
+    "text": "Infrastructure Management\nThis map was created by importing UBC campus datasets into a PostgreSQL/PostGIS database. Basic SQL queries to extract feature layers such as buildings, trees, and landscape types. These layers were then visualized using ArcGIS Pro to illustrate infrastructure and landscape patterns across the UBC Point Grey campus."
   },
   {
     "objectID": "gallery.html#comparing-spatial-interpolation-approaches",
     "href": "gallery.html#comparing-spatial-interpolation-approaches",
     "title": "Oluwaseyi Ezekiel",
     "section": "Comparing Spatial Interpolation Approaches",
-    "text": "Comparing Spatial Interpolation Approaches\nVisualization of adjacency and interspersion patterns between agricultural classes. This map shows regions of annual agricultural that are likely to transition into perennial classes in the near future."
+    "text": "Comparing Spatial Interpolation Approaches\nThe objective of this project is to evaluate how interpolation methods influence terrain representation and the accuracy of derived spatial analyses. It focuses on creating terrain surfaces from elevation data using spatial interpolation techniques such as inverse distance weighting (IDW), kriging, and spline to generate digital terrain models."
   },
   {
     "objectID": "gallery.html#machine-learning-with-geospatial-data",
     "href": "gallery.html#machine-learning-with-geospatial-data",
     "title": "Oluwaseyi Ezekiel",
     "section": "Machine Learning with Geospatial Data",
-    "text": "Machine Learning with Geospatial Data\nGIS project applying machine learning techniques to analyze spatial patterns and relationships within geospatial datasets. The resulting map visualizes model outputs and demonstrates how predictive spatial analysis can support environmental and geographic decision-making."
+    "text": "Machine Learning with Geospatial Data\nIn this project, a Random Forest model was applied to geospatial data to predict fuel type classes and crown closure across the study area. The workflow used a suite of spectral, terrain, and climate predictors—including Tasseled Cap Brightness, Tasseled Cap Wetness, Digital Elevation Model, Aspect, and Summer Heat Moisture Index—as inputs to the classification and regression models. The Random Forest classifier generated spatial patterns of fuel type distribution, while a regression‑based forest model produced continuous crown‑closure estimates."
   },
   {
     "objectID": "gallery.html#multisource-land-cover-dataset-harmonization",
     "href": "gallery.html#multisource-land-cover-dataset-harmonization",
     "title": "Oluwaseyi Ezekiel",
     "section": "Multisource Land-Cover Dataset Harmonization",
-    "text": "Multisource Land-Cover Dataset Harmonization\nComparison of harmonized land-cover datasets used to analyze agricultural transitions in the Lower Fraser Valley between 2015 and 2020."
+    "text": "Multisource Land-Cover Dataset Harmonization\nThis map shows the harmonized maps derived from integrating multi-source land-cover products: Annual Crop Inventory (ACI) and North America Land Change Monitoring System (NALCMS). This harmonization supports more reliable analysis of agricultural transitions and long‑term land‑use change."
   },
   {
     "objectID": "gallery.html#time-series-analysis",
     "href": "gallery.html#time-series-analysis",
     "title": "Oluwaseyi Ezekiel",
     "section": "Time Series Analysis",
-    "text": "Time Series Analysis\nSpatial representation of land-cover change across the Lower Fraser Valley, highlighting where transitions and stable classes occurred over time."
+    "text": "Time Series Analysis\nThis map compares classified outputs from multiple time periods to illustrates land‑cover dynamics across the Lower Fraser Valley. Areas shown in yellow represent detected change zones where land‑cover classes shifted between observation years, while dark gray highlights persistence across the five-year period."
   },
   {
     "objectID": "gallery.html#agricultural-adjacency-analysis",
     "href": "gallery.html#agricultural-adjacency-analysis",
     "title": "Oluwaseyi Ezekiel",
     "section": "Agricultural Adjacency Analysis",
-    "text": "Agricultural Adjacency Analysis\nVisualization of adjacency and interspersion patterns between agricultural classes. This map shows regions of annual agricultural that are likely to transition into perennial classes in the near future."
+    "text": "Agricultural Adjacency Analysis\nThis map shows the spatial adjacency relationships between annual and perennial agricultural classes across the Lower Fraser Valley. Agricultural interspersion patterns support assessments of agricultural expansion, land‑use dynamics, and potential crop‑type shifts driven by management decisions or environmental conditions."
   },
   {
     "objectID": "gallery.html#carbon-density-mapping",
     "href": "gallery.html#carbon-density-mapping",
     "title": "Oluwaseyi Ezekiel",
     "section": "Carbon Density Mapping",
-    "text": "Carbon Density Mapping\nSpatial visualization of carbon density patterns across MetroVancouver, BC, Canada. This map supports urban management planning and operational decisions in environmental management."
+    "text": "Carbon Density Mapping\nThis map shows the spatial distribution of above‑ground carbon biomass density across Metro Vancouver. High‑density carbon zones appear in the North Shore and other forested uplands, gradually transitioning to lower values within developed municipalities. The project supports applications in urban planning and carbon‑accounting initiatives, offering spatial insight into where ecosystem restoration actions may have the greatest impact."
   },
   {
     "objectID": "dashboards.html",
