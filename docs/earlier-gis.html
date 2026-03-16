@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>capstone – Oluwaseyi Ezekiel</title>
+<title>earlier-gis – Oluwaseyi Ezekiel</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -143,129 +143,183 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#assessing-critical-transitions-in-agricultural-landscapes-in-the-lower-fraser-valley" id="toc-assessing-critical-transitions-in-agricultural-landscapes-in-the-lower-fraser-valley" class="nav-link active" data-scroll-target="#assessing-critical-transitions-in-agricultural-landscapes-in-the-lower-fraser-valley">Assessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley</a></li>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
-  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
-  <ul class="collapse">
-  <li><a href="#land-cover-transitions" id="toc-land-cover-transitions" class="nav-link" data-scroll-target="#land-cover-transitions">Land-Cover Transitions</a></li>
-  <li><a href="#spatial-distribution-of-change" id="toc-spatial-distribution-of-change" class="nav-link" data-scroll-target="#spatial-distribution-of-change">Spatial Distribution of Change</a></li>
-  <li><a href="#agricultural-adjacency" id="toc-agricultural-adjacency" class="nav-link" data-scroll-target="#agricultural-adjacency">Agricultural Adjacency</a></li>
-  <li><a href="#landscape-structural-dynamics" id="toc-landscape-structural-dynamics" class="nav-link" data-scroll-target="#landscape-structural-dynamics">Landscape Structural Dynamics</a></li>
-  </ul></li>
-  <li><a href="#project-significance" id="toc-project-significance" class="nav-link" data-scroll-target="#project-significance">Project Significance</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<p><a href="content.html#project-mgt-page" class="back-btn">← Back to Projects</a></p>
-<section id="assessing-critical-transitions-in-agricultural-landscapes-in-the-lower-fraser-valley" class="level3">
-<h3 class="anchored" data-anchor-id="assessing-critical-transitions-in-agricultural-landscapes-in-the-lower-fraser-valley">Assessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley</h3>
-<p><strong>Master’s Capstone Project — University of British Columbia</strong><br>
-<em>Aug.&nbsp;2025 – May 2026</em></p>
-<hr>
+<style>
+.page-intro{
+  max-width: 950px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.page-intro h1{
+  margin-bottom: 0.6rem;
+}
+
+.page-intro p{
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.back-btn{
+  display:inline-block;
+  margin-bottom:1.4rem;
+  padding:.55rem 1rem;
+  border-radius:999px;
+  background:#f3f4f6;
+  color:#222;
+  text-decoration:none;
+  font-weight:600;
+  border:1px solid rgba(0,0,0,0.08);
+  cursor:pointer;
+}
+
+.back-btn:hover{
+  background:#e9ecef;
+  text-decoration:none;
+}
+
+.highlight-box{
+  max-width: 950px;
+  margin: 0 auto 2rem auto;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 1.6rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.highlight-box h2{
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.highlight-box p{
+  color:#555;
+  line-height:1.75;
+}
+
+.project-grid{
+  max-width: 950px;
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1rem;
+}
+
+.project-card{
+  background:#ffffff;
+  border-radius:16px;
+  padding:1rem;
+  box-shadow:0 6px 16px rgba(0,0,0,0.06);
+  border:1px solid rgba(0,0,0,0.05);
+}
+
+.project-card h3{
+  margin-top:0;
+  margin-bottom:.6rem;
+}
+
+.project-card p{
+  color:#555;
+  margin-bottom:.8rem;
+  line-height:1.7;
+}
+
+.tag-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.45rem;
+  margin-bottom:.9rem;
+}
+
+.tag{
+  display:inline-block;
+  padding:.3rem .7rem;
+  border-radius:999px;
+  background:#eef4ff;
+  color:#2457a6;
+  font-size:.82rem;
+  font-weight:600;
+}
+
+.project-link{
+  display:inline-block;
+  font-weight:600;
+  text-decoration:none;
+}
+
+.project-link:hover{
+  text-decoration:underline;
+}
+
+.repo-cta{
+  max-width:950px;
+  margin:2rem auto 0 auto;
+  text-align:center;
+}
+
+.repo-btn{
+  display:inline-block;
+  padding:.8rem 1.2rem;
+  border-radius:12px;
+  background:#2457a6;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.repo-btn:hover{
+  text-decoration:none;
+  opacity:.95;
+}
+</style>
+<p><a href="content.html" class="back-btn">← Back to Projects</a></p>
+<section id="overview" class="level2 page-intro">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Before the MGEM program, I worked on a range of hands-on GIS and remote sensing projects that strengthened my practical skills in land-cover classification, environmental mapping, forest analysis, hazard assessment, UAV applications, and geospatial data visualization.</p>
+<p>These projects span different platforms and workflows, including <strong>QGIS</strong>, <strong>ArcGIS Pro</strong>, <strong>Google Earth Engine</strong>, <strong>R</strong>, and <strong>Python</strong>, and show the progression of my technical experience across applied environmental and spatial problems.</p>
 </section>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Agricultural landscapes in the <strong>Lower Fraser Valley (LFV), British Columbia</strong>, are experiencing structural changes driven by evolving agricultural practices, environmental pressures, and expanding urban development. Understanding how land-cover transitions occur within this highly productive agricultural region is important for supporting sustainable land management and identifying opportunities for resilient farming systems.</p>
-<p>This capstone project evaluates how agricultural landscapes in the Lower Fraser Valley changed between <strong>2015 and 2020</strong>, with particular attention to transitions between <strong>annual and perennial agriculture</strong>. By integrating multiple land-cover datasets and applying spatial analysis techniques, the study identifies patterns of land-cover change and areas where perennial agriculture may expand within existing agricultural landscapes.</p>
-<p><img src="images/capstone/harmonized.png" class="img-fluid"></p>
-<p><em>Figure 1. Study area showing the Lower Fraser Valley agricultural region analyzed in this project.</em></p>
-<hr>
+<div class="project-grid">
+<section id="land-classification-and-environmental-mapping" class="level3 project-card">
+<h3 class="anchored" data-anchor-id="land-classification-and-environmental-mapping">Land Classification and Environmental Mapping</h3>
+<p>Projects involving supervised classification, study area mapping, and environmental interpretation using desktop GIS and remote sensing workflows.</p>
+<div class="tag-row">
+<p><span class="tag">QGIS</span> <span class="tag">ArcGIS Pro</span> <span class="tag">Classification</span> <span class="tag">Mapping</span></p>
+</div>
 </section>
-<section id="methods" class="level2">
-<h2 class="anchored" data-anchor-id="methods">Methods</h2>
-<p>This study integrates two multi-source land-cover datasets—the <strong>Annual Crop Inventory (ACI)</strong> and the <strong>North American Land Change Monitoring System (NALCMS)</strong>—to produce harmonized land-cover maps for 2015 and 2020 and evaluate agricultural landscape dynamics.</p>
-<p>First, all datasets were reprojected to UTM Zone 10N and clipped to the Lower Fraser Valley boundary to ensure spatial alignment. Land-cover classes from each dataset were then aggregated into six harmonized categories: Annual Agriculture, Perennial Agriculture, Forest, Marginalized Land, Wetlands, and Water. These categories were selected to maintain ecological relevance while reducing thematic inconsistencies between datasets. :contentReference<span data-index="0">oaicite:0</span></p>
-<p>Dataset agreement was evaluated using confusion matrices, and overall classification agreement was used to derive relative dataset weighting. Harmonization was then performed through pixel-wise overlay, prioritizing ACI classifications in cases of disagreement due to its higher thematic detail for agricultural subclasses.</p>
-<p>Following harmonization, post-classification change detection was conducted by comparing the 2015 and 2020 land-cover maps to quantify land-cover transitions and calculate both net and relative changes in landscape composition. Spatial configuration and structural dynamics were further assessed using <strong>patch metrics, diversity indices, and adjacency analysis</strong>.</p>
-<p><img src="images/capstone/workflow.png" class="img-fluid"></p>
-<p><em>Figure 2. Analytical workflow used to harmonize multi-source land-cover datasets and analyze landscape transitions.</em></p>
-<hr>
+<section id="forest-and-biomass-analysis" class="level3 project-card">
+<h3 class="anchored" data-anchor-id="forest-and-biomass-analysis">Forest and Biomass Analysis</h3>
+<p>Work focused on forest structure, biomass estimation, and vegetation analysis using remote sensing data and spatial modeling approaches.</p>
+<div class="tag-row">
+<p><span class="tag">Forest Analysis</span> <span class="tag">Biomass</span> <span class="tag">Remote Sensing</span> <span class="tag">R</span></p>
+</div>
 </section>
-<section id="results" class="level2">
-<h2 class="anchored" data-anchor-id="results">Results</h2>
-<section id="land-cover-transitions" class="level3">
-<h3 class="anchored" data-anchor-id="land-cover-transitions">Land-Cover Transitions</h3>
-<p>Temporal analysis revealed notable shifts in agricultural land cover between 2015 and 2020. <strong>Annual agriculture declined substantially</strong>, while <strong>perennial agriculture increased</strong>, indicating an important structural transition within the agricultural system.</p>
-<p><img src="images/capstone/sankey.png" class="img-fluid"></p>
-<p><em>Figure 4. Sankey diagram illustrating land-cover transitions between 2015 and 2020.</em></p>
-<p>The largest transition occurred from annual agriculture to perennial agriculture, representing nearly half of the annual agricultural area observed in 2015. Smaller conversions occurred between agricultural classes and marginalized land, as well as limited transitions involving forested areas.</p>
-<hr>
+<section id="google-earth-engine-and-time-series-analysis" class="level3 project-card">
+<h3 class="anchored" data-anchor-id="google-earth-engine-and-time-series-analysis">Google Earth Engine and Time-Series Analysis</h3>
+<p>Projects using cloud-based geospatial workflows for land analysis, drought assessment, and environmental monitoring.</p>
+<div class="tag-row">
+<p><span class="tag">Google Earth Engine</span> <span class="tag">Time Series</span> <span class="tag">Drought</span> <span class="tag">Environmental Monitoring</span></p>
+</div>
 </section>
-<section id="spatial-distribution-of-change" class="level3">
-<h3 class="anchored" data-anchor-id="spatial-distribution-of-change">Spatial Distribution of Change</h3>
-<p>Spatial change detection shows that most of the landscape remained stable during the study period, while transitions were concentrated within agricultural regions.</p>
-<p><img src="images/capstone/change_map.png" class="img-fluid"></p>
-<p><em>Figure 5. Spatial distribution of land-cover persistence and change between 2015 and 2020.</em></p>
-<p>Approximately three-quarters of the landscape remained persistent, while about one-quarter experienced land-cover transitions. These changes occurred across thousands of discrete patches, indicating that most transitions were spatially dispersed rather than large-scale conversions.</p>
-<hr>
+<section id="uav-and-applied-remote-sensing" class="level3 project-card">
+<h3 class="anchored" data-anchor-id="uav-and-applied-remote-sensing">UAV and Applied Remote Sensing</h3>
+<p>Earlier work involving UAV-derived products and practical image analysis for vegetation and landscape assessment.</p>
+<div class="tag-row">
+<p><span class="tag">UAV</span> <span class="tag">Vegetation</span> <span class="tag">Image Analysis</span> <span class="tag">Remote Sensing</span></p>
+</div>
 </section>
-<section id="agricultural-adjacency" class="level3">
-<h3 class="anchored" data-anchor-id="agricultural-adjacency">Agricultural Adjacency</h3>
-<p>Beyond land-cover transitions, the study examined spatial relationships between annual and perennial agricultural systems.</p>
-<p><img src="images/capstone/adjacency.png" class="img-fluid"></p>
-<p><em>Figure 6. Spatial distribution of annual agriculture adjacent to perennial agriculture.</em></p>
-<p>The proportion of annual agriculture directly adjacent to perennial systems increased substantially between 2015 and 2020. This pattern suggests growing spatial interaction between agricultural classes and highlights areas where <strong>perennial agriculture expansion may occur within existing agricultural landscapes</strong>.</p>
-<hr>
-</section>
-<section id="landscape-structural-dynamics" class="level3">
-<h3 class="anchored" data-anchor-id="landscape-structural-dynamics">Landscape Structural Dynamics</h3>
-<p>Shannon’s Diversity Index (SHDI) increased slightly from <strong>1.3249 to 1.355</strong>, while Shannon’s Evenness Index (SHEI) increased from <strong>0.7394 to 0.7563</strong>, suggesting a more balanced distribution among land-cover classes over time. These changes reflect shifts in the relative proportions of agricultural and non-agricultural classes across the region. At the class level, mean forest patch area decreased from <strong>12.9 ha to 10.72 ha</strong>, accompanied by a decline in forest edge density, indicating subtle changes in forest spatial configuration within the agricultural landscape.</p>
-<p>Table 1 summarizes landscape-level diversity metrics and selected class-level structural indicators derived from the harmonized land-cover maps.</p>
-<table class="caption-top table">
-<caption>Landscape structural metrics derived from harmonized land-cover maps.</caption>
-<thead>
-<tr class="header">
-<th>Metric</th>
-<th>2015</th>
-<th>2020</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Shannon’s Diversity Index (SHDI)</td>
-<td>1.3249</td>
-<td>1.355</td>
-</tr>
-<tr class="even">
-<td>Shannon’s Evenness Index (SHEI)</td>
-<td>0.7394</td>
-<td>0.7563</td>
-</tr>
-<tr class="odd">
-<td>Forest Mean Patch Area (ha)</td>
-<td>12.90</td>
-<td>10.72</td>
-</tr>
-<tr class="even">
-<td>Forest Edge Density (m/ha)</td>
-<td>42.17</td>
-<td>37.38</td>
-</tr>
-</tbody>
-</table>
-<hr>
-</section>
-</section>
-<section id="project-significance" class="level2">
-<h2 class="anchored" data-anchor-id="project-significance">Project Significance</h2>
-<p>This capstone project demonstrates how harmonized land-cover analysis and spatial landscape metrics can be used to evaluate agricultural transitions and landscape dynamics within complex agricultural regions.</p>
-<p>The findings indicate a clear shift from annual to perennial agricultural systems, accompanied by increasing spatial interaction between agricultural classes. These patterns suggest opportunities for supporting more sustainable agricultural practices while maintaining the productivity of the Lower Fraser Valley.</p>
-<p>More broadly, the analytical framework developed in this study provides a transferable approach for examining land-cover change, agricultural transitions, and landscape sustainability in other regions.</p>
+</div>
+<div class="repo-cta">
+<p><a href="https://github.com/oluwaseyigezekiel/Hands-on-Projects" class="repo-btn">View Full GitHub Project Archive →</a></p>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

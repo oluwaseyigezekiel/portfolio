@@ -163,7 +163,7 @@ This project demonstrates the use of the ESRI Field Maps app to collect, manage,
 :::
 
 ::: {.storymap-card}
-### 200m Boundary Delineation
+### Real Estate Management
 
 ::: {.tag-row}
 [StoryMaps]{.tag}

@@ -5,6 +5,7 @@ format:
     toc: false
 ---
 
+```{=html}
 <style>
 .dashboard-page{
   max-width:1000px;
@@ -42,44 +43,38 @@ format:
   color:#555;
 }
 </style>
+```
 
-::: {.dashboard-page}
-
+::::: dashboard-page
 [← Back to Projects](content.html#cartography-page){.back-btn}
 
 ## Environmental Monitoring Dashboard
 
-**Course:** Project Proposal Development and Proof of Concept (FCOR 599)  
+**Course:** Project Proposal Development and Proof of Concept (FCOR 599)\
 *Group project with four MGEM colleagues*
 
-**Role:** Dashboard development and GIS visualization  
+**Role:** Dashboard development and GIS visualization
 
 **Team Members**
 
-- Nathan Mithal  
-- Kate Van den Berg  
-- Muhamad Nafi Andriansyah  
-- Nicole Graham  
+-   Nathan Mithal\
+-   Kate Van den Berg\
+-   Muhamad Nafi Andriansyah\
+-   Nicole Graham
 
-
-This ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.
-
+This ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.
 
 ### Interactive Dashboard
 
-::: {.dashboard-note}
+::: dashboard-note
 **Note:** If prompted to sign in to ArcGIS Online, click **Cancel** to view the dashboard.
 :::
 
-::: {.dashboard-frame}
-<iframe
-  src="https://www.arcgis.com/apps/dashboards/1d640b2ee0d1471d9ffe2e9b155568b6"
-  width="100%"
-  height="650"
-  frameborder="0">
+::: dashboard-frame
+<iframe src="https://www.arcgis.com/apps/dashboards/1d640b2ee0d1471d9ffe2e9b155568b6" width="100%" height="650" frameborder="0">
+
 </iframe>
 :::
 
-[Open dashboard full screen →](https://www.arcgis.com/apps/dashboards/1d640b2ee0d1471d9ffe2e9b155568b6){target="_blank"}
-
-:::
+[Open dashboard full screen →](https://www.arcgis.com/apps/dashboards/1d640b2ee0d1471d9ffe2e9b155568b6){target="_blank"}g
+:::::

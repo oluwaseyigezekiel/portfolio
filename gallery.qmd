@@ -82,7 +82,7 @@ editor: source
 
 .map-text p {
   color: #555;
-  line-height: 1.7;
+  line-height: 2.0;
   margin-bottom: 0;
 }
 
@@ -127,18 +127,19 @@ This gallery showcases layouts of selected GIS and cartographic workflows develo
 ::: {.map-card}
 
 ::: {.map-image}
-[![](map_gallery/EzekielO_GEM511_lab2.jpg){fig-alt="GEM 511 Lab 2 Map"}](map_gallery/EzekielO_GEM511_lab2.jpg){target="_blank"}
+[![](map_gallery/stream_network.jpg){fig-alt="Hydrological Modeling"}](map_gallery/stream_network.jpg){target="_blank"}
 :::
 
 ::: {.map-text}
 ::: {.map-tag-row}
 
-[Riparian Terrain Analysis]{.map-tag}
+[Hydrological Modeling]{.map-tag}
+[Geolocation]{.map-tag}
 :::
 
-## Hydrological Modeling and Stream Network Analysis
+## Stream Network Analysis
 
-Cartographic layout prepared as part of GIS coursework, demonstrating map composition, symbology, labeling, and design principles for effective spatial communication.
+This project applies spatial network analysis methods to understand how environmental features and infrastructure are connected. It identifies the components of geolocated networks and examines how different network structures influence movement and accessibility within a landscape. The project also focuses on building spatial networks and evaluating them using metrics such as topology and impedance.
 :::
 
 :::
@@ -148,28 +149,85 @@ Cartographic layout prepared as part of GIS coursework, demonstrating map compos
 ::: {.map-card .reverse}
 
 ::: {.map-image}
-[![](map_gallery/GEM510_Lab3_map.jpg){fig-alt="GEM 510 Lab 3 Map"}](map_gallery/GEM510_Lab3_map.jpg){target="_blank"}
+[![](map_gallery/old_growth.jpg){fig-alt="Old Growth Forest Analysis"}](map_gallery/old_growth.jpg){target="_blank"}
 :::
 
 ::: {.map-text}
 ::: {.map-tag-row}
 [Old growth forests]{.map-tag}
-[Zonal Statistics]{.map-tag}
+[Cartographic modelling]{.map-tag}
 :::
 
 ## Old Growth Forest Analysis
 
-Map layout created as part of introductory GIS coursework, showcasing cartographic design, thematic mapping, and foundational spatial communication skills.
+This project integrates inventory variables such as species composition, age, density, and productivity into spatial layers suitable for analysis and visualization. The project also aims to build cartographic models that represent key stand attributes that inform decisions in forest management.
 :::
 
 :::
 
+::: {.map-card .reverse}
 
+::: {.map-image}
+[![](map_gallery/riparian.png){fig-alt="Riparian Terrain Modeling"}](map_gallery/riparian.png){target="_blank"}
+:::
+
+::: {.map-text}
+::: {.map-tag-row}
+[Hydrology]{.map-tag}
+[Digital Elevation Modeling]{.map-tag}
+[Stream Network]{.map-tag}
+:::
+
+## Riparian Terrain Analysis
+
+This project uses a Digital Elevation Model (DEM) to identify key terrain features that influence riparian forest management decisions. It evaluates how DEM‑derived indicators such as slope and flow direction can support the delineation of reserve zones and guide decision‑making in complex riparian environments.
+:::
+
+:::
+
+::: {.map-card .reverse}
+
+::: {.map-image}
+[![](map_gallery/infra_mgt.png){fig-alt="Riparian Terrain Modeling"}](map_gallery/infra_mgt.png){target="_blank"}
+:::
+
+::: {.map-text}
+::: {.map-tag-row}
+[Landscape mapping]{.map-tag}
+[QGIS]{.map-tag}
+:::
+
+## Infrastructure Management
+
+Visualization of adjacency and interspersion patterns between agricultural classes. This map shows regions of annual agricultural that are likely to transition into perennial classes in the near future.  
+:::
+
+:::
+
+::: {.map-card .reverse}
+
+::: {.map-image}
+[![](map_gallery/interpolation.png){fig-alt="Spatial Interpolation"}](map_gallery/interpolation.png){target="_blank"}
+:::
+
+::: {.map-text}
+::: {.map-tag-row}
+[Inverse Distance Weighting]{.map-tag}
+[Natural Neighbor]{.map-tag}
+[Spline]{.map-tag}
+:::
+
+## Comparing Spatial Interpolation Approaches
+
+Visualization of adjacency and interspersion patterns between agricultural classes. This map shows regions of annual agricultural that are likely to transition into perennial classes in the near future.  
+:::
+
+:::
 
 ::: {.map-card}
 
 ::: {.map-image}
-[![](map_gallery/EzekielO_GEM511_lab4.png){fig-alt="GEM 511 Lab 4 Map"}](map_gallery/EzekielO_GEM511_lab4.png){target="_blank"}
+[![](map_gallery/machine_learning.png){fig-alt="Machine learning with Geospatial Data"}](map_gallery/machine_learning.png){target="_blank"}
 :::
 
 ::: {.map-text}

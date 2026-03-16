@@ -5,6 +5,7 @@ format:
     toc: false
 ---
 
+```{=html}
 <style>
 
 .survey-page{
@@ -35,42 +36,36 @@ format:
 }
 
 </style>
+```
 
-::: {.survey-page}
-
+:::: survey-page
 [← Back to Projects](content.html#cartography-page){.back-btn}
 
 ## Survey123 Field Data Collection
 
-**Course:** Project Proposal Development and Proof of Concept (FCOR 599)  
+**Course:** Project Proposal Development and Proof of Concept (FCOR 599)\
 *Group project with four MGEM colleagues*
 
 **Role:** Survey design
 
 **Team Members**
 
-- Nathan Mithal  
-- Kate Van den Berg  
-- Muhamad Nafi Andriansyah  
-- Nicole Graham  
+-   Nathan Mithal\
+-   Kate Van den Berg\
+-   Muhamad Nafi Andriansyah\
+-   Nicole Graham
 
 This Survey123 form was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The form was designed to collect structured wildlife observations including species type, observation location, and if species were dead or alive.
 
-Participants (MGEM students) used the form to submit simulated wildlife observations, which were visualized real-time through the [Environmental Monitoring Dashboard](dashboards.html). The workflow demonstrates how mobile GIS tools can support citizen science data collection while  highlighting practical challenges such as data reliability, spatial coverage, and observer bias.
-
+Participants (MGEM students) used the form to submit simulated wildlife observations, which were visualized real-time through the [Environmental Monitoring Dashboard](dashboards.html). The workflow demonstrates how mobile GIS tools can support citizen science data collection while highlighting practical challenges such as data reliability, spatial coverage, and observer bias.
 
 ### Field Data Collection Form
+
 **Note:** [This survey form](https://arcg.is/1CLO1z0) is displayed for demonstration purposes. Submissions are currently disabled.
 
-::: {.survey-frame}
+::: survey-frame
+<iframe src="https://arcg.is/1CLO1z0" width="100%" height="500" frameborder="0">
 
-<iframe
-  src="https://arcg.is/1CLO1z0"
-  width="100%"
-  height="500"
-  frameborder="0">
 </iframe>
-
 :::
-
-
+::::

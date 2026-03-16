@@ -1,0 +1,207 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+editor: source
+---
+
+<style>
+.page-intro{
+  max-width: 950px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.page-intro h1{
+  margin-bottom: 0.6rem;
+}
+
+.page-intro p{
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.back-btn{
+  display:inline-block;
+  margin-bottom:1.4rem;
+  padding:.55rem 1rem;
+  border-radius:999px;
+  background:#f3f4f6;
+  color:#222;
+  text-decoration:none;
+  font-weight:600;
+  border:1px solid rgba(0,0,0,0.08);
+  cursor:pointer;
+}
+
+.back-btn:hover{
+  background:#e9ecef;
+  text-decoration:none;
+}
+
+.highlight-box{
+  max-width: 950px;
+  margin: 0 auto 2rem auto;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 1.6rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.highlight-box h2{
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.highlight-box p{
+  color:#555;
+  line-height:1.75;
+}
+
+.project-grid{
+  max-width: 950px;
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1rem;
+}
+
+.project-card{
+  background:#ffffff;
+  border-radius:16px;
+  padding:1rem;
+  box-shadow:0 6px 16px rgba(0,0,0,0.06);
+  border:1px solid rgba(0,0,0,0.05);
+}
+
+.project-card h3{
+  margin-top:0;
+  margin-bottom:.6rem;
+}
+
+.project-card p{
+  color:#555;
+  margin-bottom:.8rem;
+  line-height:1.7;
+}
+
+.tag-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.45rem;
+  margin-bottom:.9rem;
+}
+
+.tag{
+  display:inline-block;
+  padding:.3rem .7rem;
+  border-radius:999px;
+  background:#eef4ff;
+  color:#2457a6;
+  font-size:.82rem;
+  font-weight:600;
+}
+
+.project-link{
+  display:inline-block;
+  font-weight:600;
+  text-decoration:none;
+}
+
+.project-link:hover{
+  text-decoration:underline;
+}
+
+.repo-cta{
+  max-width:950px;
+  margin:2rem auto 0 auto;
+  text-align:center;
+}
+
+.repo-btn{
+  display:inline-block;
+  padding:.8rem 1.2rem;
+  border-radius:12px;
+  background:#2457a6;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.repo-btn:hover{
+  text-decoration:none;
+  opacity:.95;
+}
+</style>
+
+[← Back to Projects](content.html){.back-btn}
+
+::: {.page-intro}
+## Overview
+
+Before the MGEM program, I worked on a range of hands-on GIS and remote sensing projects that strengthened my practical skills in land-cover classification, environmental mapping, forest analysis, hazard assessment, UAV applications, and geospatial data visualization.
+
+These projects span different platforms and workflows, including **QGIS**, **ArcGIS Pro**, **Google Earth Engine**, **R**, and **Python**, and show the progression of my technical experience across applied environmental and spatial problems.
+:::
+
+::: {.project-grid}
+
+::: {.project-card}
+### Land Classification and Environmental Mapping
+
+Projects involving supervised classification, study area mapping, and environmental interpretation using desktop GIS and remote sensing workflows.
+
+::: {.tag-row}
+[QGIS]{.tag}
+[ArcGIS Pro]{.tag}
+[Classification]{.tag}
+[Mapping]{.tag}
+:::
+:::
+
+::: {.project-card}
+### Forest and Biomass Analysis
+
+Work focused on forest structure, biomass estimation, and vegetation analysis using remote sensing data and spatial modeling approaches.
+
+::: {.tag-row}
+[Forest Analysis]{.tag}
+[Biomass]{.tag}
+[Remote Sensing]{.tag}
+[R]{.tag}
+:::
+:::
+
+::: {.project-card}
+### Google Earth Engine and Time-Series Analysis
+
+Projects using cloud-based geospatial workflows for land analysis, drought assessment, and environmental monitoring.
+
+::: {.tag-row}
+[Google Earth Engine]{.tag}
+[Time Series]{.tag}
+[Drought]{.tag}
+[Environmental Monitoring]{.tag}
+:::
+:::
+
+::: {.project-card}
+### UAV and Applied Remote Sensing
+
+Earlier work involving UAV-derived products and practical image analysis for vegetation and landscape assessment.
+
+::: {.tag-row}
+[UAV]{.tag}
+[Vegetation]{.tag}
+[Image Analysis]{.tag}
+[Remote Sensing]{.tag}
+:::
+:::
+
+:::
+
+::: {.repo-cta}
+[View Full GitHub Project Archive →](https://github.com/oluwaseyigezekiel/Hands-on-Projects){.repo-btn}
+:::

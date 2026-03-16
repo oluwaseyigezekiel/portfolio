@@ -2,7 +2,7 @@
 title: ""
 format: html
 ---
-[← Back to Projects](content.html){.back-btn}
+[← Back to Projects](content.html#project-mgt-page){.back-btn}
 
 ### Assessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley
 

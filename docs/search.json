@@ -39,7 +39,7 @@
     "href": "storymaps.html",
     "title": "StoryMaps",
     "section": "",
-    "text": "← Back to Projects\n\nStoryMaps\nThese StoryMaps are part of my micro-credential in Geospatial Data Collection, Analysis & Interpretation using GIS Technology** at Seneca Polytechnic, Canada. They show how spatial storytelling can be employed in Asset and infrastructure management, Urban planning and other real-world scenarios.\n\n\n\nTraffic Analysis and Safety\n\nStoryMaps Traffic Analysis Road Safety\n\nThis project analyzes infrastructure distribution and traffic patterns to improve road safety and optimize traffic flow.\nView project PDF →\n\n\nMilitary Checkpoint Establishment\n\nStoryMaps Site Selection Strategic Planning\n\nThis project develops GIS-based solutions for the strategic placement of military checkpoints.\nView project PDF →\n\n\nField Maps App for Spatial Data Collection\n\nStoryMaps Field Maps Spatial Data Collection\n\nThis project demonstrates the use of the ESRI Field Maps app to collect, manage, and communicate spatial data.\nView project PDF →\n\n\n200m Boundary Delineation\n\nStoryMaps Boundary Analysis Real Estate GIS\n\nThis project defines a 200-meter jurisdiction boundary for real estate purposes.\nView project PDF →"
+    "text": "← Back to Projects\n\nStoryMaps\nThese StoryMaps are part of my micro-credential in Geospatial Data Collection, Analysis & Interpretation using GIS Technology** at Seneca Polytechnic, Canada. They show how spatial storytelling can be employed in Asset and infrastructure management, Urban planning and other real-world scenarios.\n\n\n\nTraffic Analysis and Safety\n\nStoryMaps Traffic Analysis Road Safety\n\nThis project analyzes infrastructure distribution and traffic patterns to improve road safety and optimize traffic flow.\nView project PDF →\n\n\nMilitary Checkpoint Establishment\n\nStoryMaps Site Selection Strategic Planning\n\nThis project develops GIS-based solutions for the strategic placement of military checkpoints.\nView project PDF →\n\n\nField Maps App for Spatial Data Collection\n\nStoryMaps Field Maps Spatial Data Collection\n\nThis project demonstrates the use of the ESRI Field Maps app to collect, manage, and communicate spatial data.\nView project PDF →\n\n\nReal Estate Management\n\nStoryMaps Boundary Analysis Real Estate GIS\n\nThis project defines a 200-meter jurisdiction boundary for real estate purposes.\nView project PDF →"
   },
   {
     "objectID": "remote-sensing.html",
@@ -98,18 +98,39 @@
     "text": "Map Gallery\nThis gallery showcases layouts of selected GIS and cartographic workflows developed during the Master of Geomatics for Environmental Management program at UBC."
   },
   {
-    "objectID": "gallery.html#hydrological-modeling-and-stream-network-analysis",
-    "href": "gallery.html#hydrological-modeling-and-stream-network-analysis",
+    "objectID": "gallery.html#stream-network-analysis",
+    "href": "gallery.html#stream-network-analysis",
     "title": "Oluwaseyi Ezekiel",
-    "section": "Hydrological Modeling and Stream Network Analysis",
-    "text": "Hydrological Modeling and Stream Network Analysis\nCartographic layout prepared as part of GIS coursework, demonstrating map composition, symbology, labeling, and design principles for effective spatial communication."
+    "section": "Stream Network Analysis",
+    "text": "Stream Network Analysis\nThis project applies spatial network analysis methods to understand how environmental features and infrastructure are connected. It identifies the components of geolocated networks and examines how different network structures influence movement and accessibility within a landscape. The project also focuses on building spatial networks and evaluating them using metrics such as topology and impedance."
   },
   {
     "objectID": "gallery.html#old-growth-forest-analysis",
     "href": "gallery.html#old-growth-forest-analysis",
     "title": "Oluwaseyi Ezekiel",
     "section": "Old Growth Forest Analysis",
-    "text": "Old Growth Forest Analysis\nMap layout created as part of introductory GIS coursework, showcasing cartographic design, thematic mapping, and foundational spatial communication skills."
+    "text": "Old Growth Forest Analysis\nThis project integrates inventory variables such as species composition, age, density, and productivity into spatial layers suitable for analysis and visualization. The project also aims to build cartographic models that represent key stand attributes that inform decisions in forest management."
+  },
+  {
+    "objectID": "gallery.html#riparian-terrain-analysis",
+    "href": "gallery.html#riparian-terrain-analysis",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Riparian Terrain Analysis",
+    "text": "Riparian Terrain Analysis\nThis project uses a Digital Elevation Model (DEM) to identify key terrain features that influence riparian forest management decisions. It evaluates how DEM‑derived indicators such as slope and flow direction can support the delineation of reserve zones and guide decision‑making in complex riparian environments."
+  },
+  {
+    "objectID": "gallery.html#infrastructure-management",
+    "href": "gallery.html#infrastructure-management",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Infrastructure Management",
+    "text": "Infrastructure Management\nVisualization of adjacency and interspersion patterns between agricultural classes. This map shows regions of annual agricultural that are likely to transition into perennial classes in the near future."
+  },
+  {
+    "objectID": "gallery.html#comparing-spatial-interpolation-approaches",
+    "href": "gallery.html#comparing-spatial-interpolation-approaches",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Comparing Spatial Interpolation Approaches",
+    "text": "Comparing Spatial Interpolation Approaches\nVisualization of adjacency and interspersion patterns between agricultural classes. This map shows regions of annual agricultural that are likely to transition into perennial classes in the near future."
   },
   {
     "objectID": "gallery.html#machine-learning-with-geospatial-data",
@@ -147,46 +168,18 @@
     "text": "Carbon Density Mapping\nSpatial visualization of carbon density patterns across MetroVancouver, BC, Canada. This map supports urban management planning and operational decisions in environmental management."
   },
   {
-    "objectID": "content.html",
-    "href": "content.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Note: Click a category to explore projects.\n\n\n\n\n\nApplied capstone work and geospatial project planning.\n\nCapstone Planning Communication\n\n\n\n\nMap design, ArcGIS Online applications, dashboards, field data collection and desktop GIS workflows.\n\nStoryMaps Survey123 ArcGIS Pro QGIS\n\n\n\n\nLiDAR analysis, land-cover classification, spectral interpretation, and satellite time-series remote sensing.\n\nLiDAR Classification Spectral Landsat\n\n\n\n\nLandscape metrics, spatial modeling, forest analytics, and environmental statistics.\n\nSpatial Statistics Modeling Python"
-  },
-  {
-    "objectID": "content.html#cartography-gis-applications-1",
-    "href": "content.html#cartography-gis-applications-1",
-    "title": "Projects",
-    "section": "Cartography & GIS Applications",
-    "text": "Cartography & GIS Applications\n\n\nCitizen Science: Asset & Infrastructure Management\nInteractive StoryMaps analyzing traffic patterns and urban mobility challenges to support safer and more efficient transportation systems.\n\nAsset Management Urban Planning ArcGIS StoryMaps\n\nView StoryMaps →\n\n\nData Visualization: Environmental Conservation\nInteractive dashboard designed to monitor and visualize environmental indicators collected through Survey123 field surveys.\n\nEnvironmental Conservation Data Visualization ArcGIS Dashboards\n\nView Dashboard →\n\n\nField Data Collection: Species Monitoring\nMobile GIS workflow developed using ArcGIS Survey123 to collect structured geospatial data in the field.\n\nField Data Collection Survey123\n\nView Survey →\n\n\nDesktop GIS: Mapping Projects\nCollection of thematic maps and cartographic layouts developed using ArcGIS Pro and QGIS.\n\nArcGIS Pro QGIS Cartography\n\nSee Map Gallery →"
-  },
-  {
-    "objectID": "content.html#landscape-modeling-spatial-statistics-1",
-    "href": "content.html#landscape-modeling-spatial-statistics-1",
-    "title": "Projects",
-    "section": "Landscape Modeling & Spatial Statistics",
-    "text": "Landscape Modeling & Spatial Statistics\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nThe analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.\n\nSpatial Statistics LiDAR Forest Inventory Feature Selection\n\nView project →"
-  },
-  {
-    "objectID": "content.html#project-management-1",
-    "href": "content.html#project-management-1",
-    "title": "Projects",
-    "section": "Project Management",
-    "text": "Project Management\n\n\nAssessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley\nMaster’s Capstone Project — University of British Columbia (UBC)\nThis study examines how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020 by harmonizing multi-source land-cover datasets and analyzing landscape structure and land-cover transitions. The project identifies spatial patterns of agricultural change and evaluates opportunities for perennial agriculture expansion within existing agricultural systems.\nView full project →\n\n\n\nMapping Spatial Patterns of Urban Carbon Sinks in Metro Vancouver\nResearch Proposal — UBC GEM 500 (Landscape Ecology)\nThis project investigates how vegetation distribution and landscape structure influence urban carbon storage across Metro Vancouver municipalities. Using Landsat imagery, carbon biomass datasets, and landscape metrics, the study aims to identify municipalities functioning as major urban carbon sinks and assess the spatial factors influencing carbon storage.\nView full project →"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
+    "objectID": "dashboards.html",
+    "href": "dashboards.html",
     "title": "Oluwaseyi Ezekiel",
     "section": "",
-    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
+    "text": "← Back to Projects\n\n\nCourse: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →g"
   },
   {
-    "objectID": "about.html#about-me",
-    "href": "about.html#about-me",
+    "objectID": "dashboards.html#environmental-monitoring-dashboard",
+    "href": "dashboards.html#environmental-monitoring-dashboard",
     "title": "Oluwaseyi Ezekiel",
     "section": "",
-    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
+    "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →g"
   },
   {
     "objectID": "capstone.html",
@@ -224,18 +217,60 @@
     "text": "Project Significance\nThis capstone project demonstrates how harmonized land-cover analysis and spatial landscape metrics can be used to evaluate agricultural transitions and landscape dynamics within complex agricultural regions.\nThe findings indicate a clear shift from annual to perennial agricultural systems, accompanied by increasing spatial interaction between agricultural classes. These patterns suggest opportunities for supporting more sustainable agricultural practices while maintaining the productivity of the Lower Fraser Valley.\nMore broadly, the analytical framework developed in this study provides a transferable approach for examining land-cover change, agricultural transitions, and landscape sustainability in other regions."
   },
   {
-    "objectID": "dashboards.html",
-    "href": "dashboards.html",
+    "objectID": "about.html",
+    "href": "about.html",
     "title": "Oluwaseyi Ezekiel",
     "section": "",
-    "text": "← Back to Projects\n\n\nCourse: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →"
+    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
   },
   {
-    "objectID": "dashboards.html#environmental-monitoring-dashboard",
-    "href": "dashboards.html#environmental-monitoring-dashboard",
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
     "title": "Oluwaseyi Ezekiel",
     "section": "",
-    "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →"
+    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
+  },
+  {
+    "objectID": "content.html",
+    "href": "content.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Note: Click a category to explore projects.\n\n\n\n\n\nApplied capstone work and geospatial project planning.\n\nCapstone Planning Communication\n\n\n\n\nMap design, ArcGIS Online applications, dashboards, field data collection and desktop GIS workflows.\n\nStoryMaps Survey123 ArcGIS Pro QGIS\n\n\n\n\nLiDAR analysis, land-cover classification, spectral interpretation, and satellite time-series remote sensing.\n\nLiDAR Classification Spectral Landsat\n\n\n\n\nLandscape metrics, spatial modeling, forest analytics, and environmental statistics.\n\nSpatial Statistics Modeling Python"
+  },
+  {
+    "objectID": "content.html#cartography-gis-applications-1",
+    "href": "content.html#cartography-gis-applications-1",
+    "title": "Projects",
+    "section": "Cartography & GIS Applications",
+    "text": "Cartography & GIS Applications\n\n\nCitizen Science: Asset & Infrastructure Management\nInteractive StoryMaps analyzing traffic patterns and urban mobility challenges to support safer and more efficient transportation systems.\n\nAsset Management Urban Planning ArcGIS StoryMaps\n\nView StoryMaps →\n\n\nData Visualization: Environmental Conservation\nInteractive dashboard designed to monitor and visualize environmental indicators collected through Survey123 field surveys.\n\nEnvironmental Conservation Data Visualization ArcGIS Dashboards\n\nView Dashboard →\n\n\nField Data Collection: Species Monitoring\nMobile GIS workflow developed using ArcGIS Survey123 to collect structured geospatial data in the field.\n\nField Data Collection Survey123\n\nView Survey →\n\n\nDesktop GIS: Mapping Projects\nCollection of thematic maps and cartographic layouts developed using ArcGIS Pro and QGIS.\n\nArcGIS Pro QGIS Cartography\n\nSee Map Gallery →"
+  },
+  {
+    "objectID": "content.html#landscape-modeling-spatial-statistics-1",
+    "href": "content.html#landscape-modeling-spatial-statistics-1",
+    "title": "Projects",
+    "section": "Landscape Modeling & Spatial Statistics",
+    "text": "Landscape Modeling & Spatial Statistics\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nThe analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.\n\nSpatial Statistics LiDAR Forest Inventory Feature Selection\n\nView project →"
+  },
+  {
+    "objectID": "content.html#project-management-1",
+    "href": "content.html#project-management-1",
+    "title": "Projects",
+    "section": "Project Management",
+    "text": "Project Management\n\n\nAssessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley\nMaster’s Capstone Project — University of British Columbia (UBC)\nThis study examines how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020 by harmonizing multi-source land-cover datasets and analyzing landscape structure and land-cover transitions. The project identifies spatial patterns of agricultural change and evaluates opportunities for perennial agriculture expansion within existing agricultural systems.\nView full project →\n\n\n\nMapping Spatial Patterns of Urban Carbon Sinks in Metro Vancouver\nResearch Proposal — UBC GEM 500 (Landscape Ecology)\nThis project investigates how vegetation distribution and landscape structure influence urban carbon storage across Metro Vancouver municipalities. Using Landsat imagery, carbon biomass datasets, and landscape metrics, the study aims to identify municipalities functioning as major urban carbon sinks and assess the spatial factors influencing carbon storage.\nView full project →"
+  },
+  {
+    "objectID": "earlier-gis.html",
+    "href": "earlier-gis.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "← Back to Projects"
+  },
+  {
+    "objectID": "earlier-gis.html#overview",
+    "href": "earlier-gis.html#overview",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Overview",
+    "text": "Overview\nBefore the MGEM program, I worked on a range of hands-on GIS and remote sensing projects that strengthened my practical skills in land-cover classification, environmental mapping, forest analysis, hazard assessment, UAV applications, and geospatial data visualization.\nThese projects span different platforms and workflows, including QGIS, ArcGIS Pro, Google Earth Engine, R, and Python, and show the progression of my technical experience across applied environmental and spatial problems."
   },
   {
     "objectID": "home.html",
@@ -270,7 +305,7 @@
     "href": "resume.html",
     "title": "Oluwaseyi Ezekiel",
     "section": "",
-    "text": "Expected Apr. 2026\n\n\nUniversity of British Columbia (UBC), Vancouver, BC, Canada\n\n\n\n\n\n\n\n\n\n\nApr. 2024\n\n\nSeneca Polytechnic, Toronto, ON, Canada\n\n\n\n\n\n\n\n\n\n\nFeb. 2020\n\n\nFederal University of Agriculture, Abeokuta (FUNAAB), Ogun, Nigeria\n\n\n\n\n\n\n\n\nArcGIS Pro QGIS ENVI Google Earth Engine Spatial Modelling R Python SQL Markdown GitHub MS Excel Research Project Management Technical Writing\n\nSee Projects →\n\n\n\n\n\n\n\nFeb. 2025 – May 2025\n\n\nGeospatial Research Limited, Ikeja, Lagos\n\n\n\n\nUpdated about 30,000 geodatabases of building footprints in Lagos State, Nigeria.\n\n\nConducted spatial analysis of Lagos State road networks, signages, and markings to support transport management.\n\n\n\n\n\n\n\nAug. 2020 – Jan. 2024\n\n\nGBFOODS, Tomani Farms & Agro. Industry Limited, Kebbi, Nigeria\n\n\n\n\nMonitored an 800-hectare farm using UAVs and satellite imagery.\n\n\nSupervised precision tools and decision support systems.\n\n\nSensitized 200 local farmers on agrochemical use and sustainable agriculture.\n\n\n\n\n\n\n\nMay 2024\n\n\nCitizen Science, Ayobo Local Council Development Area, Lagos, Nigeria\n\n\n\n\nConducted municipal projects to analyze traffic and security conditions.\n\n\nProposed measures to improve well-being and safety conditions within the community.\n\n\n\n\n\n\n\nNov. 2018 – Jan. 2020\n\n\nDepartment of Forestry & Wildlife Management, FUNAAB\n\n\n\n\nCreated maps of study locations for 10 undergraduate research projects.\n\n\nDeveloped geospatial data collection forms and field applications.\n\n\nUpdated topographic maps of the university with new thematic features.\n\n\n\n\n\n\n\n\n\n\n\n\nAug. 2025 – May 2026\n\n\n\n\nHarmonized multi-source land-cover and agricultural datasets to detect changes in the LFV between 2015 and 2020.\n\n\nProduced 30 m land-cover outputs to quantify land-cover change, characterize landscape structure, and identify key transitions.\n\n\nEvaluated fragmentation, connectivity, and spatial patterns to support interpretation of ecological and agricultural landscape change.\n\n\nIdentified priority areas for perennial agricultural expansion to inform sustainable land management.\n\n\n\n\nView Capstone Project →\n\n\n\n\n\n\n\n\n\n\n\n\nEzekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18.\n\n\nView publication →\n\n\n\n\n\n\n\n\n\n\nNov. 2025 – Present\n\n\nUBC Geomatics Community of Practice\n\n\nContributing to the revision of the Open Geomatics textbook for advanced GIS learning and community-based geospatial education.\n\n\nView GitHub Repository →\n\n\n\n\n\nAug. 2022 – Present\n\n\nJournal of Forestry Research; Current Agriculture Research Journal\n\n\nReviewed research articles and provided publication feedback, supporting research quality and editorial evaluation in forestry and agriculture.\n\n\nSee verified reviews here →\n\n\n\n\n\n\n\n\n\n\nDrought Monitoring, Prediction, and Projection using NASA Earth System Data — NASA ARSET, Oct. 2024\n\nInvasive Species Monitoring with Remote Sensing — NASA ARSET, Oct. 2024\n\nCO2 Measurements for Climate-Related Studies — NASA ARSET, Oct. 2024\n\nIntroduction to Agent Based Modeling — Geoversity, University of Twente, Sep. 2024\n\nUAVs in Precision Agriculture — Geoversity, University of Twente (ITC), Aug. 2024\n\nGeo Web App Building with Open-Source Tools — Geoversity, ITC, Aug. 2024\n\nRemote Sensing Image Acquisition, Analysis and Applications — Coursera, Jul. 2024\n\n\n\nView training certificates here →\n\n\n\n\n\n\n\n\n\n\nFully funded master’s program at UBC — Mastercard Foundation Scholarship, 2025\n\nFully funded micro-credential in GIS — Seneca Polytechnic / Quick Train Canada, 2024\n\nAward of Meritorious Service — GBFOODS Africa, 2023\n\nReviewer of the Year — Current Agriculture Research Journal, 2022\n\nData Science Microdegree Scholarship — USTACKY, 2021\n\nBest Graduating Student, Department of Forestry and Wildlife Management — FUNAAB Senate Awards, 2020"
+    "text": "Expected Apr. 2026\n\n\nUniversity of British Columbia (UBC), Vancouver, BC, Canada\n\n\n\n\n\n\n\n\n\n\nApr. 2024\n\n\nSeneca Polytechnic, Toronto, ON, Canada\n\n\n\n\n\n\n\n\n\n\nFeb. 2020\n\n\nFederal University of Agriculture, Abeokuta (FUNAAB), Ogun, Nigeria\n\n\n\n\n\n\n\n\nArcGIS Pro QGIS ENVI Google Earth Engine Spatial Modelling R Python SQL Markdown GitHub MS Excel Research Project Management Technical Writing\n\nSee Projects →\n\n\n\n\n\n\n\nFeb. 2025 – May 2025\n\n\nGeospatial Research Limited, Ikeja, Lagos\n\n\n\n\nUpdated road networks, signages, and markings of Lagos State (Nigeria’s most populous megacity) to support transportation planning and mobility management.\n\n\nUpdated and validated over 30,000 building footprint records using ArcGIS Pro to improve Lagos State housing database and development.\n\n\nPrepared proposals and proof of concepts for urban infrastructure planning and environmental management for public-sector clients.\n\n\n\n\n\n\n\nAug. 2020 – Jan. 2024\n\n\nGBFOODS, Tomani Farms & Agro. Industry Limited, Kebbi, Nigeria\n\n\n\n\nMonitored an 800-hectare farm using UAVs and satellite imagery, and provided weekly reports on crop performance and potential risks.\n\n\nCoordinated with Greenfield Technologies, a third-party GIS service provider, to implement daily irrigation recommendations and support precision agriculture monitoring.\n\n\nManaged a team of 62 staff members in the operation and maintenance of decision support tools including soil moisture/pH testers, irrigation sensors, and meteorological stations.\n\n\nEngaged 200 local farmers on agrochemical use and sustainable practices for optimal yield.\n\n\n\n\n\n\n\nMay 2024\n\n\nCitizen Science, Ayobo Local Council Development Area, Lagos, Nigeria\n\n\n\n\nAnalyzed traffic congestion, road usage patterns, and security infrastructure, including military checkpoints, to assess mobility and safety conditions within the municipality.\n\n\nAnalyzed real estate availability and proximity (within 200m) to major roads and infrastructure to support housing searches.\n\n\n\n\n\n\n\nNov. 2018 – Jan. 2020\n\n\nDepartment of Forestry & Wildlife Management, FUNAAB\n\n\n\n\nCreated maps of study locations for 10 undergraduate research projects.\n\n\nDeveloped geospatial data collection forms and field applications.\n\n\nUpdated topographic maps of the university with new thematic features."
   },
   {
     "objectID": "resume.html#education",
@@ -291,42 +326,42 @@
     "href": "resume.html#experience",
     "title": "Oluwaseyi Ezekiel",
     "section": "",
-    "text": "Feb. 2025 – May 2025\n\n\nGeospatial Research Limited, Ikeja, Lagos\n\n\n\n\nUpdated about 30,000 geodatabases of building footprints in Lagos State, Nigeria.\n\n\nConducted spatial analysis of Lagos State road networks, signages, and markings to support transport management.\n\n\n\n\n\n\n\nAug. 2020 – Jan. 2024\n\n\nGBFOODS, Tomani Farms & Agro. Industry Limited, Kebbi, Nigeria\n\n\n\n\nMonitored an 800-hectare farm using UAVs and satellite imagery.\n\n\nSupervised precision tools and decision support systems.\n\n\nSensitized 200 local farmers on agrochemical use and sustainable agriculture.\n\n\n\n\n\n\n\nMay 2024\n\n\nCitizen Science, Ayobo Local Council Development Area, Lagos, Nigeria\n\n\n\n\nConducted municipal projects to analyze traffic and security conditions.\n\n\nProposed measures to improve well-being and safety conditions within the community.\n\n\n\n\n\n\n\nNov. 2018 – Jan. 2020\n\n\nDepartment of Forestry & Wildlife Management, FUNAAB\n\n\n\n\nCreated maps of study locations for 10 undergraduate research projects.\n\n\nDeveloped geospatial data collection forms and field applications.\n\n\nUpdated topographic maps of the university with new thematic features."
-  },
-  {
-    "objectID": "resume.html#masters-capstone-project",
-    "href": "resume.html#masters-capstone-project",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Aug. 2025 – May 2026\n\n\n\n\nHarmonized multi-source land-cover and agricultural datasets to detect changes in the LFV between 2015 and 2020.\n\n\nProduced 30 m land-cover outputs to quantify land-cover change, characterize landscape structure, and identify key transitions.\n\n\nEvaluated fragmentation, connectivity, and spatial patterns to support interpretation of ecological and agricultural landscape change.\n\n\nIdentified priority areas for perennial agricultural expansion to inform sustainable land management.\n\n\n\n\nView Capstone Project →"
-  },
-  {
-    "objectID": "resume.html#publications",
-    "href": "resume.html#publications",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18.\n\n\nView publication →"
+    "text": "Feb. 2025 – May 2025\n\n\nGeospatial Research Limited, Ikeja, Lagos\n\n\n\n\nUpdated road networks, signages, and markings of Lagos State (Nigeria’s most populous megacity) to support transportation planning and mobility management.\n\n\nUpdated and validated over 30,000 building footprint records using ArcGIS Pro to improve Lagos State housing database and development.\n\n\nPrepared proposals and proof of concepts for urban infrastructure planning and environmental management for public-sector clients.\n\n\n\n\n\n\n\nAug. 2020 – Jan. 2024\n\n\nGBFOODS, Tomani Farms & Agro. Industry Limited, Kebbi, Nigeria\n\n\n\n\nMonitored an 800-hectare farm using UAVs and satellite imagery, and provided weekly reports on crop performance and potential risks.\n\n\nCoordinated with Greenfield Technologies, a third-party GIS service provider, to implement daily irrigation recommendations and support precision agriculture monitoring.\n\n\nManaged a team of 62 staff members in the operation and maintenance of decision support tools including soil moisture/pH testers, irrigation sensors, and meteorological stations.\n\n\nEngaged 200 local farmers on agrochemical use and sustainable practices for optimal yield.\n\n\n\n\n\n\n\nMay 2024\n\n\nCitizen Science, Ayobo Local Council Development Area, Lagos, Nigeria\n\n\n\n\nAnalyzed traffic congestion, road usage patterns, and security infrastructure, including military checkpoints, to assess mobility and safety conditions within the municipality.\n\n\nAnalyzed real estate availability and proximity (within 200m) to major roads and infrastructure to support housing searches.\n\n\n\n\n\n\n\nNov. 2018 – Jan. 2020\n\n\nDepartment of Forestry & Wildlife Management, FUNAAB\n\n\n\n\nCreated maps of study locations for 10 undergraduate research projects.\n\n\nDeveloped geospatial data collection forms and field applications.\n\n\nUpdated topographic maps of the university with new thematic features."
   },
   {
     "objectID": "resume.html#volunteering-service",
     "href": "resume.html#volunteering-service",
     "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Nov. 2025 – Present\n\n\nUBC Geomatics Community of Practice\n\n\nContributing to the revision of the Open Geomatics textbook for advanced GIS learning and community-based geospatial education.\n\n\nView GitHub Repository →\n\n\n\n\n\nAug. 2022 – Present\n\n\nJournal of Forestry Research; Current Agriculture Research Journal\n\n\nReviewed research articles and provided publication feedback, supporting research quality and editorial evaluation in forestry and agriculture.\n\n\nSee verified reviews here →"
+    "section": "Volunteering & Service",
+    "text": "Volunteering & Service\n\n\n\n\nGitHub Contributor/Reviewer — Open Geomatics Textbook Revision\n\nNov. 2025 – Present\n\n\nUBC Geomatics Community of Practice\n\n\nContribute to the revision of GEM 511— Advanced GIS for Environmental Management.\n\n\nView GitHub Repository →\n\n\n\n\n\nPeer Reviewer\n\nAug. 2022 – Present\n\n\nJournal of Forestry Research; Current Agriculture Research Journal\n\n\n\n\nReviewed research articles and provided publication feedback, supporting research quality and editorial evaluation in forestry and agriculture.\n\n\nAssess the accuracy and relevance of submissions to agriculture and forestry research.\n\n\n\n\n\n\n\nSee verified reviews here →"
+  },
+  {
+    "objectID": "resume.html#masters-capstone-project",
+    "href": "resume.html#masters-capstone-project",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Master’s Capstone Project",
+    "text": "Master’s Capstone Project\n\n\n\n\nAssessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley\n\nAug. 2025 – May 2026\n\n\n\n\nHarmonized multi-source land-cover and agricultural datasets to detect changes in the LFV between 2015 and 2020.\n\n\nProduced 30 m land-cover outputs to quantify land-cover change, characterize landscape structure, and identify key transitions.\n\n\nEvaluated fragmentation, connectivity, and spatial patterns to support interpretation of ecological and agricultural landscape change.\n\n\nIdentified priority areas for perennial agricultural expansion to inform sustainable land management.\n\n\n\n\nView Capstone Project →"
+  },
+  {
+    "objectID": "resume.html#publications",
+    "href": "resume.html#publications",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Publications",
+    "text": "Publications\n\n\n\n\nPeer-Reviewed Publication\n\n\n\nEzekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18.\n\n\nView publication →"
   },
   {
     "objectID": "resume.html#training-professional-development",
     "href": "resume.html#training-professional-development",
     "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Drought Monitoring, Prediction, and Projection using NASA Earth System Data — NASA ARSET, Oct. 2024\n\nInvasive Species Monitoring with Remote Sensing — NASA ARSET, Oct. 2024\n\nCO2 Measurements for Climate-Related Studies — NASA ARSET, Oct. 2024\n\nIntroduction to Agent Based Modeling — Geoversity, University of Twente, Sep. 2024\n\nUAVs in Precision Agriculture — Geoversity, University of Twente (ITC), Aug. 2024\n\nGeo Web App Building with Open-Source Tools — Geoversity, ITC, Aug. 2024\n\nRemote Sensing Image Acquisition, Analysis and Applications — Coursera, Jul. 2024\n\n\n\nView training certificates here →"
+    "section": "Training & Professional Development",
+    "text": "Training & Professional Development\n\n\n\n\nGetting Started with Spatial Analysis — Esri Academy, 2025\nGetting Started with Imagery and Remote Sensing — Esri Academy, 2025\nMeasuring Land Cover Change Using ArcGIS Pro — Esri Academy, 2024\nRegression Analysis: Building a Regression Model Using ArcGIS Pro — Esri Academy, 2024\nRegression Analysis: Random Forest Regression Using ArcGIS Pro — Esri Academy, 2024\nImagery in Action — Esri Academy, 2021\nDrought Monitoring using NASA Earth System Data, — NASA ARSET, Oct. 2024\nInvasive Species Monitoring with Remote Sensing — NASA ARSET, Oct. 2024\nUAVs in Precision Agriculture — University of Twente (ITC) & Geoversity, Aug. 2024\nGeo Web App Building with Open-Source tools — ITC & Geoversity, Aug. 2024\nRemote Sensing Image Acquisition, Analysis and Applications — Coursera, Jul. 2024\n\n\n\nView training certificates here →"
   },
   {
     "objectID": "resume.html#awards-honors",
     "href": "resume.html#awards-honors",
     "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Fully funded master’s program at UBC — Mastercard Foundation Scholarship, 2025\n\nFully funded micro-credential in GIS — Seneca Polytechnic / Quick Train Canada, 2024\n\nAward of Meritorious Service — GBFOODS Africa, 2023\n\nReviewer of the Year — Current Agriculture Research Journal, 2022\n\nData Science Microdegree Scholarship — USTACKY, 2021\n\nBest Graduating Student, Department of Forestry and Wildlife Management — FUNAAB Senate Awards, 2020"
+    "section": "Awards & Honors",
+    "text": "Awards & Honors\n\n\n\n\nMastercard Foundation Scholarship — Fully funded Master’s program, UBC, 2025\nQuick Train Canada Scholarship — GIS Micro credential, Seneca Polytechnic, 2024\nAward of Meritorious Service — GBFOODS, Africa, 2023\nReviewer of the year — Current Agriculture Research Journal, India, 2022\nBest Graduating Student — FWM 2020/21 session, FUNAAB Senate Awards, 2020"
   },
   {
     "objectID": "survey123.html",

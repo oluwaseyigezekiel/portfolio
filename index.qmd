@@ -8,6 +8,7 @@ format:
 
 <meta http-equiv="refresh" content="3; url=home.html">
 
+```{=html}
 <style>
 
 /* Remove Quarto width limits */
@@ -68,11 +69,10 @@ format:
 }
 
 </style>
+```
 
-<div class="full-hero">
-
-<div class="welcome-text">
+:::: full-hero
+::: welcome-text
 Welcome!!!
-</div>
-
-</div>
+:::
+::::
