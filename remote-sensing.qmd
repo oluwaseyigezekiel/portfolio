@@ -64,9 +64,8 @@ editor: source
 
 **Can an algorithm reliably find every tree in a structurally complex BC coniferous forest?**
 This project compares two individual tree segmentation approaches —
-**Li2012** (3D point-cloud) and **Dalponte2016** (CHM region-growing) — across four forest
-plots at Malcolm Knapp Research Forest. 
-**Finding:** Choosing the right CHM resolution changed results more than switching between algorithms.
+**Li2012** (3D point-cloud) and **Dalponte2016** (CHM region-growing) — across four forest plots at Malcolm Knapp Research Forest. 
+
 
 <a class="story-btn" href="labs/lidar-story.html">Read the full story →</a>
 </div>
