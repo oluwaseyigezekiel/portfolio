@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-14b550393540c49c34659b57e9e7bd9e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -151,86 +151,65 @@ ul.task-list li input[type="checkbox"] {
 
 
 <style>
-.rs-container{
-  max-width:1000px;
-  margin:0 auto;
-}
-
+.rs-container{max-width:1000px;margin:0 auto}
 .lab-card{
-  background:#ffffff;
-  border-radius:18px;
-  padding:1.4rem;
+  background:#fff;border-radius:18px;padding:1.4rem;
   margin-bottom:1.6rem;
   box-shadow:0 6px 18px rgba(0,0,0,0.07);
   border:1px solid rgba(0,0,0,0.05);
 }
-
-.tag-row{
-  display:flex;
-  flex-wrap:wrap;
-  gap:.45rem;
-  margin-bottom:.7rem;
-}
-
+.lab-card.featured{padding:0;overflow:hidden}
+.featured-body{padding:1.4rem}
+.tag-row{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:.7rem}
 .tag{
-  background:#eef4ff;
-  padding:.25rem .7rem;
-  border-radius:999px;
-  font-size:.8rem;
-  font-weight:600;
-  color:#2457a6;
+  background:#eef4ff;padding:.25rem .7rem;
+  border-radius:999px;font-size:.8rem;font-weight:600;color:#2457a6;
 }
-
-.project-link{
-  font-weight:600;
-  text-decoration:none;
+.tag.forest{background:#d8f3dc;color:#1b4332}
+.project-link{font-weight:600;text-decoration:none}
+.project-link:hover{text-decoration:underline}
+.story-btn{
+  display:inline-flex;align-items:center;gap:.45rem;
+  margin-top:1rem;padding:.6rem 1.2rem;
+  border-radius:999px;background:#1b4332;
+  color:#fff;font-size:.85rem;font-weight:600;
+  text-decoration:none;transition:background .2s;
 }
-
-.project-link:hover{
-  text-decoration:underline;
-}
-
+.story-btn:hover{background:#2d6a4f}
 .back-btn{
-  display:inline-block;
-  margin-bottom:1.4rem;
-  padding:.55rem 1rem;
-  border-radius:999px;
-  background:#f3f4f6;
-  color:#222;
-  text-decoration:none;
-  font-weight:600;
-  border:1px solid rgba(0,0,0,0.08);
+  display:inline-block;margin-bottom:1.4rem;
+  padding:.55rem 1rem;border-radius:999px;
+  background:#f3f4f6;color:#222;text-decoration:none;
+  font-weight:600;border:1px solid rgba(0,0,0,0.08);
 }
-
-.back-btn:hover{
-  background:#e9ecef;
-}
+.back-btn:hover{background:#e9ecef}
 </style>
 <div class="rs-container">
 <p><a href="content.html" class="back-btn">← Back to Projects</a></p>
 <section id="remote-sensing-projects" class="level1">
 <h1>Remote Sensing Projects</h1>
-<p><em>Click a project below to view the full lab report.</em></p>
 <hr>
+<section id="lidar-forest-structure-individual-tree-detection" class="level3">
+<h3 class="anchored" data-anchor-id="lidar-forest-structure-individual-tree-detection">LiDAR Forest Structure &amp; Individual Tree Detection</h3>
+<div class="lab-card featured">
+<div class="featured-body">
+<div class="tag-row">
+<p><span class="tag forest">LiDAR</span> <span class="tag forest">Individual Tree Detection</span> <span class="tag forest">Forest Inventory</span> <span class="tag">R · lidR</span> <span class="tag">Malcolm Knapp RF</span></p>
+</div>
+<p><strong>Can an algorithm reliably find every tree in a structurally complex BC coniferous forest?</strong> This project compares two individual tree segmentation approaches — <strong>Li2012</strong> (3D point-cloud) and <strong>Dalponte2016</strong> (CHM region-growing) — across four forest plots at Malcolm Knapp Research Forest. <strong>Finding:</strong> Choosing the right CHM resolution changed results more than switching between algorithms.</p>
+<p><a class="story-btn" href="labs/lidar-story.html">Read the full story →</a></p>
+</div>
+</div>
+<hr>
+</section>
 <section id="land-cover-classification" class="level3">
 <h3 class="anchored" data-anchor-id="land-cover-classification">Land Cover Classification</h3>
 <div class="lab-card">
 <div class="tag-row">
 <p><span class="tag">Remote Sensing</span> <span class="tag">Image Classification</span> <span class="tag">Landsat</span></p>
 </div>
-<p>This project applies supervised image classification to Landsat imagery using the Maximum Likelihood algorithm to map seven land-cover classes: Broadleaf Forest, Coniferous Forest, Exposed Soil and Rocks, High Density Developed, Low Density Developed, Non-forest Vegetation, and Water. The workflow includes training and validation polygons, spectral signature analysis, and accuracy assessment.</p>
+<p>This project applies supervised image classification to Landsat imagery using the Maximum Likelihood algorithm to map seven land-cover classes including Broadleaf Forest, Coniferous Forest, Exposed Soil and Rocks, and Water. The workflow includes training and validation polygons, spectral signature analysis, and accuracy assessment.</p>
 <p><a href="labs/classification.pdf" class="project-link">See full lab report (PDF) →</a></p>
-</div>
-<hr>
-</section>
-<section id="lidar-forest-structure-and-individual-tree-segmentation" class="level3">
-<h3 class="anchored" data-anchor-id="lidar-forest-structure-and-individual-tree-segmentation">LiDAR Forest Structure and Individual Tree Segmentation</h3>
-<div class="lab-card">
-<div class="tag-row">
-<p><span class="tag">LiDAR</span> <span class="tag">Forest Structure</span> <span class="tag">Point Cloud</span></p>
-</div>
-<p>This lab uses airborne LiDAR point cloud data to identify and segment individual trees in forest plots. The workflow includes plot extraction, canopy height model generation, tree-top detection, and segmentation using the <strong>li2012</strong> and <strong>dalponte2016</strong> algorithms, with comparison across multiple canopy height model resolutions to determine an efficient balance between detail and computation.</p>
-<p><a href="labs/lidar.pdf" class="project-link">See full lab report (PDF) →</a></p>
 </div>
 <hr>
 </section>
@@ -240,7 +219,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="tag-row">
 <p><span class="tag">Spectral Analysis</span> <span class="tag">Vegetation Indices</span> <span class="tag">Remote Sensing</span></p>
 </div>
-<p>This project analyzes reflectance spectra measured with the ASD FieldSpecPro to compare live vegetation, dead vegetation, soil, and rock. It also computes spectral indices such as <strong>PRI, SIPI, and ND705</strong>, simulates mixed pixels, and shows how <strong>NDVI</strong> and <strong>NDWI</strong> respond to increasing live vegetation cover at Landsat spectral resolution.</p>
+<p>This project analyzes reflectance spectra measured with the ASD FieldSpecPro to compare live vegetation, dead vegetation, soil, and rock. It computes spectral indices such as <strong>PRI, SIPI, and ND705</strong>, simulates mixed pixels, and shows how <strong>NDVI</strong> and <strong>NDWI</strong> respond to increasing live vegetation cover at Landsat spectral resolution.</p>
 <p><a href="labs/spectral.pdf" class="project-link">See full lab report (PDF) →</a></p>
 </div>
 <hr>
@@ -251,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="tag-row">
 <p><span class="tag">Landsat</span> <span class="tag">Time Series</span> <span class="tag">NDVI / NBR</span></p>
 </div>
-<p>This project analyzes wildfire burn severity and post-fire vegetation recovery using a Landsat 8 time series over the Prouton Lakes fire in British Columbia. The workflow includes cloud masking, NDVI and NBR calculation, yearly compositing, dNBR-based burn severity classification, and assessment of vegetation recovery patterns from 2018 to 2021.</p>
+<p>This project analyzes wildfire burn severity and post-fire vegetation recovery using a Landsat 8 time series over the Prouton Lakes fire in British Columbia. The workflow includes cloud masking, NDVI and NBR calculation, yearly compositing, dNBR-based burn severity classification, and assessment of vegetation recovery from 2018 to 2021.</p>
 <p><a href="labs/wildfire.pdf" class="project-link">See full lab report (PDF) →</a></p>
 </div>
 </section>
