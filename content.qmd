@@ -191,7 +191,7 @@ LiDAR analysis, land-cover classification, spectral interpretation, and satellit
 :::
 :::
 
-::: {.category-card data-target="landscape-page"}
+::: {.category-card onclick="window.location.href='landscape.html'"}
 ### Landscape Modeling & Spatial Statistics
 
 Landscape metrics, spatial modeling, forest analytics, and environmental statistics.

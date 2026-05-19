@@ -42,46 +42,200 @@
     "text": "← Back to Projects\n\nStoryMaps\nThese StoryMaps are part of my micro-credential in Geospatial Data Collection, Analysis & Interpretation using GIS Technology** at Seneca Polytechnic, Canada. They show how spatial storytelling can be employed in Asset and infrastructure management, Urban planning and other real-world scenarios.\n\n\n\nTraffic Analysis and Safety\n\nStoryMaps Traffic Analysis Road Safety\n\nThis project analyzes infrastructure distribution and traffic patterns to improve road safety and optimize traffic flow.\nView project PDF →\n\n\nMilitary Checkpoint Establishment\n\nStoryMaps Site Selection Strategic Planning\n\nThis project develops GIS-based solutions for the strategic placement of military checkpoints.\nView project PDF →\n\n\nField Maps App for Spatial Data Collection\n\nStoryMaps Field Maps Spatial Data Collection\n\nThis project demonstrates the use of the ESRI Field Maps app to collect, manage, and communicate spatial data.\nView project PDF →\n\n\nReal Estate Management\n\nStoryMaps Boundary Analysis Real Estate GIS\n\nThis project defines a 200-meter jurisdiction boundary for real estate purposes.\nView project PDF →"
   },
   {
-    "objectID": "remote-sensing.html",
-    "href": "remote-sensing.html",
-    "title": "Remote Sensing Projects",
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Oluwaseyi Ezekiel",
     "section": "",
-    "text": "← Back to Projects\n\nRemote Sensing Projects\n\n\nLiDAR Forest Structure & Individual Tree Detection\n\n\n\nLiDAR Individual Tree Detection Forest Inventory R · lidR Malcolm Knapp RF\n\nCan an algorithm reliably find every tree in a structurally complex BC coniferous forest? This project compares two individual tree segmentation approaches — Li2012 (3D point-cloud) and Dalponte2016 (CHM region-growing) — across four forest plots at Malcolm Knapp Research Forest.\nRead the full story →\n\n\n\n\n\nLand Cover Classification\n\n\nRemote Sensing Image Classification Landsat\n\nThis project applies supervised image classification to Landsat imagery using the Maximum Likelihood algorithm to map seven land-cover classes including Broadleaf Forest, Coniferous Forest, Exposed Soil and Rocks, and Water. The workflow includes training and validation polygons, spectral signature analysis, and accuracy assessment.\nSee full lab report (PDF) →\n\n\n\n\nSpectral Indices and Vegetation Properties\n\n\nSpectral Analysis Vegetation Indices Remote Sensing\n\nThis project analyzes reflectance spectra measured with the ASD FieldSpecPro to compare live vegetation, dead vegetation, soil, and rock. It computes spectral indices such as PRI, SIPI, and ND705, simulates mixed pixels, and shows how NDVI and NDWI respond to increasing live vegetation cover at Landsat spectral resolution.\nSee full lab report (PDF) →\n\n\n\n\nWildfire Burn Severity and Vegetation Recovery\n\n\nLandsat Time Series NDVI / NBR\n\nThis project analyzes wildfire burn severity and post-fire vegetation recovery using a Landsat 8 time series over the Prouton Lakes fire in British Columbia. The workflow includes cloud masking, NDVI and NBR calculation, yearly compositing, dNBR-based burn severity classification, and assessment of vegetation recovery from 2018 to 2021.\nSee full lab report (PDF) →"
+    "text": "Expected Apr. 2026\n\n\nUniversity of British Columbia (UBC), Vancouver, BC, Canada\n\n\n\n\n\n\n\n\n\n\nApr. 2024\n\n\nSeneca Polytechnic, Toronto, ON, Canada\n\n\n\n\n\n\n\n\n\n\nFeb. 2020\n\n\nFederal University of Agriculture, Abeokuta (FUNAAB), Ogun, Nigeria\n\n\n\n\n\n\n\n\nArcGIS Pro QGIS ENVI Google Earth Engine Spatial Modelling R Python SQL Markdown GitHub MS Excel Research Project Management Technical Writing\n\nSee Projects →\n\n\n\n\n\n\n\nFeb. 2025 – May 2025\n\n\nGeospatial Research Limited, Ikeja, Lagos\n\n\n\n\nUpdated road networks, signages, and markings of Lagos State (Nigeria’s most populous megacity) to support transportation planning and mobility management.\n\n\nUpdated and validated over 30,000 building footprint records using ArcGIS Pro to improve Lagos State housing database and development.\n\n\nPrepared proposals and proof of concepts for urban infrastructure planning and environmental management for public-sector clients.\n\n\n\n\n\n\n\nAug. 2020 – Jan. 2024\n\n\nGBFOODS, Tomani Farms & Agro. Industry Limited, Kebbi, Nigeria\n\n\n\n\nMonitored an 800-hectare farm using UAVs and satellite imagery, and provided weekly reports on crop performance and potential risks.\n\n\nCoordinated with Greenfield Technologies, a third-party GIS service provider, to implement daily irrigation recommendations and support precision agriculture monitoring.\n\n\nManaged a team of 62 staff members in the operation and maintenance of decision support tools including soil moisture/pH testers, irrigation sensors, and meteorological stations.\n\n\nEngaged 200 local farmers on agrochemical use and sustainable practices for optimal yield.\n\n\n\n\n\n\n\nMay 2024\n\n\nCitizen Science, Ayobo Local Council Development Area, Lagos, Nigeria\n\n\n\n\nAnalyzed traffic congestion, road usage patterns, and security infrastructure, including military checkpoints, to assess mobility and safety conditions within the municipality.\n\n\nAnalyzed real estate availability and proximity (within 200m) to major roads and infrastructure to support housing searches.\n\n\n\n\n\n\n\nNov. 2018 – Jan. 2020\n\n\nDepartment of Forestry & Wildlife Management, FUNAAB\n\n\n\n\nCreated maps of study locations for 10 undergraduate research projects.\n\n\nDeveloped geospatial data collection forms and field applications.\n\n\nUpdated topographic maps of the university with new thematic features."
   },
   {
-    "objectID": "hyperspectral.html",
-    "href": "hyperspectral.html",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Expected Apr. 2026\n\n\nUniversity of British Columbia (UBC), Vancouver, BC, Canada\n\n\n\n\n\n\n\n\n\n\nApr. 2024\n\n\nSeneca Polytechnic, Toronto, ON, Canada\n\n\n\n\n\n\n\n\n\n\nFeb. 2020\n\n\nFederal University of Agriculture, Abeokuta (FUNAAB), Ogun, Nigeria"
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "ArcGIS Pro QGIS ENVI Google Earth Engine Spatial Modelling R Python SQL Markdown GitHub MS Excel Research Project Management Technical Writing\n\nSee Projects →"
+  },
+  {
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Feb. 2025 – May 2025\n\n\nGeospatial Research Limited, Ikeja, Lagos\n\n\n\n\nUpdated road networks, signages, and markings of Lagos State (Nigeria’s most populous megacity) to support transportation planning and mobility management.\n\n\nUpdated and validated over 30,000 building footprint records using ArcGIS Pro to improve Lagos State housing database and development.\n\n\nPrepared proposals and proof of concepts for urban infrastructure planning and environmental management for public-sector clients.\n\n\n\n\n\n\n\nAug. 2020 – Jan. 2024\n\n\nGBFOODS, Tomani Farms & Agro. Industry Limited, Kebbi, Nigeria\n\n\n\n\nMonitored an 800-hectare farm using UAVs and satellite imagery, and provided weekly reports on crop performance and potential risks.\n\n\nCoordinated with Greenfield Technologies, a third-party GIS service provider, to implement daily irrigation recommendations and support precision agriculture monitoring.\n\n\nManaged a team of 62 staff members in the operation and maintenance of decision support tools including soil moisture/pH testers, irrigation sensors, and meteorological stations.\n\n\nEngaged 200 local farmers on agrochemical use and sustainable practices for optimal yield.\n\n\n\n\n\n\n\nMay 2024\n\n\nCitizen Science, Ayobo Local Council Development Area, Lagos, Nigeria\n\n\n\n\nAnalyzed traffic congestion, road usage patterns, and security infrastructure, including military checkpoints, to assess mobility and safety conditions within the municipality.\n\n\nAnalyzed real estate availability and proximity (within 200m) to major roads and infrastructure to support housing searches.\n\n\n\n\n\n\n\nNov. 2018 – Jan. 2020\n\n\nDepartment of Forestry & Wildlife Management, FUNAAB\n\n\n\n\nCreated maps of study locations for 10 undergraduate research projects.\n\n\nDeveloped geospatial data collection forms and field applications.\n\n\nUpdated topographic maps of the university with new thematic features."
+  },
+  {
+    "objectID": "resume.html#volunteering-service",
+    "href": "resume.html#volunteering-service",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Volunteering & Service",
+    "text": "Volunteering & Service\n\n\n\n\nGitHub Contributor/Reviewer — Open Geomatics Textbook Revision\n\nNov. 2025 – Present\n\n\nUBC Geomatics Community of Practice\n\n\nContribute to the revision of GEM 511— Advanced GIS for Environmental Management.\n\n\nView GitHub Repository →\n\n\n\n\n\nPeer Reviewer\n\nAug. 2022 – Present\n\n\nJournal of Forestry Research; Current Agriculture Research Journal\n\n\n\n\nReviewed research articles and provided publication feedback, supporting research quality and editorial evaluation in forestry and agriculture.\n\n\nAssess the accuracy and relevance of submissions to agriculture and forestry research.\n\n\n\n\n\n\n\nSee verified reviews here →"
+  },
+  {
+    "objectID": "resume.html#masters-capstone-project",
+    "href": "resume.html#masters-capstone-project",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Master’s Capstone Project",
+    "text": "Master’s Capstone Project\n\n\n\n\nAssessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley\n\nAug. 2025 – May 2026\n\n\n\n\nHarmonized multi-source land-cover and agricultural datasets to detect changes in the LFV between 2015 and 2020.\n\n\nProduced 30 m land-cover outputs to quantify land-cover change, characterize landscape structure, and identify key transitions.\n\n\nEvaluated fragmentation, connectivity, and spatial patterns to support interpretation of ecological and agricultural landscape change.\n\n\nIdentified priority areas for perennial agricultural expansion to inform sustainable land management.\n\n\n\n\nView Capstone Project →"
+  },
+  {
+    "objectID": "resume.html#publications",
+    "href": "resume.html#publications",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Publications",
+    "text": "Publications\n\n\n\n\nPeer-Reviewed Publication\n\n\n\nEzekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18.\n\n\nView publication →"
+  },
+  {
+    "objectID": "resume.html#training-professional-development",
+    "href": "resume.html#training-professional-development",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Training & Professional Development",
+    "text": "Training & Professional Development\n\n\n\n\nGetting Started with Spatial Analysis — Esri Academy, 2025\nGetting Started with Imagery and Remote Sensing — Esri Academy, 2025\nMeasuring Land Cover Change Using ArcGIS Pro — Esri Academy, 2024\nRegression Analysis: Building a Regression Model Using ArcGIS Pro — Esri Academy, 2024\nRegression Analysis: Random Forest Regression Using ArcGIS Pro — Esri Academy, 2024\nImagery in Action — Esri Academy, 2021\nDrought Monitoring using NASA Earth System Data, — NASA ARSET, Oct. 2024\nInvasive Species Monitoring with Remote Sensing — NASA ARSET, Oct. 2024\nUAVs in Precision Agriculture — University of Twente (ITC) & Geoversity, Aug. 2024\nGeo Web App Building with Open-Source tools — ITC & Geoversity, Aug. 2024\nRemote Sensing Image Acquisition, Analysis and Applications — Coursera, Jul. 2024\n\n\n\nView training certificates here →"
+  },
+  {
+    "objectID": "resume.html#awards-honors",
+    "href": "resume.html#awards-honors",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Awards & Honors",
+    "text": "Awards & Honors\n\n\n\n\nMastercard Foundation Scholarship — Fully funded Master’s program, UBC, 2025\nQuick Train Canada Scholarship — GIS Micro credential, Seneca Polytechnic, 2024\nAward of Meritorious Service — GBFOODS, Africa, 2023\nReviewer of the year — Current Agriculture Research Journal, India, 2022\nBest Graduating Student — FWM 2020/21 session, FUNAAB Senate Awards, 2020"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
+  },
+  {
+    "objectID": "publications.html#peer-reviewed-publications",
+    "href": "publications.html#peer-reviewed-publications",
+    "title": "Publications",
+    "section": "",
+    "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Welcome!!!"
+  },
+  {
+    "objectID": "home.html",
+    "href": "home.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Oluwaseyi Ezekiel\n\n\nGeospatial and Remote Sensing Scientist\n\n\n\n\nView Portfolio"
+  },
+  {
+    "objectID": "earlier-gis.html",
+    "href": "earlier-gis.html",
+    "title": "Oluwaseyi Ezekiel",
     "section": "",
     "text": "← Back to Projects"
   },
   {
-    "objectID": "hyperspectral.html#overview",
-    "href": "hyperspectral.html#overview",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "objectID": "earlier-gis.html#overview",
+    "href": "earlier-gis.html#overview",
+    "title": "Oluwaseyi Ezekiel",
     "section": "Overview",
-    "text": "Overview\nThis project explores hyperspectral reflectance signatures of vegetation and surface materials across the visible, near-infrared, and shortwave infrared spectral regions. Hyperspectral measurements allow detailed analysis of vegetation properties such as chlorophyll content, leaf structure, and moisture."
+    "text": "Overview\nBefore the MGEM program, I worked on a range of hands-on GIS and remote sensing projects that strengthened my practical skills in land-cover classification, environmental mapping, forest analysis, hazard assessment, UAV applications, and geospatial data visualization.\nThese projects span different platforms and workflows, including QGIS, ArcGIS Pro, Google Earth Engine, R, and Python, and show the progression of my technical experience across applied environmental and spatial problems."
   },
   {
-    "objectID": "hyperspectral.html#data",
-    "href": "hyperspectral.html#data",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
-    "section": "Data",
-    "text": "Data\nField spectrometry measurements of vegetation and surface materials including:\n\nBigleaf maple\nDouglas-fir\nGarry oak\nSoil\nGrass\nMoss\nCoarse woody debris"
+    "objectID": "content.html",
+    "href": "content.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Note: Click a category to explore projects.\n\n\n\n\n\nApplied capstone work and geospatial project planning.\n\nCapstone Planning Communication\n\n\n\n\nMap design, ArcGIS Online applications, dashboards, field data collection and desktop GIS workflows.\n\nStoryMaps Survey123 ArcGIS Pro QGIS\n\n\n\n\nLiDAR analysis, land-cover classification, spectral interpretation, and satellite time-series remote sensing.\n\nLiDAR Classification Spectral Landsat\n\n\n\n\nLandscape metrics, spatial modeling, forest analytics, and environmental statistics.\n\nSpatial Statistics Modeling Python"
   },
   {
-    "objectID": "hyperspectral.html#methods",
-    "href": "hyperspectral.html#methods",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "objectID": "content.html#cartography-gis-applications-1",
+    "href": "content.html#cartography-gis-applications-1",
+    "title": "Projects",
+    "section": "Cartography & GIS Applications",
+    "text": "Cartography & GIS Applications\n\n\nCitizen Science: Asset & Infrastructure Management\nInteractive StoryMaps analyzing traffic patterns and urban mobility challenges to support safer and more efficient transportation systems.\n\nAsset Management Urban Planning ArcGIS StoryMaps\n\nView StoryMaps →\n\n\nData Visualization: Environmental Conservation\nInteractive dashboard designed to monitor and visualize environmental indicators collected through Survey123 field surveys.\n\nEnvironmental Conservation Data Visualization ArcGIS Dashboards\n\nView Dashboard →\n\n\nField Data Collection: Species Monitoring\nMobile GIS workflow developed using ArcGIS Survey123 to collect structured geospatial data in the field.\n\nField Data Collection Survey123\n\nView Survey →\n\n\nDesktop GIS: Mapping Projects\nCollection of thematic maps and cartographic layouts developed using ArcGIS Pro and QGIS.\n\nArcGIS Pro QGIS Cartography\n\nSee Map Gallery →"
+  },
+  {
+    "objectID": "content.html#landscape-modeling-spatial-statistics-1",
+    "href": "content.html#landscape-modeling-spatial-statistics-1",
+    "title": "Projects",
+    "section": "Landscape Modeling & Spatial Statistics",
+    "text": "Landscape Modeling & Spatial Statistics\n\n\nMangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\nThis project quantifies mangrove loss across administrative boundaries in Madagascar between 1999 and 2019 using the Murray Global Tidal Wetland Change dataset. A fully automated Python pipeline — built with ArcPy in Jupyter notebooks — handles raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis to identify which communities experienced the greatest loss and whether proximity to paths explains deforestation patterns.\n\nPython ArcPy Google Earth Engine Spatial Analysis\n\nView project →\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nThe analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.\n\nSpatial Statistics LiDAR Forest Inventory Feature Selection\n\nView project →"
+  },
+  {
+    "objectID": "content.html#project-management-1",
+    "href": "content.html#project-management-1",
+    "title": "Projects",
+    "section": "Project Management",
+    "text": "Project Management\n\n\nAssessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley\nMaster’s Capstone Project — University of British Columbia (UBC)\nThis study examines how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020 by harmonizing multi-source land-cover datasets and analyzing landscape structure and land-cover transitions. The project identifies spatial patterns of agricultural change and evaluates opportunities for perennial agriculture expansion within existing agricultural systems.\nView full project →\n\n\n\nMapping Spatial Patterns of Urban Carbon Sinks in Metro Vancouver\nResearch Proposal — UBC GEM 500 (Landscape Ecology)\nThis project investigates how vegetation distribution and landscape structure influence urban carbon storage across Metro Vancouver municipalities. Using Landsat imagery, carbon biomass datasets, and landscape metrics, the study aims to identify municipalities functioning as major urban carbon sinks and assess the spatial factors influencing carbon storage.\nView full project →"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
+  },
+  {
+    "objectID": "capstone.html",
+    "href": "capstone.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "← Back to Projects"
+  },
+  {
+    "objectID": "capstone.html#introduction",
+    "href": "capstone.html#introduction",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Introduction",
+    "text": "Introduction\nAgricultural landscapes in the Lower Fraser Valley (LFV), British Columbia, are experiencing structural changes driven by evolving agricultural practices, environmental pressures, and expanding urban development. Understanding how land-cover transitions occur within this highly productive agricultural region is important for supporting sustainable land management and identifying opportunities for resilient farming systems.\nThis capstone project evaluates how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020, with particular attention to transitions between annual and perennial agriculture. By integrating multiple land-cover datasets and applying spatial analysis techniques, the study identifies patterns of land-cover change and areas where perennial agriculture may expand within existing agricultural landscapes.\n\nFigure 1. Study area showing the Lower Fraser Valley agricultural region analyzed in this project."
+  },
+  {
+    "objectID": "capstone.html#methods",
+    "href": "capstone.html#methods",
+    "title": "Oluwaseyi Ezekiel",
     "section": "Methods",
-    "text": "Methods\nSpectral curves were analyzed across three main spectral regions:\n\n\n\nRegion\nWavelength\nInformation\n\n\n\n\nVisible\n400–700 nm\npigment absorption\n\n\nNear infrared\n750–1300 nm\nleaf structure\n\n\nSWIR\n1300–2500 nm\nwater content"
+    "text": "Methods\nThis study integrates two multi-source land-cover datasets—the Annual Crop Inventory (ACI) and the North American Land Change Monitoring System (NALCMS)—to produce harmonized land-cover maps for 2015 and 2020 and evaluate agricultural landscape dynamics.\nFirst, all datasets were reprojected to UTM Zone 10N and clipped to the Lower Fraser Valley boundary to ensure spatial alignment. Land-cover classes from each dataset were then aggregated into six harmonized categories: Annual Agriculture, Perennial Agriculture, Forest, Marginalized Land, Wetlands, and Water. These categories were selected to maintain ecological relevance while reducing thematic inconsistencies between datasets. :contentReferenceoaicite:0\nDataset agreement was evaluated using confusion matrices, and overall classification agreement was used to derive relative dataset weighting. Harmonization was then performed through pixel-wise overlay, prioritizing ACI classifications in cases of disagreement due to its higher thematic detail for agricultural subclasses.\nFollowing harmonization, post-classification change detection was conducted by comparing the 2015 and 2020 land-cover maps to quantify land-cover transitions and calculate both net and relative changes in landscape composition. Spatial configuration and structural dynamics were further assessed using patch metrics, diversity indices, and adjacency analysis.\n\nFigure 2. Analytical workflow used to harmonize multi-source land-cover datasets and analyze landscape transitions."
   },
   {
-    "objectID": "hyperspectral.html#example-code",
-    "href": "hyperspectral.html#example-code",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
-    "section": "Example Code",
-    "text": "Example Code\n```r Refl_ind &lt;- function(wl, refl, target_wl){ approx(x = wl, y = refl, xout = target_wl, rule = 2)$y }"
+    "objectID": "capstone.html#results",
+    "href": "capstone.html#results",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Results",
+    "text": "Results\n\nLand-Cover Transitions\nTemporal analysis revealed notable shifts in agricultural land cover between 2015 and 2020. Annual agriculture declined substantially, while perennial agriculture increased, indicating an important structural transition within the agricultural system.\n\nFigure 4. Sankey diagram illustrating land-cover transitions between 2015 and 2020.\nThe largest transition occurred from annual agriculture to perennial agriculture, representing nearly half of the annual agricultural area observed in 2015. Smaller conversions occurred between agricultural classes and marginalized land, as well as limited transitions involving forested areas.\n\n\n\nSpatial Distribution of Change\nSpatial change detection shows that most of the landscape remained stable during the study period, while transitions were concentrated within agricultural regions.\n\nFigure 5. Spatial distribution of land-cover persistence and change between 2015 and 2020.\nApproximately three-quarters of the landscape remained persistent, while about one-quarter experienced land-cover transitions. These changes occurred across thousands of discrete patches, indicating that most transitions were spatially dispersed rather than large-scale conversions.\n\n\n\nAgricultural Adjacency\nBeyond land-cover transitions, the study examined spatial relationships between annual and perennial agricultural systems.\n\nFigure 6. Spatial distribution of annual agriculture adjacent to perennial agriculture.\nThe proportion of annual agriculture directly adjacent to perennial systems increased substantially between 2015 and 2020. This pattern suggests growing spatial interaction between agricultural classes and highlights areas where perennial agriculture expansion may occur within existing agricultural landscapes.\n\n\n\nLandscape Structural Dynamics\nShannon’s Diversity Index (SHDI) increased slightly from 1.3249 to 1.355, while Shannon’s Evenness Index (SHEI) increased from 0.7394 to 0.7563, suggesting a more balanced distribution among land-cover classes over time. These changes reflect shifts in the relative proportions of agricultural and non-agricultural classes across the region. At the class level, mean forest patch area decreased from 12.9 ha to 10.72 ha, accompanied by a decline in forest edge density, indicating subtle changes in forest spatial configuration within the agricultural landscape.\nTable 1 summarizes landscape-level diversity metrics and selected class-level structural indicators derived from the harmonized land-cover maps.\n\nLandscape structural metrics derived from harmonized land-cover maps.\n\n\nMetric\n2015\n2020\n\n\n\n\nShannon’s Diversity Index (SHDI)\n1.3249\n1.355\n\n\nShannon’s Evenness Index (SHEI)\n0.7394\n0.7563\n\n\nForest Mean Patch Area (ha)\n12.90\n10.72\n\n\nForest Edge Density (m/ha)\n42.17\n37.38"
+  },
+  {
+    "objectID": "capstone.html#project-significance",
+    "href": "capstone.html#project-significance",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Project Significance",
+    "text": "Project Significance\nThis capstone project demonstrates how harmonized land-cover analysis and spatial landscape metrics can be used to evaluate agricultural transitions and landscape dynamics within complex agricultural regions.\nThe findings indicate a clear shift from annual to perennial agricultural systems, accompanied by increasing spatial interaction between agricultural classes. These patterns suggest opportunities for supporting more sustainable agricultural practices while maintaining the productivity of the Lower Fraser Valley.\nMore broadly, the analytical framework developed in this study provides a transferable approach for examining land-cover change, agricultural transitions, and landscape sustainability in other regions."
+  },
+  {
+    "objectID": "dashboards.html",
+    "href": "dashboards.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "← Back to Projects\n\n\nCourse: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →g"
+  },
+  {
+    "objectID": "dashboards.html#environmental-monitoring-dashboard",
+    "href": "dashboards.html#environmental-monitoring-dashboard",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →g"
   },
   {
     "objectID": "gallery.html",
@@ -168,438 +322,46 @@
     "text": "Carbon Density Mapping\nThis map shows the spatial distribution of above‑ground carbon biomass density across Metro Vancouver. High‑density carbon zones appear in the North Shore and other forested uplands, gradually transitioning to lower values within developed municipalities. The project supports applications in urban planning and carbon‑accounting initiatives, offering spatial insight into where ecosystem restoration actions may have the greatest impact."
   },
   {
-    "objectID": "dashboards.html",
-    "href": "dashboards.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "← Back to Projects\n\n\nCourse: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →g"
-  },
-  {
-    "objectID": "dashboards.html#environmental-monitoring-dashboard",
-    "href": "dashboards.html#environmental-monitoring-dashboard",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →g"
-  },
-  {
-    "objectID": "capstone.html",
-    "href": "capstone.html",
-    "title": "Oluwaseyi Ezekiel",
+    "objectID": "hyperspectral.html",
+    "href": "hyperspectral.html",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
     "section": "",
     "text": "← Back to Projects"
   },
   {
-    "objectID": "capstone.html#introduction",
-    "href": "capstone.html#introduction",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Introduction",
-    "text": "Introduction\nAgricultural landscapes in the Lower Fraser Valley (LFV), British Columbia, are experiencing structural changes driven by evolving agricultural practices, environmental pressures, and expanding urban development. Understanding how land-cover transitions occur within this highly productive agricultural region is important for supporting sustainable land management and identifying opportunities for resilient farming systems.\nThis capstone project evaluates how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020, with particular attention to transitions between annual and perennial agriculture. By integrating multiple land-cover datasets and applying spatial analysis techniques, the study identifies patterns of land-cover change and areas where perennial agriculture may expand within existing agricultural landscapes.\n\nFigure 1. Study area showing the Lower Fraser Valley agricultural region analyzed in this project."
-  },
-  {
-    "objectID": "capstone.html#methods",
-    "href": "capstone.html#methods",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Methods",
-    "text": "Methods\nThis study integrates two multi-source land-cover datasets—the Annual Crop Inventory (ACI) and the North American Land Change Monitoring System (NALCMS)—to produce harmonized land-cover maps for 2015 and 2020 and evaluate agricultural landscape dynamics.\nFirst, all datasets were reprojected to UTM Zone 10N and clipped to the Lower Fraser Valley boundary to ensure spatial alignment. Land-cover classes from each dataset were then aggregated into six harmonized categories: Annual Agriculture, Perennial Agriculture, Forest, Marginalized Land, Wetlands, and Water. These categories were selected to maintain ecological relevance while reducing thematic inconsistencies between datasets. :contentReferenceoaicite:0\nDataset agreement was evaluated using confusion matrices, and overall classification agreement was used to derive relative dataset weighting. Harmonization was then performed through pixel-wise overlay, prioritizing ACI classifications in cases of disagreement due to its higher thematic detail for agricultural subclasses.\nFollowing harmonization, post-classification change detection was conducted by comparing the 2015 and 2020 land-cover maps to quantify land-cover transitions and calculate both net and relative changes in landscape composition. Spatial configuration and structural dynamics were further assessed using patch metrics, diversity indices, and adjacency analysis.\n\nFigure 2. Analytical workflow used to harmonize multi-source land-cover datasets and analyze landscape transitions."
-  },
-  {
-    "objectID": "capstone.html#results",
-    "href": "capstone.html#results",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Results",
-    "text": "Results\n\nLand-Cover Transitions\nTemporal analysis revealed notable shifts in agricultural land cover between 2015 and 2020. Annual agriculture declined substantially, while perennial agriculture increased, indicating an important structural transition within the agricultural system.\n\nFigure 4. Sankey diagram illustrating land-cover transitions between 2015 and 2020.\nThe largest transition occurred from annual agriculture to perennial agriculture, representing nearly half of the annual agricultural area observed in 2015. Smaller conversions occurred between agricultural classes and marginalized land, as well as limited transitions involving forested areas.\n\n\n\nSpatial Distribution of Change\nSpatial change detection shows that most of the landscape remained stable during the study period, while transitions were concentrated within agricultural regions.\n\nFigure 5. Spatial distribution of land-cover persistence and change between 2015 and 2020.\nApproximately three-quarters of the landscape remained persistent, while about one-quarter experienced land-cover transitions. These changes occurred across thousands of discrete patches, indicating that most transitions were spatially dispersed rather than large-scale conversions.\n\n\n\nAgricultural Adjacency\nBeyond land-cover transitions, the study examined spatial relationships between annual and perennial agricultural systems.\n\nFigure 6. Spatial distribution of annual agriculture adjacent to perennial agriculture.\nThe proportion of annual agriculture directly adjacent to perennial systems increased substantially between 2015 and 2020. This pattern suggests growing spatial interaction between agricultural classes and highlights areas where perennial agriculture expansion may occur within existing agricultural landscapes.\n\n\n\nLandscape Structural Dynamics\nShannon’s Diversity Index (SHDI) increased slightly from 1.3249 to 1.355, while Shannon’s Evenness Index (SHEI) increased from 0.7394 to 0.7563, suggesting a more balanced distribution among land-cover classes over time. These changes reflect shifts in the relative proportions of agricultural and non-agricultural classes across the region. At the class level, mean forest patch area decreased from 12.9 ha to 10.72 ha, accompanied by a decline in forest edge density, indicating subtle changes in forest spatial configuration within the agricultural landscape.\nTable 1 summarizes landscape-level diversity metrics and selected class-level structural indicators derived from the harmonized land-cover maps.\n\nLandscape structural metrics derived from harmonized land-cover maps.\n\n\nMetric\n2015\n2020\n\n\n\n\nShannon’s Diversity Index (SHDI)\n1.3249\n1.355\n\n\nShannon’s Evenness Index (SHEI)\n0.7394\n0.7563\n\n\nForest Mean Patch Area (ha)\n12.90\n10.72\n\n\nForest Edge Density (m/ha)\n42.17\n37.38"
-  },
-  {
-    "objectID": "capstone.html#project-significance",
-    "href": "capstone.html#project-significance",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Project Significance",
-    "text": "Project Significance\nThis capstone project demonstrates how harmonized land-cover analysis and spatial landscape metrics can be used to evaluate agricultural transitions and landscape dynamics within complex agricultural regions.\nThe findings indicate a clear shift from annual to perennial agricultural systems, accompanied by increasing spatial interaction between agricultural classes. These patterns suggest opportunities for supporting more sustainable agricultural practices while maintaining the productivity of the Lower Fraser Valley.\nMore broadly, the analytical framework developed in this study provides a transferable approach for examining land-cover change, agricultural transitions, and landscape sustainability in other regions."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
-  },
-  {
-    "objectID": "about.html#about-me",
-    "href": "about.html#about-me",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
-  },
-  {
-    "objectID": "content.html",
-    "href": "content.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Note: Click a category to explore projects.\n\n\n\n\n\nApplied capstone work and geospatial project planning.\n\nCapstone Planning Communication\n\n\n\n\nMap design, ArcGIS Online applications, dashboards, field data collection and desktop GIS workflows.\n\nStoryMaps Survey123 ArcGIS Pro QGIS\n\n\n\n\nLiDAR analysis, land-cover classification, spectral interpretation, and satellite time-series remote sensing.\n\nLiDAR Classification Spectral Landsat\n\n\n\n\nLandscape metrics, spatial modeling, forest analytics, and environmental statistics.\n\nSpatial Statistics Modeling Python"
-  },
-  {
-    "objectID": "content.html#cartography-gis-applications-1",
-    "href": "content.html#cartography-gis-applications-1",
-    "title": "Projects",
-    "section": "Cartography & GIS Applications",
-    "text": "Cartography & GIS Applications\n\n\nCitizen Science: Asset & Infrastructure Management\nInteractive StoryMaps analyzing traffic patterns and urban mobility challenges to support safer and more efficient transportation systems.\n\nAsset Management Urban Planning ArcGIS StoryMaps\n\nView StoryMaps →\n\n\nData Visualization: Environmental Conservation\nInteractive dashboard designed to monitor and visualize environmental indicators collected through Survey123 field surveys.\n\nEnvironmental Conservation Data Visualization ArcGIS Dashboards\n\nView Dashboard →\n\n\nField Data Collection: Species Monitoring\nMobile GIS workflow developed using ArcGIS Survey123 to collect structured geospatial data in the field.\n\nField Data Collection Survey123\n\nView Survey →\n\n\nDesktop GIS: Mapping Projects\nCollection of thematic maps and cartographic layouts developed using ArcGIS Pro and QGIS.\n\nArcGIS Pro QGIS Cartography\n\nSee Map Gallery →"
-  },
-  {
-    "objectID": "content.html#landscape-modeling-spatial-statistics-1",
-    "href": "content.html#landscape-modeling-spatial-statistics-1",
-    "title": "Projects",
-    "section": "Landscape Modeling & Spatial Statistics",
-    "text": "Landscape Modeling & Spatial Statistics\n\n\nMangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\nThis project quantifies mangrove loss across administrative boundaries in Madagascar between 1999 and 2019 using the Murray Global Tidal Wetland Change dataset. A fully automated Python pipeline — built with ArcPy in Jupyter notebooks — handles raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis to identify which communities experienced the greatest loss and whether proximity to paths explains deforestation patterns.\n\nPython ArcPy Google Earth Engine Spatial Analysis\n\nView project →\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nThe analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.\n\nSpatial Statistics LiDAR Forest Inventory Feature Selection\n\nView project →"
-  },
-  {
-    "objectID": "content.html#project-management-1",
-    "href": "content.html#project-management-1",
-    "title": "Projects",
-    "section": "Project Management",
-    "text": "Project Management\n\n\nAssessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley\nMaster’s Capstone Project — University of British Columbia (UBC)\nThis study examines how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020 by harmonizing multi-source land-cover datasets and analyzing landscape structure and land-cover transitions. The project identifies spatial patterns of agricultural change and evaluates opportunities for perennial agriculture expansion within existing agricultural systems.\nView full project →\n\n\n\nMapping Spatial Patterns of Urban Carbon Sinks in Metro Vancouver\nResearch Proposal — UBC GEM 500 (Landscape Ecology)\nThis project investigates how vegetation distribution and landscape structure influence urban carbon storage across Metro Vancouver municipalities. Using Landsat imagery, carbon biomass datasets, and landscape metrics, the study aims to identify municipalities functioning as major urban carbon sinks and assess the spatial factors influencing carbon storage.\nView full project →"
-  },
-  {
-    "objectID": "earlier-gis.html",
-    "href": "earlier-gis.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "← Back to Projects"
-  },
-  {
-    "objectID": "earlier-gis.html#overview",
-    "href": "earlier-gis.html#overview",
-    "title": "Oluwaseyi Ezekiel",
+    "objectID": "hyperspectral.html#overview",
+    "href": "hyperspectral.html#overview",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
     "section": "Overview",
-    "text": "Overview\nBefore the MGEM program, I worked on a range of hands-on GIS and remote sensing projects that strengthened my practical skills in land-cover classification, environmental mapping, forest analysis, hazard assessment, UAV applications, and geospatial data visualization.\nThese projects span different platforms and workflows, including QGIS, ArcGIS Pro, Google Earth Engine, R, and Python, and show the progression of my technical experience across applied environmental and spatial problems."
+    "text": "Overview\nThis project explores hyperspectral reflectance signatures of vegetation and surface materials across the visible, near-infrared, and shortwave infrared spectral regions. Hyperspectral measurements allow detailed analysis of vegetation properties such as chlorophyll content, leaf structure, and moisture."
   },
   {
-    "objectID": "home.html",
-    "href": "home.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Oluwaseyi Ezekiel\n\n\nGeospatial and Remote Sensing Scientist\n\n\n\n\nView Portfolio"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Welcome!!!"
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
-  },
-  {
-    "objectID": "publications.html#peer-reviewed-publications",
-    "href": "publications.html#peer-reviewed-publications",
-    "title": "Publications",
-    "section": "",
-    "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Expected Apr. 2026\n\n\nUniversity of British Columbia (UBC), Vancouver, BC, Canada\n\n\n\n\n\n\n\n\n\n\nApr. 2024\n\n\nSeneca Polytechnic, Toronto, ON, Canada\n\n\n\n\n\n\n\n\n\n\nFeb. 2020\n\n\nFederal University of Agriculture, Abeokuta (FUNAAB), Ogun, Nigeria\n\n\n\n\n\n\n\n\nArcGIS Pro QGIS ENVI Google Earth Engine Spatial Modelling R Python SQL Markdown GitHub MS Excel Research Project Management Technical Writing\n\nSee Projects →\n\n\n\n\n\n\n\nFeb. 2025 – May 2025\n\n\nGeospatial Research Limited, Ikeja, Lagos\n\n\n\n\nUpdated road networks, signages, and markings of Lagos State (Nigeria’s most populous megacity) to support transportation planning and mobility management.\n\n\nUpdated and validated over 30,000 building footprint records using ArcGIS Pro to improve Lagos State housing database and development.\n\n\nPrepared proposals and proof of concepts for urban infrastructure planning and environmental management for public-sector clients.\n\n\n\n\n\n\n\nAug. 2020 – Jan. 2024\n\n\nGBFOODS, Tomani Farms & Agro. Industry Limited, Kebbi, Nigeria\n\n\n\n\nMonitored an 800-hectare farm using UAVs and satellite imagery, and provided weekly reports on crop performance and potential risks.\n\n\nCoordinated with Greenfield Technologies, a third-party GIS service provider, to implement daily irrigation recommendations and support precision agriculture monitoring.\n\n\nManaged a team of 62 staff members in the operation and maintenance of decision support tools including soil moisture/pH testers, irrigation sensors, and meteorological stations.\n\n\nEngaged 200 local farmers on agrochemical use and sustainable practices for optimal yield.\n\n\n\n\n\n\n\nMay 2024\n\n\nCitizen Science, Ayobo Local Council Development Area, Lagos, Nigeria\n\n\n\n\nAnalyzed traffic congestion, road usage patterns, and security infrastructure, including military checkpoints, to assess mobility and safety conditions within the municipality.\n\n\nAnalyzed real estate availability and proximity (within 200m) to major roads and infrastructure to support housing searches.\n\n\n\n\n\n\n\nNov. 2018 – Jan. 2020\n\n\nDepartment of Forestry & Wildlife Management, FUNAAB\n\n\n\n\nCreated maps of study locations for 10 undergraduate research projects.\n\n\nDeveloped geospatial data collection forms and field applications.\n\n\nUpdated topographic maps of the university with new thematic features."
-  },
-  {
-    "objectID": "resume.html#education",
-    "href": "resume.html#education",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Expected Apr. 2026\n\n\nUniversity of British Columbia (UBC), Vancouver, BC, Canada\n\n\n\n\n\n\n\n\n\n\nApr. 2024\n\n\nSeneca Polytechnic, Toronto, ON, Canada\n\n\n\n\n\n\n\n\n\n\nFeb. 2020\n\n\nFederal University of Agriculture, Abeokuta (FUNAAB), Ogun, Nigeria"
-  },
-  {
-    "objectID": "resume.html#skills",
-    "href": "resume.html#skills",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "ArcGIS Pro QGIS ENVI Google Earth Engine Spatial Modelling R Python SQL Markdown GitHub MS Excel Research Project Management Technical Writing\n\nSee Projects →"
-  },
-  {
-    "objectID": "resume.html#experience",
-    "href": "resume.html#experience",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Feb. 2025 – May 2025\n\n\nGeospatial Research Limited, Ikeja, Lagos\n\n\n\n\nUpdated road networks, signages, and markings of Lagos State (Nigeria’s most populous megacity) to support transportation planning and mobility management.\n\n\nUpdated and validated over 30,000 building footprint records using ArcGIS Pro to improve Lagos State housing database and development.\n\n\nPrepared proposals and proof of concepts for urban infrastructure planning and environmental management for public-sector clients.\n\n\n\n\n\n\n\nAug. 2020 – Jan. 2024\n\n\nGBFOODS, Tomani Farms & Agro. Industry Limited, Kebbi, Nigeria\n\n\n\n\nMonitored an 800-hectare farm using UAVs and satellite imagery, and provided weekly reports on crop performance and potential risks.\n\n\nCoordinated with Greenfield Technologies, a third-party GIS service provider, to implement daily irrigation recommendations and support precision agriculture monitoring.\n\n\nManaged a team of 62 staff members in the operation and maintenance of decision support tools including soil moisture/pH testers, irrigation sensors, and meteorological stations.\n\n\nEngaged 200 local farmers on agrochemical use and sustainable practices for optimal yield.\n\n\n\n\n\n\n\nMay 2024\n\n\nCitizen Science, Ayobo Local Council Development Area, Lagos, Nigeria\n\n\n\n\nAnalyzed traffic congestion, road usage patterns, and security infrastructure, including military checkpoints, to assess mobility and safety conditions within the municipality.\n\n\nAnalyzed real estate availability and proximity (within 200m) to major roads and infrastructure to support housing searches.\n\n\n\n\n\n\n\nNov. 2018 – Jan. 2020\n\n\nDepartment of Forestry & Wildlife Management, FUNAAB\n\n\n\n\nCreated maps of study locations for 10 undergraduate research projects.\n\n\nDeveloped geospatial data collection forms and field applications.\n\n\nUpdated topographic maps of the university with new thematic features."
-  },
-  {
-    "objectID": "resume.html#volunteering-service",
-    "href": "resume.html#volunteering-service",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Volunteering & Service",
-    "text": "Volunteering & Service\n\n\n\n\nGitHub Contributor/Reviewer — Open Geomatics Textbook Revision\n\nNov. 2025 – Present\n\n\nUBC Geomatics Community of Practice\n\n\nContribute to the revision of GEM 511— Advanced GIS for Environmental Management.\n\n\nView GitHub Repository →\n\n\n\n\n\nPeer Reviewer\n\nAug. 2022 – Present\n\n\nJournal of Forestry Research; Current Agriculture Research Journal\n\n\n\n\nReviewed research articles and provided publication feedback, supporting research quality and editorial evaluation in forestry and agriculture.\n\n\nAssess the accuracy and relevance of submissions to agriculture and forestry research.\n\n\n\n\n\n\n\nSee verified reviews here →"
-  },
-  {
-    "objectID": "resume.html#masters-capstone-project",
-    "href": "resume.html#masters-capstone-project",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Master’s Capstone Project",
-    "text": "Master’s Capstone Project\n\n\n\n\nAssessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley\n\nAug. 2025 – May 2026\n\n\n\n\nHarmonized multi-source land-cover and agricultural datasets to detect changes in the LFV between 2015 and 2020.\n\n\nProduced 30 m land-cover outputs to quantify land-cover change, characterize landscape structure, and identify key transitions.\n\n\nEvaluated fragmentation, connectivity, and spatial patterns to support interpretation of ecological and agricultural landscape change.\n\n\nIdentified priority areas for perennial agricultural expansion to inform sustainable land management.\n\n\n\n\nView Capstone Project →"
-  },
-  {
-    "objectID": "resume.html#publications",
-    "href": "resume.html#publications",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Publications",
-    "text": "Publications\n\n\n\n\nPeer-Reviewed Publication\n\n\n\nEzekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18.\n\n\nView publication →"
-  },
-  {
-    "objectID": "resume.html#training-professional-development",
-    "href": "resume.html#training-professional-development",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Training & Professional Development",
-    "text": "Training & Professional Development\n\n\n\n\nGetting Started with Spatial Analysis — Esri Academy, 2025\nGetting Started with Imagery and Remote Sensing — Esri Academy, 2025\nMeasuring Land Cover Change Using ArcGIS Pro — Esri Academy, 2024\nRegression Analysis: Building a Regression Model Using ArcGIS Pro — Esri Academy, 2024\nRegression Analysis: Random Forest Regression Using ArcGIS Pro — Esri Academy, 2024\nImagery in Action — Esri Academy, 2021\nDrought Monitoring using NASA Earth System Data, — NASA ARSET, Oct. 2024\nInvasive Species Monitoring with Remote Sensing — NASA ARSET, Oct. 2024\nUAVs in Precision Agriculture — University of Twente (ITC) & Geoversity, Aug. 2024\nGeo Web App Building with Open-Source tools — ITC & Geoversity, Aug. 2024\nRemote Sensing Image Acquisition, Analysis and Applications — Coursera, Jul. 2024\n\n\n\nView training certificates here →"
-  },
-  {
-    "objectID": "resume.html#awards-honors",
-    "href": "resume.html#awards-honors",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Awards & Honors",
-    "text": "Awards & Honors\n\n\n\n\nMastercard Foundation Scholarship — Fully funded Master’s program, UBC, 2025\nQuick Train Canada Scholarship — GIS Micro credential, Seneca Polytechnic, 2024\nAward of Meritorious Service — GBFOODS, Africa, 2023\nReviewer of the year — Current Agriculture Research Journal, India, 2022\nBest Graduating Student — FWM 2020/21 session, FUNAAB Senate Awards, 2020"
-  },
-  {
-    "objectID": "survey123.html",
-    "href": "survey123.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "← Back to Projects\n\n\nCourse: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Survey design\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis Survey123 form was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The form was designed to collect structured wildlife observations including species type, observation location, and if species were dead or alive.\nParticipants (MGEM students) used the form to submit simulated wildlife observations, which were visualized real-time through the Environmental Monitoring Dashboard. The workflow demonstrates how mobile GIS tools can support citizen science data collection while highlighting practical challenges such as data reliability, spatial coverage, and observer bias.\n\n\nNote: This survey form is displayed for demonstration purposes. Submissions are currently disabled."
-  },
-  {
-    "objectID": "survey123.html#survey123-field-data-collection",
-    "href": "survey123.html#survey123-field-data-collection",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Survey design\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis Survey123 form was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The form was designed to collect structured wildlife observations including species type, observation location, and if species were dead or alive.\nParticipants (MGEM students) used the form to submit simulated wildlife observations, which were visualized real-time through the Environmental Monitoring Dashboard. The workflow demonstrates how mobile GIS tools can support citizen science data collection while highlighting practical challenges such as data reliability, spatial coverage, and observer bias.\n\n\nNote: This survey form is displayed for demonstration purposes. Submissions are currently disabled."
-  },
-  {
-    "objectID": "map_gallery/riparian.html",
-    "href": "map_gallery/riparian.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "GEM 511: Advanced GIS for Environmental Management — University of British Columbia 2025"
-  },
-  {
-    "objectID": "map_gallery/riparian.html#introduction",
-    "href": "map_gallery/riparian.html#introduction",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Introduction",
-    "text": "Introduction\nRiparian areas — the forests and vegetation found adjacent to streams, lakes, and wetlands — play a critical ecological role in BC’s forest landscapes. They stabilize stream banks, regulate water temperature, provide nutrient inputs, and reduce runoff into water bodies. Under BC’s Forest Practices Code, Riparian Management Areas (RMAs) must be defined around sensitive streams before harvesting can occur. The width of these legally required buffer zones depends on stream class, which is determined by channel width and fish-bearing potential.\nThis project simulates a real-world forest management workflow, using a Digital Elevation Model (DEM) to map and classify stream networks, assess fish-bearing potential, and delineate Reserve and Management Zones across a topographically complex watershed in the Nahmint Valley, Vancouver Island, British Columbia.\n\n\n\nFinal map showing stream network symbolized by stream class, Reserve and Management Zones, watershed boundaries, and contour lines across the Nahmint Valley study area.\n\n\nFigure 1. Stream network, Riparian Management Areas, watershed boundaries, and contour lines — Nahmint Valley, BC."
-  },
-  {
-    "objectID": "map_gallery/riparian.html#methods",
-    "href": "map_gallery/riparian.html#methods",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Methods",
-    "text": "Methods\nThe DEM for the Nahmint watershed was accessed from the UBC PostgreSQL server and exported as a GeoTIFF for processing in ArcGIS Pro. The analysis followed a complete hydrological modeling workflow using ArcGIS Pro’s Spatial Analyst toolset.\nDEM Preprocessing and Flow Modeling: Sinks were removed using the Fill tool to prevent unrealistic water pooling in DEM depressions. Flow Direction (D8 algorithm) and Flow Accumulation rasters were then generated to model the direction and volume of water movement across the landscape. A flow accumulation threshold was selected by comparing the derived stream network against ArcGIS basemap satellite imagery, and the raster was reclassified using the Reclassify tool to isolate stream cells.\nStream Network Delineation and Classification: Strahler stream order was assigned using the Stream Order tool, and stream features were converted to polylines using Stream to Feature. Unique stream segment IDs were generated with the Stream Link tool. Percent gradient was calculated for each segment using Zonal Statistics and the Raster Calculator, with streams below 20% gradient identified as fish-bearing under BC guidelines. Channel widths were estimated from basemap imagery for a stratified sample of streams per order, and average widths were assigned to all segments of the same order using Python scripting within ArcGIS Pro’s Calculate Field tool.\nRiparian Management Area Delineation: BC stream classes (S2–S6) were assigned based on gradient and width thresholds using conditional Python logic in the Calculate Field tool. Variable-width buffer distances for Reserve Zones (no harvest) and Management Zones (limited harvest) were calculated for each stream segment and applied using the Buffer tool with field-based distances. Watershed boundaries were delineated using the Watershed tool to support assessment of how upslope harvesting may affect downstream hydrology. Contour lines were generated using the Contour tool at 100m intervals."
-  },
-  {
-    "objectID": "map_gallery/riparian.html#results",
-    "href": "map_gallery/riparian.html#results",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Results",
-    "text": "Results\nThe analysis produced a fully classified stream network with Reserve and Management Zones assigned according to BC riparian management guidelines. Streams with gradient less than 20% were identified as fish-bearing and assigned wider protection buffers, while steeper streams received narrower or no buffers depending on their class.\nThe final cartographic output communicates the spatial extent of harvestable versus protected areas, total RMA area, and stream network length — information directly relevant to operational forest harvest planning. The watershed map further illustrates how runoff from harvested areas may affect connected stream segments, supporting assessment of cumulative hydrological impacts."
-  },
-  {
-    "objectID": "map_gallery/riparian.html#project-significance",
-    "href": "map_gallery/riparian.html#project-significance",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Project Significance",
-    "text": "Project Significance\nThis project demonstrates how DEM-derived hydrological analysis can support legally compliant and ecologically sound forest management planning in BC. The workflow — from terrain preprocessing to riparian buffer delineation — reflects the kind of spatial analysis used by forest managers, consultants, and government agencies operating under BC’s Forest Practices Code.\nThe use of Python scripting within ArcGIS Pro to automate stream classification and buffer assignment illustrates how GIS automation can efficiently handle complex, rule-based spatial decisions across large stream networks."
-  },
-  {
-    "objectID": "riparian.html",
-    "href": "riparian.html",
-    "title": "Riparian Terrain Analysis and Forest Management Planning",
-    "section": "",
-    "text": "← Back to Projects"
-  },
-  {
-    "objectID": "riparian.html#introduction",
-    "href": "riparian.html#introduction",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Introduction",
-    "text": "Introduction\nRiparian areas — the forests and vegetation found adjacent to streams, lakes, and wetlands — play a critical ecological role in BC’s forest landscapes. They stabilize stream banks, regulate water temperature, provide nutrient inputs, and reduce runoff into water bodies. Under BC’s Forest Practices Code, Riparian Management Areas (RMAs) must be defined around sensitive streams before harvesting can occur. The width of these legally required buffer zones depends on stream class, which is determined by channel width and fish-bearing potential.\nThis project simulates a real-world forest management workflow, using a Digital Elevation Model (DEM) to map and classify stream networks, assess fish-bearing potential, and delineate Reserve and Management Zones across a topographically complex watershed in the Nahmint Valley, Vancouver Island, British Columbia.\n\n\n\nFinal map showing stream network symbolized by stream class, Reserve and Management Zones, watershed boundaries, and contour lines across the Nahmint Valley study area.\n\n\nFigure 1. Stream network, Riparian Management Areas, watershed boundaries, and contour lines — Nahmint Valley, BC."
-  },
-  {
-    "objectID": "riparian.html#methods",
-    "href": "riparian.html#methods",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Methods",
-    "text": "Methods\nThe DEM for the Nahmint watershed was accessed from the UBC PostgreSQL server and exported as a GeoTIFF for processing in ArcGIS Pro. The analysis followed a complete hydrological modeling workflow using ArcGIS Pro’s Spatial Analyst toolset.\nDEM Preprocessing and Flow Modeling: Sinks were removed using the Fill tool to prevent unrealistic water pooling in DEM depressions. Flow Direction (D8 algorithm) and Flow Accumulation rasters were then generated to model the direction and volume of water movement across the landscape. A flow accumulation threshold was selected by comparing the derived stream network against ArcGIS basemap satellite imagery, and the raster was reclassified using the Reclassify tool to isolate stream cells.\nStream Network Delineation and Classification: Strahler stream order was assigned using the Stream Order tool, and stream features were converted to polylines using Stream to Feature. Unique stream segment IDs were generated with the Stream Link tool. Percent gradient was calculated for each segment using Zonal Statistics and the Raster Calculator, with streams below 20% gradient identified as fish-bearing under BC guidelines. Channel widths were estimated from basemap imagery for a stratified sample of streams per order, and average widths were assigned to all segments of the same order using Python scripting within ArcGIS Pro’s Calculate Field tool.\nRiparian Management Area Delineation: BC stream classes (S2–S6) were assigned based on gradient and width thresholds using conditional Python logic in the Calculate Field tool. Variable-width buffer distances for Reserve Zones (no harvest) and Management Zones (limited harvest) were calculated for each stream segment and applied using the Buffer tool with field-based distances. Watershed boundaries were delineated using the Watershed tool to support assessment of how upslope harvesting may affect downstream hydrology. Contour lines were generated using the Contour tool at 100m intervals."
-  },
-  {
-    "objectID": "riparian.html#results",
-    "href": "riparian.html#results",
-    "title": "Riparian Terrain Analysis and Forest Management Planning",
-    "section": "Results",
-    "text": "Results\n\n273 km of streams | 1,880 ha protected\n\n\n\nTerrain Analysis and Riparian Area Management — Nahmint Valley, BC\n\n\nFigure 1. Stream network symbolized by stream class (S1, S4, S5, S6), Reserve and Management Zones, watershed boundaries, and contour lines — Nahmint Valley, BC.\nThe analysis delineated a stream network totalling 273 km, classified into stream classes S1, S4, S5, and S6. Reserve Zones covered approximately 666 ha, while Management Zones spanned approximately 1,214 ha — bringing total riparian protection to nearly 1,880 ha. The watershed spans an elevation range of 1m to 1,574m, with higher-order streams concentrated along the main valley bottom.\n\n\n\nZone\nArea\n\n\n\n\nReserve Zone (no harvest)\n~666 ha\n\n\nManagement Zone (limited harvest)\n~1,214 ha\n\n\nTotal protected area\n~1,880 ha\n\n\nStream network length\n~273 km"
-  },
-  {
-    "objectID": "riparian.html#project-significance",
-    "href": "riparian.html#project-significance",
-    "title": "Riparian Terrain Analysis and Forest Management Planning",
-    "section": "Project Significance",
-    "text": "Project Significance\nThis project reflects the kind of spatial analysis applied by forest managers, consultants, and government agencies operating under BC’s Forest Practices Code. The use of Python scripting to automate stream classification and buffer assignment illustrates how GIS automation can efficiently handle complex, rule-based spatial decisions across large stream networks."
-  },
-  {
-    "objectID": "riparian.html#protecting-streams-before-the-chainsaw-moves-in",
-    "href": "riparian.html#protecting-streams-before-the-chainsaw-moves-in",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "Protecting streams before the chainsaw moves in",
-    "text": "Protecting streams before the chainsaw moves in\nRiparian areas — forests adjacent to streams, lakes, and wetlands — stabilize stream banks, regulate water temperature, and reduce runoff. Under BC’s Forest Practices Code, Riparian Management Areas (RMAs) must be defined before harvesting can occur. The width of these legally required buffer zones depends on stream class, determined by channel width and fish-bearing potential.\nThis project simulates a real-world forest management workflow — mapping stream networks, classifying streams, and delineating Reserve and Management Zones across the Nahmint Valley watershed.\n\nThe Data"
-  },
-  {
-    "objectID": "riparian.html#a-dem-from-the-ubc-postgresql-server",
-    "href": "riparian.html#a-dem-from-the-ubc-postgresql-server",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "A DEM from the UBC PostgreSQL server",
-    "text": "A DEM from the UBC PostgreSQL server\nThe DEM for the Nahmint watershed was accessed from the UBC PostgreSQL server and exported as a GeoTIFF for processing in ArcGIS Pro. ArcGIS basemap satellite imagery was used to validate the derived stream network and estimate channel widths."
-  },
-  {
-    "objectID": "riparian.html#filling-the-gaps-before-modeling-flow",
-    "href": "riparian.html#filling-the-gaps-before-modeling-flow",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "Filling the gaps before modeling flow",
-    "text": "Filling the gaps before modeling flow\nSinks — small depressions in the DEM where water pools unrealistically — were removed using the Fill tool. Skipping this step breaks the flow network downstream.\nFlow Direction (D8 algorithm) was then calculated, directing each cell’s flow to its steepest downslope neighbour. Flow Accumulation counted how many upstream cells drain through each point — the foundation for stream delineation.\n\nStep 2 — Stream Network"
-  },
-  {
-    "objectID": "riparian.html#finding-streams-from-elevation-alone",
-    "href": "riparian.html#finding-streams-from-elevation-alone",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "Finding streams from elevation alone",
-    "text": "Finding streams from elevation alone\nA flow accumulation threshold was selected by comparing the derived network against basemap imagery — balancing realistic stream capture against false channel extraction. The raster was Reclassified to isolate stream cells, then Stream Order (Strahler method) was assigned to each segment. Stream to Feature converted the raster network to polylines.\n\nStep 3 — Stream Characteristics"
-  },
-  {
-    "objectID": "riparian.html#gradient-and-width-determine-everything",
-    "href": "riparian.html#gradient-and-width-determine-everything",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "Gradient and width determine everything",
-    "text": "Gradient and width determine everything\nPercent gradient was calculated using Zonal Statistics and Raster Calculator. Streams with gradient below 20% were classified as fish-bearing under BC guidelines. Channel widths were estimated from basemap imagery for a stratified sample per stream order, then assigned to all segments using Python scripting in ArcGIS Pro’s Calculate Field tool:\ndef reclass(Order):\n    if Order == 1:\n        return 1\n    elif Order == 2:\n        return [measured avg width]\n    elif Order == 3:\n        return [measured avg width]\n    else:\n        return [measured avg width]\n\nStep 4 — Riparian Management Areas"
-  },
-  {
-    "objectID": "riparian.html#drawing-the-line-between-harvest-and-protection",
-    "href": "riparian.html#drawing-the-line-between-harvest-and-protection",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "Drawing the line between harvest and protection",
-    "text": "Drawing the line between harvest and protection\nBC stream classes (S2–S6) were assigned using conditional Python logic based on gradient and width thresholds. Variable-width buffer distances for Reserve Zones (no harvest) and Management Zones (limited harvest) were applied using the Buffer tool with field-based distances. Watershed boundaries were delineated using the Watershed tool.\n\nResults"
-  },
-  {
-    "objectID": "riparian.html#km-of-streams.-1880-ha-protected.",
-    "href": "riparian.html#km-of-streams.-1880-ha-protected.",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "273 km of streams. 1,880 ha protected.",
-    "text": "273 km of streams. 1,880 ha protected.\n\n\n\nTerrain Analysis and Riparian Area Management — Nahmint Valley, BC\n\n\nFigure 1. Stream network symbolized by stream class (S1, S4, S5, S6), Reserve and Management Zones, watershed boundaries, and contour lines — Nahmint Valley, BC.\nThe analysis delineated a stream network totalling 273 km, classified into stream classes S1, S4, S5, and S6. Reserve Zones covered approximately 666 ha, while Management Zones spanned approximately 1,214 ha — bringing total riparian protection to nearly 1,880 ha. The watershed spans an elevation range of 1m to 1,574m, with higher-order streams concentrated along the main valley bottom.\n\n\n\nZone\nArea\n\n\n\n\nReserve Zone (no harvest)\n~666 ha\n\n\nManagement Zone (limited harvest)\n~1,214 ha\n\n\nTotal protected area\n~1,880 ha\n\n\nStream network length\n~273 km\n\n\n\n\nWhat This Means"
-  },
-  {
-    "objectID": "riparian.html#a-workflow-forest-managers-actually-use",
-    "href": "riparian.html#a-workflow-forest-managers-actually-use",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "A workflow forest managers actually use",
-    "text": "A workflow forest managers actually use\nThis project reflects the kind of spatial analysis applied by forest managers, consultants, and government agencies operating under BC’s Forest Practices Code. The use of Python scripting to automate stream classification and buffer assignment illustrates how GIS automation can efficiently handle complex, rule-based spatial decisions across large stream networks."
-  },
-  {
-    "objectID": "riparian.html#protecting-streams-before-the-chainsaw-moves-in-1",
-    "href": "riparian.html#protecting-streams-before-the-chainsaw-moves-in-1",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "Protecting streams before the chainsaw moves in",
-    "text": "Protecting streams before the chainsaw moves in\nRiparian areas — forests adjacent to streams, lakes, and wetlands — stabilize stream banks, regulate water temperature, and reduce runoff. Under BC’s Forest Practices Code, Riparian Management Areas (RMAs) must be defined before harvesting can occur. The width of these legally required buffer zones depends on stream class, determined by channel width and fish-bearing potential.\nThis project simulates a real-world forest management workflow — mapping stream networks, classifying streams, and delineating Reserve and Management Zones across the Nahmint Valley watershed.\n\nThe Data"
-  },
-  {
-    "objectID": "riparian.html#a-dem-from-the-ubc-postgresql-server-1",
-    "href": "riparian.html#a-dem-from-the-ubc-postgresql-server-1",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "A DEM from the UBC PostgreSQL server",
-    "text": "A DEM from the UBC PostgreSQL server\nThe DEM for the Nahmint watershed was accessed from the UBC PostgreSQL server and exported as a GeoTIFF for processing in ArcGIS Pro. ArcGIS basemap satellite imagery was used to validate the derived stream network and estimate channel widths.\n\nStep 1 — DEM Preprocessing"
-  },
-  {
-    "objectID": "riparian.html#filling-the-gaps-before-modeling-flow-1",
-    "href": "riparian.html#filling-the-gaps-before-modeling-flow-1",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "Filling the gaps before modeling flow",
-    "text": "Filling the gaps before modeling flow\nSinks — small depressions in the DEM where water pools unrealistically — were removed using the Fill tool. Skipping this step breaks the flow network downstream.\nFlow Direction (D8 algorithm) was then calculated, directing each cell’s flow to its steepest downslope neighbour. Flow Accumulation counted how many upstream cells drain through each point — the foundation for stream delineation.\n\nStep 2 — Stream Network"
-  },
-  {
-    "objectID": "riparian.html#finding-streams-from-elevation-alone-1",
-    "href": "riparian.html#finding-streams-from-elevation-alone-1",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "Finding streams from elevation alone",
-    "text": "Finding streams from elevation alone\nA flow accumulation threshold was selected by comparing the derived network against basemap imagery — balancing realistic stream capture against false channel extraction. The raster was Reclassified to isolate stream cells, then Stream Order (Strahler method) was assigned to each segment. Stream to Feature converted the raster network to polylines.\n\nStep 3 — Stream Characteristics"
-  },
-  {
-    "objectID": "riparian.html#gradient-and-width-determine-everything-1",
-    "href": "riparian.html#gradient-and-width-determine-everything-1",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "Gradient and width determine everything",
-    "text": "Gradient and width determine everything\nPercent gradient was calculated using Zonal Statistics and Raster Calculator. Streams with gradient below 20% were classified as fish-bearing under BC guidelines. Channel widths were estimated from basemap imagery for a stratified sample per stream order, then assigned to all segments using Python scripting in ArcGIS Pro’s Calculate Field tool:\ndef reclass(Order):\n    if Order == 1:\n        return 1\n    elif Order == 2:\n        return [measured avg width]\n    elif Order == 3:\n        return [measured avg width]\n    else:\n        return [measured avg width]\n\nStep 4 — Riparian Management Areas"
-  },
-  {
-    "objectID": "riparian.html#drawing-the-line-between-harvest-and-protection-1",
-    "href": "riparian.html#drawing-the-line-between-harvest-and-protection-1",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "Drawing the line between harvest and protection",
-    "text": "Drawing the line between harvest and protection\nBC stream classes (S2–S6) were assigned using conditional Python logic based on gradient and width thresholds. Variable-width buffer distances for Reserve Zones (no harvest) and Management Zones (limited harvest) were applied using the Buffer tool with field-based distances. Watershed boundaries were delineated using the Watershed tool.\n\nResults"
-  },
-  {
-    "objectID": "riparian.html#km-of-streams.-1880-ha-protected.-1",
-    "href": "riparian.html#km-of-streams.-1880-ha-protected.-1",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "273 km of streams. 1,880 ha protected.",
-    "text": "273 km of streams. 1,880 ha protected.\n\n\n\nTerrain Analysis and Riparian Area Management — Nahmint Valley, BC\n\n\nFigure 1. Stream network symbolized by stream class (S1, S4, S5, S6), Reserve and Management Zones, watershed boundaries, and contour lines — Nahmint Valley, BC.\nThe analysis delineated a stream network totalling 273 km, classified into stream classes S1, S4, S5, and S6. Reserve Zones covered approximately 666 ha, while Management Zones spanned approximately 1,214 ha — bringing total riparian protection to nearly 1,880 ha. The watershed spans an elevation range of 1m to 1,574m, with higher-order streams concentrated along the main valley bottom.\n\n\n\nZone\nArea\n\n\n\n\nReserve Zone (no harvest)\n~666 ha\n\n\nManagement Zone (limited harvest)\n~1,214 ha\n\n\nTotal protected area\n~1,880 ha\n\n\nStream network length\n~273 km\n\n\n\n\nWhat This Means"
-  },
-  {
-    "objectID": "riparian.html#a-workflow-forest-managers-actually-use-1",
-    "href": "riparian.html#a-workflow-forest-managers-actually-use-1",
-    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
-    "section": "A workflow forest managers actually use",
-    "text": "A workflow forest managers actually use\nThis project reflects the kind of spatial analysis applied by forest managers, consultants, and government agencies operating under BC’s Forest Practices Code. The use of Python scripting to automate stream classification and buffer assignment illustrates how GIS automation can efficiently handle complex, rule-based spatial decisions across large stream networks."
-  },
-  {
-    "objectID": "riparian.html#step-1-dem-preprocessing",
-    "href": "riparian.html#step-1-dem-preprocessing",
-    "title": "Riparian Terrain Analysis and Forest Management Planning",
-    "section": "Step 1 — DEM Preprocessing",
-    "text": "Step 1 — DEM Preprocessing\n\nFilling the gaps before modeling flow\nSinks — small depressions in the DEM where water pools unrealistically — were removed using the Fill tool. Skipping this step breaks the flow network downstream.\nFlow Direction (D8 algorithm) was then calculated, directing each cell’s flow to its steepest downslope neighbour. Flow Accumulation counted how many upstream cells drain through each point — the foundation for stream delineation."
-  },
-  {
-    "objectID": "riparian.html#step-2-stream-network",
-    "href": "riparian.html#step-2-stream-network",
-    "title": "Riparian Terrain Analysis and Forest Management Planning",
-    "section": "Step 2 — Stream Network",
-    "text": "Step 2 — Stream Network\n\nFinding streams from elevation alone\nA flow accumulation threshold was selected by comparing the derived network against basemap imagery — balancing realistic stream capture against false channel extraction. The raster was Reclassified to isolate stream cells, then Stream Order (Strahler method) was assigned to each segment. Stream to Feature converted the raster network to polylines."
-  },
-  {
-    "objectID": "riparian.html#step-3-stream-characteristics",
-    "href": "riparian.html#step-3-stream-characteristics",
-    "title": "Riparian Terrain Analysis and Forest Management Planning",
-    "section": "Step 3 — Stream Characteristics",
-    "text": "Step 3 — Stream Characteristics\n\nGradient and width\nPercent gradient was calculated using Zonal Statistics and Raster Calculator. Streams with gradient below 20% were classified as fish-bearing under BC guidelines. Channel widths were estimated from basemap imagery for a stratified sample per stream order, then assigned to all segments using Python scripting in ArcGIS Pro’s Calculate Field tool:\ndef reclass(Order):\n    if Order == 1:\n        return 1\n    elif Order == 2:\n        return [measured avg width]\n    elif Order == 3:\n        return [measured avg width]\n    else:\n        return [measured avg width]"
-  },
-  {
-    "objectID": "riparian.html#step-4-riparian-management-areas",
-    "href": "riparian.html#step-4-riparian-management-areas",
-    "title": "Riparian Terrain Analysis and Forest Management Planning",
-    "section": "Step 4 — Riparian Management Areas",
-    "text": "Step 4 — Riparian Management Areas\n\nDrawing the line between harvest and protection\nBC stream classes (S2–S6) were assigned using conditional Python logic based on gradient and width thresholds. Variable-width buffer distances for Reserve Zones (no harvest) and Management Zones (limited harvest) were applied using the Buffer tool with field-based distances. Watershed boundaries were delineated using the Watershed tool."
-  },
-  {
-    "objectID": "riparian.html#the-problem",
-    "href": "riparian.html#the-problem",
-    "title": "Riparian Terrain Analysis and Forest Management Planning",
-    "section": "The Problem",
-    "text": "The Problem\n\nProtecting streams before Harvesting\nRiparian areas — forests adjacent to streams, lakes, and wetlands — stabilize stream banks, regulate water temperature, and reduce runoff. Under BC’s Forest Practices Code, Riparian Management Areas (RMAs) must be defined before harvesting can occur. The width of these legally required buffer zones depends on stream class, determined by channel width and fish-bearing potential.\nThis project simulates a real-world forest management workflow — mapping stream networks, classifying streams, and delineating Reserve and Management Zones across the Nahmint Valley watershed."
-  },
-  {
-    "objectID": "riparian.html#data",
-    "href": "riparian.html#data",
-    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "objectID": "hyperspectral.html#data",
+    "href": "hyperspectral.html#data",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
     "section": "Data",
-    "text": "Data\n\nA DEM from the UBC PostgreSQL server\nThe DEM for the Nahmint watershed was accessed from the UBC PostgreSQL server and exported as a GeoTIFF for processing in ArcGIS Pro. ArcGIS basemap satellite imagery was used to validate the derived stream network and estimate channel widths."
+    "text": "Data\nField spectrometry measurements of vegetation and surface materials including:\n\nBigleaf maple\nDouglas-fir\nGarry oak\nSoil\nGrass\nMoss\nCoarse woody debris"
+  },
+  {
+    "objectID": "hyperspectral.html#methods",
+    "href": "hyperspectral.html#methods",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "section": "Methods",
+    "text": "Methods\nSpectral curves were analyzed across three main spectral regions:\n\n\n\nRegion\nWavelength\nInformation\n\n\n\n\nVisible\n400–700 nm\npigment absorption\n\n\nNear infrared\n750–1300 nm\nleaf structure\n\n\nSWIR\n1300–2500 nm\nwater content"
+  },
+  {
+    "objectID": "hyperspectral.html#example-code",
+    "href": "hyperspectral.html#example-code",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "section": "Example Code",
+    "text": "Example Code\n```r Refl_ind &lt;- function(wl, refl, target_wl){ approx(x = wl, y = refl, xout = target_wl, rule = 2)$y }"
+  },
+  {
+    "objectID": "landscape.html",
+    "href": "landscape.html",
+    "title": "Landscape Modeling & Spatial Statistics",
+    "section": "",
+    "text": "← Back to Projects\n\nLandscape Modeling & Spatial Statistics\n\n\nMangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\n\n\n\nDeforestation ArcPy Google Earth Engine Multi-ring buffer Analysis\n\nThis project quantifies mangrove loss across communes and fokontany in Madagascar’s Ambanja and Ambaro Bays between 1999 and 2019, using an automated ArcPy pipeline built in Jupyter notebooks. The workflow covers raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis.\nView Project →\n\n\n\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\n\n\nLiDAR Forest Inventory Python Feature Selection Petawawa RF\n\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nView Project →"
   },
   {
     "objectID": "mangrove.html",
@@ -651,17 +413,87 @@
     "text": "Where loss is greatest — and what drives it\nThe analysis revealed that most loss occurred between 2012 and 2015. At the commune level, Antsakoamanondro experienced the greatest loss (~3.05 km²), while Ambodimanga Sud led at the fokontany level (~1.47 km²).\n\n\n\nZone\nArea\n\n\n\n\nMost affected commune\nAntsakoamanondro (~3.05 km²)\n\n\nMost affected fokontany\nAmbodimanga Sud (~1.47 km²)\n\n\nLoss within 1km of paths\n0.66 km²\n\n\nLoss within 5km of paths\n7.71 km²\n\n\n\n\nProject Significance\nThis project illustrates how Python-based spatial analysis can automate repetitive geoprocessing steps, handle large datasets systematically, and produce structured outputs that directly inform conservation planning. The workflow is transferable to any region where tidal wetland change data is available — making it a scalable approach for monitoring mangrove loss globally."
   },
   {
-    "objectID": "content.html#mangrove-deforestation-analysis-ambanja-ambaro-bays-madagascar",
-    "href": "content.html#mangrove-deforestation-analysis-ambanja-ambaro-bays-madagascar",
-    "title": "Projects",
-    "section": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
-    "text": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\n\n\nThis project quantifies mangrove loss across administrative boundaries in Madagascar between 1999 and 2019 using the Murray Global Tidal Wetland Change dataset. A fully automated Python pipeline — built with ArcPy in Jupyter notebooks — handles raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis to identify which communities experienced the greatest loss and whether proximity to paths explains deforestation patterns.\n\nPython ArcPy Google Earth Engine Spatial Analysis\n\nView project →"
+    "objectID": "remote-sensing.html",
+    "href": "remote-sensing.html",
+    "title": "Remote Sensing Projects",
+    "section": "",
+    "text": "← Back to Projects\n\nRemote Sensing Projects\n\n\nLiDAR Forest Structure & Individual Tree Detection\n\n\n\nLiDAR Individual Tree Detection Forest Inventory R · lidR Malcolm Knapp RF\n\nCan an algorithm reliably find every tree in a structurally complex BC coniferous forest? This project compares two individual tree segmentation approaches — Li2012 (3D point-cloud) and Dalponte2016 (CHM region-growing) — across four forest plots at Malcolm Knapp Research Forest.\nRead the full story →\n\n\n\n\n\nLand Cover Classification\n\n\nRemote Sensing Image Classification Landsat\n\nThis project applies supervised image classification to Landsat imagery using the Maximum Likelihood algorithm to map seven land-cover classes including Broadleaf Forest, Coniferous Forest, Exposed Soil and Rocks, and Water. The workflow includes training and validation polygons, spectral signature analysis, and accuracy assessment.\nSee full lab report (PDF) →\n\n\n\n\nSpectral Indices and Vegetation Properties\n\n\nSpectral Analysis Vegetation Indices Remote Sensing\n\nThis project analyzes reflectance spectra measured with the ASD FieldSpecPro to compare live vegetation, dead vegetation, soil, and rock. It computes spectral indices such as PRI, SIPI, and ND705, simulates mixed pixels, and shows how NDVI and NDWI respond to increasing live vegetation cover at Landsat spectral resolution.\nSee full lab report (PDF) →\n\n\n\n\nWildfire Burn Severity and Vegetation Recovery\n\n\nLandsat Time Series NDVI / NBR\n\nThis project analyzes wildfire burn severity and post-fire vegetation recovery using a Landsat 8 time series over the Prouton Lakes fire in British Columbia. The workflow includes cloud masking, NDVI and NBR calculation, yearly compositing, dNBR-based burn severity classification, and assessment of vegetation recovery from 2018 to 2021.\nSee full lab report (PDF) →"
   },
   {
-    "objectID": "landscape.html",
-    "href": "landscape.html",
-    "title": "Landscape Modeling & Spatial Statistics",
+    "objectID": "riparian.html",
+    "href": "riparian.html",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
     "section": "",
-    "text": "← Back to Projects\n\nLandscape Modeling & Spatial Statistics\n\n\nMangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\n\n\n\nDeforestation ArcPy Google Earth Engine Multi-ring buffer Analysis\n\nThis project quantifies mangrove loss across communes and fokontany in Madagascar’s Ambanja and Ambaro Bays between 1999 and 2019, using an automated ArcPy pipeline built in Jupyter notebooks. The workflow covers raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis.\nView Project →\n\n\n\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\n\n\nLiDAR Forest Inventory Python Feature Selection Petawawa RF\n\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nView Project →"
+    "text": "← Back to Projects"
+  },
+  {
+    "objectID": "riparian.html#the-problem",
+    "href": "riparian.html#the-problem",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "The Problem",
+    "text": "The Problem\n\nProtecting streams before Harvesting\nRiparian areas — forests adjacent to streams, lakes, and wetlands — stabilize stream banks, regulate water temperature, and reduce runoff. Under BC’s Forest Practices Code, Riparian Management Areas (RMAs) must be defined before harvesting can occur. The width of these legally required buffer zones depends on stream class, determined by channel width and fish-bearing potential.\nThis project simulates a real-world forest management workflow — mapping stream networks, classifying streams, and delineating Reserve and Management Zones across the Nahmint Valley watershed."
+  },
+  {
+    "objectID": "riparian.html#data",
+    "href": "riparian.html#data",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "Data",
+    "text": "Data\n\nA DEM from the UBC PostgreSQL server\nThe DEM for the Nahmint watershed was accessed from the UBC PostgreSQL server and exported as a GeoTIFF for processing in ArcGIS Pro. ArcGIS basemap satellite imagery was used to validate the derived stream network and estimate channel widths."
+  },
+  {
+    "objectID": "riparian.html#step-1-dem-preprocessing",
+    "href": "riparian.html#step-1-dem-preprocessing",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "Step 1 — DEM Preprocessing",
+    "text": "Step 1 — DEM Preprocessing\n\nFilling the gaps before modeling flow\nSinks — small depressions in the DEM where water pools unrealistically — were removed using the Fill tool. Skipping this step breaks the flow network downstream.\nFlow Direction (D8 algorithm) was then calculated, directing each cell’s flow to its steepest downslope neighbour. Flow Accumulation counted how many upstream cells drain through each point — the foundation for stream delineation."
+  },
+  {
+    "objectID": "riparian.html#step-2-stream-network",
+    "href": "riparian.html#step-2-stream-network",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "Step 2 — Stream Network",
+    "text": "Step 2 — Stream Network\n\nFinding streams from elevation alone\nA flow accumulation threshold was selected by comparing the derived network against basemap imagery — balancing realistic stream capture against false channel extraction. The raster was Reclassified to isolate stream cells, then Stream Order (Strahler method) was assigned to each segment. Stream to Feature converted the raster network to polylines."
+  },
+  {
+    "objectID": "riparian.html#step-3-stream-characteristics",
+    "href": "riparian.html#step-3-stream-characteristics",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "Step 3 — Stream Characteristics",
+    "text": "Step 3 — Stream Characteristics\n\nGradient and width\nPercent gradient was calculated using Zonal Statistics and Raster Calculator. Streams with gradient below 20% were classified as fish-bearing under BC guidelines. Channel widths were estimated from basemap imagery for a stratified sample per stream order, then assigned to all segments using Python scripting in ArcGIS Pro’s Calculate Field tool:\ndef reclass(Order):\n    if Order == 1:\n        return 1\n    elif Order == 2:\n        return [measured avg width]\n    elif Order == 3:\n        return [measured avg width]\n    else:\n        return [measured avg width]"
+  },
+  {
+    "objectID": "riparian.html#step-4-riparian-management-areas",
+    "href": "riparian.html#step-4-riparian-management-areas",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "Step 4 — Riparian Management Areas",
+    "text": "Step 4 — Riparian Management Areas\n\nDrawing the line between harvest and protection\nBC stream classes (S2–S6) were assigned using conditional Python logic based on gradient and width thresholds. Variable-width buffer distances for Reserve Zones (no harvest) and Management Zones (limited harvest) were applied using the Buffer tool with field-based distances. Watershed boundaries were delineated using the Watershed tool."
+  },
+  {
+    "objectID": "riparian.html#results",
+    "href": "riparian.html#results",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "Results",
+    "text": "Results\n\n273 km of streams | 1,880 ha protected\n\n\n\nTerrain Analysis and Riparian Area Management — Nahmint Valley, BC\n\n\nFigure 1. Stream network symbolized by stream class (S1, S4, S5, S6), Reserve and Management Zones, watershed boundaries, and contour lines — Nahmint Valley, BC.\nThe analysis delineated a stream network totalling 273 km, classified into stream classes S1, S4, S5, and S6. Reserve Zones covered approximately 666 ha, while Management Zones spanned approximately 1,214 ha — bringing total riparian protection to nearly 1,880 ha. The watershed spans an elevation range of 1m to 1,574m, with higher-order streams concentrated along the main valley bottom.\n\n\n\nZone\nArea\n\n\n\n\nReserve Zone (no harvest)\n~666 ha\n\n\nManagement Zone (limited harvest)\n~1,214 ha\n\n\nTotal protected area\n~1,880 ha\n\n\nStream network length\n~273 km"
+  },
+  {
+    "objectID": "riparian.html#project-significance",
+    "href": "riparian.html#project-significance",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "Project Significance",
+    "text": "Project Significance\nThis project reflects the kind of spatial analysis applied by forest managers, consultants, and government agencies operating under BC’s Forest Practices Code. The use of Python scripting to automate stream classification and buffer assignment illustrates how GIS automation can efficiently handle complex, rule-based spatial decisions across large stream networks."
+  },
+  {
+    "objectID": "survey123.html",
+    "href": "survey123.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "← Back to Projects\n\n\nCourse: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Survey design\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis Survey123 form was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The form was designed to collect structured wildlife observations including species type, observation location, and if species were dead or alive.\nParticipants (MGEM students) used the form to submit simulated wildlife observations, which were visualized real-time through the Environmental Monitoring Dashboard. The workflow demonstrates how mobile GIS tools can support citizen science data collection while highlighting practical challenges such as data reliability, spatial coverage, and observer bias.\n\n\nNote: This survey form is displayed for demonstration purposes. Submissions are currently disabled."
+  },
+  {
+    "objectID": "survey123.html#survey123-field-data-collection",
+    "href": "survey123.html#survey123-field-data-collection",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Survey design\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis Survey123 form was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The form was designed to collect structured wildlife observations including species type, observation location, and if species were dead or alive.\nParticipants (MGEM students) used the form to submit simulated wildlife observations, which were visualized real-time through the Environmental Monitoring Dashboard. The workflow demonstrates how mobile GIS tools can support citizen science data collection while highlighting practical challenges such as data reliability, spatial coverage, and observer bias.\n\n\nNote: This survey form is displayed for demonstration purposes. Submissions are currently disabled."
   }
 ]
