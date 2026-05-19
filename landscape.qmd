@@ -1,0 +1,80 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+editor: source
+---
+
+```{=html}
+<style>
+.ls-container{max-width:1000px;margin:0 auto}
+.lab-card{
+  background:#fff;border-radius:18px;padding:1.4rem;
+  margin-bottom:1.6rem;
+  box-shadow:0 6px 18px rgba(0,0,0,0.07);
+  border:1px solid rgba(0,0,0,0.05);
+}
+.lab-card.featured{padding:0;overflow:hidden}
+.featured-body{padding:1.4rem}
+.tag-row{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:.7rem}
+.tag{
+  background:#eef4ff;padding:.25rem .7rem;
+  border-radius:999px;font-size:.8rem;font-weight:600;color:#2457a6;
+}
+.tag.forest{background:#d8f3dc;color:#1b4332}
+.project-link{font-weight:600;text-decoration:none}
+.project-link:hover{text-decoration:underline}
+.story-btn{
+  display:inline-flex;align-items:center;gap:.45rem;
+  margin-top:1rem;padding:.6rem 1.2rem;
+  border-radius:999px;background:#1b4332;
+  color:#fff;font-size:.85rem;font-weight:600;
+  text-decoration:none;transition:background .2s;
+}
+.story-btn:hover{background:#2d6a4f}
+.back-btn{
+  display:inline-block;margin-bottom:1.4rem;
+  padding:.55rem 1rem;border-radius:999px;
+  background:#f3f4f6;color:#222;text-decoration:none;
+  font-weight:600;border:1px solid rgba(0,0,0,0.08);
+}
+.back-btn:hover{background:#e9ecef}
+</style>
+```
+
+:::::::: ls-container
+[← Back to Projects](content.html){.back-btn}
+
+# Landscape Modeling & Spatial Statistics
+
+------------------------------------------------------------------------
+
+### Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar
+
+::::: {.lab-card .featured}
+:::: featured-body
+::: tag-row
+[Deforestation]{.tag .forest} [ArcPy]{.tag .forest} [Google Earth Engine]{.tag .forest} [Multi-ring buffer Analysis]{.tag}
+:::
+
+This project quantifies mangrove loss across communes and fokontany in Madagascar's Ambanja and Ambaro Bays between 1999 and 2019, using an automated ArcPy pipeline built in Jupyter notebooks. The workflow covers raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis.
+
+<a class="story-btn" href="projects/mangrove/mangrove.html">View Project →</a>
+::::
+:::::
+
+------------------------------------------------------------------------
+
+### Mapping Dominant Tree Species Using LiDAR Structural Metrics
+
+:::: lab-card
+::: tag-row
+[LiDAR]{.tag} [Forest Inventory]{.tag} [Python]{.tag} [Feature Selection]{.tag} [Petawawa RF]{.tag}
+:::
+
+This project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the **Petawawa Research Forest, Ontario**, as part of Ontario's transition toward an **Enhanced Forest Inventory (EFI)**. LiDAR-derived metrics were extracted at ground plot locations and analyzed using **mutual information feature selection** to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.
+
+<a class="story-btn" href="projects/project_tree_species.html">View Project →</a>
+::::
+::::::::

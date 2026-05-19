@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>content – Oluwaseyi Ezekiel</title>
+<title>Mangrove Deforestation Analysis — Oluwaseyi Ezekiel – Oluwaseyi Ezekiel</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -74,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -104,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./content.html" aria-current="page"> 
+    <a class="nav-link" href="./content.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -143,309 +178,156 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#mangrove-deforestation-analysis-ambanja-and-ambaro-bays-madagascar" id="toc-mangrove-deforestation-analysis-ambanja-and-ambaro-bays-madagascar" class="nav-link active" data-scroll-target="#mangrove-deforestation-analysis-ambanja-and-ambaro-bays-madagascar">Mangrove Deforestation Analysis — Ambanja and Ambaro Bays, Madagascar</a>
+  <ul class="collapse">
+  <li><a href="#one-of-the-worlds-most-valuable-ecosystems-vanishing-fast" id="toc-one-of-the-worlds-most-valuable-ecosystems-vanishing-fast" class="nav-link" data-scroll-target="#one-of-the-worlds-most-valuable-ecosystems-vanishing-fast">One of the world’s most valuable ecosystems — vanishing fast</a></li>
+  <li><a href="#a-global-tidal-wetland-dataset-from-google-earth-engine" id="toc-a-global-tidal-wetland-dataset-from-google-earth-engine" class="nav-link" data-scroll-target="#a-global-tidal-wetland-dataset-from-google-earth-engine">A global tidal wetland dataset from Google Earth Engine</a></li>
+  <li><a href="#removing-noise-before-analysis" id="toc-removing-noise-before-analysis" class="nav-link" data-scroll-target="#removing-noise-before-analysis">Removing noise before analysis</a></li>
+  <li><a href="#which-communes-and-fokontany-lost-the-most" id="toc-which-communes-and-fokontany-lost-the-most" class="nav-link" data-scroll-target="#which-communes-and-fokontany-lost-the-most">Which communes and fokontany lost the most?</a></li>
+  <li><a href="#does-accessibility-drive-deforestation" id="toc-does-accessibility-drive-deforestation" class="nav-link" data-scroll-target="#does-accessibility-drive-deforestation">Does accessibility drive deforestation?</a></li>
+  <li><a href="#where-loss-is-greatest-and-what-drives-it" id="toc-where-loss-is-greatest-and-what-drives-it" class="nav-link" data-scroll-target="#where-loss-is-greatest-and-what-drives-it">Where loss is greatest — and what drives it</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Projects</h1></header>
+<main class="content" id="quarto-document-content">
 
-
-
-
-<style>
-.projects-intro{
-  max-width:900px;
-  margin:0 auto 2.5rem auto;
-  text-align:left;
-}
-
-.projects-intro h1{
-  margin-bottom:0.6rem;
-}
-
-.projects-intro p{
-  color:#555;
-  font-size:1.05rem;
-}
-
-.category-grid{
-  display:grid;
-  grid-template-columns:repeat(2, minmax(0, 1fr));
-  gap:1.5rem;
-  margin:2rem 0 2.5rem 0;
-}
-
-@media (max-width: 900px){
-  .category-grid{
-    grid-template-columns:1fr;
-  }
-}
-
-.category-card{
-  background:#ffffff;
-  border-radius:22px;
-  padding:1.5rem;
-  box-shadow:0 10px 24px rgba(0,0,0,0.08);
-  border:1px solid rgba(0,0,0,0.05);
-  cursor:pointer;
-  transition:all .2s ease;
-}
-
-.category-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 16px 32px rgba(0,0,0,0.12);
-}
-
-.category-card h3{
-  margin-top:0;
-  margin-bottom:.7rem;
-}
-
-.category-card p{
-  color:#555;
-  margin-bottom:.8rem;
-}
-
-.tag-row{
-  display:flex;
-  flex-wrap:wrap;
-  gap:.45rem;
-}
-
-.tag{
-  display:inline-block;
-  padding:.3rem .7rem;
-  border-radius:999px;
-  background:#eef4ff;
-  color:#2457a6;
-  font-size:.82rem;
-  font-weight:600;
-}
-
-.subpage{
-  display:none;
-  margin-top:1.5rem;
-}
-
-.subpage.active{
-  display:block;
-}
-
-.back-btn{
-  display:inline-block;
-  margin-bottom:1.4rem;
-  padding:.55rem 1rem;
-  border-radius:999px;
-  background:#f3f4f6;
-  color:#222;
-  text-decoration:none;
-  font-weight:600;
-  border:1px solid rgba(0,0,0,0.08);
-  cursor:pointer;
-}
-
-.back-btn:hover{
-  background:#e9ecef;
-  text-decoration:none;
-}
-
-.project-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:1rem;
-  margin-top:1rem;
-}
-
-.project-card{
-  background:#ffffff;
-  border-radius:16px;
-  padding:1rem;
-  box-shadow:0 6px 16px rgba(0,0,0,0.06);
-  border:1px solid rgba(0,0,0,0.05);
-}
-
-.project-card h4{
-  margin-top:0;
-  margin-bottom:.5rem;
-}
-
-.project-card p{
-  color:#555;
-  margin-bottom:.75rem;
-}
-
-.project-link{
-  display:inline-block;
-  font-weight:600;
-  text-decoration:none;
-}
-
-.project-link:hover{
-  text-decoration:underline;
-}
-</style>
-<div id="projects-home">
-<section id="projects" class="level1 projects-intro">
-
-<div style="text-align:left; font-weight:600; margin-top:8px;">
-<p>Note: Click a category to explore projects.</p>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mangrove Deforestation Analysis — Oluwaseyi Ezekiel</h1>
 </div>
-</section>
-<div class="category-grid">
-<section id="project-management" class="level3 category-card" data-target="project-mgt-page">
-<h3 class="anchored" data-anchor-id="project-management">Project Management</h3>
-<p>Applied capstone work and geospatial project planning.</p>
-<div class="tag-row">
-<p><span class="tag">Capstone</span> <span class="tag">Planning</span> <span class="tag">Communication</span></p>
-</div>
-</section>
-<section id="cartography-gis-applications" class="level3 category-card" data-target="cartography-page">
-<h3 class="anchored" data-anchor-id="cartography-gis-applications">Cartography &amp; GIS Applications</h3>
-<p>Map design, ArcGIS Online applications, dashboards, field data collection and desktop GIS workflows.</p>
-<div class="tag-row">
-<p><span class="tag">StoryMaps</span> <span class="tag">Survey123</span> <span class="tag">ArcGIS Pro</span> <span class="tag">QGIS</span></p>
-</div>
-</section>
-<section id="remote-sensing-image-processing" class="level3 category-card" onclick="window.location.href='remote-sensing.html'">
-<h3 class="anchored" data-anchor-id="remote-sensing-image-processing">Remote Sensing &amp; Image Processing</h3>
-<p>LiDAR analysis, land-cover classification, spectral interpretation, and satellite time-series remote sensing.</p>
-<div class="tag-row">
-<p><span class="tag">LiDAR</span> <span class="tag">Classification</span> <span class="tag">Spectral</span> <span class="tag">Landsat</span></p>
-</div>
-</section>
-<section id="landscape-modeling-spatial-statistics" class="level3 category-card" data-target="landscape-page">
-<h3 class="anchored" data-anchor-id="landscape-modeling-spatial-statistics">Landscape Modeling &amp; Spatial Statistics</h3>
-<p>Landscape metrics, spatial modeling, forest analytics, and environmental statistics.</p>
-<div class="tag-row">
-<p><span class="tag">Spatial Statistics</span> <span class="tag">Modeling</span> <span class="tag">Python</span></p>
-</div>
-</section>
-</div>
-</div>
-<div id="cartography-page" class="subpage">
-<p><a href="#" class="back-btn" data-back="true">← Back to Projects</a></p>
-<section id="cartography-gis-applications-1" class="level2">
-<h2 class="anchored" data-anchor-id="cartography-gis-applications-1">Cartography &amp; GIS Applications</h2>
-<div class="project-grid">
-<section id="citizen-science-asset-infrastructure-management" class="level4 project-card">
-<h4 class="anchored" data-anchor-id="citizen-science-asset-infrastructure-management">Citizen Science: Asset &amp; Infrastructure Management</h4>
-<p>Interactive StoryMaps analyzing traffic patterns and urban mobility challenges to support safer and more efficient transportation systems.</p>
-<div class="tag-row">
-<p><span class="tag">Asset Management</span> <span class="tag">Urban Planning</span> <span class="tag">ArcGIS StoryMaps</span></p>
-</div>
-<p><a href="storymaps.html" class="project-link">View StoryMaps →</a></p>
-</section>
-<section id="data-visualization-environmental-conservation" class="level4 project-card">
-<h4 class="anchored" data-anchor-id="data-visualization-environmental-conservation">Data Visualization: Environmental Conservation</h4>
-<p>Interactive dashboard designed to monitor and visualize environmental indicators collected through Survey123 field surveys.</p>
-<div class="tag-row">
-<p><span class="tag">Environmental Conservation</span> <span class="tag">Data Visualization</span> <span class="tag">ArcGIS Dashboards</span></p>
-</div>
-<p><a href="dashboards.html" class="project-link">View Dashboard →</a></p>
-</section>
-<section id="field-data-collection-species-monitoring" class="level4 project-card">
-<h4 class="anchored" data-anchor-id="field-data-collection-species-monitoring">Field Data Collection: Species Monitoring</h4>
-<p>Mobile GIS workflow developed using ArcGIS Survey123 to collect structured geospatial data in the field.</p>
-<div class="tag-row">
-<p><span class="tag">Field Data Collection</span> <span class="tag">Survey123</span></p>
-</div>
-<p><a href="survey123.html" class="project-link">View Survey →</a></p>
-</section>
-<section id="desktop-gis-mapping-projects" class="level4 project-card">
-<h4 class="anchored" data-anchor-id="desktop-gis-mapping-projects">Desktop GIS: Mapping Projects</h4>
-<p>Collection of thematic maps and cartographic layouts developed using ArcGIS Pro and QGIS.</p>
-<div class="tag-row">
-<p><span class="tag">ArcGIS Pro</span> <span class="tag">QGIS</span> <span class="tag">Cartography</span></p>
-</div>
-<p><a href="gallery.html" class="project-link">See Map Gallery →</a></p>
-</section>
-</div>
-</section>
-</div>
-<div id="landscape-page" class="subpage">
-<p><a href="#" class="back-btn" data-back="true">← Back to Projects</a></p>
-<section id="landscape-modeling-spatial-statistics-1" class="level2">
-<h2 class="anchored" data-anchor-id="landscape-modeling-spatial-statistics-1">Landscape Modeling &amp; Spatial Statistics</h2>
-<div class="project-grid">
-<section id="mangrove-deforestation-analysis-ambanja-ambaro-bays-madagascar" class="level4 project-card">
-<h4 class="anchored" data-anchor-id="mangrove-deforestation-analysis-ambanja-ambaro-bays-madagascar">Mangrove Deforestation Analysis — Ambanja &amp; Ambaro Bays, Madagascar</h4>
-<p>This project quantifies mangrove loss across administrative boundaries in Madagascar between 1999 and 2019 using the Murray Global Tidal Wetland Change dataset. A fully automated Python pipeline — built with ArcPy in Jupyter notebooks — handles raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis to identify which communities experienced the greatest loss and whether proximity to paths explains deforestation patterns.</p>
-<div class="tag-row">
-<p><span class="tag">Python</span> <span class="tag">ArcPy</span> <span class="tag">Google Earth Engine</span> <span class="tag">Spatial Analysis</span></p>
-</div>
-<p><a href="projects/mangrove.html" class="project-link">View project →</a></p>
-</section>
-<section id="mapping-dominant-tree-species-using-lidar-structural-metrics" class="level4 project-card">
-<h4 class="anchored" data-anchor-id="mapping-dominant-tree-species-using-lidar-structural-metrics">Mapping Dominant Tree Species Using LiDAR Structural Metrics</h4>
-<p>This project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the <strong>Petawawa Research Forest, Ontario</strong>, as part of Ontario’s transition toward an <strong>Enhanced Forest Inventory (EFI)</strong>. LiDAR-derived metrics were extracted at ground plot locations and analyzed using <strong>mutual information feature selection</strong> to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.</p>
-<p>The analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.</p>
-<div class="tag-row">
-<p><span class="tag">Spatial Statistics</span> <span class="tag">LiDAR</span> <span class="tag">Forest Inventory</span> <span class="tag">Feature Selection</span></p>
-</div>
-<p><a href="projects/project_tree_species.html" class="project-link">View project →</a></p>
-</section>
-</div>
-</section>
-</div>
-<div id="project-mgt-page" class="subpage">
-<p><a href="#" class="back-btn" data-back="true">← Back to Projects</a></p>
-<section id="project-management-1" class="level2">
-<h2 class="anchored" data-anchor-id="project-management-1">Project Management</h2>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="../content.html">← Back to Projects</a></p>
+<p>Python · ArcPy · Google Earth Engine · Spatial Analysis</p>
+<section id="mangrove-deforestation-analysis-ambanja-and-ambaro-bays-madagascar" class="level1">
+<h1>Mangrove Deforestation Analysis — Ambanja and Ambaro Bays, Madagascar</h1>
+<p>📍 Madagascar &nbsp; 📅 2025</p>
+<blockquote class="blockquote">
+<p>Mangroves are disappearing. Can spatial analysis reveal where, when, and why?</p>
+</blockquote>
 <hr>
-<section id="assessing-critical-transitions-in-agricultural-landscapes-in-the-lower-fraser-valley" class="level3">
-<h3 class="anchored" data-anchor-id="assessing-critical-transitions-in-agricultural-landscapes-in-the-lower-fraser-valley">Assessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley</h3>
-<p>Master’s Capstone Project — University of British Columbia (UBC)</p>
-<p>This study examines how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020 by harmonizing multi-source land-cover datasets and analyzing landscape structure and land-cover transitions. The project identifies spatial patterns of agricultural change and evaluates opportunities for perennial agriculture expansion within existing agricultural systems.</p>
-<p><a href="capstone.html">View full project →</a></p>
+<p>The Problem</p>
+<section id="one-of-the-worlds-most-valuable-ecosystems-vanishing-fast" class="level2">
+<h2 class="anchored" data-anchor-id="one-of-the-worlds-most-valuable-ecosystems-vanishing-fast">One of the world’s most valuable ecosystems — vanishing fast</h2>
+<p>Mangrove forests are among the most carbon-rich and ecologically productive ecosystems on the planet. They protect coastlines, support fisheries, and store significant quantities of carbon. Yet they are disappearing rapidly due to agricultural expansion, timber harvesting, and coastal development.</p>
+<p>This project quantifies mangrove loss across administrative boundaries in the Ambanja and Ambaro Bays of Madagascar between <strong>1999 and 2019</strong>, and investigates whether deforestation is spatially associated with proximity to paths and permanent rivers.</p>
 <hr>
+<p>The Data</p>
 </section>
-<section id="mapping-spatial-patterns-of-urban-carbon-sinks-in-metro-vancouver" class="level3">
-<h3 class="anchored" data-anchor-id="mapping-spatial-patterns-of-urban-carbon-sinks-in-metro-vancouver">Mapping Spatial Patterns of Urban Carbon Sinks in Metro Vancouver</h3>
-<p>Research Proposal — UBC GEM 500 (Landscape Ecology)</p>
-<p>This project investigates how vegetation distribution and landscape structure influence urban carbon storage across Metro Vancouver municipalities. Using Landsat imagery, carbon biomass datasets, and landscape metrics, the study aims to identify municipalities functioning as major urban carbon sinks and assess the spatial factors influencing carbon storage.</p>
-<p><a href="urban-carbon.html">View full project →</a></p>
+<section id="a-global-tidal-wetland-dataset-from-google-earth-engine" class="level2">
+<h2 class="anchored" data-anchor-id="a-global-tidal-wetland-dataset-from-google-earth-engine">A global tidal wetland dataset from Google Earth Engine</h2>
+<p>The <strong>Murray Global Tidal Wetland Change dataset</strong> was downloaded from <strong>Google Earth Engine</strong>, capturing changes in tidal wetland extent globally at high spatial resolution. Administrative boundary layers — communes and fokontany — and infrastructure layers including paths and permanent rivers were used for spatial analysis.</p>
+<hr>
+<p>Step 1 — Data Cleaning</p>
 </section>
+<section id="removing-noise-before-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="removing-noise-before-analysis">Removing noise before analysis</h2>
+<p>The Murray raster was converted to polygon format using <code>arcpy.conversion.RasterToPolygon()</code>. ArcPy cursors were then used to remove null value polygons (coded as 0) and rename the gridcode field to “loss_year”:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>arcpy.management.AlterField(mangrove_polygon_name, <span class="st">'gridcode'</span>, <span class="st">'loss_year'</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> arcpy.da.UpdateCursor(mangrove_polygon_name, <span class="st">'loss_year'</span>) <span class="im">as</span> cursor:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> row <span class="kw">in</span> cursor:</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> row[<span class="dv">0</span>] <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>            cursor.deleteRow()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+<p>Step 2 — Quantifying Loss by Administrative Unit</p>
 </section>
+<section id="which-communes-and-fokontany-lost-the-most" class="level2">
+<h2 class="anchored" data-anchor-id="which-communes-and-fokontany-lost-the-most">Which communes and fokontany lost the most?</h2>
+<p>The cleaned polygons were spatially joined to commune and fokontany boundary layers. Area was calculated using <code>arcpy.management.CalculateGeometryAttributes()</code>, and <code>arcpy.analysis.Statistics()</code> summarized total loss area (km²) and average loss year by administrative unit. Results were exported to Excel using Pandas.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="projects/mangrove/mangrove_loss_commune.png" class="img-fluid figure-img"></p>
+<figcaption>Mangrove loss by commune</figcaption>
+</figure>
 </div>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const home = document.getElementById("projects-home");
-  const cards = document.querySelectorAll(".category-card[data-target]");
-  const subpages = document.querySelectorAll(".subpage");
-  const backButtons = document.querySelectorAll("[data-back='true']");
+<p><em>Figure 1. Total mangrove loss (km²) by commune, 1999–2019. Antsakoamanondro recorded the highest loss at 3.05 km², followed by Anorontsangana (1.86 km²) and Maherivaratra (1.67 km²).</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="projects/mangrove/mangrove_loss_fokontany.png" class="img-fluid figure-img"></p>
+<figcaption>Top 10 fokontany by mangrove loss</figcaption>
+</figure>
+</div>
+<p><em>Figure 2. Top 10 fokontany by total mangrove loss. Ambodimanga Sud (1.47 km²) and Andrahibo (1.30 km²) recorded the highest losses at the sub-commune level.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="projects/mangrove/mangrove_loss_temporal.png" class="img-fluid figure-img"></p>
+<figcaption>Average year of mangrove loss by commune</figcaption>
+</figure>
+</div>
+<p><em>Figure 3. Average year of mangrove loss by commune. Darker bars indicate more recent loss (2015 and later).</em></p>
+<hr>
+<p>Step 3 — Proximity Analysis</p>
+</section>
+<section id="does-accessibility-drive-deforestation" class="level2">
+<h2 class="anchored" data-anchor-id="does-accessibility-drive-deforestation">Does accessibility drive deforestation?</h2>
+<p>Multi-ring buffers of <strong>1km, 2km, and 5km</strong> were applied around paths and permanent rivers using ArcPy’s Buffer tool, then intersected with mangrove loss polygons to quantify deforestation within each distance band.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="projects/mangrove/mangrove_loss_proximity.png" class="img-fluid figure-img"></p>
+<figcaption>Mangrove loss by distance from paths</figcaption>
+</figure>
+</div>
+<p><em>Figure 4. Total mangrove loss by distance from paths. Loss increases with distance, suggesting remoteness — not accessibility — may be a stronger driver of deforestation.</em></p>
+<hr>
+<p>Results</p>
+</section>
+<section id="where-loss-is-greatest-and-what-drives-it" class="level2">
+<h2 class="anchored" data-anchor-id="where-loss-is-greatest-and-what-drives-it">Where loss is greatest — and what drives it</h2>
+<p>The analysis revealed that most loss occurred between <strong>2012 and 2015</strong>. At the commune level, <strong>Antsakoamanondro</strong> experienced the greatest loss (~3.05 km²), while <strong>Ambodimanga Sud</strong> led at the fokontany level (~1.47 km²).</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Zone</th>
+<th>Area</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Most affected commune</td>
+<td>Antsakoamanondro (~3.05 km²)</td>
+</tr>
+<tr class="even">
+<td>Most affected fokontany</td>
+<td>Ambodimanga Sud (~1.47 km²)</td>
+</tr>
+<tr class="odd">
+<td>Loss within 1km of paths</td>
+<td>0.66 km²</td>
+</tr>
+<tr class="even">
+<td>Loss within 5km of paths</td>
+<td>7.71 km²</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Project Significance</p>
+<p>This project illustrates how Python-based spatial analysis can automate repetitive geoprocessing steps, handle large datasets systematically, and produce structured outputs that directly inform conservation planning. The workflow is transferable to any region where tidal wetland change data is available — making it a scalable approach for monitoring mangrove loss globally.</p>
 
-  function openSubpage(targetId) {
-    const targetPage = document.getElementById(targetId);
-    if (!targetPage) return;
 
-    subpages.forEach(page => page.classList.remove("active"));
-    home.style.display = "none";
-    targetPage.classList.add("active");
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-
-  cards.forEach(card => {
-    card.addEventListener("click", function () {
-      const targetId = this.getAttribute("data-target");
-      openSubpage(targetId);
-    });
-  });
-
-  backButtons.forEach(btn => {
-    btn.addEventListener("click", function (e) {
-      e.preventDefault();
-      subpages.forEach(page => page.classList.remove("active"));
-      home.style.display = "block";
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  });
-
-  const hash = window.location.hash.replace("#", "");
-  if (hash) {
-    openSubpage(hash);
-  }
-});
-</script>
-
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

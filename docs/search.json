@@ -116,7 +116,7 @@
     "href": "gallery.html#riparian-terrain-analysis",
     "title": "Oluwaseyi Ezekiel",
     "section": "Riparian Terrain Analysis",
-    "text": "Riparian Terrain Analysis\nThis project uses a Digital Elevation Model (DEM) to identify key terrain features that influence riparian forest management decisions. It evaluates how DEM‑derived indicators such as slope and flow direction can support the delineation of reserve zones and guide decision‑making in complex riparian environments."
+    "text": "Riparian Terrain Analysis\nThis project uses a Digital Elevation Model to map and classify stream networks, assess fish-bearing potential, and delineate Riparian Management Areas in the Nahmint Valley, BC — following BC’s Forest Practices Code to define Reserve and Management Zones that guide harvest planning decisions. View full project →"
   },
   {
     "objectID": "gallery.html#infrastructure-management",
@@ -249,7 +249,7 @@
     "href": "content.html#landscape-modeling-spatial-statistics-1",
     "title": "Projects",
     "section": "Landscape Modeling & Spatial Statistics",
-    "text": "Landscape Modeling & Spatial Statistics\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nThe analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.\n\nSpatial Statistics LiDAR Forest Inventory Feature Selection\n\nView project →"
+    "text": "Landscape Modeling & Spatial Statistics\n\n\nMangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\nThis project quantifies mangrove loss across administrative boundaries in Madagascar between 1999 and 2019 using the Murray Global Tidal Wetland Change dataset. A fully automated Python pipeline — built with ArcPy in Jupyter notebooks — handles raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis to identify which communities experienced the greatest loss and whether proximity to paths explains deforestation patterns.\n\nPython ArcPy Google Earth Engine Spatial Analysis\n\nView project →\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nThe analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.\n\nSpatial Statistics LiDAR Forest Inventory Feature Selection\n\nView project →"
   },
   {
     "objectID": "content.html#project-management-1",
@@ -376,5 +376,292 @@
     "title": "Oluwaseyi Ezekiel",
     "section": "",
     "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Survey design\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis Survey123 form was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The form was designed to collect structured wildlife observations including species type, observation location, and if species were dead or alive.\nParticipants (MGEM students) used the form to submit simulated wildlife observations, which were visualized real-time through the Environmental Monitoring Dashboard. The workflow demonstrates how mobile GIS tools can support citizen science data collection while highlighting practical challenges such as data reliability, spatial coverage, and observer bias.\n\n\nNote: This survey form is displayed for demonstration purposes. Submissions are currently disabled."
+  },
+  {
+    "objectID": "map_gallery/riparian.html",
+    "href": "map_gallery/riparian.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "GEM 511: Advanced GIS for Environmental Management — University of British Columbia 2025"
+  },
+  {
+    "objectID": "map_gallery/riparian.html#introduction",
+    "href": "map_gallery/riparian.html#introduction",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Introduction",
+    "text": "Introduction\nRiparian areas — the forests and vegetation found adjacent to streams, lakes, and wetlands — play a critical ecological role in BC’s forest landscapes. They stabilize stream banks, regulate water temperature, provide nutrient inputs, and reduce runoff into water bodies. Under BC’s Forest Practices Code, Riparian Management Areas (RMAs) must be defined around sensitive streams before harvesting can occur. The width of these legally required buffer zones depends on stream class, which is determined by channel width and fish-bearing potential.\nThis project simulates a real-world forest management workflow, using a Digital Elevation Model (DEM) to map and classify stream networks, assess fish-bearing potential, and delineate Reserve and Management Zones across a topographically complex watershed in the Nahmint Valley, Vancouver Island, British Columbia.\n\n\n\nFinal map showing stream network symbolized by stream class, Reserve and Management Zones, watershed boundaries, and contour lines across the Nahmint Valley study area.\n\n\nFigure 1. Stream network, Riparian Management Areas, watershed boundaries, and contour lines — Nahmint Valley, BC."
+  },
+  {
+    "objectID": "map_gallery/riparian.html#methods",
+    "href": "map_gallery/riparian.html#methods",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Methods",
+    "text": "Methods\nThe DEM for the Nahmint watershed was accessed from the UBC PostgreSQL server and exported as a GeoTIFF for processing in ArcGIS Pro. The analysis followed a complete hydrological modeling workflow using ArcGIS Pro’s Spatial Analyst toolset.\nDEM Preprocessing and Flow Modeling: Sinks were removed using the Fill tool to prevent unrealistic water pooling in DEM depressions. Flow Direction (D8 algorithm) and Flow Accumulation rasters were then generated to model the direction and volume of water movement across the landscape. A flow accumulation threshold was selected by comparing the derived stream network against ArcGIS basemap satellite imagery, and the raster was reclassified using the Reclassify tool to isolate stream cells.\nStream Network Delineation and Classification: Strahler stream order was assigned using the Stream Order tool, and stream features were converted to polylines using Stream to Feature. Unique stream segment IDs were generated with the Stream Link tool. Percent gradient was calculated for each segment using Zonal Statistics and the Raster Calculator, with streams below 20% gradient identified as fish-bearing under BC guidelines. Channel widths were estimated from basemap imagery for a stratified sample of streams per order, and average widths were assigned to all segments of the same order using Python scripting within ArcGIS Pro’s Calculate Field tool.\nRiparian Management Area Delineation: BC stream classes (S2–S6) were assigned based on gradient and width thresholds using conditional Python logic in the Calculate Field tool. Variable-width buffer distances for Reserve Zones (no harvest) and Management Zones (limited harvest) were calculated for each stream segment and applied using the Buffer tool with field-based distances. Watershed boundaries were delineated using the Watershed tool to support assessment of how upslope harvesting may affect downstream hydrology. Contour lines were generated using the Contour tool at 100m intervals."
+  },
+  {
+    "objectID": "map_gallery/riparian.html#results",
+    "href": "map_gallery/riparian.html#results",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Results",
+    "text": "Results\nThe analysis produced a fully classified stream network with Reserve and Management Zones assigned according to BC riparian management guidelines. Streams with gradient less than 20% were identified as fish-bearing and assigned wider protection buffers, while steeper streams received narrower or no buffers depending on their class.\nThe final cartographic output communicates the spatial extent of harvestable versus protected areas, total RMA area, and stream network length — information directly relevant to operational forest harvest planning. The watershed map further illustrates how runoff from harvested areas may affect connected stream segments, supporting assessment of cumulative hydrological impacts."
+  },
+  {
+    "objectID": "map_gallery/riparian.html#project-significance",
+    "href": "map_gallery/riparian.html#project-significance",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Project Significance",
+    "text": "Project Significance\nThis project demonstrates how DEM-derived hydrological analysis can support legally compliant and ecologically sound forest management planning in BC. The workflow — from terrain preprocessing to riparian buffer delineation — reflects the kind of spatial analysis used by forest managers, consultants, and government agencies operating under BC’s Forest Practices Code.\nThe use of Python scripting within ArcGIS Pro to automate stream classification and buffer assignment illustrates how GIS automation can efficiently handle complex, rule-based spatial decisions across large stream networks."
+  },
+  {
+    "objectID": "riparian.html",
+    "href": "riparian.html",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "",
+    "text": "← Back to Projects"
+  },
+  {
+    "objectID": "riparian.html#introduction",
+    "href": "riparian.html#introduction",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Introduction",
+    "text": "Introduction\nRiparian areas — the forests and vegetation found adjacent to streams, lakes, and wetlands — play a critical ecological role in BC’s forest landscapes. They stabilize stream banks, regulate water temperature, provide nutrient inputs, and reduce runoff into water bodies. Under BC’s Forest Practices Code, Riparian Management Areas (RMAs) must be defined around sensitive streams before harvesting can occur. The width of these legally required buffer zones depends on stream class, which is determined by channel width and fish-bearing potential.\nThis project simulates a real-world forest management workflow, using a Digital Elevation Model (DEM) to map and classify stream networks, assess fish-bearing potential, and delineate Reserve and Management Zones across a topographically complex watershed in the Nahmint Valley, Vancouver Island, British Columbia.\n\n\n\nFinal map showing stream network symbolized by stream class, Reserve and Management Zones, watershed boundaries, and contour lines across the Nahmint Valley study area.\n\n\nFigure 1. Stream network, Riparian Management Areas, watershed boundaries, and contour lines — Nahmint Valley, BC."
+  },
+  {
+    "objectID": "riparian.html#methods",
+    "href": "riparian.html#methods",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Methods",
+    "text": "Methods\nThe DEM for the Nahmint watershed was accessed from the UBC PostgreSQL server and exported as a GeoTIFF for processing in ArcGIS Pro. The analysis followed a complete hydrological modeling workflow using ArcGIS Pro’s Spatial Analyst toolset.\nDEM Preprocessing and Flow Modeling: Sinks were removed using the Fill tool to prevent unrealistic water pooling in DEM depressions. Flow Direction (D8 algorithm) and Flow Accumulation rasters were then generated to model the direction and volume of water movement across the landscape. A flow accumulation threshold was selected by comparing the derived stream network against ArcGIS basemap satellite imagery, and the raster was reclassified using the Reclassify tool to isolate stream cells.\nStream Network Delineation and Classification: Strahler stream order was assigned using the Stream Order tool, and stream features were converted to polylines using Stream to Feature. Unique stream segment IDs were generated with the Stream Link tool. Percent gradient was calculated for each segment using Zonal Statistics and the Raster Calculator, with streams below 20% gradient identified as fish-bearing under BC guidelines. Channel widths were estimated from basemap imagery for a stratified sample of streams per order, and average widths were assigned to all segments of the same order using Python scripting within ArcGIS Pro’s Calculate Field tool.\nRiparian Management Area Delineation: BC stream classes (S2–S6) were assigned based on gradient and width thresholds using conditional Python logic in the Calculate Field tool. Variable-width buffer distances for Reserve Zones (no harvest) and Management Zones (limited harvest) were calculated for each stream segment and applied using the Buffer tool with field-based distances. Watershed boundaries were delineated using the Watershed tool to support assessment of how upslope harvesting may affect downstream hydrology. Contour lines were generated using the Contour tool at 100m intervals."
+  },
+  {
+    "objectID": "riparian.html#results",
+    "href": "riparian.html#results",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "Results",
+    "text": "Results\n\n273 km of streams | 1,880 ha protected\n\n\n\nTerrain Analysis and Riparian Area Management — Nahmint Valley, BC\n\n\nFigure 1. Stream network symbolized by stream class (S1, S4, S5, S6), Reserve and Management Zones, watershed boundaries, and contour lines — Nahmint Valley, BC.\nThe analysis delineated a stream network totalling 273 km, classified into stream classes S1, S4, S5, and S6. Reserve Zones covered approximately 666 ha, while Management Zones spanned approximately 1,214 ha — bringing total riparian protection to nearly 1,880 ha. The watershed spans an elevation range of 1m to 1,574m, with higher-order streams concentrated along the main valley bottom.\n\n\n\nZone\nArea\n\n\n\n\nReserve Zone (no harvest)\n~666 ha\n\n\nManagement Zone (limited harvest)\n~1,214 ha\n\n\nTotal protected area\n~1,880 ha\n\n\nStream network length\n~273 km"
+  },
+  {
+    "objectID": "riparian.html#project-significance",
+    "href": "riparian.html#project-significance",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "Project Significance",
+    "text": "Project Significance\nThis project reflects the kind of spatial analysis applied by forest managers, consultants, and government agencies operating under BC’s Forest Practices Code. The use of Python scripting to automate stream classification and buffer assignment illustrates how GIS automation can efficiently handle complex, rule-based spatial decisions across large stream networks."
+  },
+  {
+    "objectID": "riparian.html#protecting-streams-before-the-chainsaw-moves-in",
+    "href": "riparian.html#protecting-streams-before-the-chainsaw-moves-in",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "Protecting streams before the chainsaw moves in",
+    "text": "Protecting streams before the chainsaw moves in\nRiparian areas — forests adjacent to streams, lakes, and wetlands — stabilize stream banks, regulate water temperature, and reduce runoff. Under BC’s Forest Practices Code, Riparian Management Areas (RMAs) must be defined before harvesting can occur. The width of these legally required buffer zones depends on stream class, determined by channel width and fish-bearing potential.\nThis project simulates a real-world forest management workflow — mapping stream networks, classifying streams, and delineating Reserve and Management Zones across the Nahmint Valley watershed.\n\nThe Data"
+  },
+  {
+    "objectID": "riparian.html#a-dem-from-the-ubc-postgresql-server",
+    "href": "riparian.html#a-dem-from-the-ubc-postgresql-server",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "A DEM from the UBC PostgreSQL server",
+    "text": "A DEM from the UBC PostgreSQL server\nThe DEM for the Nahmint watershed was accessed from the UBC PostgreSQL server and exported as a GeoTIFF for processing in ArcGIS Pro. ArcGIS basemap satellite imagery was used to validate the derived stream network and estimate channel widths."
+  },
+  {
+    "objectID": "riparian.html#filling-the-gaps-before-modeling-flow",
+    "href": "riparian.html#filling-the-gaps-before-modeling-flow",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "Filling the gaps before modeling flow",
+    "text": "Filling the gaps before modeling flow\nSinks — small depressions in the DEM where water pools unrealistically — were removed using the Fill tool. Skipping this step breaks the flow network downstream.\nFlow Direction (D8 algorithm) was then calculated, directing each cell’s flow to its steepest downslope neighbour. Flow Accumulation counted how many upstream cells drain through each point — the foundation for stream delineation.\n\nStep 2 — Stream Network"
+  },
+  {
+    "objectID": "riparian.html#finding-streams-from-elevation-alone",
+    "href": "riparian.html#finding-streams-from-elevation-alone",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "Finding streams from elevation alone",
+    "text": "Finding streams from elevation alone\nA flow accumulation threshold was selected by comparing the derived network against basemap imagery — balancing realistic stream capture against false channel extraction. The raster was Reclassified to isolate stream cells, then Stream Order (Strahler method) was assigned to each segment. Stream to Feature converted the raster network to polylines.\n\nStep 3 — Stream Characteristics"
+  },
+  {
+    "objectID": "riparian.html#gradient-and-width-determine-everything",
+    "href": "riparian.html#gradient-and-width-determine-everything",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "Gradient and width determine everything",
+    "text": "Gradient and width determine everything\nPercent gradient was calculated using Zonal Statistics and Raster Calculator. Streams with gradient below 20% were classified as fish-bearing under BC guidelines. Channel widths were estimated from basemap imagery for a stratified sample per stream order, then assigned to all segments using Python scripting in ArcGIS Pro’s Calculate Field tool:\ndef reclass(Order):\n    if Order == 1:\n        return 1\n    elif Order == 2:\n        return [measured avg width]\n    elif Order == 3:\n        return [measured avg width]\n    else:\n        return [measured avg width]\n\nStep 4 — Riparian Management Areas"
+  },
+  {
+    "objectID": "riparian.html#drawing-the-line-between-harvest-and-protection",
+    "href": "riparian.html#drawing-the-line-between-harvest-and-protection",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "Drawing the line between harvest and protection",
+    "text": "Drawing the line between harvest and protection\nBC stream classes (S2–S6) were assigned using conditional Python logic based on gradient and width thresholds. Variable-width buffer distances for Reserve Zones (no harvest) and Management Zones (limited harvest) were applied using the Buffer tool with field-based distances. Watershed boundaries were delineated using the Watershed tool.\n\nResults"
+  },
+  {
+    "objectID": "riparian.html#km-of-streams.-1880-ha-protected.",
+    "href": "riparian.html#km-of-streams.-1880-ha-protected.",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "273 km of streams. 1,880 ha protected.",
+    "text": "273 km of streams. 1,880 ha protected.\n\n\n\nTerrain Analysis and Riparian Area Management — Nahmint Valley, BC\n\n\nFigure 1. Stream network symbolized by stream class (S1, S4, S5, S6), Reserve and Management Zones, watershed boundaries, and contour lines — Nahmint Valley, BC.\nThe analysis delineated a stream network totalling 273 km, classified into stream classes S1, S4, S5, and S6. Reserve Zones covered approximately 666 ha, while Management Zones spanned approximately 1,214 ha — bringing total riparian protection to nearly 1,880 ha. The watershed spans an elevation range of 1m to 1,574m, with higher-order streams concentrated along the main valley bottom.\n\n\n\nZone\nArea\n\n\n\n\nReserve Zone (no harvest)\n~666 ha\n\n\nManagement Zone (limited harvest)\n~1,214 ha\n\n\nTotal protected area\n~1,880 ha\n\n\nStream network length\n~273 km\n\n\n\n\nWhat This Means"
+  },
+  {
+    "objectID": "riparian.html#a-workflow-forest-managers-actually-use",
+    "href": "riparian.html#a-workflow-forest-managers-actually-use",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "A workflow forest managers actually use",
+    "text": "A workflow forest managers actually use\nThis project reflects the kind of spatial analysis applied by forest managers, consultants, and government agencies operating under BC’s Forest Practices Code. The use of Python scripting to automate stream classification and buffer assignment illustrates how GIS automation can efficiently handle complex, rule-based spatial decisions across large stream networks."
+  },
+  {
+    "objectID": "riparian.html#protecting-streams-before-the-chainsaw-moves-in-1",
+    "href": "riparian.html#protecting-streams-before-the-chainsaw-moves-in-1",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "Protecting streams before the chainsaw moves in",
+    "text": "Protecting streams before the chainsaw moves in\nRiparian areas — forests adjacent to streams, lakes, and wetlands — stabilize stream banks, regulate water temperature, and reduce runoff. Under BC’s Forest Practices Code, Riparian Management Areas (RMAs) must be defined before harvesting can occur. The width of these legally required buffer zones depends on stream class, determined by channel width and fish-bearing potential.\nThis project simulates a real-world forest management workflow — mapping stream networks, classifying streams, and delineating Reserve and Management Zones across the Nahmint Valley watershed.\n\nThe Data"
+  },
+  {
+    "objectID": "riparian.html#a-dem-from-the-ubc-postgresql-server-1",
+    "href": "riparian.html#a-dem-from-the-ubc-postgresql-server-1",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "A DEM from the UBC PostgreSQL server",
+    "text": "A DEM from the UBC PostgreSQL server\nThe DEM for the Nahmint watershed was accessed from the UBC PostgreSQL server and exported as a GeoTIFF for processing in ArcGIS Pro. ArcGIS basemap satellite imagery was used to validate the derived stream network and estimate channel widths.\n\nStep 1 — DEM Preprocessing"
+  },
+  {
+    "objectID": "riparian.html#filling-the-gaps-before-modeling-flow-1",
+    "href": "riparian.html#filling-the-gaps-before-modeling-flow-1",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "Filling the gaps before modeling flow",
+    "text": "Filling the gaps before modeling flow\nSinks — small depressions in the DEM where water pools unrealistically — were removed using the Fill tool. Skipping this step breaks the flow network downstream.\nFlow Direction (D8 algorithm) was then calculated, directing each cell’s flow to its steepest downslope neighbour. Flow Accumulation counted how many upstream cells drain through each point — the foundation for stream delineation.\n\nStep 2 — Stream Network"
+  },
+  {
+    "objectID": "riparian.html#finding-streams-from-elevation-alone-1",
+    "href": "riparian.html#finding-streams-from-elevation-alone-1",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "Finding streams from elevation alone",
+    "text": "Finding streams from elevation alone\nA flow accumulation threshold was selected by comparing the derived network against basemap imagery — balancing realistic stream capture against false channel extraction. The raster was Reclassified to isolate stream cells, then Stream Order (Strahler method) was assigned to each segment. Stream to Feature converted the raster network to polylines.\n\nStep 3 — Stream Characteristics"
+  },
+  {
+    "objectID": "riparian.html#gradient-and-width-determine-everything-1",
+    "href": "riparian.html#gradient-and-width-determine-everything-1",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "Gradient and width determine everything",
+    "text": "Gradient and width determine everything\nPercent gradient was calculated using Zonal Statistics and Raster Calculator. Streams with gradient below 20% were classified as fish-bearing under BC guidelines. Channel widths were estimated from basemap imagery for a stratified sample per stream order, then assigned to all segments using Python scripting in ArcGIS Pro’s Calculate Field tool:\ndef reclass(Order):\n    if Order == 1:\n        return 1\n    elif Order == 2:\n        return [measured avg width]\n    elif Order == 3:\n        return [measured avg width]\n    else:\n        return [measured avg width]\n\nStep 4 — Riparian Management Areas"
+  },
+  {
+    "objectID": "riparian.html#drawing-the-line-between-harvest-and-protection-1",
+    "href": "riparian.html#drawing-the-line-between-harvest-and-protection-1",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "Drawing the line between harvest and protection",
+    "text": "Drawing the line between harvest and protection\nBC stream classes (S2–S6) were assigned using conditional Python logic based on gradient and width thresholds. Variable-width buffer distances for Reserve Zones (no harvest) and Management Zones (limited harvest) were applied using the Buffer tool with field-based distances. Watershed boundaries were delineated using the Watershed tool.\n\nResults"
+  },
+  {
+    "objectID": "riparian.html#km-of-streams.-1880-ha-protected.-1",
+    "href": "riparian.html#km-of-streams.-1880-ha-protected.-1",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "273 km of streams. 1,880 ha protected.",
+    "text": "273 km of streams. 1,880 ha protected.\n\n\n\nTerrain Analysis and Riparian Area Management — Nahmint Valley, BC\n\n\nFigure 1. Stream network symbolized by stream class (S1, S4, S5, S6), Reserve and Management Zones, watershed boundaries, and contour lines — Nahmint Valley, BC.\nThe analysis delineated a stream network totalling 273 km, classified into stream classes S1, S4, S5, and S6. Reserve Zones covered approximately 666 ha, while Management Zones spanned approximately 1,214 ha — bringing total riparian protection to nearly 1,880 ha. The watershed spans an elevation range of 1m to 1,574m, with higher-order streams concentrated along the main valley bottom.\n\n\n\nZone\nArea\n\n\n\n\nReserve Zone (no harvest)\n~666 ha\n\n\nManagement Zone (limited harvest)\n~1,214 ha\n\n\nTotal protected area\n~1,880 ha\n\n\nStream network length\n~273 km\n\n\n\n\nWhat This Means"
+  },
+  {
+    "objectID": "riparian.html#a-workflow-forest-managers-actually-use-1",
+    "href": "riparian.html#a-workflow-forest-managers-actually-use-1",
+    "title": "Riparian Terrain Analysis — Oluwaseyi Ezekiel",
+    "section": "A workflow forest managers actually use",
+    "text": "A workflow forest managers actually use\nThis project reflects the kind of spatial analysis applied by forest managers, consultants, and government agencies operating under BC’s Forest Practices Code. The use of Python scripting to automate stream classification and buffer assignment illustrates how GIS automation can efficiently handle complex, rule-based spatial decisions across large stream networks."
+  },
+  {
+    "objectID": "riparian.html#step-1-dem-preprocessing",
+    "href": "riparian.html#step-1-dem-preprocessing",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "Step 1 — DEM Preprocessing",
+    "text": "Step 1 — DEM Preprocessing\n\nFilling the gaps before modeling flow\nSinks — small depressions in the DEM where water pools unrealistically — were removed using the Fill tool. Skipping this step breaks the flow network downstream.\nFlow Direction (D8 algorithm) was then calculated, directing each cell’s flow to its steepest downslope neighbour. Flow Accumulation counted how many upstream cells drain through each point — the foundation for stream delineation."
+  },
+  {
+    "objectID": "riparian.html#step-2-stream-network",
+    "href": "riparian.html#step-2-stream-network",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "Step 2 — Stream Network",
+    "text": "Step 2 — Stream Network\n\nFinding streams from elevation alone\nA flow accumulation threshold was selected by comparing the derived network against basemap imagery — balancing realistic stream capture against false channel extraction. The raster was Reclassified to isolate stream cells, then Stream Order (Strahler method) was assigned to each segment. Stream to Feature converted the raster network to polylines."
+  },
+  {
+    "objectID": "riparian.html#step-3-stream-characteristics",
+    "href": "riparian.html#step-3-stream-characteristics",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "Step 3 — Stream Characteristics",
+    "text": "Step 3 — Stream Characteristics\n\nGradient and width\nPercent gradient was calculated using Zonal Statistics and Raster Calculator. Streams with gradient below 20% were classified as fish-bearing under BC guidelines. Channel widths were estimated from basemap imagery for a stratified sample per stream order, then assigned to all segments using Python scripting in ArcGIS Pro’s Calculate Field tool:\ndef reclass(Order):\n    if Order == 1:\n        return 1\n    elif Order == 2:\n        return [measured avg width]\n    elif Order == 3:\n        return [measured avg width]\n    else:\n        return [measured avg width]"
+  },
+  {
+    "objectID": "riparian.html#step-4-riparian-management-areas",
+    "href": "riparian.html#step-4-riparian-management-areas",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "Step 4 — Riparian Management Areas",
+    "text": "Step 4 — Riparian Management Areas\n\nDrawing the line between harvest and protection\nBC stream classes (S2–S6) were assigned using conditional Python logic based on gradient and width thresholds. Variable-width buffer distances for Reserve Zones (no harvest) and Management Zones (limited harvest) were applied using the Buffer tool with field-based distances. Watershed boundaries were delineated using the Watershed tool."
+  },
+  {
+    "objectID": "riparian.html#the-problem",
+    "href": "riparian.html#the-problem",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "The Problem",
+    "text": "The Problem\n\nProtecting streams before Harvesting\nRiparian areas — forests adjacent to streams, lakes, and wetlands — stabilize stream banks, regulate water temperature, and reduce runoff. Under BC’s Forest Practices Code, Riparian Management Areas (RMAs) must be defined before harvesting can occur. The width of these legally required buffer zones depends on stream class, determined by channel width and fish-bearing potential.\nThis project simulates a real-world forest management workflow — mapping stream networks, classifying streams, and delineating Reserve and Management Zones across the Nahmint Valley watershed."
+  },
+  {
+    "objectID": "riparian.html#data",
+    "href": "riparian.html#data",
+    "title": "Riparian Terrain Analysis and Forest Management Planning",
+    "section": "Data",
+    "text": "Data\n\nA DEM from the UBC PostgreSQL server\nThe DEM for the Nahmint watershed was accessed from the UBC PostgreSQL server and exported as a GeoTIFF for processing in ArcGIS Pro. ArcGIS basemap satellite imagery was used to validate the derived stream network and estimate channel widths."
+  },
+  {
+    "objectID": "mangrove.html",
+    "href": "mangrove.html",
+    "title": "Mangrove Deforestation Analysis — Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "← Back to Projects\nPython · ArcPy · Google Earth Engine · Spatial Analysis"
+  },
+  {
+    "objectID": "mangrove.html#one-of-the-worlds-most-valuable-ecosystems-vanishing-fast",
+    "href": "mangrove.html#one-of-the-worlds-most-valuable-ecosystems-vanishing-fast",
+    "title": "Mangrove Deforestation Analysis — Oluwaseyi Ezekiel",
+    "section": "One of the world’s most valuable ecosystems — vanishing fast",
+    "text": "One of the world’s most valuable ecosystems — vanishing fast\nMangrove forests are among the most carbon-rich and ecologically productive ecosystems on the planet. They protect coastlines, support fisheries, and store significant quantities of carbon. Yet they are disappearing rapidly due to agricultural expansion, timber harvesting, and coastal development.\nThis project quantifies mangrove loss across administrative boundaries in the Ambanja and Ambaro Bays of Madagascar between 1999 and 2019, and investigates whether deforestation is spatially associated with proximity to paths and permanent rivers.\n\nThe Data"
+  },
+  {
+    "objectID": "mangrove.html#a-global-tidal-wetland-dataset-from-google-earth-engine",
+    "href": "mangrove.html#a-global-tidal-wetland-dataset-from-google-earth-engine",
+    "title": "Mangrove Deforestation Analysis — Oluwaseyi Ezekiel",
+    "section": "A global tidal wetland dataset from Google Earth Engine",
+    "text": "A global tidal wetland dataset from Google Earth Engine\nThe Murray Global Tidal Wetland Change dataset was downloaded from Google Earth Engine, capturing changes in tidal wetland extent globally at high spatial resolution. Administrative boundary layers — communes and fokontany — and infrastructure layers including paths and permanent rivers were used for spatial analysis.\n\nStep 1 — Data Cleaning"
+  },
+  {
+    "objectID": "mangrove.html#removing-noise-before-analysis",
+    "href": "mangrove.html#removing-noise-before-analysis",
+    "title": "Mangrove Deforestation Analysis — Oluwaseyi Ezekiel",
+    "section": "Removing noise before analysis",
+    "text": "Removing noise before analysis\nThe Murray raster was converted to polygon format using arcpy.conversion.RasterToPolygon(). ArcPy cursors were then used to remove null value polygons (coded as 0) and rename the gridcode field to “loss_year”:\narcpy.management.AlterField(mangrove_polygon_name, 'gridcode', 'loss_year')\n\nwith arcpy.da.UpdateCursor(mangrove_polygon_name, 'loss_year') as cursor:\n    for row in cursor:\n        if row[0] == 0:\n            cursor.deleteRow()\n\nStep 2 — Quantifying Loss by Administrative Unit"
+  },
+  {
+    "objectID": "mangrove.html#which-communes-and-fokontany-lost-the-most",
+    "href": "mangrove.html#which-communes-and-fokontany-lost-the-most",
+    "title": "Mangrove Deforestation Analysis — Oluwaseyi Ezekiel",
+    "section": "Which communes and fokontany lost the most?",
+    "text": "Which communes and fokontany lost the most?\nThe cleaned polygons were spatially joined to commune and fokontany boundary layers. Area was calculated using arcpy.management.CalculateGeometryAttributes(), and arcpy.analysis.Statistics() summarized total loss area (km²) and average loss year by administrative unit. Results were exported to Excel using Pandas.\n\n\n\nMangrove loss by commune\n\n\nFigure 1. Total mangrove loss (km²) by commune, 1999–2019. Antsakoamanondro recorded the highest loss at 3.05 km², followed by Anorontsangana (1.86 km²) and Maherivaratra (1.67 km²).\n\n\n\nTop 10 fokontany by mangrove loss\n\n\nFigure 2. Top 10 fokontany by total mangrove loss. Ambodimanga Sud (1.47 km²) and Andrahibo (1.30 km²) recorded the highest losses at the sub-commune level.\n\n\n\nAverage year of mangrove loss by commune\n\n\nFigure 3. Average year of mangrove loss by commune. Darker bars indicate more recent loss (2015 and later).\n\nStep 3 — Proximity Analysis"
+  },
+  {
+    "objectID": "mangrove.html#does-accessibility-drive-deforestation",
+    "href": "mangrove.html#does-accessibility-drive-deforestation",
+    "title": "Mangrove Deforestation Analysis — Oluwaseyi Ezekiel",
+    "section": "Does accessibility drive deforestation?",
+    "text": "Does accessibility drive deforestation?\nMulti-ring buffers of 1km, 2km, and 5km were applied around paths and permanent rivers using ArcPy’s Buffer tool, then intersected with mangrove loss polygons to quantify deforestation within each distance band.\n\n\n\nMangrove loss by distance from paths\n\n\nFigure 4. Total mangrove loss by distance from paths. Loss increases with distance, suggesting remoteness — not accessibility — may be a stronger driver of deforestation.\n\nResults"
+  },
+  {
+    "objectID": "mangrove.html#where-loss-is-greatest-and-what-drives-it",
+    "href": "mangrove.html#where-loss-is-greatest-and-what-drives-it",
+    "title": "Mangrove Deforestation Analysis — Oluwaseyi Ezekiel",
+    "section": "Where loss is greatest — and what drives it",
+    "text": "Where loss is greatest — and what drives it\nThe analysis revealed that most loss occurred between 2012 and 2015. At the commune level, Antsakoamanondro experienced the greatest loss (~3.05 km²), while Ambodimanga Sud led at the fokontany level (~1.47 km²).\n\n\n\nZone\nArea\n\n\n\n\nMost affected commune\nAntsakoamanondro (~3.05 km²)\n\n\nMost affected fokontany\nAmbodimanga Sud (~1.47 km²)\n\n\nLoss within 1km of paths\n0.66 km²\n\n\nLoss within 5km of paths\n7.71 km²\n\n\n\n\nProject Significance\nThis project illustrates how Python-based spatial analysis can automate repetitive geoprocessing steps, handle large datasets systematically, and produce structured outputs that directly inform conservation planning. The workflow is transferable to any region where tidal wetland change data is available — making it a scalable approach for monitoring mangrove loss globally."
+  },
+  {
+    "objectID": "content.html#mangrove-deforestation-analysis-ambanja-ambaro-bays-madagascar",
+    "href": "content.html#mangrove-deforestation-analysis-ambanja-ambaro-bays-madagascar",
+    "title": "Projects",
+    "section": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
+    "text": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\n\n\nThis project quantifies mangrove loss across administrative boundaries in Madagascar between 1999 and 2019 using the Murray Global Tidal Wetland Change dataset. A fully automated Python pipeline — built with ArcPy in Jupyter notebooks — handles raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis to identify which communities experienced the greatest loss and whether proximity to paths explains deforestation patterns.\n\nPython ArcPy Google Earth Engine Spatial Analysis\n\nView project →"
+  },
+  {
+    "objectID": "landscape.html",
+    "href": "landscape.html",
+    "title": "Landscape Modeling & Spatial Statistics",
+    "section": "",
+    "text": "← Back to Projects\n\nLandscape Modeling & Spatial Statistics\n\n\nMangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\n\n\n\nDeforestation ArcPy Google Earth Engine Multi-ring buffer Analysis\n\nThis project quantifies mangrove loss across communes and fokontany in Madagascar’s Ambanja and Ambaro Bays between 1999 and 2019, using an automated ArcPy pipeline built in Jupyter notebooks. The workflow covers raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis.\nView Project →\n\n\n\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\n\n\nLiDAR Forest Inventory Python Feature Selection Petawawa RF\n\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nView Project →"
   }
 ]

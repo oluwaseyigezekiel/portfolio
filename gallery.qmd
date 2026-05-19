@@ -180,7 +180,8 @@ This project integrates inventory variables such as species composition, age, de
 
 ## Riparian Terrain Analysis
 
-This project uses a Digital Elevation Model (DEM) to identify key terrain features that influence riparian forest management decisions. It evaluates how DEM‑derived indicators such as slope and flow direction can support the delineation of reserve zones and guide decision‑making in complex riparian environments.
+This project uses a Digital Elevation Model to map and classify stream networks, assess fish-bearing potential, and delineate Riparian Management Areas in the Nahmint Valley, BC — following BC's Forest Practices Code to define Reserve and Management Zones that guide harvest planning decisions.
+[View full project →](riparian.qmd){.project-link}
 :::
 
 :::

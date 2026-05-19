@@ -280,9 +280,24 @@ Collection of thematic maps and cartographic layouts developed using ArcGIS Pro 
 ::: {.project-grid}
 
 ::: {.project-card}
+#### Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar
+
+This project quantifies mangrove loss across administrative boundaries in Madagascar between 1999 and 2019 using the Murray Global Tidal Wetland Change dataset. A fully automated Python pipeline — built with ArcPy in Jupyter notebooks — handles raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis to identify which communities experienced the greatest loss and whether proximity to paths explains deforestation patterns.
+
+::: {.tag-row}
+[Python]{.tag}
+[ArcPy]{.tag}
+[Google Earth Engine]{.tag}
+[Spatial Analysis]{.tag}
+:::
+
+[View project →](projects/mangrove.html){.project-link}
+:::
+
+::: {.project-card}
 #### Mapping Dominant Tree Species Using LiDAR Structural Metrics
 
-This project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the **Petawawa Research Forest, Ontario**, as part of Ontario’s transition toward an **Enhanced Forest Inventory (EFI)**. LiDAR-derived metrics were extracted at ground plot locations and analyzed using **mutual information feature selection** to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.
+This project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the **Petawawa Research Forest, Ontario**, as part of Ontario's transition toward an **Enhanced Forest Inventory (EFI)**. LiDAR-derived metrics were extracted at ground plot locations and analyzed using **mutual information feature selection** to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.
 
 The analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.
 
@@ -309,7 +324,7 @@ The analysis integrates spatial data processing, statistical feature ranking, an
 
 ### Assessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley
 
-Master’s Capstone Project — University of British Columbia (UBC)
+Master's Capstone Project — University of British Columbia (UBC)
 
 This study examines how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020 by harmonizing multi-source land-cover datasets and analyzing landscape structure and land-cover transitions. The project identifies spatial patterns of agricultural change and evaluates opportunities for perennial agriculture expansion within existing agricultural systems.
 
