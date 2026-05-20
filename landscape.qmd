@@ -60,7 +60,7 @@ editor: source
 
 This project quantifies mangrove loss across communes and fokontany in Madagascar's Ambanja and Ambaro Bays between 1999 and 2019, using an automated ArcPy pipeline built in Jupyter notebooks. The workflow covers raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis.
 
-<a class="story-btn" href="projects/mangrove/mangrove.html">View Project →</a>
+<a class="story-btn" href="projects/mangrove.html">View Project →</a>
 ::::
 :::::
 

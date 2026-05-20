@@ -119,123 +119,46 @@
     "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Oluwaseyi Ezekiel",
+    "objectID": "landscape.html",
+    "href": "landscape.html",
+    "title": "Landscape Modeling & Spatial Statistics",
     "section": "",
-    "text": "Welcome!!!"
+    "text": "← Back to Projects\n\nLandscape Modeling & Spatial Statistics\n\n\nMangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\n\n\n\nDeforestation ArcPy Google Earth Engine Multi-ring buffer Analysis\n\nThis project quantifies mangrove loss across communes and fokontany in Madagascar’s Ambanja and Ambaro Bays between 1999 and 2019, using an automated ArcPy pipeline built in Jupyter notebooks. The workflow covers raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis.\nView Project →\n\n\n\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\n\n\nLiDAR Forest Inventory Python Feature Selection Petawawa RF\n\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nView Project →"
   },
   {
-    "objectID": "home.html",
-    "href": "home.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Oluwaseyi Ezekiel\n\n\nGeospatial and Remote Sensing Scientist\n\n\n\n\nView Portfolio"
-  },
-  {
-    "objectID": "earlier-gis.html",
-    "href": "earlier-gis.html",
-    "title": "Oluwaseyi Ezekiel",
+    "objectID": "hyperspectral.html",
+    "href": "hyperspectral.html",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
     "section": "",
     "text": "← Back to Projects"
   },
   {
-    "objectID": "earlier-gis.html#overview",
-    "href": "earlier-gis.html#overview",
-    "title": "Oluwaseyi Ezekiel",
+    "objectID": "hyperspectral.html#overview",
+    "href": "hyperspectral.html#overview",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
     "section": "Overview",
-    "text": "Overview\nBefore the MGEM program, I worked on a range of hands-on GIS and remote sensing projects that strengthened my practical skills in land-cover classification, environmental mapping, forest analysis, hazard assessment, UAV applications, and geospatial data visualization.\nThese projects span different platforms and workflows, including QGIS, ArcGIS Pro, Google Earth Engine, R, and Python, and show the progression of my technical experience across applied environmental and spatial problems."
+    "text": "Overview\nThis project explores hyperspectral reflectance signatures of vegetation and surface materials across the visible, near-infrared, and shortwave infrared spectral regions. Hyperspectral measurements allow detailed analysis of vegetation properties such as chlorophyll content, leaf structure, and moisture."
   },
   {
-    "objectID": "content.html",
-    "href": "content.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Note: Click a category to explore projects.\n\n\n\n\n\nApplied capstone work and geospatial project planning.\n\nCapstone Planning Communication\n\n\n\n\nMap design, ArcGIS Online applications, dashboards, field data collection and desktop GIS workflows.\n\nStoryMaps Survey123 ArcGIS Pro QGIS\n\n\n\n\nLiDAR analysis, land-cover classification, spectral interpretation, and satellite time-series remote sensing.\n\nLiDAR Classification Spectral Landsat\n\n\n\n\nLandscape metrics, spatial modeling, forest analytics, and environmental statistics.\n\nSpatial Statistics Modeling Python"
+    "objectID": "hyperspectral.html#data",
+    "href": "hyperspectral.html#data",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "section": "Data",
+    "text": "Data\nField spectrometry measurements of vegetation and surface materials including:\n\nBigleaf maple\nDouglas-fir\nGarry oak\nSoil\nGrass\nMoss\nCoarse woody debris"
   },
   {
-    "objectID": "content.html#cartography-gis-applications-1",
-    "href": "content.html#cartography-gis-applications-1",
-    "title": "Projects",
-    "section": "Cartography & GIS Applications",
-    "text": "Cartography & GIS Applications\n\n\nCitizen Science: Asset & Infrastructure Management\nInteractive StoryMaps analyzing traffic patterns and urban mobility challenges to support safer and more efficient transportation systems.\n\nAsset Management Urban Planning ArcGIS StoryMaps\n\nView StoryMaps →\n\n\nData Visualization: Environmental Conservation\nInteractive dashboard designed to monitor and visualize environmental indicators collected through Survey123 field surveys.\n\nEnvironmental Conservation Data Visualization ArcGIS Dashboards\n\nView Dashboard →\n\n\nField Data Collection: Species Monitoring\nMobile GIS workflow developed using ArcGIS Survey123 to collect structured geospatial data in the field.\n\nField Data Collection Survey123\n\nView Survey →\n\n\nDesktop GIS: Mapping Projects\nCollection of thematic maps and cartographic layouts developed using ArcGIS Pro and QGIS.\n\nArcGIS Pro QGIS Cartography\n\nSee Map Gallery →"
-  },
-  {
-    "objectID": "content.html#landscape-modeling-spatial-statistics-1",
-    "href": "content.html#landscape-modeling-spatial-statistics-1",
-    "title": "Projects",
-    "section": "Landscape Modeling & Spatial Statistics",
-    "text": "Landscape Modeling & Spatial Statistics\n\n\nMangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\nThis project quantifies mangrove loss across administrative boundaries in Madagascar between 1999 and 2019 using the Murray Global Tidal Wetland Change dataset. A fully automated Python pipeline — built with ArcPy in Jupyter notebooks — handles raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis to identify which communities experienced the greatest loss and whether proximity to paths explains deforestation patterns.\n\nPython ArcPy Google Earth Engine Spatial Analysis\n\nView project →\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nThe analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.\n\nSpatial Statistics LiDAR Forest Inventory Feature Selection\n\nView project →"
-  },
-  {
-    "objectID": "content.html#project-management-1",
-    "href": "content.html#project-management-1",
-    "title": "Projects",
-    "section": "Project Management",
-    "text": "Project Management\n\n\nAssessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley\nMaster’s Capstone Project — University of British Columbia (UBC)\nThis study examines how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020 by harmonizing multi-source land-cover datasets and analyzing landscape structure and land-cover transitions. The project identifies spatial patterns of agricultural change and evaluates opportunities for perennial agriculture expansion within existing agricultural systems.\nView full project →\n\n\n\nMapping Spatial Patterns of Urban Carbon Sinks in Metro Vancouver\nResearch Proposal — UBC GEM 500 (Landscape Ecology)\nThis project investigates how vegetation distribution and landscape structure influence urban carbon storage across Metro Vancouver municipalities. Using Landsat imagery, carbon biomass datasets, and landscape metrics, the study aims to identify municipalities functioning as major urban carbon sinks and assess the spatial factors influencing carbon storage.\nView full project →"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
-  },
-  {
-    "objectID": "about.html#about-me",
-    "href": "about.html#about-me",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
-  },
-  {
-    "objectID": "capstone.html",
-    "href": "capstone.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "← Back to Projects"
-  },
-  {
-    "objectID": "capstone.html#introduction",
-    "href": "capstone.html#introduction",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Introduction",
-    "text": "Introduction\nAgricultural landscapes in the Lower Fraser Valley (LFV), British Columbia, are experiencing structural changes driven by evolving agricultural practices, environmental pressures, and expanding urban development. Understanding how land-cover transitions occur within this highly productive agricultural region is important for supporting sustainable land management and identifying opportunities for resilient farming systems.\nThis capstone project evaluates how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020, with particular attention to transitions between annual and perennial agriculture. By integrating multiple land-cover datasets and applying spatial analysis techniques, the study identifies patterns of land-cover change and areas where perennial agriculture may expand within existing agricultural landscapes.\n\nFigure 1. Study area showing the Lower Fraser Valley agricultural region analyzed in this project."
-  },
-  {
-    "objectID": "capstone.html#methods",
-    "href": "capstone.html#methods",
-    "title": "Oluwaseyi Ezekiel",
+    "objectID": "hyperspectral.html#methods",
+    "href": "hyperspectral.html#methods",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
     "section": "Methods",
-    "text": "Methods\nThis study integrates two multi-source land-cover datasets—the Annual Crop Inventory (ACI) and the North American Land Change Monitoring System (NALCMS)—to produce harmonized land-cover maps for 2015 and 2020 and evaluate agricultural landscape dynamics.\nFirst, all datasets were reprojected to UTM Zone 10N and clipped to the Lower Fraser Valley boundary to ensure spatial alignment. Land-cover classes from each dataset were then aggregated into six harmonized categories: Annual Agriculture, Perennial Agriculture, Forest, Marginalized Land, Wetlands, and Water. These categories were selected to maintain ecological relevance while reducing thematic inconsistencies between datasets. :contentReferenceoaicite:0\nDataset agreement was evaluated using confusion matrices, and overall classification agreement was used to derive relative dataset weighting. Harmonization was then performed through pixel-wise overlay, prioritizing ACI classifications in cases of disagreement due to its higher thematic detail for agricultural subclasses.\nFollowing harmonization, post-classification change detection was conducted by comparing the 2015 and 2020 land-cover maps to quantify land-cover transitions and calculate both net and relative changes in landscape composition. Spatial configuration and structural dynamics were further assessed using patch metrics, diversity indices, and adjacency analysis.\n\nFigure 2. Analytical workflow used to harmonize multi-source land-cover datasets and analyze landscape transitions."
+    "text": "Methods\nSpectral curves were analyzed across three main spectral regions:\n\n\n\nRegion\nWavelength\nInformation\n\n\n\n\nVisible\n400–700 nm\npigment absorption\n\n\nNear infrared\n750–1300 nm\nleaf structure\n\n\nSWIR\n1300–2500 nm\nwater content"
   },
   {
-    "objectID": "capstone.html#results",
-    "href": "capstone.html#results",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Results",
-    "text": "Results\n\nLand-Cover Transitions\nTemporal analysis revealed notable shifts in agricultural land cover between 2015 and 2020. Annual agriculture declined substantially, while perennial agriculture increased, indicating an important structural transition within the agricultural system.\n\nFigure 4. Sankey diagram illustrating land-cover transitions between 2015 and 2020.\nThe largest transition occurred from annual agriculture to perennial agriculture, representing nearly half of the annual agricultural area observed in 2015. Smaller conversions occurred between agricultural classes and marginalized land, as well as limited transitions involving forested areas.\n\n\n\nSpatial Distribution of Change\nSpatial change detection shows that most of the landscape remained stable during the study period, while transitions were concentrated within agricultural regions.\n\nFigure 5. Spatial distribution of land-cover persistence and change between 2015 and 2020.\nApproximately three-quarters of the landscape remained persistent, while about one-quarter experienced land-cover transitions. These changes occurred across thousands of discrete patches, indicating that most transitions were spatially dispersed rather than large-scale conversions.\n\n\n\nAgricultural Adjacency\nBeyond land-cover transitions, the study examined spatial relationships between annual and perennial agricultural systems.\n\nFigure 6. Spatial distribution of annual agriculture adjacent to perennial agriculture.\nThe proportion of annual agriculture directly adjacent to perennial systems increased substantially between 2015 and 2020. This pattern suggests growing spatial interaction between agricultural classes and highlights areas where perennial agriculture expansion may occur within existing agricultural landscapes.\n\n\n\nLandscape Structural Dynamics\nShannon’s Diversity Index (SHDI) increased slightly from 1.3249 to 1.355, while Shannon’s Evenness Index (SHEI) increased from 0.7394 to 0.7563, suggesting a more balanced distribution among land-cover classes over time. These changes reflect shifts in the relative proportions of agricultural and non-agricultural classes across the region. At the class level, mean forest patch area decreased from 12.9 ha to 10.72 ha, accompanied by a decline in forest edge density, indicating subtle changes in forest spatial configuration within the agricultural landscape.\nTable 1 summarizes landscape-level diversity metrics and selected class-level structural indicators derived from the harmonized land-cover maps.\n\nLandscape structural metrics derived from harmonized land-cover maps.\n\n\nMetric\n2015\n2020\n\n\n\n\nShannon’s Diversity Index (SHDI)\n1.3249\n1.355\n\n\nShannon’s Evenness Index (SHEI)\n0.7394\n0.7563\n\n\nForest Mean Patch Area (ha)\n12.90\n10.72\n\n\nForest Edge Density (m/ha)\n42.17\n37.38"
-  },
-  {
-    "objectID": "capstone.html#project-significance",
-    "href": "capstone.html#project-significance",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Project Significance",
-    "text": "Project Significance\nThis capstone project demonstrates how harmonized land-cover analysis and spatial landscape metrics can be used to evaluate agricultural transitions and landscape dynamics within complex agricultural regions.\nThe findings indicate a clear shift from annual to perennial agricultural systems, accompanied by increasing spatial interaction between agricultural classes. These patterns suggest opportunities for supporting more sustainable agricultural practices while maintaining the productivity of the Lower Fraser Valley.\nMore broadly, the analytical framework developed in this study provides a transferable approach for examining land-cover change, agricultural transitions, and landscape sustainability in other regions."
-  },
-  {
-    "objectID": "dashboards.html",
-    "href": "dashboards.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "← Back to Projects\n\n\nCourse: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →g"
-  },
-  {
-    "objectID": "dashboards.html#environmental-monitoring-dashboard",
-    "href": "dashboards.html#environmental-monitoring-dashboard",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →g"
+    "objectID": "hyperspectral.html#example-code",
+    "href": "hyperspectral.html#example-code",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "section": "Example Code",
+    "text": "Example Code\n```r Refl_ind &lt;- function(wl, refl, target_wl){ approx(x = wl, y = refl, xout = target_wl, rule = 2)$y }"
   },
   {
     "objectID": "gallery.html",
@@ -322,95 +245,123 @@
     "text": "Carbon Density Mapping\nThis map shows the spatial distribution of above‑ground carbon biomass density across Metro Vancouver. High‑density carbon zones appear in the North Shore and other forested uplands, gradually transitioning to lower values within developed municipalities. The project supports applications in urban planning and carbon‑accounting initiatives, offering spatial insight into where ecosystem restoration actions may have the greatest impact."
   },
   {
-    "objectID": "hyperspectral.html",
-    "href": "hyperspectral.html",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "objectID": "dashboards.html",
+    "href": "dashboards.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "← Back to Projects\n\n\nCourse: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →g"
+  },
+  {
+    "objectID": "dashboards.html#environmental-monitoring-dashboard",
+    "href": "dashboards.html#environmental-monitoring-dashboard",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →g"
+  },
+  {
+    "objectID": "capstone.html",
+    "href": "capstone.html",
+    "title": "Oluwaseyi Ezekiel",
     "section": "",
     "text": "← Back to Projects"
   },
   {
-    "objectID": "hyperspectral.html#overview",
-    "href": "hyperspectral.html#overview",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
-    "section": "Overview",
-    "text": "Overview\nThis project explores hyperspectral reflectance signatures of vegetation and surface materials across the visible, near-infrared, and shortwave infrared spectral regions. Hyperspectral measurements allow detailed analysis of vegetation properties such as chlorophyll content, leaf structure, and moisture."
+    "objectID": "capstone.html#introduction",
+    "href": "capstone.html#introduction",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Introduction",
+    "text": "Introduction\nAgricultural landscapes in the Lower Fraser Valley (LFV), British Columbia, are experiencing structural changes driven by evolving agricultural practices, environmental pressures, and expanding urban development. Understanding how land-cover transitions occur within this highly productive agricultural region is important for supporting sustainable land management and identifying opportunities for resilient farming systems.\nThis capstone project evaluates how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020, with particular attention to transitions between annual and perennial agriculture. By integrating multiple land-cover datasets and applying spatial analysis techniques, the study identifies patterns of land-cover change and areas where perennial agriculture may expand within existing agricultural landscapes.\n\nFigure 1. Study area showing the Lower Fraser Valley agricultural region analyzed in this project."
   },
   {
-    "objectID": "hyperspectral.html#data",
-    "href": "hyperspectral.html#data",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
-    "section": "Data",
-    "text": "Data\nField spectrometry measurements of vegetation and surface materials including:\n\nBigleaf maple\nDouglas-fir\nGarry oak\nSoil\nGrass\nMoss\nCoarse woody debris"
-  },
-  {
-    "objectID": "hyperspectral.html#methods",
-    "href": "hyperspectral.html#methods",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "objectID": "capstone.html#methods",
+    "href": "capstone.html#methods",
+    "title": "Oluwaseyi Ezekiel",
     "section": "Methods",
-    "text": "Methods\nSpectral curves were analyzed across three main spectral regions:\n\n\n\nRegion\nWavelength\nInformation\n\n\n\n\nVisible\n400–700 nm\npigment absorption\n\n\nNear infrared\n750–1300 nm\nleaf structure\n\n\nSWIR\n1300–2500 nm\nwater content"
+    "text": "Methods\nThis study integrates two multi-source land-cover datasets—the Annual Crop Inventory (ACI) and the North American Land Change Monitoring System (NALCMS)—to produce harmonized land-cover maps for 2015 and 2020 and evaluate agricultural landscape dynamics.\nFirst, all datasets were reprojected to UTM Zone 10N and clipped to the Lower Fraser Valley boundary to ensure spatial alignment. Land-cover classes from each dataset were then aggregated into six harmonized categories: Annual Agriculture, Perennial Agriculture, Forest, Marginalized Land, Wetlands, and Water. These categories were selected to maintain ecological relevance while reducing thematic inconsistencies between datasets. :contentReferenceoaicite:0\nDataset agreement was evaluated using confusion matrices, and overall classification agreement was used to derive relative dataset weighting. Harmonization was then performed through pixel-wise overlay, prioritizing ACI classifications in cases of disagreement due to its higher thematic detail for agricultural subclasses.\nFollowing harmonization, post-classification change detection was conducted by comparing the 2015 and 2020 land-cover maps to quantify land-cover transitions and calculate both net and relative changes in landscape composition. Spatial configuration and structural dynamics were further assessed using patch metrics, diversity indices, and adjacency analysis.\n\nFigure 2. Analytical workflow used to harmonize multi-source land-cover datasets and analyze landscape transitions."
   },
   {
-    "objectID": "hyperspectral.html#example-code",
-    "href": "hyperspectral.html#example-code",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
-    "section": "Example Code",
-    "text": "Example Code\n```r Refl_ind &lt;- function(wl, refl, target_wl){ approx(x = wl, y = refl, xout = target_wl, rule = 2)$y }"
+    "objectID": "capstone.html#results",
+    "href": "capstone.html#results",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Results",
+    "text": "Results\n\nLand-Cover Transitions\nTemporal analysis revealed notable shifts in agricultural land cover between 2015 and 2020. Annual agriculture declined substantially, while perennial agriculture increased, indicating an important structural transition within the agricultural system.\n\nFigure 4. Sankey diagram illustrating land-cover transitions between 2015 and 2020.\nThe largest transition occurred from annual agriculture to perennial agriculture, representing nearly half of the annual agricultural area observed in 2015. Smaller conversions occurred between agricultural classes and marginalized land, as well as limited transitions involving forested areas.\n\n\n\nSpatial Distribution of Change\nSpatial change detection shows that most of the landscape remained stable during the study period, while transitions were concentrated within agricultural regions.\n\nFigure 5. Spatial distribution of land-cover persistence and change between 2015 and 2020.\nApproximately three-quarters of the landscape remained persistent, while about one-quarter experienced land-cover transitions. These changes occurred across thousands of discrete patches, indicating that most transitions were spatially dispersed rather than large-scale conversions.\n\n\n\nAgricultural Adjacency\nBeyond land-cover transitions, the study examined spatial relationships between annual and perennial agricultural systems.\n\nFigure 6. Spatial distribution of annual agriculture adjacent to perennial agriculture.\nThe proportion of annual agriculture directly adjacent to perennial systems increased substantially between 2015 and 2020. This pattern suggests growing spatial interaction between agricultural classes and highlights areas where perennial agriculture expansion may occur within existing agricultural landscapes.\n\n\n\nLandscape Structural Dynamics\nShannon’s Diversity Index (SHDI) increased slightly from 1.3249 to 1.355, while Shannon’s Evenness Index (SHEI) increased from 0.7394 to 0.7563, suggesting a more balanced distribution among land-cover classes over time. These changes reflect shifts in the relative proportions of agricultural and non-agricultural classes across the region. At the class level, mean forest patch area decreased from 12.9 ha to 10.72 ha, accompanied by a decline in forest edge density, indicating subtle changes in forest spatial configuration within the agricultural landscape.\nTable 1 summarizes landscape-level diversity metrics and selected class-level structural indicators derived from the harmonized land-cover maps.\n\nLandscape structural metrics derived from harmonized land-cover maps.\n\n\nMetric\n2015\n2020\n\n\n\n\nShannon’s Diversity Index (SHDI)\n1.3249\n1.355\n\n\nShannon’s Evenness Index (SHEI)\n0.7394\n0.7563\n\n\nForest Mean Patch Area (ha)\n12.90\n10.72\n\n\nForest Edge Density (m/ha)\n42.17\n37.38"
   },
   {
-    "objectID": "landscape.html",
-    "href": "landscape.html",
-    "title": "Landscape Modeling & Spatial Statistics",
+    "objectID": "capstone.html#project-significance",
+    "href": "capstone.html#project-significance",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Project Significance",
+    "text": "Project Significance\nThis capstone project demonstrates how harmonized land-cover analysis and spatial landscape metrics can be used to evaluate agricultural transitions and landscape dynamics within complex agricultural regions.\nThe findings indicate a clear shift from annual to perennial agricultural systems, accompanied by increasing spatial interaction between agricultural classes. These patterns suggest opportunities for supporting more sustainable agricultural practices while maintaining the productivity of the Lower Fraser Valley.\nMore broadly, the analytical framework developed in this study provides a transferable approach for examining land-cover change, agricultural transitions, and landscape sustainability in other regions."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Oluwaseyi Ezekiel",
     "section": "",
-    "text": "← Back to Projects\n\nLandscape Modeling & Spatial Statistics\n\n\nMangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\n\n\n\nDeforestation ArcPy Google Earth Engine Multi-ring buffer Analysis\n\nThis project quantifies mangrove loss across communes and fokontany in Madagascar’s Ambanja and Ambaro Bays between 1999 and 2019, using an automated ArcPy pipeline built in Jupyter notebooks. The workflow covers raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis.\nView Project →\n\n\n\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\n\n\nLiDAR Forest Inventory Python Feature Selection Petawawa RF\n\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nView Project →"
+    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
   },
   {
-    "objectID": "mangrove.html",
-    "href": "mangrove.html",
-    "title": "Mangrove Deforestation Analysis — Oluwaseyi Ezekiel",
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "Oluwaseyi Ezekiel",
     "section": "",
-    "text": "← Back to Projects\nPython · ArcPy · Google Earth Engine · Spatial Analysis"
+    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
   },
   {
-    "objectID": "mangrove.html#one-of-the-worlds-most-valuable-ecosystems-vanishing-fast",
-    "href": "mangrove.html#one-of-the-worlds-most-valuable-ecosystems-vanishing-fast",
-    "title": "Mangrove Deforestation Analysis — Oluwaseyi Ezekiel",
-    "section": "One of the world’s most valuable ecosystems — vanishing fast",
-    "text": "One of the world’s most valuable ecosystems — vanishing fast\nMangrove forests are among the most carbon-rich and ecologically productive ecosystems on the planet. They protect coastlines, support fisheries, and store significant quantities of carbon. Yet they are disappearing rapidly due to agricultural expansion, timber harvesting, and coastal development.\nThis project quantifies mangrove loss across administrative boundaries in the Ambanja and Ambaro Bays of Madagascar between 1999 and 2019, and investigates whether deforestation is spatially associated with proximity to paths and permanent rivers.\n\nThe Data"
+    "objectID": "content.html",
+    "href": "content.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Note: Click a category to explore projects.\n\n\n\n\n\nApplied capstone work and geospatial project planning.\n\nCapstone Planning Communication\n\n\n\n\nMap design, ArcGIS Online applications, dashboards, field data collection and desktop GIS workflows.\n\nStoryMaps Survey123 ArcGIS Pro QGIS\n\n\n\n\nLiDAR analysis, land-cover classification, spectral interpretation, and satellite time-series remote sensing.\n\nLiDAR Classification Spectral Landsat\n\n\n\n\nLandscape metrics, spatial modeling, forest analytics, and environmental statistics.\n\nSpatial Statistics Modeling Python"
   },
   {
-    "objectID": "mangrove.html#a-global-tidal-wetland-dataset-from-google-earth-engine",
-    "href": "mangrove.html#a-global-tidal-wetland-dataset-from-google-earth-engine",
-    "title": "Mangrove Deforestation Analysis — Oluwaseyi Ezekiel",
-    "section": "A global tidal wetland dataset from Google Earth Engine",
-    "text": "A global tidal wetland dataset from Google Earth Engine\nThe Murray Global Tidal Wetland Change dataset was downloaded from Google Earth Engine, capturing changes in tidal wetland extent globally at high spatial resolution. Administrative boundary layers — communes and fokontany — and infrastructure layers including paths and permanent rivers were used for spatial analysis.\n\nStep 1 — Data Cleaning"
+    "objectID": "content.html#cartography-gis-applications-1",
+    "href": "content.html#cartography-gis-applications-1",
+    "title": "Projects",
+    "section": "Cartography & GIS Applications",
+    "text": "Cartography & GIS Applications\n\n\nCitizen Science: Asset & Infrastructure Management\nInteractive StoryMaps analyzing traffic patterns and urban mobility challenges to support safer and more efficient transportation systems.\n\nAsset Management Urban Planning ArcGIS StoryMaps\n\nView StoryMaps →\n\n\nData Visualization: Environmental Conservation\nInteractive dashboard designed to monitor and visualize environmental indicators collected through Survey123 field surveys.\n\nEnvironmental Conservation Data Visualization ArcGIS Dashboards\n\nView Dashboard →\n\n\nField Data Collection: Species Monitoring\nMobile GIS workflow developed using ArcGIS Survey123 to collect structured geospatial data in the field.\n\nField Data Collection Survey123\n\nView Survey →\n\n\nDesktop GIS: Mapping Projects\nCollection of thematic maps and cartographic layouts developed using ArcGIS Pro and QGIS.\n\nArcGIS Pro QGIS Cartography\n\nSee Map Gallery →"
   },
   {
-    "objectID": "mangrove.html#removing-noise-before-analysis",
-    "href": "mangrove.html#removing-noise-before-analysis",
-    "title": "Mangrove Deforestation Analysis — Oluwaseyi Ezekiel",
-    "section": "Removing noise before analysis",
-    "text": "Removing noise before analysis\nThe Murray raster was converted to polygon format using arcpy.conversion.RasterToPolygon(). ArcPy cursors were then used to remove null value polygons (coded as 0) and rename the gridcode field to “loss_year”:\narcpy.management.AlterField(mangrove_polygon_name, 'gridcode', 'loss_year')\n\nwith arcpy.da.UpdateCursor(mangrove_polygon_name, 'loss_year') as cursor:\n    for row in cursor:\n        if row[0] == 0:\n            cursor.deleteRow()\n\nStep 2 — Quantifying Loss by Administrative Unit"
+    "objectID": "content.html#landscape-modeling-spatial-statistics-1",
+    "href": "content.html#landscape-modeling-spatial-statistics-1",
+    "title": "Projects",
+    "section": "Landscape Modeling & Spatial Statistics",
+    "text": "Landscape Modeling & Spatial Statistics\n\n\nMangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\nThis project quantifies mangrove loss across administrative boundaries in Madagascar between 1999 and 2019 using the Murray Global Tidal Wetland Change dataset. A fully automated Python pipeline — built with ArcPy in Jupyter notebooks — handles raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis to identify which communities experienced the greatest loss and whether proximity to paths explains deforestation patterns.\n\nPython ArcPy Google Earth Engine Spatial Analysis\n\nView project →\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nThe analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.\n\nSpatial Statistics LiDAR Forest Inventory Feature Selection\n\nView project →"
   },
   {
-    "objectID": "mangrove.html#which-communes-and-fokontany-lost-the-most",
-    "href": "mangrove.html#which-communes-and-fokontany-lost-the-most",
-    "title": "Mangrove Deforestation Analysis — Oluwaseyi Ezekiel",
-    "section": "Which communes and fokontany lost the most?",
-    "text": "Which communes and fokontany lost the most?\nThe cleaned polygons were spatially joined to commune and fokontany boundary layers. Area was calculated using arcpy.management.CalculateGeometryAttributes(), and arcpy.analysis.Statistics() summarized total loss area (km²) and average loss year by administrative unit. Results were exported to Excel using Pandas.\n\n\n\nMangrove loss by commune\n\n\nFigure 1. Total mangrove loss (km²) by commune, 1999–2019. Antsakoamanondro recorded the highest loss at 3.05 km², followed by Anorontsangana (1.86 km²) and Maherivaratra (1.67 km²).\n\n\n\nTop 10 fokontany by mangrove loss\n\n\nFigure 2. Top 10 fokontany by total mangrove loss. Ambodimanga Sud (1.47 km²) and Andrahibo (1.30 km²) recorded the highest losses at the sub-commune level.\n\n\n\nAverage year of mangrove loss by commune\n\n\nFigure 3. Average year of mangrove loss by commune. Darker bars indicate more recent loss (2015 and later).\n\nStep 3 — Proximity Analysis"
+    "objectID": "content.html#project-management-1",
+    "href": "content.html#project-management-1",
+    "title": "Projects",
+    "section": "Project Management",
+    "text": "Project Management\n\n\nAssessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley\nMaster’s Capstone Project — University of British Columbia (UBC)\nThis study examines how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020 by harmonizing multi-source land-cover datasets and analyzing landscape structure and land-cover transitions. The project identifies spatial patterns of agricultural change and evaluates opportunities for perennial agriculture expansion within existing agricultural systems.\nView full project →\n\n\n\nMapping Spatial Patterns of Urban Carbon Sinks in Metro Vancouver\nResearch Proposal — UBC GEM 500 (Landscape Ecology)\nThis project investigates how vegetation distribution and landscape structure influence urban carbon storage across Metro Vancouver municipalities. Using Landsat imagery, carbon biomass datasets, and landscape metrics, the study aims to identify municipalities functioning as major urban carbon sinks and assess the spatial factors influencing carbon storage.\nView full project →"
   },
   {
-    "objectID": "mangrove.html#does-accessibility-drive-deforestation",
-    "href": "mangrove.html#does-accessibility-drive-deforestation",
-    "title": "Mangrove Deforestation Analysis — Oluwaseyi Ezekiel",
-    "section": "Does accessibility drive deforestation?",
-    "text": "Does accessibility drive deforestation?\nMulti-ring buffers of 1km, 2km, and 5km were applied around paths and permanent rivers using ArcPy’s Buffer tool, then intersected with mangrove loss polygons to quantify deforestation within each distance band.\n\n\n\nMangrove loss by distance from paths\n\n\nFigure 4. Total mangrove loss by distance from paths. Loss increases with distance, suggesting remoteness — not accessibility — may be a stronger driver of deforestation.\n\nResults"
+    "objectID": "earlier-gis.html",
+    "href": "earlier-gis.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "← Back to Projects"
   },
   {
-    "objectID": "mangrove.html#where-loss-is-greatest-and-what-drives-it",
-    "href": "mangrove.html#where-loss-is-greatest-and-what-drives-it",
-    "title": "Mangrove Deforestation Analysis — Oluwaseyi Ezekiel",
-    "section": "Where loss is greatest — and what drives it",
-    "text": "Where loss is greatest — and what drives it\nThe analysis revealed that most loss occurred between 2012 and 2015. At the commune level, Antsakoamanondro experienced the greatest loss (~3.05 km²), while Ambodimanga Sud led at the fokontany level (~1.47 km²).\n\n\n\nZone\nArea\n\n\n\n\nMost affected commune\nAntsakoamanondro (~3.05 km²)\n\n\nMost affected fokontany\nAmbodimanga Sud (~1.47 km²)\n\n\nLoss within 1km of paths\n0.66 km²\n\n\nLoss within 5km of paths\n7.71 km²\n\n\n\n\nProject Significance\nThis project illustrates how Python-based spatial analysis can automate repetitive geoprocessing steps, handle large datasets systematically, and produce structured outputs that directly inform conservation planning. The workflow is transferable to any region where tidal wetland change data is available — making it a scalable approach for monitoring mangrove loss globally."
+    "objectID": "earlier-gis.html#overview",
+    "href": "earlier-gis.html#overview",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Overview",
+    "text": "Overview\nBefore the MGEM program, I worked on a range of hands-on GIS and remote sensing projects that strengthened my practical skills in land-cover classification, environmental mapping, forest analysis, hazard assessment, UAV applications, and geospatial data visualization.\nThese projects span different platforms and workflows, including QGIS, ArcGIS Pro, Google Earth Engine, R, and Python, and show the progression of my technical experience across applied environmental and spatial problems."
+  },
+  {
+    "objectID": "home.html",
+    "href": "home.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Oluwaseyi Ezekiel\n\n\nGeospatial and Remote Sensing Scientist\n\n\n\n\nView Portfolio"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Welcome!!!"
   },
   {
     "objectID": "remote-sensing.html",
