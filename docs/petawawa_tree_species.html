@@ -254,13 +254,13 @@ ul.task-list li input[type="checkbox"] {
 <p>Ground truth comes from the <strong>Petawawa Research Forest plot data</strong>: field-surveyed plot locations for approximately 30 tree species, sampled in summer 2018, each labelled with a dominant species code.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="figures/als_metrics_raster.png" class="img-fluid figure-img"></p>
+<p><img src="images/petawawa/als_metrics.png" class="img-fluid figure-img"></p>
 <figcaption>ALS metrics raster for the Petawawa Research Forest. Each of the 67 bands represents a statistical summary derived from the 2018 wall-to-wall airborne LiDAR point cloud at 25 m spatial resolution.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="figures/plot_locations.png" class="img-fluid figure-img"></p>
+<p><img src="images/petawawa/plot_locations.png" class="img-fluid figure-img"></p>
 <figcaption>Ground plot locations across the Petawawa Research Forest, coloured by dominant tree species. Plots were sampled in summer 2018 and cover approximately 30 species.</figcaption>
 </figure>
 </div>
@@ -299,7 +299,7 @@ lidar_final    = lidar_good[species_filter]
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="figures/species_distribution.png" class="img-fluid figure-img"></p>
+<p><img src="images/petawawa/species_distribution.png" class="img-fluid figure-img"></p>
 <figcaption>Species distribution across all ground plots after removing sites with missing ALS data. White pine dominates the dataset, with most other species having too few observations for model training.</figcaption>
 </figure>
 </div>
@@ -353,7 +353,7 @@ plt.show()
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="figures/box_plots.png" class="img-fluid figure-img"></p>
+<p><img src="images/petawawa/box_plots.png" class="img-fluid figure-img"></p>
 <figcaption>Box plots showing the distribution of the top three mutual-information-ranked ALS metrics and VCI across White Pine, Red Pine, and Red Oak. Substantial overlap between classes suggests LiDAR structural metrics alone may not reliably distinguish species.</figcaption>
 </figure>
 </div>

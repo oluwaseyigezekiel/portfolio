@@ -119,46 +119,249 @@
     "text": "Ezekiel, O., Yisau, J. A., & Aduradola, A. M. (2024). Effect of watering regime and mycorrhizal inoculation on the growth of Baobab (Adansonia digitata). Journal of Agriculture and Environment for International Development, 118(1), 5–18. https://doi.org/10.36253/jaeid-12082"
   },
   {
-    "objectID": "landscape.html",
-    "href": "landscape.html",
-    "title": "Landscape Modeling & Spatial Statistics",
-    "section": "",
-    "text": "← Back to Projects\n\nLandscape Modeling & Spatial Statistics\n\n\nMangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\n\n\n\nDeforestation ArcPy Google Earth Engine Multi-ring buffer Analysis\n\nThis project quantifies mangrove loss across communes and fokontany in Madagascar’s Ambanja and Ambaro Bays between 1999 and 2019, using an automated ArcPy pipeline built in Jupyter notebooks. The workflow covers raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis.\nView Project →\n\n\n\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\n\n\nLiDAR Forest Inventory Python Feature Selection Petawawa RF\n\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nView Project →"
-  },
-  {
-    "objectID": "hyperspectral.html",
-    "href": "hyperspectral.html",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "objectID": "petawawa.html",
+    "href": "petawawa.html",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
     "section": "",
     "text": "← Back to Projects"
   },
   {
-    "objectID": "hyperspectral.html#overview",
-    "href": "hyperspectral.html#overview",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "objectID": "petawawa.html#introduction",
+    "href": "petawawa.html#introduction",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "Introduction",
+    "text": "Introduction\n\nForest inventory is changing — and LiDAR is at the centre of it\nDominant tree species information is essential for forest management. Different species shape wildlife habitat, timber value, biodiversity, and cultural priorities. Traditional mapping relied on sample plots and air photo interpretation — slow, expensive, and limited in coverage.\nRemote sensing offers a scalable alternative. Multispectral imagery detects species through spectral signatures. LiDAR is more challenging — it typically uses a single wavelength — but captures detailed forest structure, and studies show species often have distinct vertical and canopy patterns.\nThis project investigates whether LiDAR structural metrics alone can reliably classify dominant tree species in the Petawawa Research Forest."
+  },
+  {
+    "objectID": "petawawa.html#motivation",
+    "href": "petawawa.html#motivation",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "Motivation",
+    "text": "Motivation\n\nOntario’s push toward an Enhanced Forest Inventory\nOntario is transitioning to an Enhanced Forest Inventory (EFI), aiming to replace manual methods with remote-sensing-based models that are more consistent, scalable, and cost-efficient. Dominant species classification is a key component of EFI workflows.\nThe Ministry of Natural Resources wants to know: is newly collected ALS (LiDAR) data sufficient for operational species mapping — or is multispectral data still required?\nKey question: Is LiDAR alone accurate enough to model dominant tree species, or must it be fused with multispectral data?"
+  },
+  {
+    "objectID": "petawawa.html#the-data",
+    "href": "petawawa.html#the-data",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "The Data",
+    "text": "The Data\n\nTwo datasets — one structural, one ground-truth\nThe Airborne Laser Scanning (ALS) metrics dataset provides 2018 wall-to-wall LiDAR coverage of the Petawawa Research Forest. Rather than raw point clouds, it delivers 67 statistical summaries per cell at 25 m spatial resolution — capturing canopy height, density, and vertical structure.\nGround truth comes from the Petawawa Research Forest plot data: field-surveyed plot locations for approximately 30 tree species, sampled in summer 2018, each labelled with a dominant species code.\n\n\n\nALS metrics raster for the Petawawa Research Forest. Each of the 67 bands represents a statistical summary derived from the 2018 wall-to-wall airborne LiDAR point cloud at 25 m spatial resolution.\n\n\n\n\n\nGround plot locations across the Petawawa Research Forest, coloured by dominant tree species. Plots were sampled in summer 2018 and cover approximately 30 species."
+  },
+  {
+    "objectID": "petawawa.html#step-1-cleaning",
+    "href": "petawawa.html#step-1-cleaning",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "Step 1 — Cleaning",
+    "text": "Step 1 — Cleaning\n\nRemoving missing data and filtering rare species\nLimitations in the original point cloud’s data structure meant some sites had no ALS coverage. These were removed before analysis. ALS and plot data were kept in separate dataframes to support future scikit-learn workflows requiring separate class and attribute inputs.\n\n  Python — Filter NaN Sites\n  # Find the indexes of rows containing NaN\nbad_data = lidar_data.isnull().any(axis=1).tolist()\n\n# Filter these rows out of both datasets\nwhich       = np.logical_not(bad_data)\nplots_good  = plot_data[which]\nlidar_good  = lidar_data[which]\n  \n\nLooking at the species distribution, plots are dominated by white pine — potentially representative of the forest, but insufficient to build training, validation, and test sets for all classes. Species with fewer than 15 observations were excluded, leaving three proceeding species: White Pine · Red Pine · Red Oak.\n\n  Python — Filter to Target Species\n  # Keep only species with at least 15 plots\ntrg_species = (plots_good['Species']\n               .value_counts()\n               .loc[lambda count: count &gt;= 15]\n               .index.tolist())\n\nspecies_filter = plots_good['Species'].isin(trg_species)\nplots_final    = plots_good[species_filter]\nlidar_final    = lidar_good[species_filter]\n  \n\n\n\n\nSpecies distribution across all ground plots after removing sites with missing ALS data. White pine dominates the dataset, with most other species having too few observations for model training."
+  },
+  {
+    "objectID": "petawawa.html#step-2-feature-correlation",
+    "href": "petawawa.html#step-2-feature-correlation",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "Step 2 — Feature Correlation",
+    "text": "Step 2 — Feature Correlation\n\nWhich ALS metrics relate most to species?\nWith 67 available bands, feature selection was critical. mutual_info_classif from scikit-learn calculates the mutual information between each attribute and the target class individually — providing a ranked view of which LiDAR metrics carry the most species signal.\n\n  Python — Mutual Information Feature Ranking\n  from sklearn.feature_selection import mutual_info_classif\n\n# Prepare data\ny = plots_final['Code'].map({1: 1, 2: 2, 41: 3})\nX = lidar_final.drop('plot', axis=1)\n\n# Rank features by mutual information with species class\nmi        = mutual_info_classif(X, y, discrete_features='auto')\nmi_scores = pd.Series(mi, index=X.columns).sort_values(ascending=False)\nprint(mi_scores.head())"
+  },
+  {
+    "objectID": "petawawa.html#step-3-visualisation",
+    "href": "petawawa.html#step-3-visualisation",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "Step 3 — Visualisation",
+    "text": "Step 3 — Visualisation\n\nBox plots: can the top metrics separate species?\nTo understand whether the highest-ranked features can distinguish the three species, box plots were used to show the distribution overlap of each class across each attribute. The Vertical Complexity Index (VCI) was included as a hypothesis test — intuitively, canopy vertical structure should reflect species differences.\n\n  Python — Box Plot Grid\n  classes = [lidar_final[y == i+1] for i in range(3)]\nmetrics = mi_scores[0:3].index.tolist() + ['vci_0.5bin']\n\nfig, axs = plt.subplots(2, 2)\nfor i, ax in enumerate(axs.flat):\n    metric = metrics[i]\n    spread = [cl[metric] for cl in classes]\n    ax.boxplot(spread)\n    ax.set_xticklabels(trg_species)\n    ax.set_title(metric)\n\nplt.suptitle('Box Plots — Top ALS Metrics by Species')\nplt.tight_layout()\nplt.show()\n  \n\n\n\n\nBox plots showing the distribution of the top three mutual-information-ranked ALS metrics and VCI across White Pine, Red Pine, and Red Oak. Substantial overlap between classes suggests LiDAR structural metrics alone may not reliably distinguish species."
+  },
+  {
+    "objectID": "petawawa.html#key-findings",
+    "href": "petawawa.html#key-findings",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "Key Findings",
+    "text": "Key Findings\nThe data exploration revealed two key shortcomings that must be addressed before model development can begin.\n\n\n\n\n\n\n\n\nChallenge\nDetail\nRecommended Solution\n\n\n\n\nInsufficient training data\nMany dominant species had fewer than 10 observations — too few for training, validation, and testing splits.\nThe Ministry should procure additional plot data to support robust model development.\n\n\nInconsistent ALS metrics\nMany sites lacked ALS coverage; others showed data inconsistent with their dominant species.\nExclude grass-dominated sites; replace nearest-neighbour extraction with a distance-weighted Gaussian average of surrounding pixels."
+  },
+  {
+    "objectID": "petawawa.html#proposed-methods",
+    "href": "petawawa.html#proposed-methods",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "Proposed Methods",
+    "text": "Proposed Methods\n\nTwo models, one comparison\nOnce the data challenges above are resolved, two models will be developed using scikit-learn:\n\nALS-only model — predicts dominant species using exclusively LiDAR-derived metrics.\nData fusion model — combines ALS and multispectral data for species prediction.\n\nAn in-depth performance comparison will determine whether LiDAR alone is sufficient for operational EFI species mapping, or whether a multisensor approach is required.\nBased on the data exploration, ALS alone is unlikely to match the performance of a fused approach — multispectral data offers substantial advantages for species discrimination. However, high-density ALS with fine spatial resolution may yet resolve individual crowns, potentially closing the gap."
+  },
+  {
+    "objectID": "lidar-story.html",
+    "href": "lidar-story.html",
+    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
+    "section": "",
+    "text": "← Remote Sensing Projects"
+  },
+  {
+    "objectID": "lidar-story.html#the-problem",
+    "href": "lidar-story.html#the-problem",
+    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
+    "section": "The Problem",
+    "text": "The Problem\n\nWhy individual trees matter — and why they’re hard to isolate\nForest inventory traditionally summarizes canopy structure over grid cells. But per‑tree metrics — height, crown area, stem density — drive carbon accounting, habitat modelling, and harvest planning.\nIn BC’s mixed coniferous forests, overlapping crowns and dense lower‑storey branches make it difficult for algorithms to determine where one tree ends and another begins."
+  },
+  {
+    "objectID": "lidar-story.html#the-data",
+    "href": "lidar-story.html#the-data",
+    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
+    "section": "The Data",
+    "text": "The Data\n\nFour circular plots, millions of points\nI extracted four 154‑m diameter plots from a normalized LiDAR catalog covering Malcolm Knapp Research Forest. Height outliers were removed to prevent false detections.\nctg &lt;- readLAScatalog(norm_dir)\nopt_filter(ctg) &lt;- \"-drop_z_below 0 -drop_z_above 65\"\n\nradius &lt;- 77\nfor(i in 1:4) {\n  x &lt;- plots_tbl$X[i]; y &lt;- plots_tbl$Y[i]\n  p &lt;- clip_circle(ctg, x, y, radius)\n  writeLAS(p, file.path(plots_dir, paste0(\"Lab4_Plot_\", i, \".las\")))\n}"
+  },
+  {
+    "objectID": "lidar-story.html#algorithm-1-li-et-al.-2012",
+    "href": "lidar-story.html#algorithm-1-li-et-al.-2012",
+    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
+    "section": "Algorithm 1 — Li et al. (2012)",
+    "text": "Algorithm 1 — Li et al. (2012)\n\nStarting from the top: segmentation in 3D\nLi2012 begins segmentation at the top of the canopy, where crown spacing is greatest. The speed_up parameter defines the maximum crown radius.\nli12 &lt;- li2012(dt1=1.5, dt2=2, R=2, Zu=15, speed_up=10)\n\nfor(i in 1:4) {\n  Plt      &lt;- readLAS(file.path(\"Plots\", paste0(\"Lab4_Plot_\", i, \".las\")))\n  Plt_li12 &lt;- segment_trees(Plt, li12)\n  plot(Plt_li12, color=\"treeID\")\n}\n\n\n\nLi2012 segmentation — Plot 1.\n\n\n\n\n\nLi2012 segmentation — Plot 2.\n\n\n\n\n\nLi2012 segmentation — Plot 3.\n\n\n\n\n\nLi2012 segmentation — Plot 4."
+  },
+  {
+    "objectID": "lidar-story.html#building-the-surface",
+    "href": "lidar-story.html#building-the-surface",
+    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
+    "section": "Building the Surface",
+    "text": "Building the Surface\n\nFrom point cloud to canopy height model\nDalponte2016 requires a CHM. I generated a 0.5 m pitfree CHM and detected tree tops using a local maximum filter.\n\n\n\nCHM of Plot 1 with detected tree tops."
+  },
+  {
+    "objectID": "lidar-story.html#resolution-matters",
+    "href": "lidar-story.html#resolution-matters",
+    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
+    "section": "Resolution Matters",
+    "text": "Resolution Matters\n\nCHM at four resolutions\nI compared CHMs at 0.5 m, 2 m, 4 m, and 10 m. 2 m provided the best balance between detail and noise.\n\n\n\nCHM resolution comparison for Plot 2."
+  },
+  {
+    "objectID": "lidar-story.html#algorithm-2-dalponte-coomes-2016",
+    "href": "lidar-story.html#algorithm-2-dalponte-coomes-2016",
+    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
+    "section": "Algorithm 2 — Dalponte & Coomes (2016)",
+    "text": "Algorithm 2 — Dalponte & Coomes (2016)\n\nGrowing crowns outward from tree tops\n\n\n\nDalponte segmentation for Plot 1.\n\n\n\n\n\nDalponte segmentation for Plot 2 at 2 m resolution."
+  },
+  {
+    "objectID": "lidar-story.html#algorithm-comparison",
+    "href": "lidar-story.html#algorithm-comparison",
+    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
+    "section": "Algorithm Comparison",
+    "text": "Algorithm Comparison\nLi2012 and Dalponte2016 didn’t just produce different segmentation maps — they revealed different blind spots in how each method interprets forest structure. The table below summarizes their strengths, weaknesses, and ideal use‑cases.\n\n\n\n\n\n\n\n\n\nAlgorithm\nStrengths\nFailure Mode\nBest Used In\n\n\n\n\nDalponte2016\nProduces clean, intuitive crown boundaries when the CHM surface is smooth and distinct.\nMerges adjacent crowns when the CHM forms a single ridge in dense stands.\nOpen, even‑aged stands with well‑separated crowns and reliable CHM structure.\n\n\nLi2012\nMore resilient in dense, multi‑layered stands due to its 3D, point‑based logic.\nStruggles where lower‑storey branches from neighbouring trees intertwine.\nDense, structurally complex stands where 3D segmentation prevents crown merging."
+  },
+  {
+    "objectID": "lidar-story.html#what-this-means-for-operational-forest-inventory",
+    "href": "lidar-story.html#what-this-means-for-operational-forest-inventory",
+    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
+    "section": "What this means for operational forest inventory",
+    "text": "What this means for operational forest inventory\nNo single algorithm is universally “best” across a heterogeneous forest like MKRF. A practical workflow needs to adapt to stand structure.\nThe key insight: across the entire forest, CHM resolution influenced results more than the choice of algorithm. A 2 m CHM provided the strongest balance between structural detail, noise suppression, and computational efficiency."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Welcome!!!"
+  },
+  {
+    "objectID": "home.html",
+    "href": "home.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Oluwaseyi Ezekiel\n\n\nGeospatial and Remote Sensing Scientist\n\n\n\n\nView Portfolio"
+  },
+  {
+    "objectID": "earlier-gis.html",
+    "href": "earlier-gis.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "← Back to Projects"
+  },
+  {
+    "objectID": "earlier-gis.html#overview",
+    "href": "earlier-gis.html#overview",
+    "title": "Oluwaseyi Ezekiel",
     "section": "Overview",
-    "text": "Overview\nThis project explores hyperspectral reflectance signatures of vegetation and surface materials across the visible, near-infrared, and shortwave infrared spectral regions. Hyperspectral measurements allow detailed analysis of vegetation properties such as chlorophyll content, leaf structure, and moisture."
+    "text": "Overview\nBefore the MGEM program, I worked on a range of hands-on GIS and remote sensing projects that strengthened my practical skills in land-cover classification, environmental mapping, forest analysis, hazard assessment, UAV applications, and geospatial data visualization.\nThese projects span different platforms and workflows, including QGIS, ArcGIS Pro, Google Earth Engine, R, and Python, and show the progression of my technical experience across applied environmental and spatial problems."
   },
   {
-    "objectID": "hyperspectral.html#data",
-    "href": "hyperspectral.html#data",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
-    "section": "Data",
-    "text": "Data\nField spectrometry measurements of vegetation and surface materials including:\n\nBigleaf maple\nDouglas-fir\nGarry oak\nSoil\nGrass\nMoss\nCoarse woody debris"
+    "objectID": "content.html",
+    "href": "content.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Note: Click a category to explore projects.\n\n\n\n\n\nApplied capstone work and geospatial project planning.\n\nCapstone Planning Communication\n\n\n\n\nMap design, ArcGIS Online applications, dashboards, field data collection and desktop GIS workflows.\n\nStoryMaps Survey123 ArcGIS Pro QGIS\n\n\n\n\nLiDAR analysis, land-cover classification, spectral interpretation, and satellite time-series remote sensing.\n\nLiDAR Classification Spectral Landsat\n\n\n\n\nLandscape metrics, spatial modeling, forest analytics, and environmental statistics.\n\nSpatial Statistics Modeling Python"
   },
   {
-    "objectID": "hyperspectral.html#methods",
-    "href": "hyperspectral.html#methods",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "objectID": "content.html#cartography-gis-applications-1",
+    "href": "content.html#cartography-gis-applications-1",
+    "title": "Projects",
+    "section": "Cartography & GIS Applications",
+    "text": "Cartography & GIS Applications\n\n\nCitizen Science: Asset & Infrastructure Management\nInteractive StoryMaps analyzing traffic patterns and urban mobility challenges to support safer and more efficient transportation systems.\n\nAsset Management Urban Planning ArcGIS StoryMaps\n\nView StoryMaps →\n\n\nData Visualization: Environmental Conservation\nInteractive dashboard designed to monitor and visualize environmental indicators collected through Survey123 field surveys.\n\nEnvironmental Conservation Data Visualization ArcGIS Dashboards\n\nView Dashboard →\n\n\nField Data Collection: Species Monitoring\nMobile GIS workflow developed using ArcGIS Survey123 to collect structured geospatial data in the field.\n\nField Data Collection Survey123\n\nView Survey →\n\n\nDesktop GIS: Mapping Projects\nCollection of thematic maps and cartographic layouts developed using ArcGIS Pro and QGIS.\n\nArcGIS Pro QGIS Cartography\n\nSee Map Gallery →"
+  },
+  {
+    "objectID": "content.html#landscape-modeling-spatial-statistics-1",
+    "href": "content.html#landscape-modeling-spatial-statistics-1",
+    "title": "Projects",
+    "section": "Landscape Modeling & Spatial Statistics",
+    "text": "Landscape Modeling & Spatial Statistics\n\n\nMangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\nThis project quantifies mangrove loss across administrative boundaries in Madagascar between 1999 and 2019 using the Murray Global Tidal Wetland Change dataset. A fully automated Python pipeline — built with ArcPy in Jupyter notebooks — handles raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis to identify which communities experienced the greatest loss and whether proximity to paths explains deforestation patterns.\n\nPython ArcPy Google Earth Engine Spatial Analysis\n\nView project →\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nThe analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.\n\nSpatial Statistics LiDAR Forest Inventory Feature Selection\n\nView project →"
+  },
+  {
+    "objectID": "content.html#project-management-1",
+    "href": "content.html#project-management-1",
+    "title": "Projects",
+    "section": "Project Management",
+    "text": "Project Management\n\n\nAssessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley\nMaster’s Capstone Project — University of British Columbia (UBC)\nThis study examines how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020 by harmonizing multi-source land-cover datasets and analyzing landscape structure and land-cover transitions. The project identifies spatial patterns of agricultural change and evaluates opportunities for perennial agriculture expansion within existing agricultural systems.\nView full project →\n\n\n\nMapping Spatial Patterns of Urban Carbon Sinks in Metro Vancouver\nResearch Proposal — UBC GEM 500 (Landscape Ecology)\nThis project investigates how vegetation distribution and landscape structure influence urban carbon storage across Metro Vancouver municipalities. Using Landsat imagery, carbon biomass datasets, and landscape metrics, the study aims to identify municipalities functioning as major urban carbon sinks and assess the spatial factors influencing carbon storage.\nView full project →"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
+  },
+  {
+    "objectID": "capstone.html",
+    "href": "capstone.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "← Back to Projects"
+  },
+  {
+    "objectID": "capstone.html#introduction",
+    "href": "capstone.html#introduction",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Introduction",
+    "text": "Introduction\nAgricultural landscapes in the Lower Fraser Valley (LFV), British Columbia, are experiencing structural changes driven by evolving agricultural practices, environmental pressures, and expanding urban development. Understanding how land-cover transitions occur within this highly productive agricultural region is important for supporting sustainable land management and identifying opportunities for resilient farming systems.\nThis capstone project evaluates how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020, with particular attention to transitions between annual and perennial agriculture. By integrating multiple land-cover datasets and applying spatial analysis techniques, the study identifies patterns of land-cover change and areas where perennial agriculture may expand within existing agricultural landscapes.\n\nFigure 1. Study area showing the Lower Fraser Valley agricultural region analyzed in this project."
+  },
+  {
+    "objectID": "capstone.html#methods",
+    "href": "capstone.html#methods",
+    "title": "Oluwaseyi Ezekiel",
     "section": "Methods",
-    "text": "Methods\nSpectral curves were analyzed across three main spectral regions:\n\n\n\nRegion\nWavelength\nInformation\n\n\n\n\nVisible\n400–700 nm\npigment absorption\n\n\nNear infrared\n750–1300 nm\nleaf structure\n\n\nSWIR\n1300–2500 nm\nwater content"
+    "text": "Methods\nThis study integrates two multi-source land-cover datasets—the Annual Crop Inventory (ACI) and the North American Land Change Monitoring System (NALCMS)—to produce harmonized land-cover maps for 2015 and 2020 and evaluate agricultural landscape dynamics.\nFirst, all datasets were reprojected to UTM Zone 10N and clipped to the Lower Fraser Valley boundary to ensure spatial alignment. Land-cover classes from each dataset were then aggregated into six harmonized categories: Annual Agriculture, Perennial Agriculture, Forest, Marginalized Land, Wetlands, and Water. These categories were selected to maintain ecological relevance while reducing thematic inconsistencies between datasets. :contentReferenceoaicite:0\nDataset agreement was evaluated using confusion matrices, and overall classification agreement was used to derive relative dataset weighting. Harmonization was then performed through pixel-wise overlay, prioritizing ACI classifications in cases of disagreement due to its higher thematic detail for agricultural subclasses.\nFollowing harmonization, post-classification change detection was conducted by comparing the 2015 and 2020 land-cover maps to quantify land-cover transitions and calculate both net and relative changes in landscape composition. Spatial configuration and structural dynamics were further assessed using patch metrics, diversity indices, and adjacency analysis.\n\nFigure 2. Analytical workflow used to harmonize multi-source land-cover datasets and analyze landscape transitions."
   },
   {
-    "objectID": "hyperspectral.html#example-code",
-    "href": "hyperspectral.html#example-code",
-    "title": "Hyperspectral Vegetation Spectral Analysis",
-    "section": "Example Code",
-    "text": "Example Code\n```r Refl_ind &lt;- function(wl, refl, target_wl){ approx(x = wl, y = refl, xout = target_wl, rule = 2)$y }"
+    "objectID": "capstone.html#results",
+    "href": "capstone.html#results",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Results",
+    "text": "Results\n\nLand-Cover Transitions\nTemporal analysis revealed notable shifts in agricultural land cover between 2015 and 2020. Annual agriculture declined substantially, while perennial agriculture increased, indicating an important structural transition within the agricultural system.\n\nFigure 4. Sankey diagram illustrating land-cover transitions between 2015 and 2020.\nThe largest transition occurred from annual agriculture to perennial agriculture, representing nearly half of the annual agricultural area observed in 2015. Smaller conversions occurred between agricultural classes and marginalized land, as well as limited transitions involving forested areas.\n\n\n\nSpatial Distribution of Change\nSpatial change detection shows that most of the landscape remained stable during the study period, while transitions were concentrated within agricultural regions.\n\nFigure 5. Spatial distribution of land-cover persistence and change between 2015 and 2020.\nApproximately three-quarters of the landscape remained persistent, while about one-quarter experienced land-cover transitions. These changes occurred across thousands of discrete patches, indicating that most transitions were spatially dispersed rather than large-scale conversions.\n\n\n\nAgricultural Adjacency\nBeyond land-cover transitions, the study examined spatial relationships between annual and perennial agricultural systems.\n\nFigure 6. Spatial distribution of annual agriculture adjacent to perennial agriculture.\nThe proportion of annual agriculture directly adjacent to perennial systems increased substantially between 2015 and 2020. This pattern suggests growing spatial interaction between agricultural classes and highlights areas where perennial agriculture expansion may occur within existing agricultural landscapes.\n\n\n\nLandscape Structural Dynamics\nShannon’s Diversity Index (SHDI) increased slightly from 1.3249 to 1.355, while Shannon’s Evenness Index (SHEI) increased from 0.7394 to 0.7563, suggesting a more balanced distribution among land-cover classes over time. These changes reflect shifts in the relative proportions of agricultural and non-agricultural classes across the region. At the class level, mean forest patch area decreased from 12.9 ha to 10.72 ha, accompanied by a decline in forest edge density, indicating subtle changes in forest spatial configuration within the agricultural landscape.\nTable 1 summarizes landscape-level diversity metrics and selected class-level structural indicators derived from the harmonized land-cover maps.\n\nLandscape structural metrics derived from harmonized land-cover maps.\n\n\nMetric\n2015\n2020\n\n\n\n\nShannon’s Diversity Index (SHDI)\n1.3249\n1.355\n\n\nShannon’s Evenness Index (SHEI)\n0.7394\n0.7563\n\n\nForest Mean Patch Area (ha)\n12.90\n10.72\n\n\nForest Edge Density (m/ha)\n42.17\n37.38"
+  },
+  {
+    "objectID": "capstone.html#project-significance",
+    "href": "capstone.html#project-significance",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "Project Significance",
+    "text": "Project Significance\nThis capstone project demonstrates how harmonized land-cover analysis and spatial landscape metrics can be used to evaluate agricultural transitions and landscape dynamics within complex agricultural regions.\nThe findings indicate a clear shift from annual to perennial agricultural systems, accompanied by increasing spatial interaction between agricultural classes. These patterns suggest opportunities for supporting more sustainable agricultural practices while maintaining the productivity of the Lower Fraser Valley.\nMore broadly, the analytical framework developed in this study provides a transferable approach for examining land-cover change, agricultural transitions, and landscape sustainability in other regions."
+  },
+  {
+    "objectID": "dashboards.html",
+    "href": "dashboards.html",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "← Back to Projects\n\n\nCourse: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →g"
+  },
+  {
+    "objectID": "dashboards.html#environmental-monitoring-dashboard",
+    "href": "dashboards.html#environmental-monitoring-dashboard",
+    "title": "Oluwaseyi Ezekiel",
+    "section": "",
+    "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →g"
   },
   {
     "objectID": "gallery.html",
@@ -245,123 +448,179 @@
     "text": "Carbon Density Mapping\nThis map shows the spatial distribution of above‑ground carbon biomass density across Metro Vancouver. High‑density carbon zones appear in the North Shore and other forested uplands, gradually transitioning to lower values within developed municipalities. The project supports applications in urban planning and carbon‑accounting initiatives, offering spatial insight into where ecosystem restoration actions may have the greatest impact."
   },
   {
-    "objectID": "dashboards.html",
-    "href": "dashboards.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "← Back to Projects\n\n\nCourse: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →g"
-  },
-  {
-    "objectID": "dashboards.html#environmental-monitoring-dashboard",
-    "href": "dashboards.html#environmental-monitoring-dashboard",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Dashboard development and GIS visualization\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis ArcGIS Dashboard was developed as part of a simulated citizen science exercise conducte d in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The project was designed to explore the opportunities and challenges associated with citizen-generated environmental data, including issues of data reliability, spatial coverage, and observer bias.\n\n\n\nNote: If prompted to sign in to ArcGIS Online, click Cancel to view the dashboard.\n\n\n\n\n\nOpen dashboard full screen →g"
-  },
-  {
-    "objectID": "capstone.html",
-    "href": "capstone.html",
-    "title": "Oluwaseyi Ezekiel",
+    "objectID": "hyperspectral.html",
+    "href": "hyperspectral.html",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
     "section": "",
     "text": "← Back to Projects"
   },
   {
-    "objectID": "capstone.html#introduction",
-    "href": "capstone.html#introduction",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Introduction",
-    "text": "Introduction\nAgricultural landscapes in the Lower Fraser Valley (LFV), British Columbia, are experiencing structural changes driven by evolving agricultural practices, environmental pressures, and expanding urban development. Understanding how land-cover transitions occur within this highly productive agricultural region is important for supporting sustainable land management and identifying opportunities for resilient farming systems.\nThis capstone project evaluates how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020, with particular attention to transitions between annual and perennial agriculture. By integrating multiple land-cover datasets and applying spatial analysis techniques, the study identifies patterns of land-cover change and areas where perennial agriculture may expand within existing agricultural landscapes.\n\nFigure 1. Study area showing the Lower Fraser Valley agricultural region analyzed in this project."
-  },
-  {
-    "objectID": "capstone.html#methods",
-    "href": "capstone.html#methods",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Methods",
-    "text": "Methods\nThis study integrates two multi-source land-cover datasets—the Annual Crop Inventory (ACI) and the North American Land Change Monitoring System (NALCMS)—to produce harmonized land-cover maps for 2015 and 2020 and evaluate agricultural landscape dynamics.\nFirst, all datasets were reprojected to UTM Zone 10N and clipped to the Lower Fraser Valley boundary to ensure spatial alignment. Land-cover classes from each dataset were then aggregated into six harmonized categories: Annual Agriculture, Perennial Agriculture, Forest, Marginalized Land, Wetlands, and Water. These categories were selected to maintain ecological relevance while reducing thematic inconsistencies between datasets. :contentReferenceoaicite:0\nDataset agreement was evaluated using confusion matrices, and overall classification agreement was used to derive relative dataset weighting. Harmonization was then performed through pixel-wise overlay, prioritizing ACI classifications in cases of disagreement due to its higher thematic detail for agricultural subclasses.\nFollowing harmonization, post-classification change detection was conducted by comparing the 2015 and 2020 land-cover maps to quantify land-cover transitions and calculate both net and relative changes in landscape composition. Spatial configuration and structural dynamics were further assessed using patch metrics, diversity indices, and adjacency analysis.\n\nFigure 2. Analytical workflow used to harmonize multi-source land-cover datasets and analyze landscape transitions."
-  },
-  {
-    "objectID": "capstone.html#results",
-    "href": "capstone.html#results",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Results",
-    "text": "Results\n\nLand-Cover Transitions\nTemporal analysis revealed notable shifts in agricultural land cover between 2015 and 2020. Annual agriculture declined substantially, while perennial agriculture increased, indicating an important structural transition within the agricultural system.\n\nFigure 4. Sankey diagram illustrating land-cover transitions between 2015 and 2020.\nThe largest transition occurred from annual agriculture to perennial agriculture, representing nearly half of the annual agricultural area observed in 2015. Smaller conversions occurred between agricultural classes and marginalized land, as well as limited transitions involving forested areas.\n\n\n\nSpatial Distribution of Change\nSpatial change detection shows that most of the landscape remained stable during the study period, while transitions were concentrated within agricultural regions.\n\nFigure 5. Spatial distribution of land-cover persistence and change between 2015 and 2020.\nApproximately three-quarters of the landscape remained persistent, while about one-quarter experienced land-cover transitions. These changes occurred across thousands of discrete patches, indicating that most transitions were spatially dispersed rather than large-scale conversions.\n\n\n\nAgricultural Adjacency\nBeyond land-cover transitions, the study examined spatial relationships between annual and perennial agricultural systems.\n\nFigure 6. Spatial distribution of annual agriculture adjacent to perennial agriculture.\nThe proportion of annual agriculture directly adjacent to perennial systems increased substantially between 2015 and 2020. This pattern suggests growing spatial interaction between agricultural classes and highlights areas where perennial agriculture expansion may occur within existing agricultural landscapes.\n\n\n\nLandscape Structural Dynamics\nShannon’s Diversity Index (SHDI) increased slightly from 1.3249 to 1.355, while Shannon’s Evenness Index (SHEI) increased from 0.7394 to 0.7563, suggesting a more balanced distribution among land-cover classes over time. These changes reflect shifts in the relative proportions of agricultural and non-agricultural classes across the region. At the class level, mean forest patch area decreased from 12.9 ha to 10.72 ha, accompanied by a decline in forest edge density, indicating subtle changes in forest spatial configuration within the agricultural landscape.\nTable 1 summarizes landscape-level diversity metrics and selected class-level structural indicators derived from the harmonized land-cover maps.\n\nLandscape structural metrics derived from harmonized land-cover maps.\n\n\nMetric\n2015\n2020\n\n\n\n\nShannon’s Diversity Index (SHDI)\n1.3249\n1.355\n\n\nShannon’s Evenness Index (SHEI)\n0.7394\n0.7563\n\n\nForest Mean Patch Area (ha)\n12.90\n10.72\n\n\nForest Edge Density (m/ha)\n42.17\n37.38"
-  },
-  {
-    "objectID": "capstone.html#project-significance",
-    "href": "capstone.html#project-significance",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "Project Significance",
-    "text": "Project Significance\nThis capstone project demonstrates how harmonized land-cover analysis and spatial landscape metrics can be used to evaluate agricultural transitions and landscape dynamics within complex agricultural regions.\nThe findings indicate a clear shift from annual to perennial agricultural systems, accompanied by increasing spatial interaction between agricultural classes. These patterns suggest opportunities for supporting more sustainable agricultural practices while maintaining the productivity of the Lower Fraser Valley.\nMore broadly, the analytical framework developed in this study provides a transferable approach for examining land-cover change, agricultural transitions, and landscape sustainability in other regions."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
-  },
-  {
-    "objectID": "about.html#about-me",
-    "href": "about.html#about-me",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "I am passionate about advancing work in spatial ecology and environmental management. My goal is to contribute to global conservation efforts through the integration of traditional monitoring approaches with modern technologies in remote sensing and Geographic Information Systems.\nMy interests include spatial ecology, land-cover analysis, environmental monitoring, GIS, and geospatial data communication using reproducible workflows.\nIn my spare time, you will probably find me at a chessboard, playing Scrabble, or at the piano.\n\n\n View Projects \n View Resume"
-  },
-  {
-    "objectID": "content.html",
-    "href": "content.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Note: Click a category to explore projects.\n\n\n\n\n\nApplied capstone work and geospatial project planning.\n\nCapstone Planning Communication\n\n\n\n\nMap design, ArcGIS Online applications, dashboards, field data collection and desktop GIS workflows.\n\nStoryMaps Survey123 ArcGIS Pro QGIS\n\n\n\n\nLiDAR analysis, land-cover classification, spectral interpretation, and satellite time-series remote sensing.\n\nLiDAR Classification Spectral Landsat\n\n\n\n\nLandscape metrics, spatial modeling, forest analytics, and environmental statistics.\n\nSpatial Statistics Modeling Python"
-  },
-  {
-    "objectID": "content.html#cartography-gis-applications-1",
-    "href": "content.html#cartography-gis-applications-1",
-    "title": "Projects",
-    "section": "Cartography & GIS Applications",
-    "text": "Cartography & GIS Applications\n\n\nCitizen Science: Asset & Infrastructure Management\nInteractive StoryMaps analyzing traffic patterns and urban mobility challenges to support safer and more efficient transportation systems.\n\nAsset Management Urban Planning ArcGIS StoryMaps\n\nView StoryMaps →\n\n\nData Visualization: Environmental Conservation\nInteractive dashboard designed to monitor and visualize environmental indicators collected through Survey123 field surveys.\n\nEnvironmental Conservation Data Visualization ArcGIS Dashboards\n\nView Dashboard →\n\n\nField Data Collection: Species Monitoring\nMobile GIS workflow developed using ArcGIS Survey123 to collect structured geospatial data in the field.\n\nField Data Collection Survey123\n\nView Survey →\n\n\nDesktop GIS: Mapping Projects\nCollection of thematic maps and cartographic layouts developed using ArcGIS Pro and QGIS.\n\nArcGIS Pro QGIS Cartography\n\nSee Map Gallery →"
-  },
-  {
-    "objectID": "content.html#landscape-modeling-spatial-statistics-1",
-    "href": "content.html#landscape-modeling-spatial-statistics-1",
-    "title": "Projects",
-    "section": "Landscape Modeling & Spatial Statistics",
-    "text": "Landscape Modeling & Spatial Statistics\n\n\nMangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\nThis project quantifies mangrove loss across administrative boundaries in Madagascar between 1999 and 2019 using the Murray Global Tidal Wetland Change dataset. A fully automated Python pipeline — built with ArcPy in Jupyter notebooks — handles raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis to identify which communities experienced the greatest loss and whether proximity to paths explains deforestation patterns.\n\nPython ArcPy Google Earth Engine Spatial Analysis\n\nView project →\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nThe analysis integrates spatial data processing, statistical feature ranking, and visualization to assess whether LiDAR-only approaches are sufficient for operational species mapping or whether additional multispectral information may be required.\n\nSpatial Statistics LiDAR Forest Inventory Feature Selection\n\nView project →"
-  },
-  {
-    "objectID": "content.html#project-management-1",
-    "href": "content.html#project-management-1",
-    "title": "Projects",
-    "section": "Project Management",
-    "text": "Project Management\n\n\nAssessing Critical Transitions in Agricultural Landscapes in the Lower Fraser Valley\nMaster’s Capstone Project — University of British Columbia (UBC)\nThis study examines how agricultural landscapes in the Lower Fraser Valley changed between 2015 and 2020 by harmonizing multi-source land-cover datasets and analyzing landscape structure and land-cover transitions. The project identifies spatial patterns of agricultural change and evaluates opportunities for perennial agriculture expansion within existing agricultural systems.\nView full project →\n\n\n\nMapping Spatial Patterns of Urban Carbon Sinks in Metro Vancouver\nResearch Proposal — UBC GEM 500 (Landscape Ecology)\nThis project investigates how vegetation distribution and landscape structure influence urban carbon storage across Metro Vancouver municipalities. Using Landsat imagery, carbon biomass datasets, and landscape metrics, the study aims to identify municipalities functioning as major urban carbon sinks and assess the spatial factors influencing carbon storage.\nView full project →"
-  },
-  {
-    "objectID": "earlier-gis.html",
-    "href": "earlier-gis.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "← Back to Projects"
-  },
-  {
-    "objectID": "earlier-gis.html#overview",
-    "href": "earlier-gis.html#overview",
-    "title": "Oluwaseyi Ezekiel",
+    "objectID": "hyperspectral.html#overview",
+    "href": "hyperspectral.html#overview",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
     "section": "Overview",
-    "text": "Overview\nBefore the MGEM program, I worked on a range of hands-on GIS and remote sensing projects that strengthened my practical skills in land-cover classification, environmental mapping, forest analysis, hazard assessment, UAV applications, and geospatial data visualization.\nThese projects span different platforms and workflows, including QGIS, ArcGIS Pro, Google Earth Engine, R, and Python, and show the progression of my technical experience across applied environmental and spatial problems."
+    "text": "Overview\nThis project explores hyperspectral reflectance signatures of vegetation and surface materials across the visible, near-infrared, and shortwave infrared spectral regions. Hyperspectral measurements allow detailed analysis of vegetation properties such as chlorophyll content, leaf structure, and moisture."
   },
   {
-    "objectID": "home.html",
-    "href": "home.html",
-    "title": "Oluwaseyi Ezekiel",
-    "section": "",
-    "text": "Oluwaseyi Ezekiel\n\n\nGeospatial and Remote Sensing Scientist\n\n\n\n\nView Portfolio"
+    "objectID": "hyperspectral.html#data",
+    "href": "hyperspectral.html#data",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "section": "Data",
+    "text": "Data\nField spectrometry measurements of vegetation and surface materials including:\n\nBigleaf maple\nDouglas-fir\nGarry oak\nSoil\nGrass\nMoss\nCoarse woody debris"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Oluwaseyi Ezekiel",
+    "objectID": "hyperspectral.html#methods",
+    "href": "hyperspectral.html#methods",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "section": "Methods",
+    "text": "Methods\nSpectral curves were analyzed across three main spectral regions:\n\n\n\nRegion\nWavelength\nInformation\n\n\n\n\nVisible\n400–700 nm\npigment absorption\n\n\nNear infrared\n750–1300 nm\nleaf structure\n\n\nSWIR\n1300–2500 nm\nwater content"
+  },
+  {
+    "objectID": "hyperspectral.html#example-code",
+    "href": "hyperspectral.html#example-code",
+    "title": "Hyperspectral Vegetation Spectral Analysis",
+    "section": "Example Code",
+    "text": "Example Code\n```r Refl_ind &lt;- function(wl, refl, target_wl){ approx(x = wl, y = refl, xout = target_wl, rule = 2)$y }"
+  },
+  {
+    "objectID": "landscape.html",
+    "href": "landscape.html",
+    "title": "Landscape Modeling & Spatial Statistics",
     "section": "",
-    "text": "Welcome!!!"
+    "text": "← Back to Projects\n\nLandscape Modeling & Spatial Statistics\n\n\nMangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar\n\n\n\nDeforestation ArcPy Google Earth Engine Multi-ring buffer Analysis\n\nThis project quantifies mangrove loss across communes and fokontany in Madagascar’s Ambanja and Ambaro Bays between 1999 and 2019, using an automated ArcPy pipeline built in Jupyter notebooks. The workflow covers raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis.\nView Project →\n\n\n\n\n\nMapping Dominant Tree Species Using LiDAR Structural Metrics\n\n\nLiDAR Forest Inventory Python Feature Selection Petawawa RF\n\nThis project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the Petawawa Research Forest, Ontario, as part of Ontario’s transition toward an Enhanced Forest Inventory (EFI). LiDAR-derived metrics were extracted at ground plot locations and analyzed using mutual information feature selection to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.\nView Project →"
+  },
+  {
+    "objectID": "mangrove.html",
+    "href": "mangrove.html",
+    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
+    "section": "",
+    "text": "← Back to Projects"
+  },
+  {
+    "objectID": "mangrove.html#the-problem",
+    "href": "mangrove.html#the-problem",
+    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
+    "section": "The Problem",
+    "text": "The Problem\n\nOne of the world’s most productive ecosystems — vanishing fast\nMangrove forests store extraordinary amounts of carbon, protect coastlines from storm surges, and sustain the livelihoods of coastal communities. In Madagascar, they are under pressure from timber harvesting, agricultural expansion, and aquaculture — driven by population growth and limited governance.\nThis project quantifies mangrove loss between 1999 and 2019 at two administrative scales — commune and fokontany — and tests whether proximity to paths and permanent rivers explains spatial patterns of deforestation."
+  },
+  {
+    "objectID": "mangrove.html#the-data",
+    "href": "mangrove.html#the-data",
+    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
+    "section": "The Data",
+    "text": "The Data\n\nA global dataset, downloaded from Google Earth Engine\nThe Murray Global Tidal Wetland Change dataset (Murray et al. 2022) maps tidal wetland gain and loss globally using over 1 million Landsat images combined with machine learning. It was downloaded for this project via a Google Earth Engine script, with NA values encoded as 0 in the raster.\nAdministrative boundaries — communes and fokontany — and infrastructure layers including paths and permanent rivers were sourced from the AAB geodatabase."
+  },
+  {
+    "objectID": "mangrove.html#step-1-pre-processing",
+    "href": "mangrove.html#step-1-pre-processing",
+    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
+    "section": "Step 1 — Pre-Processing",
+    "text": "Step 1 — Pre-Processing\n\nConverting pixels to polygons — and cleaning the noise\nThe Murray raster encodes mangrove loss year as pixel values, with 0 representing no data. The first task was converting it to polygon format for vector-based spatial analysis, then using ArcPy cursors to remove null records and rename the gridcode field to loss_year.\narcpy.conversion.RasterToPolygon(\n    original, opath,\n    \"NO_SIMPLIFY\",\n    raster_field = 'Value'\n)\n\n# Rename gridcode to loss_year\narcpy.management.AlterField(mangrove_polygon_name, 'gridcode', 'loss_year')\n\n# Remove null polygons using UpdateCursor\nwith arcpy.da.UpdateCursor(mangrove_polygon_name, 'loss_year') as cursor:\n    for row in cursor:\n        if row[0] == 0:\n            cursor.deleteRow()"
+  },
+  {
+    "objectID": "mangrove.html#step-2-loss-by-commune",
+    "href": "mangrove.html#step-2-loss-by-commune",
+    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
+    "section": "Step 2 — Loss by Commune",
+    "text": "Step 2 — Loss by Commune\n\nWhere is deforestation most severe?\nThe cleaned polygons were spatially joined to commune boundaries. Area was calculated using CalculateGeometryAttributes(), then summarized with arcpy.analysis.Statistics() — grouping by commune to produce total loss area (km²) and average loss year.\narcpy.analysis.Statistics(\n    in_table = joined_layer,\n    out_table = summary_table,\n    statistics_fields = [[\"Shape_Area\", \"SUM\"], [\"loss_year\", \"MEAN\"]],\n    case_field = \"COMMUNE\"\n)\n\n\n\nTotal mangrove loss (km²) by commune, 1999–2019. Antsakoamanondro recorded the highest loss at 3.05 km², followed by Anorontsangana (1.86 km²) and Maherivaratra (1.67 km²). Dashed line shows the mean loss across all communes."
+  },
+  {
+    "objectID": "mangrove.html#step-3-fokontany-scale",
+    "href": "mangrove.html#step-3-fokontany-scale",
+    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
+    "section": "Step 3 — Fokontany Scale",
+    "text": "Step 3 — Fokontany Scale\n\nZooming in: sub-commune hotspots\nThe same workflow was repeated at the fokontany level — a finer administrative unit — revealing deforestation hotspots that commune-level analysis would mask.\n\n\n\nTop 10 fokontany by total mangrove loss. Ambodimanga Sud (1.47 km²) and Andrahibo (1.30 km²) led at the sub-commune scale."
+  },
+  {
+    "objectID": "mangrove.html#step-4-temporal-trend",
+    "href": "mangrove.html#step-4-temporal-trend",
+    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
+    "section": "Step 4 — Temporal Trend",
+    "text": "Step 4 — Temporal Trend\n\nWhen did deforestation peak?\nA histogram of loss year revealed that mangrove loss increased steadily until peaking around 2016, with a slight decline afterward. The map of average loss year by commune shows most deforestation concentrated between 2012 and 2015.\n\n\n\nAverage year of mangrove loss by commune. Darker bars indicate more recent deforestation events (2015 and later)."
+  },
+  {
+    "objectID": "mangrove.html#step-5-proximity-analysis",
+    "href": "mangrove.html#step-5-proximity-analysis",
+    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
+    "section": "Step 5 — Proximity Analysis",
+    "text": "Step 5 — Proximity Analysis\n\nDoes accessibility drive deforestation?\nMulti-ring buffers of 1 km, 2 km, and 5 km were applied around paths and permanent rivers, then intersected with mangrove loss polygons to quantify deforestation within each distance band.\narcpy.analysis.Buffer(\n    in_features = paths_layer,\n    out_feature_class = buffer_output,\n    buffer_distance_or_field = \"1000 Meters\",\n    dissolve_option = \"ALL\"\n)\n\narcpy.analysis.Intersect(\n    in_features = [buffer_output, mangrove_polygon_name],\n    out_feature_class = intersect_output\n)\n\n\n\nTotal mangrove loss by distance from paths. Loss increases with distance, suggesting remoteness — not direct accessibility — may be a stronger driver of deforestation in this region."
+  },
+  {
+    "objectID": "mangrove.html#key-findings",
+    "href": "mangrove.html#key-findings",
+    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
+    "section": "Key Findings",
+    "text": "Key Findings\nMost loss occurred between 2012 and 2015. At the commune level, Antsakoamanondro experienced the greatest loss, while Ambodimanga Sud led at the fokontany level. The proximity analysis revealed a counter-intuitive pattern — loss increased with distance from paths, pointing to subsistence expansion into remote coastal areas rather than direct infrastructure-driven clearing.\n\n\n\nFinding\nDetail\n\n\n\n\nMost affected commune\nAntsakoamanondro (~3.05 km²)\n\n\nMost affected fokontany\nAmbodimanga Sud (~1.47 km²)\n\n\nPeak loss period\n2012–2015\n\n\nLoss within 1 km of paths\n0.66 km²\n\n\nLoss within 5 km of paths\n7.71 km²\n\n\nKey insight\nRemoteness, not accessibility, appears to drive loss"
+  },
+  {
+    "objectID": "mangrove.html#what-this-means-for-conservation-planning",
+    "href": "mangrove.html#what-this-means-for-conservation-planning",
+    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
+    "section": "What this means for conservation planning",
+    "text": "What this means for conservation planning\nThe spatial pattern of loss — concentrated in specific communes and fokontany, and increasing with distance from paths — suggests deforestation in the Ambanja and Ambaro Bays is driven more by subsistence expansion into remote coastal areas than by direct infrastructure access.\nThis Python-based pipeline — raster conversion, cursor-based cleaning, spatial joins, buffer intersections, and structured Excel outputs — demonstrates how ArcPy automation can efficiently process large environmental datasets to generate actionable, governance-ready spatial insights."
+  },
+  {
+    "objectID": "petawawa_tree_species.html",
+    "href": "petawawa_tree_species.html",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "",
+    "text": "← Back to Projects"
+  },
+  {
+    "objectID": "petawawa_tree_species.html#introduction",
+    "href": "petawawa_tree_species.html#introduction",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "Introduction",
+    "text": "Introduction\n\nForest inventory is changing — and LiDAR is at the centre of it\nDominant tree species information is essential for forest management. Different species shape wildlife habitat, timber value, biodiversity, and cultural priorities. Traditional mapping relied on sample plots and air photo interpretation — slow, expensive, and limited in coverage.\nRemote sensing offers a scalable alternative. Multispectral imagery detects species through spectral signatures. LiDAR is more challenging — it typically uses a single wavelength — but captures detailed forest structure, and studies show species often have distinct vertical and canopy patterns.\nThis project investigates whether LiDAR structural metrics alone can reliably classify dominant tree species in the Petawawa Research Forest."
+  },
+  {
+    "objectID": "petawawa_tree_species.html#motivation",
+    "href": "petawawa_tree_species.html#motivation",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "Motivation",
+    "text": "Motivation\n\nOntario’s push toward an Enhanced Forest Inventory\nOntario is transitioning to an Enhanced Forest Inventory (EFI), aiming to replace manual methods with remote-sensing-based models that are more consistent, scalable, and cost-efficient. Dominant species classification is a key component of EFI workflows.\nThe Ministry of Natural Resources wants to know: is newly collected ALS (LiDAR) data sufficient for operational species mapping — or is multispectral data still required?\nKey question: Is LiDAR alone accurate enough to model dominant tree species, or must it be fused with multispectral data?"
+  },
+  {
+    "objectID": "petawawa_tree_species.html#the-data",
+    "href": "petawawa_tree_species.html#the-data",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "The Data",
+    "text": "The Data\n\nTwo datasets — one structural, one ground-truth\nThe Airborne Laser Scanning (ALS) metrics dataset provides 2018 wall-to-wall LiDAR coverage of the Petawawa Research Forest. Rather than raw point clouds, it delivers 67 statistical summaries per cell at 25 m spatial resolution — capturing canopy height, density, and vertical structure.\nGround truth comes from the Petawawa Research Forest plot data: field-surveyed plot locations for approximately 30 tree species, sampled in summer 2018, each labelled with a dominant species code.\n\n\n\nALS metrics raster for the Petawawa Research Forest. Each of the 67 bands represents a statistical summary derived from the 2018 wall-to-wall airborne LiDAR point cloud at 25 m spatial resolution.\n\n\n\n\n\nGround plot locations across the Petawawa Research Forest, coloured by dominant tree species. Plots were sampled in summer 2018 and cover approximately 30 species."
+  },
+  {
+    "objectID": "petawawa_tree_species.html#step-1-cleaning",
+    "href": "petawawa_tree_species.html#step-1-cleaning",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "Step 1 — Cleaning",
+    "text": "Step 1 — Cleaning\n\nRemoving missing data and filtering rare species\nLimitations in the original point cloud’s data structure meant some sites had no ALS coverage. These were removed before analysis. ALS and plot data were kept in separate dataframes to support future scikit-learn workflows requiring separate class and attribute inputs.\n\n  Python — Filter NaN Sites\n  # Find the indexes of rows containing NaN\nbad_data = lidar_data.isnull().any(axis=1).tolist()\n\n# Filter these rows out of both datasets\nwhich       = np.logical_not(bad_data)\nplots_good  = plot_data[which]\nlidar_good  = lidar_data[which]\n  \n\nLooking at the species distribution, plots are dominated by white pine — potentially representative of the forest, but insufficient to build training, validation, and test sets for all classes. Species with fewer than 15 observations were excluded, leaving three proceeding species: White Pine · Red Pine · Red Oak.\n\n  Python — Filter to Target Species\n  # Keep only species with at least 15 plots\ntrg_species = (plots_good['Species']\n               .value_counts()\n               .loc[lambda count: count &gt;= 15]\n               .index.tolist())\n\nspecies_filter = plots_good['Species'].isin(trg_species)\nplots_final    = plots_good[species_filter]\nlidar_final    = lidar_good[species_filter]\n  \n\n\n\n\nSpecies distribution across all ground plots after removing sites with missing ALS data. White pine dominates the dataset, with most other species having too few observations for model training."
+  },
+  {
+    "objectID": "petawawa_tree_species.html#step-2-feature-correlation",
+    "href": "petawawa_tree_species.html#step-2-feature-correlation",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "Step 2 — Feature Correlation",
+    "text": "Step 2 — Feature Correlation\n\nWhich ALS metrics relate most to species?\nWith 67 available bands, feature selection was critical. mutual_info_classif from scikit-learn calculates the mutual information between each attribute and the target class individually — providing a ranked view of which LiDAR metrics carry the most species signal.\n\n  Python — Mutual Information Feature Ranking\n  from sklearn.feature_selection import mutual_info_classif\n\n# Prepare data\ny = plots_final['Code'].map({1: 1, 2: 2, 41: 3})\nX = lidar_final.drop('plot', axis=1)\n\n# Rank features by mutual information with species class\nmi        = mutual_info_classif(X, y, discrete_features='auto')\nmi_scores = pd.Series(mi, index=X.columns).sort_values(ascending=False)\nprint(mi_scores.head())"
+  },
+  {
+    "objectID": "petawawa_tree_species.html#step-3-visualisation",
+    "href": "petawawa_tree_species.html#step-3-visualisation",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "Step 3 — Visualisation",
+    "text": "Step 3 — Visualisation\n\nBox plots: can the top metrics separate species?\nTo understand whether the highest-ranked features can distinguish the three species, box plots were used to show the distribution overlap of each class across each attribute. The Vertical Complexity Index (VCI) was included as a hypothesis test — intuitively, canopy vertical structure should reflect species differences.\n\n  Python — Box Plot Grid\n  classes = [lidar_final[y == i+1] for i in range(3)]\nmetrics = mi_scores[0:3].index.tolist() + ['vci_0.5bin']\n\nfig, axs = plt.subplots(2, 2)\nfor i, ax in enumerate(axs.flat):\n    metric = metrics[i]\n    spread = [cl[metric] for cl in classes]\n    ax.boxplot(spread)\n    ax.set_xticklabels(trg_species)\n    ax.set_title(metric)\n\nplt.suptitle('Box Plots — Top ALS Metrics by Species')\nplt.tight_layout()\nplt.show()\n  \n\n\n\n\nBox plots showing the distribution of the top three mutual-information-ranked ALS metrics and VCI across White Pine, Red Pine, and Red Oak. Substantial overlap between classes suggests LiDAR structural metrics alone may not reliably distinguish species."
+  },
+  {
+    "objectID": "petawawa_tree_species.html#key-findings",
+    "href": "petawawa_tree_species.html#key-findings",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "Key Findings",
+    "text": "Key Findings\nThe data exploration revealed two key shortcomings that must be addressed before model development can begin.\n\n\n\n\n\n\n\n\nChallenge\nDetail\nRecommended Solution\n\n\n\n\nInsufficient training data\nMany dominant species had fewer than 10 observations — too few for training, validation, and testing splits.\nThe Ministry should procure additional plot data to support robust model development.\n\n\nInconsistent ALS metrics\nMany sites lacked ALS coverage; others showed data inconsistent with their dominant species.\nExclude grass-dominated sites; replace nearest-neighbour extraction with a distance-weighted Gaussian average of surrounding pixels."
+  },
+  {
+    "objectID": "petawawa_tree_species.html#proposed-methods",
+    "href": "petawawa_tree_species.html#proposed-methods",
+    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
+    "section": "Proposed Methods",
+    "text": "Proposed Methods\n\nTwo models, one comparison\nOnce the data challenges above are resolved, two models will be developed using scikit-learn:\n\nALS-only model — predicts dominant species using exclusively LiDAR-derived metrics.\nData fusion model — combines ALS and multispectral data for species prediction.\n\nAn in-depth performance comparison will determine whether LiDAR alone is sufficient for operational EFI species mapping, or whether a multisensor approach is required.\nBased on the data exploration, ALS alone is unlikely to match the performance of a fused approach — multispectral data offers substantial advantages for species discrimination. However, high-density ALS with fine spatial resolution may yet resolve individual crowns, potentially closing the gap."
   },
   {
     "objectID": "remote-sensing.html",
@@ -446,264 +705,5 @@
     "title": "Oluwaseyi Ezekiel",
     "section": "",
     "text": "Course: Project Proposal Development and Proof of Concept (FCOR 599)\nGroup project with four MGEM colleagues\nRole: Survey design\nTeam Members\n\nNathan Mithal\n\nKate Van den Berg\n\nMuhamad Nafi Andriansyah\n\nNicole Graham\n\nThis Survey123 form was developed as part of a simulated citizen science exercise conducted in the UBC MGEM classroom, focused on monitoring birds, mammals, and amphibians. The form was designed to collect structured wildlife observations including species type, observation location, and if species were dead or alive.\nParticipants (MGEM students) used the form to submit simulated wildlife observations, which were visualized real-time through the Environmental Monitoring Dashboard. The workflow demonstrates how mobile GIS tools can support citizen science data collection while highlighting practical challenges such as data reliability, spatial coverage, and observer bias.\n\n\nNote: This survey form is displayed for demonstration purposes. Submissions are currently disabled."
-  },
-  {
-    "objectID": "lidar-story.html",
-    "href": "lidar-story.html",
-    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
-    "section": "",
-    "text": "← Remote Sensing Projects"
-  },
-  {
-    "objectID": "lidar-story.html#the-problem",
-    "href": "lidar-story.html#the-problem",
-    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
-    "section": "The Problem",
-    "text": "The Problem\n\nWhy individual trees matter — and why they’re hard to isolate\nForest inventory traditionally summarizes canopy structure over grid cells. But per‑tree metrics — height, crown area, stem density — drive carbon accounting, habitat modelling, and harvest planning.\nIn BC’s mixed coniferous forests, overlapping crowns and dense lower‑storey branches make it difficult for algorithms to determine where one tree ends and another begins."
-  },
-  {
-    "objectID": "lidar-story.html#the-data",
-    "href": "lidar-story.html#the-data",
-    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
-    "section": "The Data",
-    "text": "The Data\n\nFour circular plots, millions of points\nI extracted four 154‑m diameter plots from a normalized LiDAR catalog covering Malcolm Knapp Research Forest. Height outliers were removed to prevent false detections.\nctg &lt;- readLAScatalog(norm_dir)\nopt_filter(ctg) &lt;- \"-drop_z_below 0 -drop_z_above 65\"\n\nradius &lt;- 77\nfor(i in 1:4) {\n  x &lt;- plots_tbl$X[i]; y &lt;- plots_tbl$Y[i]\n  p &lt;- clip_circle(ctg, x, y, radius)\n  writeLAS(p, file.path(plots_dir, paste0(\"Lab4_Plot_\", i, \".las\")))\n}"
-  },
-  {
-    "objectID": "lidar-story.html#algorithm-1-li-et-al.-2012",
-    "href": "lidar-story.html#algorithm-1-li-et-al.-2012",
-    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
-    "section": "Algorithm 1 — Li et al. (2012)",
-    "text": "Algorithm 1 — Li et al. (2012)\n\nStarting from the top: segmentation in 3D\nLi2012 begins segmentation at the top of the canopy, where crown spacing is greatest. The speed_up parameter defines the maximum crown radius.\nli12 &lt;- li2012(dt1=1.5, dt2=2, R=2, Zu=15, speed_up=10)\n\nfor(i in 1:4) {\n  Plt      &lt;- readLAS(file.path(\"Plots\", paste0(\"Lab4_Plot_\", i, \".las\")))\n  Plt_li12 &lt;- segment_trees(Plt, li12)\n  plot(Plt_li12, color=\"treeID\")\n}\n\n\n\nLi2012 segmentation — Plot 1.\n\n\n\n\n\nLi2012 segmentation — Plot 2.\n\n\n\n\n\nLi2012 segmentation — Plot 3.\n\n\n\n\n\nLi2012 segmentation — Plot 4."
-  },
-  {
-    "objectID": "lidar-story.html#building-the-surface",
-    "href": "lidar-story.html#building-the-surface",
-    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
-    "section": "Building the Surface",
-    "text": "Building the Surface\n\nFrom point cloud to canopy height model\nDalponte2016 requires a CHM. I generated a 0.5 m pitfree CHM and detected tree tops using a local maximum filter.\n\n\n\nCHM of Plot 1 with detected tree tops."
-  },
-  {
-    "objectID": "lidar-story.html#resolution-matters",
-    "href": "lidar-story.html#resolution-matters",
-    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
-    "section": "Resolution Matters",
-    "text": "Resolution Matters\n\nCHM at four resolutions\nI compared CHMs at 0.5 m, 2 m, 4 m, and 10 m. 2 m provided the best balance between detail and noise.\n\n\n\nCHM resolution comparison for Plot 2."
-  },
-  {
-    "objectID": "lidar-story.html#algorithm-2-dalponte-coomes-2016",
-    "href": "lidar-story.html#algorithm-2-dalponte-coomes-2016",
-    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
-    "section": "Algorithm 2 — Dalponte & Coomes (2016)",
-    "text": "Algorithm 2 — Dalponte & Coomes (2016)\n\nGrowing crowns outward from tree tops\n\n\n\nDalponte segmentation for Plot 1.\n\n\n\n\n\nDalponte segmentation for Plot 2 at 2 m resolution."
-  },
-  {
-    "objectID": "lidar-story.html#algorithm-comparison",
-    "href": "lidar-story.html#algorithm-comparison",
-    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
-    "section": "Algorithm Comparison",
-    "text": "Algorithm Comparison\nLi2012 and Dalponte2016 didn’t just produce different segmentation maps — they revealed different blind spots in how each method interprets forest structure. The table below summarizes their strengths, weaknesses, and ideal use‑cases.\n\n\n\n\n\n\n\n\n\nAlgorithm\nStrengths\nFailure Mode\nBest Used In\n\n\n\n\nDalponte2016\nProduces clean, intuitive crown boundaries when the CHM surface is smooth and distinct.\nMerges adjacent crowns when the CHM forms a single ridge in dense stands.\nOpen, even‑aged stands with well‑separated crowns and reliable CHM structure.\n\n\nLi2012\nMore resilient in dense, multi‑layered stands due to its 3D, point‑based logic.\nStruggles where lower‑storey branches from neighbouring trees intertwine.\nDense, structurally complex stands where 3D segmentation prevents crown merging."
-  },
-  {
-    "objectID": "lidar-story.html#what-this-means-for-operational-forest-inventory",
-    "href": "lidar-story.html#what-this-means-for-operational-forest-inventory",
-    "title": "Individual Tree Detection in Malcolm Knapp Research Forest",
-    "section": "What this means for operational forest inventory",
-    "text": "What this means for operational forest inventory\nNo single algorithm is universally “best” across a heterogeneous forest like MKRF. A practical workflow needs to adapt to stand structure.\nThe key insight: across the entire forest, CHM resolution influenced results more than the choice of algorithm. A 2 m CHM provided the strongest balance between structural detail, noise suppression, and computational efficiency."
-  },
-  {
-    "objectID": "mangrove.html",
-    "href": "mangrove.html",
-    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
-    "section": "",
-    "text": "← Back to Projects"
-  },
-  {
-    "objectID": "mangrove.html#the-problem",
-    "href": "mangrove.html#the-problem",
-    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
-    "section": "The Problem",
-    "text": "The Problem\n\nOne of the world’s most productive ecosystems — vanishing fast\nMangrove forests store extraordinary amounts of carbon, protect coastlines from storm surges, and sustain the livelihoods of coastal communities. In Madagascar, they are under pressure from timber harvesting, agricultural expansion, and aquaculture — driven by population growth and limited governance.\nThis project quantifies mangrove loss between 1999 and 2019 at two administrative scales — commune and fokontany — and tests whether proximity to paths and permanent rivers explains spatial patterns of deforestation."
-  },
-  {
-    "objectID": "mangrove.html#the-data",
-    "href": "mangrove.html#the-data",
-    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
-    "section": "The Data",
-    "text": "The Data\n\nA global dataset, downloaded from Google Earth Engine\nThe Murray Global Tidal Wetland Change dataset (Murray et al. 2022) maps tidal wetland gain and loss globally using over 1 million Landsat images combined with machine learning. It was downloaded for this project via a Google Earth Engine script, with NA values encoded as 0 in the raster.\nAdministrative boundaries — communes and fokontany — and infrastructure layers including paths and permanent rivers were sourced from the AAB geodatabase."
-  },
-  {
-    "objectID": "mangrove.html#step-1-pre-processing",
-    "href": "mangrove.html#step-1-pre-processing",
-    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
-    "section": "Step 1 — Pre-Processing",
-    "text": "Step 1 — Pre-Processing\n\nConverting pixels to polygons — and cleaning the noise\nThe Murray raster encodes mangrove loss year as pixel values, with 0 representing no data. The first task was converting it to polygon format for vector-based spatial analysis, then using ArcPy cursors to remove null records and rename the gridcode field to loss_year.\narcpy.conversion.RasterToPolygon(\n    original, opath,\n    \"NO_SIMPLIFY\",\n    raster_field = 'Value'\n)\n\n# Rename gridcode to loss_year\narcpy.management.AlterField(mangrove_polygon_name, 'gridcode', 'loss_year')\n\n# Remove null polygons using UpdateCursor\nwith arcpy.da.UpdateCursor(mangrove_polygon_name, 'loss_year') as cursor:\n    for row in cursor:\n        if row[0] == 0:\n            cursor.deleteRow()"
-  },
-  {
-    "objectID": "mangrove.html#step-2-loss-by-commune",
-    "href": "mangrove.html#step-2-loss-by-commune",
-    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
-    "section": "Step 2 — Loss by Commune",
-    "text": "Step 2 — Loss by Commune\n\nWhere is deforestation most severe?\nThe cleaned polygons were spatially joined to commune boundaries. Area was calculated using CalculateGeometryAttributes(), then summarized with arcpy.analysis.Statistics() — grouping by commune to produce total loss area (km²) and average loss year.\narcpy.analysis.Statistics(\n    in_table = joined_layer,\n    out_table = summary_table,\n    statistics_fields = [[\"Shape_Area\", \"SUM\"], [\"loss_year\", \"MEAN\"]],\n    case_field = \"COMMUNE\"\n)\n\n\n\nTotal mangrove loss (km²) by commune, 1999–2019. Antsakoamanondro recorded the highest loss at 3.05 km², followed by Anorontsangana (1.86 km²) and Maherivaratra (1.67 km²). Dashed line shows the mean loss across all communes."
-  },
-  {
-    "objectID": "mangrove.html#step-3-fokontany-scale",
-    "href": "mangrove.html#step-3-fokontany-scale",
-    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
-    "section": "Step 3 — Fokontany Scale",
-    "text": "Step 3 — Fokontany Scale\n\nZooming in: sub-commune hotspots\nThe same workflow was repeated at the fokontany level — a finer administrative unit — revealing deforestation hotspots that commune-level analysis would mask.\n\n\n\nTop 10 fokontany by total mangrove loss. Ambodimanga Sud (1.47 km²) and Andrahibo (1.30 km²) led at the sub-commune scale."
-  },
-  {
-    "objectID": "mangrove.html#step-4-temporal-trend",
-    "href": "mangrove.html#step-4-temporal-trend",
-    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
-    "section": "Step 4 — Temporal Trend",
-    "text": "Step 4 — Temporal Trend\n\nWhen did deforestation peak?\nA histogram of loss year revealed that mangrove loss increased steadily until peaking around 2016, with a slight decline afterward. The map of average loss year by commune shows most deforestation concentrated between 2012 and 2015.\n\n\n\nAverage year of mangrove loss by commune. Darker bars indicate more recent deforestation events (2015 and later)."
-  },
-  {
-    "objectID": "mangrove.html#step-5-proximity-analysis",
-    "href": "mangrove.html#step-5-proximity-analysis",
-    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
-    "section": "Step 5 — Proximity Analysis",
-    "text": "Step 5 — Proximity Analysis\n\nDoes accessibility drive deforestation?\nMulti-ring buffers of 1 km, 2 km, and 5 km were applied around paths and permanent rivers, then intersected with mangrove loss polygons to quantify deforestation within each distance band.\narcpy.analysis.Buffer(\n    in_features = paths_layer,\n    out_feature_class = buffer_output,\n    buffer_distance_or_field = \"1000 Meters\",\n    dissolve_option = \"ALL\"\n)\n\narcpy.analysis.Intersect(\n    in_features = [buffer_output, mangrove_polygon_name],\n    out_feature_class = intersect_output\n)\n\n\n\nTotal mangrove loss by distance from paths. Loss increases with distance, suggesting remoteness — not direct accessibility — may be a stronger driver of deforestation in this region."
-  },
-  {
-    "objectID": "mangrove.html#key-findings",
-    "href": "mangrove.html#key-findings",
-    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
-    "section": "Key Findings",
-    "text": "Key Findings\nMost loss occurred between 2012 and 2015. At the commune level, Antsakoamanondro experienced the greatest loss, while Ambodimanga Sud led at the fokontany level. The proximity analysis revealed a counter-intuitive pattern — loss increased with distance from paths, pointing to subsistence expansion into remote coastal areas rather than direct infrastructure-driven clearing.\n\n\n\nFinding\nDetail\n\n\n\n\nMost affected commune\nAntsakoamanondro (~3.05 km²)\n\n\nMost affected fokontany\nAmbodimanga Sud (~1.47 km²)\n\n\nPeak loss period\n2012–2015\n\n\nLoss within 1 km of paths\n0.66 km²\n\n\nLoss within 5 km of paths\n7.71 km²\n\n\nKey insight\nRemoteness, not accessibility, appears to drive loss"
-  },
-  {
-    "objectID": "mangrove.html#what-this-means-for-conservation-planning",
-    "href": "mangrove.html#what-this-means-for-conservation-planning",
-    "title": "Mangrove Deforestation Analysis — Ambanja & Ambaro Bays, Madagascar",
-    "section": "What this means for conservation planning",
-    "text": "What this means for conservation planning\nThe spatial pattern of loss — concentrated in specific communes and fokontany, and increasing with distance from paths — suggests deforestation in the Ambanja and Ambaro Bays is driven more by subsistence expansion into remote coastal areas than by direct infrastructure access.\nThis Python-based pipeline — raster conversion, cursor-based cleaning, spatial joins, buffer intersections, and structured Excel outputs — demonstrates how ArcPy automation can efficiently process large environmental datasets to generate actionable, governance-ready spatial insights."
-  },
-  {
-    "objectID": "petawawa.html",
-    "href": "petawawa.html",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "",
-    "text": "← Back to Projects"
-  },
-  {
-    "objectID": "petawawa_tree_species.html",
-    "href": "petawawa_tree_species.html",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "",
-    "text": "← Back to Projects"
-  },
-  {
-    "objectID": "petawawa_tree_species.html#introduction",
-    "href": "petawawa_tree_species.html#introduction",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "Introduction",
-    "text": "Introduction\n\nForest inventory is changing — and LiDAR is at the centre of it\nDominant tree species information is essential for forest management. Different species shape wildlife habitat, timber value, biodiversity, and cultural priorities. Traditional mapping relied on sample plots and air photo interpretation — slow, expensive, and limited in coverage.\nRemote sensing offers a scalable alternative. Multispectral imagery detects species through spectral signatures. LiDAR is more challenging — it typically uses a single wavelength — but captures detailed forest structure, and studies show species often have distinct vertical and canopy patterns.\nThis project investigates whether LiDAR structural metrics alone can reliably classify dominant tree species in the Petawawa Research Forest."
-  },
-  {
-    "objectID": "petawawa_tree_species.html#motivation",
-    "href": "petawawa_tree_species.html#motivation",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "Motivation",
-    "text": "Motivation\n\nOntario’s push toward an Enhanced Forest Inventory\nOntario is transitioning to an Enhanced Forest Inventory (EFI), aiming to replace manual methods with remote-sensing-based models that are more consistent, scalable, and cost-efficient. Dominant species classification is a key component of EFI workflows.\nThe Ministry of Natural Resources wants to know: is newly collected ALS (LiDAR) data sufficient for operational species mapping — or is multispectral data still required?\nKey question: Is LiDAR alone accurate enough to model dominant tree species, or must it be fused with multispectral data?"
-  },
-  {
-    "objectID": "petawawa_tree_species.html#the-data",
-    "href": "petawawa_tree_species.html#the-data",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "The Data",
-    "text": "The Data\n\nTwo datasets — one structural, one ground-truth\nThe Airborne Laser Scanning (ALS) metrics dataset provides 2018 wall-to-wall LiDAR coverage of the Petawawa Research Forest. Rather than raw point clouds, it delivers 67 statistical summaries per cell at 25 m spatial resolution — capturing canopy height, density, and vertical structure.\nGround truth comes from the Petawawa Research Forest plot data: field-surveyed plot locations for approximately 30 tree species, sampled in summer 2018, each labelled with a dominant species code.\n\n\n\nALS metrics raster for the Petawawa Research Forest. Each of the 67 bands represents a statistical summary derived from the 2018 wall-to-wall airborne LiDAR point cloud at 25 m spatial resolution.\n\n\n\n\n\nGround plot locations across the Petawawa Research Forest, coloured by dominant tree species. Plots were sampled in summer 2018 and cover approximately 30 species."
-  },
-  {
-    "objectID": "petawawa_tree_species.html#step-1-cleaning",
-    "href": "petawawa_tree_species.html#step-1-cleaning",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "Step 1 — Cleaning",
-    "text": "Step 1 — Cleaning\n\nRemoving missing data and filtering rare species\nLimitations in the original point cloud’s data structure meant some sites had no ALS coverage. These were removed before analysis. ALS and plot data were kept in separate dataframes to support future scikit-learn workflows requiring separate class and attribute inputs.\n\n  Python — Filter NaN Sites\n  # Find the indexes of rows containing NaN\nbad_data = lidar_data.isnull().any(axis=1).tolist()\n\n# Filter these rows out of both datasets\nwhich       = np.logical_not(bad_data)\nplots_good  = plot_data[which]\nlidar_good  = lidar_data[which]\n  \n\nLooking at the species distribution, plots are dominated by white pine — potentially representative of the forest, but insufficient to build training, validation, and test sets for all classes. Species with fewer than 15 observations were excluded, leaving three proceeding species: White Pine · Red Pine · Red Oak.\n\n  Python — Filter to Target Species\n  # Keep only species with at least 15 plots\ntrg_species = (plots_good['Species']\n               .value_counts()\n               .loc[lambda count: count &gt;= 15]\n               .index.tolist())\n\nspecies_filter = plots_good['Species'].isin(trg_species)\nplots_final    = plots_good[species_filter]\nlidar_final    = lidar_good[species_filter]\n  \n\n\n\n\nSpecies distribution across all ground plots after removing sites with missing ALS data. White pine dominates the dataset, with most other species having too few observations for model training."
-  },
-  {
-    "objectID": "petawawa_tree_species.html#step-2-feature-correlation",
-    "href": "petawawa_tree_species.html#step-2-feature-correlation",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "Step 2 — Feature Correlation",
-    "text": "Step 2 — Feature Correlation\n\nWhich ALS metrics relate most to species?\nWith 67 available bands, feature selection was critical. mutual_info_classif from scikit-learn calculates the mutual information between each attribute and the target class individually — providing a ranked view of which LiDAR metrics carry the most species signal.\n\n  Python — Mutual Information Feature Ranking\n  from sklearn.feature_selection import mutual_info_classif\n\n# Prepare data\ny = plots_final['Code'].map({1: 1, 2: 2, 41: 3})\nX = lidar_final.drop('plot', axis=1)\n\n# Rank features by mutual information with species class\nmi        = mutual_info_classif(X, y, discrete_features='auto')\nmi_scores = pd.Series(mi, index=X.columns).sort_values(ascending=False)\nprint(mi_scores.head())"
-  },
-  {
-    "objectID": "petawawa_tree_species.html#step-3-visualisation",
-    "href": "petawawa_tree_species.html#step-3-visualisation",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "Step 3 — Visualisation",
-    "text": "Step 3 — Visualisation\n\nBox plots: can the top metrics separate species?\nTo understand whether the highest-ranked features can distinguish the three species, box plots were used to show the distribution overlap of each class across each attribute. The Vertical Complexity Index (VCI) was included as a hypothesis test — intuitively, canopy vertical structure should reflect species differences.\n\n  Python — Box Plot Grid\n  classes = [lidar_final[y == i+1] for i in range(3)]\nmetrics = mi_scores[0:3].index.tolist() + ['vci_0.5bin']\n\nfig, axs = plt.subplots(2, 2)\nfor i, ax in enumerate(axs.flat):\n    metric = metrics[i]\n    spread = [cl[metric] for cl in classes]\n    ax.boxplot(spread)\n    ax.set_xticklabels(trg_species)\n    ax.set_title(metric)\n\nplt.suptitle('Box Plots — Top ALS Metrics by Species')\nplt.tight_layout()\nplt.show()\n  \n\n\n\n\nBox plots showing the distribution of the top three mutual-information-ranked ALS metrics and VCI across White Pine, Red Pine, and Red Oak. Substantial overlap between classes suggests LiDAR structural metrics alone may not reliably distinguish species."
-  },
-  {
-    "objectID": "petawawa_tree_species.html#key-findings",
-    "href": "petawawa_tree_species.html#key-findings",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "Key Findings",
-    "text": "Key Findings\nThe data exploration revealed two key shortcomings that must be addressed before model development can begin.\n\n\n\n\n\n\n\n\nChallenge\nDetail\nRecommended Solution\n\n\n\n\nInsufficient training data\nMany dominant species had fewer than 10 observations — too few for training, validation, and testing splits.\nThe Ministry should procure additional plot data to support robust model development.\n\n\nInconsistent ALS metrics\nMany sites lacked ALS coverage; others showed data inconsistent with their dominant species.\nExclude grass-dominated sites; replace nearest-neighbour extraction with a distance-weighted Gaussian average of surrounding pixels."
-  },
-  {
-    "objectID": "petawawa_tree_species.html#proposed-methods",
-    "href": "petawawa_tree_species.html#proposed-methods",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "Proposed Methods",
-    "text": "Proposed Methods\n\nTwo models, one comparison\nOnce the data challenges above are resolved, two models will be developed using scikit-learn:\n\nALS-only model — predicts dominant species using exclusively LiDAR-derived metrics.\nData fusion model — combines ALS and multispectral data for species prediction.\n\nAn in-depth performance comparison will determine whether LiDAR alone is sufficient for operational EFI species mapping, or whether a multisensor approach is required.\nBased on the data exploration, ALS alone is unlikely to match the performance of a fused approach — multispectral data offers substantial advantages for species discrimination. However, high-density ALS with fine spatial resolution may yet resolve individual crowns, potentially closing the gap."
-  },
-  {
-    "objectID": "petawawa.html#introduction",
-    "href": "petawawa.html#introduction",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "Introduction",
-    "text": "Introduction\n\nForest inventory is changing — and LiDAR is at the centre of it\nDominant tree species information is essential for forest management. Different species shape wildlife habitat, timber value, biodiversity, and cultural priorities. Traditional mapping relied on sample plots and air photo interpretation — slow, expensive, and limited in coverage.\nRemote sensing offers a scalable alternative. Multispectral imagery detects species through spectral signatures. LiDAR is more challenging — it typically uses a single wavelength — but captures detailed forest structure, and studies show species often have distinct vertical and canopy patterns.\nThis project investigates whether LiDAR structural metrics alone can reliably classify dominant tree species in the Petawawa Research Forest."
-  },
-  {
-    "objectID": "petawawa.html#motivation",
-    "href": "petawawa.html#motivation",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "Motivation",
-    "text": "Motivation\n\nOntario’s push toward an Enhanced Forest Inventory\nOntario is transitioning to an Enhanced Forest Inventory (EFI), aiming to replace manual methods with remote-sensing-based models that are more consistent, scalable, and cost-efficient. Dominant species classification is a key component of EFI workflows.\nThe Ministry of Natural Resources wants to know: is newly collected ALS (LiDAR) data sufficient for operational species mapping — or is multispectral data still required?\nKey question: Is LiDAR alone accurate enough to model dominant tree species, or must it be fused with multispectral data?"
-  },
-  {
-    "objectID": "petawawa.html#the-data",
-    "href": "petawawa.html#the-data",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "The Data",
-    "text": "The Data\n\nTwo datasets — one structural, one ground-truth\nThe Airborne Laser Scanning (ALS) metrics dataset provides 2018 wall-to-wall LiDAR coverage of the Petawawa Research Forest. Rather than raw point clouds, it delivers 67 statistical summaries per cell at 25 m spatial resolution — capturing canopy height, density, and vertical structure.\nGround truth comes from the Petawawa Research Forest plot data: field-surveyed plot locations for approximately 30 tree species, sampled in summer 2018, each labelled with a dominant species code.\n\n\n\nALS metrics raster for the Petawawa Research Forest. Each of the 67 bands represents a statistical summary derived from the 2018 wall-to-wall airborne LiDAR point cloud at 25 m spatial resolution.\n\n\n\n\n\nGround plot locations across the Petawawa Research Forest, coloured by dominant tree species. Plots were sampled in summer 2018 and cover approximately 30 species."
-  },
-  {
-    "objectID": "petawawa.html#step-1-cleaning",
-    "href": "petawawa.html#step-1-cleaning",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "Step 1 — Cleaning",
-    "text": "Step 1 — Cleaning\n\nRemoving missing data and filtering rare species\nLimitations in the original point cloud’s data structure meant some sites had no ALS coverage. These were removed before analysis. ALS and plot data were kept in separate dataframes to support future scikit-learn workflows requiring separate class and attribute inputs.\n\n  Python — Filter NaN Sites\n  # Find the indexes of rows containing NaN\nbad_data = lidar_data.isnull().any(axis=1).tolist()\n\n# Filter these rows out of both datasets\nwhich       = np.logical_not(bad_data)\nplots_good  = plot_data[which]\nlidar_good  = lidar_data[which]\n  \n\nLooking at the species distribution, plots are dominated by white pine — potentially representative of the forest, but insufficient to build training, validation, and test sets for all classes. Species with fewer than 15 observations were excluded, leaving three proceeding species: White Pine · Red Pine · Red Oak.\n\n  Python — Filter to Target Species\n  # Keep only species with at least 15 plots\ntrg_species = (plots_good['Species']\n               .value_counts()\n               .loc[lambda count: count &gt;= 15]\n               .index.tolist())\n\nspecies_filter = plots_good['Species'].isin(trg_species)\nplots_final    = plots_good[species_filter]\nlidar_final    = lidar_good[species_filter]\n  \n\n\n\n\nSpecies distribution across all ground plots after removing sites with missing ALS data. White pine dominates the dataset, with most other species having too few observations for model training."
-  },
-  {
-    "objectID": "petawawa.html#step-2-feature-correlation",
-    "href": "petawawa.html#step-2-feature-correlation",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "Step 2 — Feature Correlation",
-    "text": "Step 2 — Feature Correlation\n\nWhich ALS metrics relate most to species?\nWith 67 available bands, feature selection was critical. mutual_info_classif from scikit-learn calculates the mutual information between each attribute and the target class individually — providing a ranked view of which LiDAR metrics carry the most species signal.\n\n  Python — Mutual Information Feature Ranking\n  from sklearn.feature_selection import mutual_info_classif\n\n# Prepare data\ny = plots_final['Code'].map({1: 1, 2: 2, 41: 3})\nX = lidar_final.drop('plot', axis=1)\n\n# Rank features by mutual information with species class\nmi        = mutual_info_classif(X, y, discrete_features='auto')\nmi_scores = pd.Series(mi, index=X.columns).sort_values(ascending=False)\nprint(mi_scores.head())"
-  },
-  {
-    "objectID": "petawawa.html#step-3-visualisation",
-    "href": "petawawa.html#step-3-visualisation",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "Step 3 — Visualisation",
-    "text": "Step 3 — Visualisation\n\nBox plots: can the top metrics separate species?\nTo understand whether the highest-ranked features can distinguish the three species, box plots were used to show the distribution overlap of each class across each attribute. The Vertical Complexity Index (VCI) was included as a hypothesis test — intuitively, canopy vertical structure should reflect species differences.\n\n  Python — Box Plot Grid\n  classes = [lidar_final[y == i+1] for i in range(3)]\nmetrics = mi_scores[0:3].index.tolist() + ['vci_0.5bin']\n\nfig, axs = plt.subplots(2, 2)\nfor i, ax in enumerate(axs.flat):\n    metric = metrics[i]\n    spread = [cl[metric] for cl in classes]\n    ax.boxplot(spread)\n    ax.set_xticklabels(trg_species)\n    ax.set_title(metric)\n\nplt.suptitle('Box Plots — Top ALS Metrics by Species')\nplt.tight_layout()\nplt.show()\n  \n\n\n\n\nBox plots showing the distribution of the top three mutual-information-ranked ALS metrics and VCI across White Pine, Red Pine, and Red Oak. Substantial overlap between classes suggests LiDAR structural metrics alone may not reliably distinguish species."
-  },
-  {
-    "objectID": "petawawa.html#key-findings",
-    "href": "petawawa.html#key-findings",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "Key Findings",
-    "text": "Key Findings\nThe data exploration revealed two key shortcomings that must be addressed before model development can begin.\n\n\n\n\n\n\n\n\nChallenge\nDetail\nRecommended Solution\n\n\n\n\nInsufficient training data\nMany dominant species had fewer than 10 observations — too few for training, validation, and testing splits.\nThe Ministry should procure additional plot data to support robust model development.\n\n\nInconsistent ALS metrics\nMany sites lacked ALS coverage; others showed data inconsistent with their dominant species.\nExclude grass-dominated sites; replace nearest-neighbour extraction with a distance-weighted Gaussian average of surrounding pixels."
-  },
-  {
-    "objectID": "petawawa.html#proposed-methods",
-    "href": "petawawa.html#proposed-methods",
-    "title": "Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR",
-    "section": "Proposed Methods",
-    "text": "Proposed Methods\n\nTwo models, one comparison\nOnce the data challenges above are resolved, two models will be developed using scikit-learn:\n\nALS-only model — predicts dominant species using exclusively LiDAR-derived metrics.\nData fusion model — combines ALS and multispectral data for species prediction.\n\nAn in-depth performance comparison will determine whether LiDAR alone is sufficient for operational EFI species mapping, or whether a multisensor approach is required.\nBased on the data exploration, ALS alone is unlikely to match the performance of a fused approach — multispectral data offers substantial advantages for species discrimination. However, high-density ALS with fine spatial resolution may yet resolve individual crowns, potentially closing the gap."
   }
 ]
