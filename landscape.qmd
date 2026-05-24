@@ -60,7 +60,7 @@ editor: source
 
 This project quantifies mangrove loss across communes and fokontany in Madagascar's Ambanja and Ambaro Bays between 1999 and 2019, using an automated ArcPy pipeline built in Jupyter notebooks. The workflow covers raster conversion, spatial joins, summary statistics, and multi-ring buffer analysis.
 
-<a class="story-btn" href="projects/mangrove.html">View Project →</a>
+<a class="story-btn" href="mangrove.html">View Project →</a>
 ::::
 :::::
 
@@ -75,6 +75,6 @@ This project quantifies mangrove loss across communes and fokontany in Madagasca
 
 This project evaluates whether airborne LiDAR structural metrics can support dominant tree species classification in the **Petawawa Research Forest, Ontario**, as part of Ontario's transition toward an **Enhanced Forest Inventory (EFI)**. LiDAR-derived metrics were extracted at ground plot locations and analyzed using **mutual information feature selection** to identify the most informative structural variables for distinguishing White Pine, Red Pine, and Red Oak.
 
-<a class="story-btn" href="projects/project_tree_species.html">View Project →</a>
+<a class="story-btn" href="petawawa.html">View Project →</a>
 ::::
 ::::::::

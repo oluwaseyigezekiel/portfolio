@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>remote-sensing – Oluwaseyi Ezekiel</title>
+<title>mangrove – Oluwaseyi Ezekiel</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -76,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -145,101 +180,221 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#mangrove-deforestation-analysis-ambanja-ambaro-bays-madagascar" id="toc-mangrove-deforestation-analysis-ambanja-ambaro-bays-madagascar" class="nav-link active" data-scroll-target="#mangrove-deforestation-analysis-ambanja-ambaro-bays-madagascar">Mangrove Deforestation Analysis — Ambanja &amp; Ambaro Bays, Madagascar</a>
+  <ul class="collapse">
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The Problem</a>
+  <ul class="collapse">
+  <li><a href="#one-of-the-worlds-most-productive-ecosystems-vanishing-fast" id="toc-one-of-the-worlds-most-productive-ecosystems-vanishing-fast" class="nav-link" data-scroll-target="#one-of-the-worlds-most-productive-ecosystems-vanishing-fast"><em>One of the world’s most productive ecosystems — vanishing fast</em></a></li>
+  </ul></li>
+  <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The Data</a>
+  <ul class="collapse">
+  <li><a href="#a-global-dataset-downloaded-from-google-earth-engine" id="toc-a-global-dataset-downloaded-from-google-earth-engine" class="nav-link" data-scroll-target="#a-global-dataset-downloaded-from-google-earth-engine"><em>A global dataset, downloaded from Google Earth Engine</em></a></li>
+  </ul></li>
+  <li><a href="#step-1-pre-processing" id="toc-step-1-pre-processing" class="nav-link" data-scroll-target="#step-1-pre-processing">Step 1 — Pre-Processing</a>
+  <ul class="collapse">
+  <li><a href="#converting-pixels-to-polygons-and-cleaning-the-noise" id="toc-converting-pixels-to-polygons-and-cleaning-the-noise" class="nav-link" data-scroll-target="#converting-pixels-to-polygons-and-cleaning-the-noise"><em>Converting pixels to polygons — and cleaning the noise</em></a></li>
+  </ul></li>
+  <li><a href="#step-2-loss-by-commune" id="toc-step-2-loss-by-commune" class="nav-link" data-scroll-target="#step-2-loss-by-commune">Step 2 — Loss by Commune</a>
+  <ul class="collapse">
+  <li><a href="#where-is-deforestation-most-severe" id="toc-where-is-deforestation-most-severe" class="nav-link" data-scroll-target="#where-is-deforestation-most-severe"><em>Where is deforestation most severe?</em></a></li>
+  </ul></li>
+  <li><a href="#step-3-fokontany-scale" id="toc-step-3-fokontany-scale" class="nav-link" data-scroll-target="#step-3-fokontany-scale">Step 3 — Fokontany Scale</a>
+  <ul class="collapse">
+  <li><a href="#zooming-in-sub-commune-hotspots" id="toc-zooming-in-sub-commune-hotspots" class="nav-link" data-scroll-target="#zooming-in-sub-commune-hotspots"><em>Zooming in: sub-commune hotspots</em></a></li>
+  </ul></li>
+  <li><a href="#step-4-temporal-trend" id="toc-step-4-temporal-trend" class="nav-link" data-scroll-target="#step-4-temporal-trend">Step 4 — Temporal Trend</a>
+  <ul class="collapse">
+  <li><a href="#when-did-deforestation-peak" id="toc-when-did-deforestation-peak" class="nav-link" data-scroll-target="#when-did-deforestation-peak"><em>When did deforestation peak?</em></a></li>
+  </ul></li>
+  <li><a href="#step-5-proximity-analysis" id="toc-step-5-proximity-analysis" class="nav-link" data-scroll-target="#step-5-proximity-analysis">Step 5 — Proximity Analysis</a>
+  <ul class="collapse">
+  <li><a href="#does-accessibility-drive-deforestation" id="toc-does-accessibility-drive-deforestation" class="nav-link" data-scroll-target="#does-accessibility-drive-deforestation"><em>Does accessibility drive deforestation?</em></a></li>
+  </ul></li>
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key Findings</a></li>
+  <li><a href="#what-this-means-for-conservation-planning" id="toc-what-this-means-for-conservation-planning" class="nav-link" data-scroll-target="#what-this-means-for-conservation-planning">What this means for conservation planning</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<style>
-.rs-container{max-width:1000px;margin:0 auto}
-.lab-card{
-  background:#fff;border-radius:18px;padding:1.4rem;
-  margin-bottom:1.6rem;
-  box-shadow:0 6px 18px rgba(0,0,0,0.07);
-  border:1px solid rgba(0,0,0,0.05);
-}
-.lab-card.featured{padding:0;overflow:hidden}
-.featured-body{padding:1.4rem}
-.tag-row{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:.7rem}
-.tag{
-  background:#eef4ff;padding:.25rem .7rem;
-  border-radius:999px;font-size:.8rem;font-weight:600;color:#2457a6;
-}
-.tag.forest{background:#d8f3dc;color:#1b4332}
-.project-link{font-weight:600;text-decoration:none}
-.project-link:hover{text-decoration:underline}
-.story-btn{
-  display:inline-flex;align-items:center;gap:.45rem;
-  margin-top:1rem;padding:.6rem 1.2rem;
-  border-radius:999px;background:#1b4332;
-  color:#fff;font-size:.85rem;font-weight:600;
-  text-decoration:none;transition:background .2s;
-}
-.story-btn:hover{background:#2d6a4f}
-.back-btn{
-  display:inline-block;margin-bottom:1.4rem;
-  padding:.55rem 1rem;border-radius:999px;
-  background:#f3f4f6;color:#222;text-decoration:none;
-  font-weight:600;border:1px solid rgba(0,0,0,0.08);
-}
-.back-btn:hover{background:#e9ecef}
-</style>
-<div class="rs-container">
 <p><a href="content.html" class="back-btn">← Back to Projects</a></p>
-<section id="remote-sensing-projects" class="level1">
-<h1>Remote Sensing Projects</h1>
+<section id="mangrove-deforestation-analysis-ambanja-ambaro-bays-madagascar" class="level1">
+<h1>Mangrove Deforestation Analysis — Ambanja &amp; Ambaro Bays, Madagascar</h1>
+<p>📍 Madagascar · 📅 November 2025</p>
+<p><strong>Tools</strong>: Python · ArcPy · Google Earth Engine</p>
 <hr>
-<section id="lidar-forest-structure-individual-tree-detection" class="level3">
-<h3 class="anchored" data-anchor-id="lidar-forest-structure-individual-tree-detection">LiDAR Forest Structure &amp; Individual Tree Detection</h3>
-<div class="lab-card featured">
-<div class="featured-body">
-<div class="tag-row">
-<p><span class="tag forest">LiDAR</span> <span class="tag forest">Individual Tree Detection</span> <span class="tag forest">Forest Inventory</span> <span class="tag">R · lidR</span> <span class="tag">Malcolm Knapp RF</span></p>
-</div>
-<p><strong>Can an algorithm reliably find every tree in a structurally complex BC coniferous forest?</strong> This project compares two individual tree segmentation approaches — <strong>Li2012</strong> (3D point-cloud) and <strong>Dalponte2016</strong> (CHM region-growing) — across four forest plots at Malcolm Knapp Research Forest.</p>
-<p><a class="story-btn" href="lidar-story.html">Read the full story →</a></p>
-</div>
-</div>
+<p><em>Which communities are losing the most mangrove forest — and does proximity to human infrastructure explain it? In Madagascar’s Ambanja and Ambaro Bays, a Python-based spatial pipeline built the answer from the ground up.</em></p>
 <hr>
-</section>
-<section id="land-cover-classification" class="level3">
-<h3 class="anchored" data-anchor-id="land-cover-classification">Land Cover Classification</h3>
-<div class="lab-card">
-<div class="tag-row">
-<p><span class="tag">Remote Sensing</span> <span class="tag">Image Classification</span> <span class="tag">Landsat</span></p>
-</div>
-<p>This project applies supervised image classification to Landsat imagery using the Maximum Likelihood algorithm to map seven land-cover classes including Broadleaf Forest, Coniferous Forest, Exposed Soil and Rocks, and Water. The workflow includes training and validation polygons, spectral signature analysis, and accuracy assessment.</p>
-<p><a href="labs/classification.pdf" class="project-link">See full lab report (PDF) →</a></p>
-</div>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The Problem</h2>
+<section id="one-of-the-worlds-most-productive-ecosystems-vanishing-fast" class="level3">
+<h3 class="anchored" data-anchor-id="one-of-the-worlds-most-productive-ecosystems-vanishing-fast"><em>One of the world’s most productive ecosystems — vanishing fast</em></h3>
+<p>Mangrove forests store extraordinary amounts of carbon, protect coastlines from storm surges, and sustain the livelihoods of coastal communities. In Madagascar, they are under pressure from timber harvesting, agricultural expansion, and aquaculture — driven by population growth and limited governance.</p>
+<p>This project quantifies mangrove loss between <strong>1999 and 2019</strong> at two administrative scales — commune and fokontany — and tests whether proximity to paths and permanent rivers explains spatial patterns of deforestation.</p>
 <hr>
 </section>
-<section id="spectral-indices-and-vegetation-properties" class="level3">
-<h3 class="anchored" data-anchor-id="spectral-indices-and-vegetation-properties">Spectral Indices and Vegetation Properties</h3>
-<div class="lab-card">
-<div class="tag-row">
-<p><span class="tag">Spectral Analysis</span> <span class="tag">Vegetation Indices</span> <span class="tag">Remote Sensing</span></p>
-</div>
-<p>This project analyzes reflectance spectra measured with the ASD FieldSpecPro to compare live vegetation, dead vegetation, soil, and rock. It computes spectral indices such as <strong>PRI, SIPI, and ND705</strong>, simulates mixed pixels, and shows how <strong>NDVI</strong> and <strong>NDWI</strong> respond to increasing live vegetation cover at Landsat spectral resolution.</p>
-<p><a href="labs/spectral.pdf" class="project-link">See full lab report (PDF) →</a></p>
+</section>
+<section id="the-data" class="level2">
+<h2 class="anchored" data-anchor-id="the-data">The Data</h2>
+<section id="a-global-dataset-downloaded-from-google-earth-engine" class="level3">
+<h3 class="anchored" data-anchor-id="a-global-dataset-downloaded-from-google-earth-engine"><em>A global dataset, downloaded from Google Earth Engine</em></h3>
+<p>The <strong>Murray Global Tidal Wetland Change dataset</strong> (Murray et al.&nbsp;2022) maps tidal wetland gain and loss globally using over 1 million Landsat images combined with machine learning. It was downloaded for this project via a Google Earth Engine script, with NA values encoded as 0 in the raster.</p>
+<p>Administrative boundaries — communes and fokontany — and infrastructure layers including paths and permanent rivers were sourced from the AAB geodatabase.</p>
+<hr>
+</section>
+</section>
+<section id="step-1-pre-processing" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-pre-processing">Step 1 — Pre-Processing</h2>
+<section id="converting-pixels-to-polygons-and-cleaning-the-noise" class="level3">
+<h3 class="anchored" data-anchor-id="converting-pixels-to-polygons-and-cleaning-the-noise"><em>Converting pixels to polygons — and cleaning the noise</em></h3>
+<p>The Murray raster encodes mangrove loss year as pixel values, with 0 representing no data. The first task was converting it to polygon format for vector-based spatial analysis, then using ArcPy cursors to remove null records and rename the gridcode field to <code>loss_year</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>arcpy.conversion.RasterToPolygon(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    original, opath,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"NO_SIMPLIFY"</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    raster_field <span class="op">=</span> <span class="st">'Value'</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Rename gridcode to loss_year</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>arcpy.management.AlterField(mangrove_polygon_name, <span class="st">'gridcode'</span>, <span class="st">'loss_year'</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove null polygons using UpdateCursor</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> arcpy.da.UpdateCursor(mangrove_polygon_name, <span class="st">'loss_year'</span>) <span class="im">as</span> cursor:</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> row <span class="kw">in</span> cursor:</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> row[<span class="dv">0</span>] <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>            cursor.deleteRow()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="step-2-loss-by-commune" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-loss-by-commune">Step 2 — Loss by Commune</h2>
+<section id="where-is-deforestation-most-severe" class="level3">
+<h3 class="anchored" data-anchor-id="where-is-deforestation-most-severe"><em>Where is deforestation most severe?</em></h3>
+<p>The cleaned polygons were spatially joined to commune boundaries. Area was calculated using <code>CalculateGeometryAttributes()</code>, then summarized with <code>arcpy.analysis.Statistics()</code> — grouping by commune to produce total loss area (km²) and average loss year.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>arcpy.analysis.Statistics(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    in_table <span class="op">=</span> joined_layer,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    out_table <span class="op">=</span> summary_table,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    statistics_fields <span class="op">=</span> [[<span class="st">"Shape_Area"</span>, <span class="st">"SUM"</span>], [<span class="st">"loss_year"</span>, <span class="st">"MEAN"</span>]],</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    case_field <span class="op">=</span> <span class="st">"COMMUNE"</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/mangrove/mangrove_loss_commune.png" class="img-fluid figure-img"></p>
+<figcaption>Total mangrove loss (km²) by commune, 1999–2019. Antsakoamanondro recorded the highest loss at 3.05 km², followed by Anorontsangana (1.86 km²) and Maherivaratra (1.67 km²). Dashed line shows the mean loss across all communes.</figcaption>
+</figure>
 </div>
 <hr>
 </section>
-<section id="wildfire-burn-severity-and-vegetation-recovery" class="level3">
-<h3 class="anchored" data-anchor-id="wildfire-burn-severity-and-vegetation-recovery">Wildfire Burn Severity and Vegetation Recovery</h3>
-<div class="lab-card">
-<div class="tag-row">
-<p><span class="tag">Landsat</span> <span class="tag">Time Series</span> <span class="tag">NDVI / NBR</span></p>
+</section>
+<section id="step-3-fokontany-scale" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-fokontany-scale">Step 3 — Fokontany Scale</h2>
+<section id="zooming-in-sub-commune-hotspots" class="level3">
+<h3 class="anchored" data-anchor-id="zooming-in-sub-commune-hotspots"><em>Zooming in: sub-commune hotspots</em></h3>
+<p>The same workflow was repeated at the fokontany level — a finer administrative unit — revealing deforestation hotspots that commune-level analysis would mask.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/mangrove/mangrove_loss_fokontany.png" class="img-fluid figure-img"></p>
+<figcaption>Top 10 fokontany by total mangrove loss. Ambodimanga Sud (1.47 km²) and Andrahibo (1.30 km²) led at the sub-commune scale.</figcaption>
+</figure>
 </div>
-<p>This project analyzes wildfire burn severity and post-fire vegetation recovery using a Landsat 8 time series over the Prouton Lakes fire in British Columbia. The workflow includes cloud masking, NDVI and NBR calculation, yearly compositing, dNBR-based burn severity classification, and assessment of vegetation recovery from 2018 to 2021.</p>
-<p><a href="labs/wildfire.pdf" class="project-link">See full lab report (PDF) →</a></p>
-</div>
+<hr>
 </section>
 </section>
+<section id="step-4-temporal-trend" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-temporal-trend">Step 4 — Temporal Trend</h2>
+<section id="when-did-deforestation-peak" class="level3">
+<h3 class="anchored" data-anchor-id="when-did-deforestation-peak"><em>When did deforestation peak?</em></h3>
+<p>A histogram of loss year revealed that mangrove loss increased steadily until peaking around 2016, with a slight decline afterward. The map of average loss year by commune shows most deforestation concentrated between <strong>2012 and 2015</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/mangrove/mangrove_loss_temporal.png" class="img-fluid figure-img"></p>
+<figcaption>Average year of mangrove loss by commune. Darker bars indicate more recent deforestation events (2015 and later).</figcaption>
+</figure>
 </div>
+<hr>
+</section>
+</section>
+<section id="step-5-proximity-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-proximity-analysis">Step 5 — Proximity Analysis</h2>
+<section id="does-accessibility-drive-deforestation" class="level3">
+<h3 class="anchored" data-anchor-id="does-accessibility-drive-deforestation"><em>Does accessibility drive deforestation?</em></h3>
+<p>Multi-ring buffers of <strong>1 km, 2 km, and 5 km</strong> were applied around paths and permanent rivers, then intersected with mangrove loss polygons to quantify deforestation within each distance band.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>arcpy.analysis.Buffer(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    in_features <span class="op">=</span> paths_layer,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    out_feature_class <span class="op">=</span> buffer_output,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    buffer_distance_or_field <span class="op">=</span> <span class="st">"1000 Meters"</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    dissolve_option <span class="op">=</span> <span class="st">"ALL"</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>arcpy.analysis.Intersect(</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    in_features <span class="op">=</span> [buffer_output, mangrove_polygon_name],</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    out_feature_class <span class="op">=</span> intersect_output</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/mangrove/mangrove_loss_proximity.png" class="img-fluid figure-img"></p>
+<figcaption>Total mangrove loss by distance from paths. Loss increases with distance, suggesting remoteness — not direct accessibility — may be a stronger driver of deforestation in this region.</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+</section>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
+<p>Most loss occurred between 2012 and 2015. At the commune level, Antsakoamanondro experienced the greatest loss, while Ambodimanga Sud led at the fokontany level. The proximity analysis revealed a counter-intuitive pattern — loss increased with distance from paths, pointing to subsistence expansion into remote coastal areas rather than direct infrastructure-driven clearing.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Finding</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Most affected commune</td>
+<td>Antsakoamanondro (~3.05 km²)</td>
+</tr>
+<tr class="even">
+<td>Most affected fokontany</td>
+<td>Ambodimanga Sud (~1.47 km²)</td>
+</tr>
+<tr class="odd">
+<td>Peak loss period</td>
+<td>2012–2015</td>
+</tr>
+<tr class="even">
+<td>Loss within 1 km of paths</td>
+<td>0.66 km²</td>
+</tr>
+<tr class="odd">
+<td>Loss within 5 km of paths</td>
+<td>7.71 km²</td>
+</tr>
+<tr class="even">
+<td>Key insight</td>
+<td>Remoteness, not accessibility, appears to drive loss</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="what-this-means-for-conservation-planning" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-means-for-conservation-planning">What this means for conservation planning</h2>
+<p>The spatial pattern of loss — concentrated in specific communes and fokontany, and increasing with distance from paths — suggests deforestation in the Ambanja and Ambaro Bays is driven more by subsistence expansion into remote coastal areas than by direct infrastructure access.</p>
+<p>This Python-based pipeline — raster conversion, cursor-based cleaning, spatial joins, buffer intersections, and structured Excel outputs — demonstrates how ArcPy automation can efficiently process large environmental datasets to generate actionable, governance-ready spatial insights.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

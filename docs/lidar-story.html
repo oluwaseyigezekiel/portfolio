@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>remote-sensing – Oluwaseyi Ezekiel</title>
+<title>lidar-story – Oluwaseyi Ezekiel</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -76,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -145,101 +180,212 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#individual-tree-detection-in-malcolm-knapp-research-forest" id="toc-individual-tree-detection-in-malcolm-knapp-research-forest" class="nav-link active" data-scroll-target="#individual-tree-detection-in-malcolm-knapp-research-forest">Individual Tree Detection in Malcolm Knapp Research Forest</a>
+  <ul class="collapse">
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The Problem</a>
+  <ul class="collapse">
+  <li><a href="#why-individual-trees-matter-and-why-theyre-hard-to-isolate" id="toc-why-individual-trees-matter-and-why-theyre-hard-to-isolate" class="nav-link" data-scroll-target="#why-individual-trees-matter-and-why-theyre-hard-to-isolate"><em>Why individual trees matter — and why they’re hard to isolate</em></a></li>
+  </ul></li>
+  <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The Data</a>
+  <ul class="collapse">
+  <li><a href="#four-circular-plots-millions-of-points" id="toc-four-circular-plots-millions-of-points" class="nav-link" data-scroll-target="#four-circular-plots-millions-of-points"><em>Four circular plots, millions of points</em></a></li>
+  </ul></li>
+  <li><a href="#algorithm-1-li-et-al.-2012" id="toc-algorithm-1-li-et-al.-2012" class="nav-link" data-scroll-target="#algorithm-1-li-et-al.-2012">Algorithm 1 — Li et al.&nbsp;(2012)</a>
+  <ul class="collapse">
+  <li><a href="#starting-from-the-top-segmentation-in-3d" id="toc-starting-from-the-top-segmentation-in-3d" class="nav-link" data-scroll-target="#starting-from-the-top-segmentation-in-3d"><em>Starting from the top: segmentation in 3D</em></a></li>
+  </ul></li>
+  <li><a href="#building-the-surface" id="toc-building-the-surface" class="nav-link" data-scroll-target="#building-the-surface">Building the Surface</a>
+  <ul class="collapse">
+  <li><a href="#from-point-cloud-to-canopy-height-model" id="toc-from-point-cloud-to-canopy-height-model" class="nav-link" data-scroll-target="#from-point-cloud-to-canopy-height-model"><em>From point cloud to canopy height model</em></a></li>
+  </ul></li>
+  <li><a href="#resolution-matters" id="toc-resolution-matters" class="nav-link" data-scroll-target="#resolution-matters">Resolution Matters</a>
+  <ul class="collapse">
+  <li><a href="#chm-at-four-resolutions" id="toc-chm-at-four-resolutions" class="nav-link" data-scroll-target="#chm-at-four-resolutions"><em>CHM at four resolutions</em></a></li>
+  </ul></li>
+  <li><a href="#algorithm-2-dalponte-coomes-2016" id="toc-algorithm-2-dalponte-coomes-2016" class="nav-link" data-scroll-target="#algorithm-2-dalponte-coomes-2016">Algorithm 2 — Dalponte &amp; Coomes (2016)</a>
+  <ul class="collapse">
+  <li><a href="#growing-crowns-outward-from-tree-tops" id="toc-growing-crowns-outward-from-tree-tops" class="nav-link" data-scroll-target="#growing-crowns-outward-from-tree-tops"><em>Growing crowns outward from tree tops</em></a></li>
+  </ul></li>
+  <li><a href="#algorithm-comparison" id="toc-algorithm-comparison" class="nav-link" data-scroll-target="#algorithm-comparison">Algorithm Comparison</a></li>
+  <li><a href="#what-this-means-for-operational-forest-inventory" id="toc-what-this-means-for-operational-forest-inventory" class="nav-link" data-scroll-target="#what-this-means-for-operational-forest-inventory">What this means for operational forest inventory</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<style>
-.rs-container{max-width:1000px;margin:0 auto}
-.lab-card{
-  background:#fff;border-radius:18px;padding:1.4rem;
-  margin-bottom:1.6rem;
-  box-shadow:0 6px 18px rgba(0,0,0,0.07);
-  border:1px solid rgba(0,0,0,0.05);
-}
-.lab-card.featured{padding:0;overflow:hidden}
-.featured-body{padding:1.4rem}
-.tag-row{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:.7rem}
-.tag{
-  background:#eef4ff;padding:.25rem .7rem;
-  border-radius:999px;font-size:.8rem;font-weight:600;color:#2457a6;
-}
-.tag.forest{background:#d8f3dc;color:#1b4332}
-.project-link{font-weight:600;text-decoration:none}
-.project-link:hover{text-decoration:underline}
-.story-btn{
-  display:inline-flex;align-items:center;gap:.45rem;
-  margin-top:1rem;padding:.6rem 1.2rem;
-  border-radius:999px;background:#1b4332;
-  color:#fff;font-size:.85rem;font-weight:600;
-  text-decoration:none;transition:background .2s;
-}
-.story-btn:hover{background:#2d6a4f}
-.back-btn{
-  display:inline-block;margin-bottom:1.4rem;
-  padding:.55rem 1rem;border-radius:999px;
-  background:#f3f4f6;color:#222;text-decoration:none;
-  font-weight:600;border:1px solid rgba(0,0,0,0.08);
-}
-.back-btn:hover{background:#e9ecef}
-</style>
-<div class="rs-container">
-<p><a href="content.html" class="back-btn">← Back to Projects</a></p>
-<section id="remote-sensing-projects" class="level1">
-<h1>Remote Sensing Projects</h1>
+<p><a href="remote-sensing.html" class="back-btn">← Remote Sensing Projects</a></p>
+<section id="individual-tree-detection-in-malcolm-knapp-research-forest" class="level1">
+<h1>Individual Tree Detection in Malcolm Knapp Research Forest</h1>
+<p>📍 Maple Ridge, BC · 📅 February 2026</p>
+<p><strong>Tools</strong>: R · lidR · LiDAR</p>
 <hr>
-<section id="lidar-forest-structure-individual-tree-detection" class="level3">
-<h3 class="anchored" data-anchor-id="lidar-forest-structure-individual-tree-detection">LiDAR Forest Structure &amp; Individual Tree Detection</h3>
-<div class="lab-card featured">
-<div class="featured-body">
-<div class="tag-row">
-<p><span class="tag forest">LiDAR</span> <span class="tag forest">Individual Tree Detection</span> <span class="tag forest">Forest Inventory</span> <span class="tag">R · lidR</span> <span class="tag">Malcolm Knapp RF</span></p>
-</div>
-<p><strong>Can an algorithm reliably find every tree in a structurally complex BC coniferous forest?</strong> This project compares two individual tree segmentation approaches — <strong>Li2012</strong> (3D point-cloud) and <strong>Dalponte2016</strong> (CHM region-growing) — across four forest plots at Malcolm Knapp Research Forest.</p>
-<p><a class="story-btn" href="lidar-story.html">Read the full story →</a></p>
-</div>
-</div>
+<p><em>Can an algorithm find every tree in a dense BC forest? In a structurally complex mixed coniferous stand, crown overlap and multi‑layered canopy structure make this a far more difficult question than it seems.</em></p>
+<hr>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The Problem</h2>
+<section id="why-individual-trees-matter-and-why-theyre-hard-to-isolate" class="level3">
+<h3 class="anchored" data-anchor-id="why-individual-trees-matter-and-why-theyre-hard-to-isolate"><em>Why individual trees matter — and why they’re hard to isolate</em></h3>
+<p>Forest inventory traditionally summarizes canopy structure over grid cells. But per‑tree metrics — height, crown area, stem density — drive carbon accounting, habitat modelling, and harvest planning.</p>
+<p>In BC’s mixed coniferous forests, overlapping crowns and dense lower‑storey branches make it difficult for algorithms to determine where one tree ends and another begins.</p>
 <hr>
 </section>
-<section id="land-cover-classification" class="level3">
-<h3 class="anchored" data-anchor-id="land-cover-classification">Land Cover Classification</h3>
-<div class="lab-card">
-<div class="tag-row">
-<p><span class="tag">Remote Sensing</span> <span class="tag">Image Classification</span> <span class="tag">Landsat</span></p>
-</div>
-<p>This project applies supervised image classification to Landsat imagery using the Maximum Likelihood algorithm to map seven land-cover classes including Broadleaf Forest, Coniferous Forest, Exposed Soil and Rocks, and Water. The workflow includes training and validation polygons, spectral signature analysis, and accuracy assessment.</p>
-<p><a href="labs/classification.pdf" class="project-link">See full lab report (PDF) →</a></p>
-</div>
+</section>
+<section id="the-data" class="level2">
+<h2 class="anchored" data-anchor-id="the-data">The Data</h2>
+<section id="four-circular-plots-millions-of-points" class="level3">
+<h3 class="anchored" data-anchor-id="four-circular-plots-millions-of-points"><em>Four circular plots, millions of points</em></h3>
+<p>I extracted four 154‑m diameter plots from a normalized LiDAR catalog covering Malcolm Knapp Research Forest. Height outliers were removed to prevent false detections.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>ctg <span class="ot">&lt;-</span> <span class="fu">readLAScatalog</span>(norm_dir)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">opt_filter</span>(ctg) <span class="ot">&lt;-</span> <span class="st">"-drop_z_below 0 -drop_z_above 65"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>radius <span class="ot">&lt;-</span> <span class="dv">77</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>) {</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> plots_tbl<span class="sc">$</span>X[i]; y <span class="ot">&lt;-</span> plots_tbl<span class="sc">$</span>Y[i]</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> <span class="fu">clip_circle</span>(ctg, x, y, radius)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">writeLAS</span>(p, <span class="fu">file.path</span>(plots_dir, <span class="fu">paste0</span>(<span class="st">"Lab4_Plot_"</span>, i, <span class="st">".las"</span>)))</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
-<section id="spectral-indices-and-vegetation-properties" class="level3">
-<h3 class="anchored" data-anchor-id="spectral-indices-and-vegetation-properties">Spectral Indices and Vegetation Properties</h3>
-<div class="lab-card">
-<div class="tag-row">
-<p><span class="tag">Spectral Analysis</span> <span class="tag">Vegetation Indices</span> <span class="tag">Remote Sensing</span></p>
+</section>
+<section id="algorithm-1-li-et-al.-2012" class="level2">
+<h2 class="anchored" data-anchor-id="algorithm-1-li-et-al.-2012">Algorithm 1 — Li et al.&nbsp;(2012)</h2>
+<section id="starting-from-the-top-segmentation-in-3d" class="level3">
+<h3 class="anchored" data-anchor-id="starting-from-the-top-segmentation-in-3d"><em>Starting from the top: segmentation in 3D</em></h3>
+<p>Li2012 begins segmentation at the top of the canopy, where crown spacing is greatest. The <code>speed_up</code> parameter defines the maximum crown radius.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>li12 <span class="ot">&lt;-</span> <span class="fu">li2012</span>(<span class="at">dt1=</span><span class="fl">1.5</span>, <span class="at">dt2=</span><span class="dv">2</span>, <span class="at">R=</span><span class="dv">2</span>, <span class="at">Zu=</span><span class="dv">15</span>, <span class="at">speed_up=</span><span class="dv">10</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>) {</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  Plt      <span class="ot">&lt;-</span> <span class="fu">readLAS</span>(<span class="fu">file.path</span>(<span class="st">"Plots"</span>, <span class="fu">paste0</span>(<span class="st">"Lab4_Plot_"</span>, i, <span class="st">".las"</span>)))</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  Plt_li12 <span class="ot">&lt;-</span> <span class="fu">segment_trees</span>(Plt, li12)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(Plt_li12, <span class="at">color=</span><span class="st">"treeID"</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lidar/Plot1_Li2012.png" class="img-fluid figure-img"></p>
+<figcaption>Li2012 segmentation — Plot 1.</figcaption>
+</figure>
 </div>
-<p>This project analyzes reflectance spectra measured with the ASD FieldSpecPro to compare live vegetation, dead vegetation, soil, and rock. It computes spectral indices such as <strong>PRI, SIPI, and ND705</strong>, simulates mixed pixels, and shows how <strong>NDVI</strong> and <strong>NDWI</strong> respond to increasing live vegetation cover at Landsat spectral resolution.</p>
-<p><a href="labs/spectral.pdf" class="project-link">See full lab report (PDF) →</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lidar/Plot2_Li2012.png" class="img-fluid figure-img"></p>
+<figcaption>Li2012 segmentation — Plot 2.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lidar/Plot3_Li2012.png" class="img-fluid figure-img"></p>
+<figcaption>Li2012 segmentation — Plot 3.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lidar/Plot4_Li2012.png" class="img-fluid figure-img"></p>
+<figcaption>Li2012 segmentation — Plot 4.</figcaption>
+</figure>
 </div>
 <hr>
 </section>
-<section id="wildfire-burn-severity-and-vegetation-recovery" class="level3">
-<h3 class="anchored" data-anchor-id="wildfire-burn-severity-and-vegetation-recovery">Wildfire Burn Severity and Vegetation Recovery</h3>
-<div class="lab-card">
-<div class="tag-row">
-<p><span class="tag">Landsat</span> <span class="tag">Time Series</span> <span class="tag">NDVI / NBR</span></p>
+</section>
+<section id="building-the-surface" class="level2">
+<h2 class="anchored" data-anchor-id="building-the-surface">Building the Surface</h2>
+<section id="from-point-cloud-to-canopy-height-model" class="level3">
+<h3 class="anchored" data-anchor-id="from-point-cloud-to-canopy-height-model"><em>From point cloud to canopy height model</em></h3>
+<p>Dalponte2016 requires a CHM. I generated a 0.5 m pitfree CHM and detected tree tops using a local maximum filter.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lidar/Figure2_Plot1_CHM_treetops.png" class="img-fluid figure-img"></p>
+<figcaption>CHM of Plot 1 with detected tree tops.</figcaption>
+</figure>
 </div>
-<p>This project analyzes wildfire burn severity and post-fire vegetation recovery using a Landsat 8 time series over the Prouton Lakes fire in British Columbia. The workflow includes cloud masking, NDVI and NBR calculation, yearly compositing, dNBR-based burn severity classification, and assessment of vegetation recovery from 2018 to 2021.</p>
-<p><a href="labs/wildfire.pdf" class="project-link">See full lab report (PDF) →</a></p>
-</div>
+<hr>
 </section>
 </section>
+<section id="resolution-matters" class="level2">
+<h2 class="anchored" data-anchor-id="resolution-matters">Resolution Matters</h2>
+<section id="chm-at-four-resolutions" class="level3">
+<h3 class="anchored" data-anchor-id="chm-at-four-resolutions"><em>CHM at four resolutions</em></h3>
+<p>I compared CHMs at 0.5 m, 2 m, 4 m, and 10 m. 2 m provided the best balance between detail and noise.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lidar/Figure4_Plot2_CHM_4res.png" class="img-fluid figure-img"></p>
+<figcaption>CHM resolution comparison for Plot 2.</figcaption>
+</figure>
 </div>
+<hr>
+</section>
+</section>
+<section id="algorithm-2-dalponte-coomes-2016" class="level2">
+<h2 class="anchored" data-anchor-id="algorithm-2-dalponte-coomes-2016">Algorithm 2 — Dalponte &amp; Coomes (2016)</h2>
+<section id="growing-crowns-outward-from-tree-tops" class="level3">
+<h3 class="anchored" data-anchor-id="growing-crowns-outward-from-tree-tops"><em>Growing crowns outward from tree tops</em></h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lidar/Figure3_Plot1_Dalponte.png" class="img-fluid figure-img"></p>
+<figcaption>Dalponte segmentation for Plot 1.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lidar/Figure5_Plot2_Dalponte_2m.png" class="img-fluid figure-img"></p>
+<figcaption>Dalponte segmentation for Plot 2 at 2 m resolution.</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+</section>
+<section id="algorithm-comparison" class="level2">
+<h2 class="anchored" data-anchor-id="algorithm-comparison">Algorithm Comparison</h2>
+<p>Li2012 and Dalponte2016 didn’t just produce different segmentation maps — they revealed different blind spots in how each method interprets forest structure. The table below summarizes their strengths, weaknesses, and ideal use‑cases.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Algorithm</th>
+<th>Strengths</th>
+<th>Failure Mode</th>
+<th>Best Used In</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Dalponte2016</strong></td>
+<td>Produces clean, intuitive crown boundaries when the CHM surface is smooth and distinct.</td>
+<td>Merges adjacent crowns when the CHM forms a single ridge in dense stands.</td>
+<td>Open, even‑aged stands with well‑separated crowns and reliable CHM structure.</td>
+</tr>
+<tr class="even">
+<td><strong>Li2012</strong></td>
+<td>More resilient in dense, multi‑layered stands due to its 3D, point‑based logic.</td>
+<td>Struggles where lower‑storey branches from neighbouring trees intertwine.</td>
+<td>Dense, structurally complex stands where 3D segmentation prevents crown merging.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="what-this-means-for-operational-forest-inventory" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-means-for-operational-forest-inventory">What this means for operational forest inventory</h2>
+<p>No single algorithm is universally “best” across a heterogeneous forest like MKRF. A practical workflow needs to adapt to stand structure.</p>
+<p>The key insight: across the entire forest, <strong>CHM resolution influenced results more than the choice of algorithm.</strong> A 2 m CHM provided the strongest balance between structural detail, noise suppression, and computational efficiency.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

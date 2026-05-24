@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - lidar-story.html
+    - mangrove.html
+    - project_tree_species.html
 
 website:
   title: "Oluwaseyi Ezekiel"

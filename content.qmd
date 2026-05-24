@@ -291,7 +291,7 @@ This project quantifies mangrove loss across administrative boundaries in Madaga
 [Spatial Analysis]{.tag}
 :::
 
-[View project →](projects/mangrove.html){.project-link}
+[View project →](mangrove.html){.project-link}
 :::
 
 ::: {.project-card}

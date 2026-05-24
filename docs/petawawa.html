@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>remote-sensing – Oluwaseyi Ezekiel</title>
+<title>petawawa – Oluwaseyi Ezekiel</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -145,7 +145,46 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#mapping-dominant-tree-species-in-the-petawawa-research-forest-with-lidar" id="toc-mapping-dominant-tree-species-in-the-petawawa-research-forest-with-lidar" class="nav-link active" data-scroll-target="#mapping-dominant-tree-species-in-the-petawawa-research-forest-with-lidar">Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#forest-inventory-is-changing-and-lidar-is-at-the-centre-of-it" id="toc-forest-inventory-is-changing-and-lidar-is-at-the-centre-of-it" class="nav-link" data-scroll-target="#forest-inventory-is-changing-and-lidar-is-at-the-centre-of-it"><em>Forest inventory is changing — and LiDAR is at the centre of it</em></a></li>
+  </ul></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a>
+  <ul class="collapse">
+  <li><a href="#ontarios-push-toward-an-enhanced-forest-inventory" id="toc-ontarios-push-toward-an-enhanced-forest-inventory" class="nav-link" data-scroll-target="#ontarios-push-toward-an-enhanced-forest-inventory"><em>Ontario’s push toward an Enhanced Forest Inventory</em></a></li>
+  </ul></li>
+  <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The Data</a>
+  <ul class="collapse">
+  <li><a href="#two-datasets-one-structural-one-ground-truth" id="toc-two-datasets-one-structural-one-ground-truth" class="nav-link" data-scroll-target="#two-datasets-one-structural-one-ground-truth"><em>Two datasets — one structural, one ground-truth</em></a></li>
+  </ul></li>
+  <li><a href="#step-1-cleaning" id="toc-step-1-cleaning" class="nav-link" data-scroll-target="#step-1-cleaning">Step 1 — Cleaning</a>
+  <ul class="collapse">
+  <li><a href="#removing-missing-data-and-filtering-rare-species" id="toc-removing-missing-data-and-filtering-rare-species" class="nav-link" data-scroll-target="#removing-missing-data-and-filtering-rare-species"><em>Removing missing data and filtering rare species</em></a></li>
+  </ul></li>
+  <li><a href="#step-2-feature-correlation" id="toc-step-2-feature-correlation" class="nav-link" data-scroll-target="#step-2-feature-correlation">Step 2 — Feature Correlation</a>
+  <ul class="collapse">
+  <li><a href="#which-als-metrics-relate-most-to-species" id="toc-which-als-metrics-relate-most-to-species" class="nav-link" data-scroll-target="#which-als-metrics-relate-most-to-species"><em>Which ALS metrics relate most to species?</em></a></li>
+  </ul></li>
+  <li><a href="#step-3-visualisation" id="toc-step-3-visualisation" class="nav-link" data-scroll-target="#step-3-visualisation">Step 3 — Visualisation</a>
+  <ul class="collapse">
+  <li><a href="#box-plots-can-the-top-metrics-separate-species" id="toc-box-plots-can-the-top-metrics-separate-species" class="nav-link" data-scroll-target="#box-plots-can-the-top-metrics-separate-species"><em>Box plots: can the top metrics separate species?</em></a></li>
+  </ul></li>
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key Findings</a></li>
+  <li><a href="#proposed-methods" id="toc-proposed-methods" class="nav-link" data-scroll-target="#proposed-methods">Proposed Methods</a>
+  <ul class="collapse">
+  <li><a href="#two-models-one-comparison" id="toc-two-models-one-comparison" class="nav-link" data-scroll-target="#two-models-one-comparison"><em>Two models, one comparison</em></a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
@@ -153,93 +192,221 @@ ul.task-list li input[type="checkbox"] {
 
 
 <style>
-.rs-container{max-width:1000px;margin:0 auto}
-.lab-card{
-  background:#fff;border-radius:18px;padding:1.4rem;
-  margin-bottom:1.6rem;
-  box-shadow:0 6px 18px rgba(0,0,0,0.07);
-  border:1px solid rgba(0,0,0,0.05);
+.code-block {
+  background-color: #1a2a2a;
+  border-radius: 8px;
+  margin: 1.2em 0;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
 }
-.lab-card.featured{padding:0;overflow:hidden}
-.featured-body{padding:1.4rem}
-.tag-row{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:.7rem}
-.tag{
-  background:#eef4ff;padding:.25rem .7rem;
-  border-radius:999px;font-size:.8rem;font-weight:600;color:#2457a6;
+.code-block-label {
+  background-color: #2a3d3d;
+  color: #a0c8b0;
+  font-size: 0.78em;
+  padding: 6px 14px;
+  letter-spacing: 0.03em;
 }
-.tag.forest{background:#d8f3dc;color:#1b4332}
-.project-link{font-weight:600;text-decoration:none}
-.project-link:hover{text-decoration:underline}
-.story-btn{
-  display:inline-flex;align-items:center;gap:.45rem;
-  margin-top:1rem;padding:.6rem 1.2rem;
-  border-radius:999px;background:#1b4332;
-  color:#fff;font-size:.85rem;font-weight:600;
-  text-decoration:none;transition:background .2s;
+.code-block pre {
+  background: none !important;
+  color: #d4e8d4;
+  margin: 0;
+  padding: 16px 18px;
+  font-size: 0.88em;
+  line-height: 1.6;
+  white-space: pre;
+  overflow-x: auto;
 }
-.story-btn:hover{background:#2d6a4f}
-.back-btn{
-  display:inline-block;margin-bottom:1.4rem;
-  padding:.55rem 1rem;border-radius:999px;
-  background:#f3f4f6;color:#222;text-decoration:none;
-  font-weight:600;border:1px solid rgba(0,0,0,0.08);
-}
-.back-btn:hover{background:#e9ecef}
 </style>
-<div class="rs-container">
 <p><a href="content.html" class="back-btn">← Back to Projects</a></p>
-<section id="remote-sensing-projects" class="level1">
-<h1>Remote Sensing Projects</h1>
+<section id="mapping-dominant-tree-species-in-the-petawawa-research-forest-with-lidar" class="level1">
+<h1>Mapping Dominant Tree Species in the Petawawa Research Forest with LiDAR</h1>
+<p>📍 Petawawa Research Forest, Ontario · 📅 April 2025</p>
+<p><strong>Tools</strong>: Python · LiDAR · scikit-learn</p>
+<p><strong>Team</strong>: Agness Chisale · Oluwaseyi Ezekiel · N. Tyler Goncalves</p>
 <hr>
-<section id="lidar-forest-structure-individual-tree-detection" class="level3">
-<h3 class="anchored" data-anchor-id="lidar-forest-structure-individual-tree-detection">LiDAR Forest Structure &amp; Individual Tree Detection</h3>
-<div class="lab-card featured">
-<div class="featured-body">
-<div class="tag-row">
-<p><span class="tag forest">LiDAR</span> <span class="tag forest">Individual Tree Detection</span> <span class="tag forest">Forest Inventory</span> <span class="tag">R · lidR</span> <span class="tag">Malcolm Knapp RF</span></p>
-</div>
-<p><strong>Can an algorithm reliably find every tree in a structurally complex BC coniferous forest?</strong> This project compares two individual tree segmentation approaches — <strong>Li2012</strong> (3D point-cloud) and <strong>Dalponte2016</strong> (CHM region-growing) — across four forest plots at Malcolm Knapp Research Forest.</p>
-<p><a class="story-btn" href="lidar-story.html">Read the full story →</a></p>
-</div>
-</div>
+<p><em>Can LiDAR alone tell a white pine from a red oak? In Ontario’s Petawawa Research Forest, we built a Python-based exploration pipeline to find out — and discovered where the data falls short before a single model is trained.</em></p>
 <hr>
-</section>
-<section id="land-cover-classification" class="level3">
-<h3 class="anchored" data-anchor-id="land-cover-classification">Land Cover Classification</h3>
-<div class="lab-card">
-<div class="tag-row">
-<p><span class="tag">Remote Sensing</span> <span class="tag">Image Classification</span> <span class="tag">Landsat</span></p>
-</div>
-<p>This project applies supervised image classification to Landsat imagery using the Maximum Likelihood algorithm to map seven land-cover classes including Broadleaf Forest, Coniferous Forest, Exposed Soil and Rocks, and Water. The workflow includes training and validation polygons, spectral signature analysis, and accuracy assessment.</p>
-<p><a href="labs/classification.pdf" class="project-link">See full lab report (PDF) →</a></p>
-</div>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<section id="forest-inventory-is-changing-and-lidar-is-at-the-centre-of-it" class="level3">
+<h3 class="anchored" data-anchor-id="forest-inventory-is-changing-and-lidar-is-at-the-centre-of-it"><em>Forest inventory is changing — and LiDAR is at the centre of it</em></h3>
+<p>Dominant tree species information is essential for forest management. Different species shape wildlife habitat, timber value, biodiversity, and cultural priorities. Traditional mapping relied on sample plots and air photo interpretation — slow, expensive, and limited in coverage.</p>
+<p>Remote sensing offers a scalable alternative. Multispectral imagery detects species through spectral signatures. LiDAR is more challenging — it typically uses a single wavelength — but captures detailed forest structure, and studies show species often have distinct vertical and canopy patterns.</p>
+<p>This project investigates whether LiDAR structural metrics alone can reliably classify dominant tree species in the Petawawa Research Forest.</p>
 <hr>
 </section>
-<section id="spectral-indices-and-vegetation-properties" class="level3">
-<h3 class="anchored" data-anchor-id="spectral-indices-and-vegetation-properties">Spectral Indices and Vegetation Properties</h3>
-<div class="lab-card">
-<div class="tag-row">
-<p><span class="tag">Spectral Analysis</span> <span class="tag">Vegetation Indices</span> <span class="tag">Remote Sensing</span></p>
+</section>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<section id="ontarios-push-toward-an-enhanced-forest-inventory" class="level3">
+<h3 class="anchored" data-anchor-id="ontarios-push-toward-an-enhanced-forest-inventory"><em>Ontario’s push toward an Enhanced Forest Inventory</em></h3>
+<p>Ontario is transitioning to an Enhanced Forest Inventory (EFI), aiming to replace manual methods with remote-sensing-based models that are more consistent, scalable, and cost-efficient. Dominant species classification is a key component of EFI workflows.</p>
+<p>The Ministry of Natural Resources wants to know: is newly collected ALS (LiDAR) data sufficient for operational species mapping — or is multispectral data still required?</p>
+<p><strong>Key question:</strong> Is LiDAR alone accurate enough to model dominant tree species, or must it be fused with multispectral data?</p>
+<hr>
+</section>
+</section>
+<section id="the-data" class="level2">
+<h2 class="anchored" data-anchor-id="the-data">The Data</h2>
+<section id="two-datasets-one-structural-one-ground-truth" class="level3">
+<h3 class="anchored" data-anchor-id="two-datasets-one-structural-one-ground-truth"><em>Two datasets — one structural, one ground-truth</em></h3>
+<p>The <strong>Airborne Laser Scanning (ALS) metrics</strong> dataset provides 2018 wall-to-wall LiDAR coverage of the Petawawa Research Forest. Rather than raw point clouds, it delivers 67 statistical summaries per cell at 25 m spatial resolution — capturing canopy height, density, and vertical structure.</p>
+<p>Ground truth comes from the <strong>Petawawa Research Forest plot data</strong>: field-surveyed plot locations for approximately 30 tree species, sampled in summer 2018, each labelled with a dominant species code.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/petawawa/als_metrics.png" class="img-fluid figure-img"></p>
+<figcaption>ALS metrics raster for the Petawawa Research Forest. Each of the 67 bands represents a statistical summary derived from the 2018 wall-to-wall airborne LiDAR point cloud at 25 m spatial resolution.</figcaption>
+</figure>
 </div>
-<p>This project analyzes reflectance spectra measured with the ASD FieldSpecPro to compare live vegetation, dead vegetation, soil, and rock. It computes spectral indices such as <strong>PRI, SIPI, and ND705</strong>, simulates mixed pixels, and shows how <strong>NDVI</strong> and <strong>NDWI</strong> respond to increasing live vegetation cover at Landsat spectral resolution.</p>
-<p><a href="labs/spectral.pdf" class="project-link">See full lab report (PDF) →</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/petawawa/plot_locations.png" class="img-fluid figure-img"></p>
+<figcaption>Ground plot locations across the Petawawa Research Forest, coloured by dominant tree species. Plots were sampled in summer 2018 and cover approximately 30 species.</figcaption>
+</figure>
 </div>
 <hr>
 </section>
-<section id="wildfire-burn-severity-and-vegetation-recovery" class="level3">
-<h3 class="anchored" data-anchor-id="wildfire-burn-severity-and-vegetation-recovery">Wildfire Burn Severity and Vegetation Recovery</h3>
-<div class="lab-card">
-<div class="tag-row">
-<p><span class="tag">Landsat</span> <span class="tag">Time Series</span> <span class="tag">NDVI / NBR</span></p>
+</section>
+<section id="step-1-cleaning" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-cleaning">Step 1 — Cleaning</h2>
+<section id="removing-missing-data-and-filtering-rare-species" class="level3">
+<h3 class="anchored" data-anchor-id="removing-missing-data-and-filtering-rare-species"><em>Removing missing data and filtering rare species</em></h3>
+<p>Limitations in the original point cloud’s data structure meant some sites had no ALS coverage. These were removed before analysis. ALS and plot data were kept in separate dataframes to support future scikit-learn workflows requiring separate class and attribute inputs.</p>
+<div class="code-block">
+  <div class="code-block-label">Python — Filter NaN Sites</div>
+  <pre># Find the indexes of rows containing NaN
+bad_data = lidar_data.isnull().any(axis=1).tolist()
+
+# Filter these rows out of both datasets
+which       = np.logical_not(bad_data)
+plots_good  = plot_data[which]
+lidar_good  = lidar_data[which]
+  </pre>
 </div>
-<p>This project analyzes wildfire burn severity and post-fire vegetation recovery using a Landsat 8 time series over the Prouton Lakes fire in British Columbia. The workflow includes cloud masking, NDVI and NBR calculation, yearly compositing, dNBR-based burn severity classification, and assessment of vegetation recovery from 2018 to 2021.</p>
-<p><a href="labs/wildfire.pdf" class="project-link">See full lab report (PDF) →</a></p>
+<p>Looking at the species distribution, plots are dominated by white pine — potentially representative of the forest, but insufficient to build training, validation, and test sets for all classes. Species with fewer than 15 observations were excluded, leaving three proceeding species: <strong>White Pine · Red Pine · Red Oak</strong>.</p>
+<div class="code-block">
+  <div class="code-block-label">Python — Filter to Target Species</div>
+  <pre># Keep only species with at least 15 plots
+trg_species = (plots_good['Species']
+               .value_counts()
+               .loc[lambda count: count &gt;= 15]
+               .index.tolist())
+
+species_filter = plots_good['Species'].isin(trg_species)
+plots_final    = plots_good[species_filter]
+lidar_final    = lidar_good[species_filter]
+  </pre>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/petawawa/species_distribution.png" class="img-fluid figure-img"></p>
+<figcaption>Species distribution across all ground plots after removing sites with missing ALS data. White pine dominates the dataset, with most other species having too few observations for model training.</figcaption>
+</figure>
+</div>
+<hr>
 </section>
 </section>
+<section id="step-2-feature-correlation" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-feature-correlation">Step 2 — Feature Correlation</h2>
+<section id="which-als-metrics-relate-most-to-species" class="level3">
+<h3 class="anchored" data-anchor-id="which-als-metrics-relate-most-to-species"><em>Which ALS metrics relate most to species?</em></h3>
+<p>With 67 available bands, feature selection was critical. <code>mutual_info_classif</code> from scikit-learn calculates the mutual information between each attribute and the target class individually — providing a ranked view of which LiDAR metrics carry the most species signal.</p>
+<div class="code-block">
+  <div class="code-block-label">Python — Mutual Information Feature Ranking</div>
+  <pre>from sklearn.feature_selection import mutual_info_classif
+
+# Prepare data
+y = plots_final['Code'].map({1: 1, 2: 2, 41: 3})
+X = lidar_final.drop('plot', axis=1)
+
+# Rank features by mutual information with species class
+mi        = mutual_info_classif(X, y, discrete_features='auto')
+mi_scores = pd.Series(mi, index=X.columns).sort_values(ascending=False)
+print(mi_scores.head())
+  </pre>
 </div>
+<hr>
+</section>
+</section>
+<section id="step-3-visualisation" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-visualisation">Step 3 — Visualisation</h2>
+<section id="box-plots-can-the-top-metrics-separate-species" class="level3">
+<h3 class="anchored" data-anchor-id="box-plots-can-the-top-metrics-separate-species"><em>Box plots: can the top metrics separate species?</em></h3>
+<p>To understand whether the highest-ranked features can distinguish the three species, box plots were used to show the distribution overlap of each class across each attribute. The Vertical Complexity Index (VCI) was included as a hypothesis test — intuitively, canopy vertical structure should reflect species differences.</p>
+<div class="code-block">
+  <div class="code-block-label">Python — Box Plot Grid</div>
+  <pre>classes = [lidar_final[y == i+1] for i in range(3)]
+metrics = mi_scores[0:3].index.tolist() + ['vci_0.5bin']
+
+fig, axs = plt.subplots(2, 2)
+for i, ax in enumerate(axs.flat):
+    metric = metrics[i]
+    spread = [cl[metric] for cl in classes]
+    ax.boxplot(spread)
+    ax.set_xticklabels(trg_species)
+    ax.set_title(metric)
+
+plt.suptitle('Box Plots — Top ALS Metrics by Species')
+plt.tight_layout()
+plt.show()
+  </pre>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/petawawa/box_plots.png" class="img-fluid figure-img"></p>
+<figcaption>Box plots showing the distribution of the top three mutual-information-ranked ALS metrics and VCI across White Pine, Red Pine, and Red Oak. Substantial overlap between classes suggests LiDAR structural metrics alone may not reliably distinguish species.</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+</section>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
+<p>The data exploration revealed two key shortcomings that must be addressed before model development can begin.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Challenge</th>
+<th>Detail</th>
+<th>Recommended Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Insufficient training data</td>
+<td>Many dominant species had fewer than 10 observations — too few for training, validation, and testing splits.</td>
+<td>The Ministry should procure additional plot data to support robust model development.</td>
+</tr>
+<tr class="even">
+<td>Inconsistent ALS metrics</td>
+<td>Many sites lacked ALS coverage; others showed data inconsistent with their dominant species.</td>
+<td>Exclude grass-dominated sites; replace nearest-neighbour extraction with a distance-weighted Gaussian average of surrounding pixels.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="proposed-methods" class="level2">
+<h2 class="anchored" data-anchor-id="proposed-methods">Proposed Methods</h2>
+<section id="two-models-one-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="two-models-one-comparison"><em>Two models, one comparison</em></h3>
+<p>Once the data challenges above are resolved, two models will be developed using scikit-learn:</p>
+<ul>
+<li><strong>ALS-only model</strong> — predicts dominant species using exclusively LiDAR-derived metrics.</li>
+<li><strong>Data fusion model</strong> — combines ALS and multispectral data for species prediction.</li>
+</ul>
+<p>An in-depth performance comparison will determine whether LiDAR alone is sufficient for operational EFI species mapping, or whether a multisensor approach is required.</p>
+<p>Based on the data exploration, ALS alone is unlikely to match the performance of a fused approach — multispectral data offers substantial advantages for species discrimination. However, high-density ALS with fine spatial resolution may yet resolve individual crowns, potentially closing the gap.</p>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
